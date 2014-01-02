@@ -129,14 +129,18 @@ $^0::
 	tabPrevReport.click()
 
 	frmTabIframe2 := frmWork.document.frames["tabIframe2"]
+	Loop    ;optional check to wait for the page to completely load
+		Sleep,100
+	Until (frmTabIframe2.document.readyState = "complete")
 	prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
 	latestReport := prevReportLists.children[1].children[1]
 	; 點最近報告、開影像
 	latestReport.click()
 
-	Sleep, 100
-
 	frmPrevReport := frmWork.document.frames["tabIframe2"].document.frames["History3"]
+	Loop    ;optional check to wait for the page to completely load
+		Sleep,100
+	Until (frmPrevReport.document.readyState = "complete")
 	btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
 	; 複製報告
 	btnCopyReport.click()
