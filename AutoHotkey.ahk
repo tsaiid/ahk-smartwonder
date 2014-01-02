@@ -92,20 +92,11 @@ return
 
 SetTitleMatchMode, 2
 
+#Include MyScripts\active-current-image-before-submit.ahk
+
 ; HotKey
 ;; for SmartWonder
 #IfWinActive, tedpc-
-;;; Move mouse to SmartIris to activate current image, and then confirm the report (^k).
-$^k::
-	MouseGetPos, xpos,ypos
-	MouseMove, 1919, 0
-	SetMouseDelay, 250
-	MouseMove, 1921, 0
-	SetMouseDelay, 0
-	MouseMove, %xpos%, %ypos%
-	Send ^k
-return
-
 ;;; Select whole line and delete
 $^l::
 	Send {Home}+{End}
@@ -143,13 +134,13 @@ return
 
 $^0::
 	wb := IEGet()
-	frmWork := wb.document.frames[4]
+	frmWork := wb.document.frames["frameWork"]
 	tabEditReport := frmWork.document.getElementById("tabCaption0").children[1]
 	tabPrevReport := frmWork.document.getElementById("tabCaption0").children[7]
 	; 切換至歷史報告頁
 	tabPrevReport.click()
 
-	frmTabIframe2 := frmWork.document.frames[0]
+	frmTabIframe2 := frmWork.document.frames["tabIframe2"]
 	prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
 	latestReport := prevReportLists.children[1].children[1]
 	; 點最近報告、開影像
@@ -157,7 +148,7 @@ $^0::
 
 	Sleep, 100
 
-	frmPrevReport := frmWork.document.frames[0].document.frames[3]
+	frmPrevReport := frmWork.document.frames["tabIframe2"].document.frames["History3"]
 	btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
 	; 複製報告
 	btnCopyReport.click()
