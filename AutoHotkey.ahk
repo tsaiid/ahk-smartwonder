@@ -87,11 +87,7 @@ return
 #Include MyScripts\chest-x-ray.ahk
 #Include MyScripts\kub.ahk
 #Include MyScripts\bone-x-ray.ahk
-
-; Other plain films
-:O:cnic::The condition shows no obvious change as compared with previous study.
-:O:fe::Suggest further evaluation.
-:O:ifo::in favor of
+#Include MyScripts\other-x-ray.ahk
 
 ; Sono-guide
 :O:sg-ptgbd::
