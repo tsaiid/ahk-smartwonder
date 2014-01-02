@@ -93,6 +93,7 @@ return
 SetTitleMatchMode, 2
 
 #Include MyScripts\active-current-image-before-submit.ahk
+#Include MyScripts\selecting-tabs.ahk
 
 ; HotKey
 ;; for SmartWonder
@@ -101,19 +102,6 @@ SetTitleMatchMode, 2
 $^l::
 	Send {Home}+{End}
 	Send {Del}
-return
-
-;;; Select Tabs
-$^1::	; 報告編輯
-	MouseGetPos, xpos,ypos
-	Click 300, 180
-	MouseMove, %xpos%, %ypos%
-return
-
-$^3::	; 歷史報告
-	MouseGetPos, xpos,ypos
-	Click 700, 180
-	MouseMove, %xpos%, %ypos%
 return
 
 
