@@ -14,7 +14,7 @@
 ; try out these hotkeys, run AutoHotkey again, which will load this file.
 
 ; With Parameters
-#Include Hotstrings.ahk
+#Include Lib\Hotstrings.ahk
 hotstrings("p/lsp(\d)(\d)\s", "plsp")
 Return
 
