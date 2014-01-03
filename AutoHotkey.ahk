@@ -132,18 +132,24 @@ $^0::
 	Loop    ;optional check to wait for the page to completely load
 		Sleep,100
 	Until (frmTabIframe2.document.readyState = "complete")
-	prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
-	latestReport := prevReportLists.children[1].children[1]
-	; 點最近報告、開影像
-	latestReport.click()
+	; 檢查是否有歷史報告
+	tdMsgMore := frmTabIframe2.document.frames["History1"].document.getElementById("tdMsgMore")
+	If tdMsgMore {
+		MsgBox % tdMsgMore.innerText
+	}	Else {
+		prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
+		latestReport := prevReportLists.children[1].children[1]
+		; 點最近報告、開影像
+		latestReport.click()
 
-	frmPrevReport := frmWork.document.frames["tabIframe2"].document.frames["History3"]
-	Loop    ;optional check to wait for the page to completely load
-		Sleep,100
-	Until (frmPrevReport.document.readyState = "complete")
-	btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
-	; 複製報告
-	btnCopyReport.click()
+		frmPrevReport := frmWork.document.frames["tabIframe2"].document.frames["History3"]
+		Loop    ;optional check to wait for the page to completely load
+			Sleep,100
+		Until (frmPrevReport.document.readyState = "complete")
+		btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
+		; 複製報告
+		btnCopyReport.click()
+	}
 
 	; 切回報告編輯頁
 	tabEditReport.click()
