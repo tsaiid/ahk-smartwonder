@@ -115,9 +115,24 @@ IEGet(Name="")        ;Retrieve pointer to existing IE window/tab
             Return wb
 } ;written by Jethrow
 
+; for debug
 $^9::
 	wb := IEGet()
-	wb.window.onbeforeunload := ""
+	;; get current exam name
+	;str := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
+	;RegExMatch(str, "(.+) : (.+)", splitted)
+	;currExam := splitted[2]
+
+	;; get previous exam name
+	;prevExamDate := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].children[4].innerText
+	;prevExamTime := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].children[5].innerText
+	;prevExamName := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].children[7].innerText
+
+	;; determine lstBdyQuery Type
+	;; if CtrlId == lstBdyQuery, is a valid exam.
+	prevExamType := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].getAttribute("CtrlId")
+
+	MsgBox, %prevExamType%
 return
 
 $^0::
