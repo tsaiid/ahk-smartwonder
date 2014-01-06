@@ -148,11 +148,12 @@ $^0::
 		Sleep,100
 	Until (frmTabIframe2.document.readyState = "complete")
 	; 檢查是否有歷史報告
+	prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
+	isNoPrevReport := (prevReportLists.children.length = 0)
 	tdMsgMore := frmTabIframe2.document.frames["History1"].document.getElementById("tdMsgMore")
-	If tdMsgMore {
+	If isNoPrevReport {
 		MsgBox % tdMsgMore.innerText
 	}	Else {
-		prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
 		latestReport := prevReportLists.children[1].children[1]
 		; 點最近報告、開影像
 		latestReport.click()
