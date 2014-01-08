@@ -104,23 +104,4 @@ $^l::
 	Send {Home}+{End}
 	Send {Del}
 return
-
-;;; Open Previous Image and Report
-$^j::
-;	SetMouseDelay, 50
-	MouseGetPos, xpos,ypos
-	Click 700, 180		; 歷史報告
-	;Click 700, 325		; 最近檢查
-	Click 270, 325		; 開影像
-	Click 1080, 741		; 複製報告
-	Click 1080, 759		; 複製報告
-	Click 1080, 777		; 複製報告
-	Click 1080, 795		; 複製報告
-	Click 1080, 813		; 複製報告
-	Click 1080, 831		; 複製報告
-	Click 300, 180		; 回報告區
-	MouseMove, %xpos%, %ypos%
-
-;	wb := IEGet()
-return
 #IfWinActive
