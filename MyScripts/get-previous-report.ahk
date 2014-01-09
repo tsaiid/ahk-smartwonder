@@ -16,9 +16,14 @@ IEGet(Name="")        ;Retrieve pointer to existing IE window/tab
 $^9::
   wb := IEGet()
   ;; get current exam name
-  str := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
-  RegExMatch(str, "(.+) : (.+)", splitted)
-  currExam := splitted2
+  ;str := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
+  ;RegExMatch(str, "(.+) : (.+)", splitted)
+  ;currExam := splitted2
+
+  ;; get current exam date and time
+  currExamName := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.frames["History2"].document.getElementById("BodyPart").innerText
+  currExamDate := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.frames["History2"].document.getElementById("StudyDate").innerText
+  currExamTime := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.frames["History2"].document.getElementById("StudyTime").innerText
 
   ;; get previous exam name
   ;prevExamDate := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].children[4].innerText
@@ -41,18 +46,13 @@ $^9::
   ;  }
   ;}
 
-  MsgBox, %currExam%
+  MsgBox, %currExamName%
 return
 
 $^0::
   wb := IEGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
-
-  ;; get current exam name
-  tmpStr := frmTabIframe2.document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
-  RegExMatch(tmpStr, "(.+) : (.+)", splittedTmpStr)
-  currExamName := splittedTmpStr2
 
   tabEditReport := frmWork.document.getElementById("tabCaption0").children[1]
   tabPrevReport := frmWork.document.getElementById("tabCaption0").children[7]
@@ -62,6 +62,17 @@ $^0::
   Loop    ;optional check to wait for the page to completely load
     Sleep, 100
   Until (frmTabIframe2.document.readyState = "complete")
+
+  ;; get current exam date and time
+  frmHistory2 := frmTabIframe2.frames["History2"]
+
+  Loop    ;optional check to wait for the page to completely load
+    Sleep, 100
+  Until (frmHistory2.document.readyState = "complete")
+
+  currExamName := frmHistory2.document.getElementById("BodyPart").innerText
+  currExamDate := frmHistory2.document.getElementById("StudyDate").innerText
+  currExamTime := frmHistory2.document.getElementById("StudyTime").innerText
 
   ; 檢查是否有歷史報告
   prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
