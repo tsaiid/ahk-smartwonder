@@ -78,9 +78,7 @@ $^0::
   prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
   isNoPrevReport := (prevReportLists.children.length = 0)
   tdMsgMore := frmTabIframe2.document.frames["History1"].document.getElementById("tdMsgMore")
-  If isNoPrevReport ; 完全沒有歷史報告
-    MsgBox % tdMsgMore.innerText
-  Else ; 有一筆以上的歷史報告
+  If !isNoPrevReport ; 有一筆以上的歷史報告
   {
     ; 參考用的 pattern
     patternCXR := "i)chest (pa|ap)"
@@ -109,7 +107,7 @@ $^0::
         latestRelatedReport := prevReportLists.children[getPrevReport].children[1]
         latestRelatedReport.click() ; 點最近報告、開影像
 
-        frmPrevReport := frmWork.document.frames["tabIframe2"].document.frames["History3"]
+        frmPrevReport := frmTabIframe2.document.frames["History3"]
 
         Loop    ;optional check to wait for the page to completely load
           Sleep, 100
@@ -123,6 +121,8 @@ $^0::
 
   ; 切回報告編輯頁
   tabEditReport.click()
+  If isNoPrevReport ; 完全沒有歷史報告
+    MsgBox % tdMsgMore.innerText
   If (getPrevReport = 0) ; 有找到相關的報告，顯示訊息
     MsgBox % "AHK-SmartWonder: No related report found."
   ;MsgBox % tabPrevReport.id
