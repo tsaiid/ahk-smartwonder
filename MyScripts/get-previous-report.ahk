@@ -61,14 +61,14 @@ $^0::
 
   Loop    ;optional check to wait for the page to completely load
     Sleep, 100
-  Until (frmTabIframe2.document.readyState = "complete")
+  Until (frmTabIframe2.document && frmTabIframe2.document.readyState = "complete")
 
   ;; get current exam date and time
   frmHistory2 := frmTabIframe2.frames["History2"]
 
   Loop    ;optional check to wait for the page to completely load
     Sleep, 100
-  Until (frmHistory2.document.readyState = "complete")
+  Until (frmHistory2.document && frmHistory2.document.readyState = "complete")
 
   currExamName := frmHistory2.document.getElementById("BodyPart").innerText
   currExamDate := frmHistory2.document.getElementById("StudyDate").innerText
@@ -111,7 +111,7 @@ $^0::
 
         Loop    ;optional check to wait for the page to completely load
           Sleep, 100
-        Until (frmPrevReport.document.readyState = "complete")
+        Until (frmPrevReport.document && frmPrevReport.document.readyState = "complete")
 
         btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
         btnCopyReport.click() ; 複製報告
