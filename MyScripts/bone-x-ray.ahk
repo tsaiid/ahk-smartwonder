@@ -20,3 +20,12 @@
 :O:oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 :O:calspur::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
 :O:nabl::No active bone lesion.
+:O:p/rthr::s/p right total hip replacement.
+:O:p/lthr::s/p left total hip replacement.
+
+:O:flat::
+(
+Lateral projection of the foot with weight-bearing:
+
+The angle formed by the inferior axis of the calcaneus and 5th metatarsal shaft measures _____ degree on the right side, and _____ degree on the left side.
+)
