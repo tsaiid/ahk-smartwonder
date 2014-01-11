@@ -36,6 +36,8 @@
 :O:licvp::On central venous catheter via left internal jegular vein with tip at superior vena cava.
 :O:rscvp::On central venous catheter via right subclavian vein with tip at superior vena cava.
 :O:lscvp::On central venous catheter via left subclavian vein with tip at superior vena cava.
+:O:rport::On Port-A catheter via right subclavian vein.
+:O:lport::On Port-A catheter via left subclavian vein.
 :O:ile::Inadequate inspiration crowds lung markings.
 :O:pe::Engorged hila and pulmonary vasculature indicate pulmonary edema.
 :O:clc::Increased linear opacity over bilatera lower lungs, in favor of chronic inflammatory change.
