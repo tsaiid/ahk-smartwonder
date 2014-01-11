@@ -92,6 +92,7 @@ return
 
 SetTitleMatchMode, 2
 
+#Include MyScripts\debug.ahk
 #Include MyScripts\active-current-image-before-submit.ahk
 #Include MyScripts\selecting-tabs.ahk
 #Include MyScripts\get-previous-report.ahk
