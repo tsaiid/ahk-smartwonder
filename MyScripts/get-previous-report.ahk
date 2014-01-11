@@ -27,7 +27,7 @@ $^9::
 
   ;; get previous exam name
   ;prevExamDate := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].children[4].innerText
-  ;prevExamTime := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].children[5].innerText
+  prevExamTime := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].children[5].innerText
   ;prevExamName := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("lstBdyQuery").children[1].children[7].innerText
 
   ;; determine lstBdyQuery Type
@@ -46,7 +46,15 @@ $^9::
   ;  }
   ;}
 
-  MsgBox, %currExamName%
+  prevExamTime := prevExamTime + 0
+  currExamTime := currExamTime + 0
+  if (prevExamTime > currExamTime)
+    str := ">"
+  else
+    str := "<"
+
+  StringReplace currExamDate, currExamDate, -,, All
+  MsgBox, %currExamDate%
 return
 
 $^0::
@@ -98,8 +106,19 @@ $^0::
       getPrevReport := 0
       Loop %prevReportListsLength% {
         If RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) {
-          getPrevReport := A_Index
-          break
+          ; 必須要是比當前報告早的報告
+          prevExamDate := prevReportLists.children[A_Index].children[4].innerText
+          prevExamTime := prevReportLists.children[A_Index].children[5].innerText
+
+          ;; convert string to int for date and time
+          StringReplace prevExamDate, prevExamDate, -,, All
+          StringReplace currExamDate, currExamDate, -,, All
+          prevExamTime := prevExamTime + 0
+          currExamTime := currExamTime + 0
+          If (currExamDate > prevExamDate || (currExamDate = prevExamDate && currExamTime > prevExamTime)) {
+            getPrevReport := A_Index
+            break
+          }
         }
       }
 
