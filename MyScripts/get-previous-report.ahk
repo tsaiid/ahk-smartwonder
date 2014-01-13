@@ -40,7 +40,14 @@ $^0::
   ; 檢查是否有歷史報告
   prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
   isNoPrevReport := (prevReportLists.children.length = 0)
-  tdMsgMore := frmTabIframe2.document.frames["History1"].document.getElementById("tdMsgMore")
+
+  ; get no prev report message.
+  frmHistory1 := frmTabIframe2.frames["History1"]
+  Loop    ;optional check to wait for the page to completely load
+    Sleep, 100
+  Until (frmHistory1.document && frmHistory1.document.readyState = "complete")
+  tdMsgMore := frmHistory1.document.getElementById("tdMsgMore")
+
   If !isNoPrevReport ; 有一筆以上的歷史報告
   {
     ; 參考用的 pattern
