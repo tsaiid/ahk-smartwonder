@@ -22,6 +22,7 @@
 :O:nabl::No active bone lesion.
 :O:p/rthr::s/p right total hip replacement.
 :O:p/lthr::s/p left total hip replacement.
+:O:p/bthr::s/p bilateral total hip replacement.
 
 :O:flat::
 (

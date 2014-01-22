@@ -50,4 +50,7 @@
 :O:slr::Scoliosis of L-spine with right lateral convexity.
 :O:stl::Scoliosis of T-spine with left lateral convexity.
 :O:str::Scoliosis of T-spine with right lateral convexity.
-
+:O:pi::Ill-defined pulmonary infiltration over
+:O:po::Patch opacity over
+:O:ip::inflammatory process.
+:O:ntd::Nature to be determined.
