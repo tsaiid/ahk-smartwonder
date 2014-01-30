@@ -25,6 +25,7 @@
 :O:rc::Mild regressive change as compared with previous study on .{Left}
 :O:rpig::s/p right chest pigtail drainage.
 :O:lpig::s/p left chest pigtail drainage.
+:O:bpig::s/p bilateral chest pigtail drainage.
 :O:elm::Exaggerated lung markings.
 :O:lop0::s/p instrument fixation of L-spine.
 :O:lple::Left costophrenic angle blunting, suspect pleural effusion or changes.
