@@ -10,9 +10,6 @@
 :O:nic::No obvious interval change as comparing with previous study on .{Left}
 :O:clnic::The condition of lung shows no obvious change as compared with previous study.
 :O:ggo::ground glass opacity
-:O:cc::Suggest clinical correlation.
-:O:fu::Suggest follow-up.
-:O:ccfu::Suggest clinical correlation and follow-up.
 :O:clat::Suggest correlation with lateral view.
 :O:ett::On endotracheal tube with tip at proper location.{Enter}
 :O:ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.{Enter}
