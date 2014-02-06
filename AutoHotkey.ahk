@@ -96,6 +96,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\active-current-image-before-submit.ahk
 #Include MyScripts\selecting-tabs.ahk
 #Include MyScripts\get-previous-report.ahk
+#Include MyScripts\change-font.ahk
 
 ; HotKey
 ;; for SmartWonder
