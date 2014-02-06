@@ -90,6 +90,8 @@ return
 #Include MyScripts\other-x-ray.ahk
 #Include MyScripts\sono-guide.ahk
 
+#Include MyScripts\chest-ct.ahk
+
 SetTitleMatchMode, 2
 
 #Include MyScripts\debug.ahk
