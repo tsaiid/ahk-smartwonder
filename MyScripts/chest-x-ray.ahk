@@ -50,3 +50,4 @@
 :O:po::Patch opacity over
 :O:ip::inflammatory process.
 :O:ntd::Nature to be determined.
+:O:abg::air-bronchogram
