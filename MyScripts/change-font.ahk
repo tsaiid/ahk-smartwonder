@@ -8,6 +8,6 @@ $^!f:: ; 更改報告編輯區字體
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
   txtReportContent := frmTabIframe2.document.getElementsByName("ReportContent")[0]
   txtReportContent.style.fontFamily := "Source Code Pro"
-  txtReportContent.style.fontSize := "11pt"
+  txtReportContent.style.fontSize := "12pt"
 return
 #IfWinActive
