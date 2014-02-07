@@ -3,7 +3,7 @@
 ;; Lung Routine
 :O:ct-lr::
 ClipSave:=ClipboardAll ; store clipboard data
-Clipboard=
+MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
@@ -33,6 +33,7 @@ IMPRESSION:
 SUGGESTION:
 
 )
+Clipboard := MyForm
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -41,7 +42,7 @@ Return
 ;; NCSD
 :O:ct-ncsd::
 ClipSave:=ClipboardAll ; store clipboard data
-Clipboard=
+MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
@@ -72,6 +73,7 @@ SUGGESTION:
 *N.P. means no particular findings adjusted for patient's age.
 *N.A. means complete evaluation is not available due to absence of contrast enhancement however, from the limited information, there is no evident lesion.
 )
+Clipboard := MyForm
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -80,7 +82,7 @@ Return
 ;; CTA
 :O:ct-cta::
 ClipSave:=ClipboardAll ; store clipboard data
-Clipboard=
+MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
@@ -106,6 +108,7 @@ IMPRESSION:
 
 SUGGESTION:
 )
+Clipboard := MyForm
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
