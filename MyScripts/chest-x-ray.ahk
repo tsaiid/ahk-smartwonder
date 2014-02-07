@@ -14,10 +14,6 @@
 :O:ett-b::On endotracheal tube. The tip is in right main bronchus. Suggest adjusting the depth.{Enter}
 :O:ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.{Enter}
 :O:ng::On NG tube.{Enter}
-:O:pc0::Progressive change as compared with previous study.
-:O:pc::Mild progressive change as compared with previous study on .{Left}
-:O:rc0::Mild regressive change as compared with previous study.
-:O:rc::Mild regressive change as compared with previous study on .{Left}
 :O:rpig::s/p right chest pigtail drainage.
 :O:lpig::s/p left chest pigtail drainage.
 :O:bpig::s/p bilateral chest pigtail drainage.

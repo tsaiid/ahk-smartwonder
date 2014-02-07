@@ -3,6 +3,12 @@
 :O:nic::No obvious interval change as comparing with previous study on .{Left}
 :O:nic0::No obvious interval change.
 :O:nic1::No obvious interval change as comparing with previous study.
+:O:pc::Mild progressive change as compared with previous study on .{Left}
+:O:pc0::progressive change.
+:O:pc1::Progressive change as compared with previous study.
+:O:rc::Mild regressive change as compared with previous study on .{Left}
+:O:rc0::regressive change.
+:O:rc1::Mild regressive change as compared with previous study.
 :O:cc::Suggest clinical correlation.
 :O:fe::Suggest further evaluation.
 :O:fu::Suggest follow-up.
