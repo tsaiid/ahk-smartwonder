@@ -82,9 +82,10 @@ return
 ; It explains how to perform common automation tasks such as sending
 ; keystrokes and mouse clicks.  It also explains more about hotkeys.
 
-#Hotstring EndChars  `t
+#Hotstring EndChars `t
 
 #Include MyScripts\others.ahk
+#Include MyScripts\abbreviations.ahk
 
 #Include MyScripts\chest-x-ray.ahk
 #Include MyScripts\kub.ahk
