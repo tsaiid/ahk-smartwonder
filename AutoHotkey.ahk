@@ -84,6 +84,8 @@ return
 
 #Hotstring EndChars `t
 
+#Include MyScripts\others.ahk
+
 #Include MyScripts\chest-x-ray.ahk
 #Include MyScripts\kub.ahk
 #Include MyScripts\bone-x-ray.ahk
