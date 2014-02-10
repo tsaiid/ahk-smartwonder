@@ -6,3 +6,4 @@
 :O:rpcn::s/p right side percutaneous nephrostomy.
 :O:rfcvp::On central venous catheter via right femoral vein.
 :O:lfcvp::On central venous catheter via left femoral vein.
+:O:ileus::Obvious small bowel gas, may be due to ileus.

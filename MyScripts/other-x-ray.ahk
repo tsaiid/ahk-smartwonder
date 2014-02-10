@@ -14,5 +14,4 @@
 :O:fu::Suggest follow-up.
 :O:ccfu::Suggest clinical correlation and follow-up.
 :O:fufe::Suggest follow-up or further evaluation.
-:O:ifo::in favor of
 :O:nbd::Nature to be determined.

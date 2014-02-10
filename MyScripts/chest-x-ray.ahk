@@ -7,7 +7,6 @@
 :O:0::No previous film for comparison.{Enter 2}
 :O:1::No active lung lesion. {Enter}No cardiomegaly. {Enter}Intact bony thorax.
 :O:clnic::The condition of lung shows no obvious change as compared with previous study.
-:O:ggo::ground glass opacity
 :O:clat::Suggest correlation with lateral view.
 :O:ett::On endotracheal tube with tip at proper location.{Enter}
 :O:ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.{Enter}
@@ -42,7 +41,7 @@
 :O:slr::Scoliosis of L-spine with right lateral convexity.
 :O:stl::Scoliosis of T-spine with left lateral convexity.
 :O:str::Scoliosis of T-spine with right lateral convexity.
-:O:pi::Ill-defined pulmonary infiltration over
+:O:pi::Ill-defined pulmonary infiltration over `
 :O:po::Patch opacity over
 :O:ip::inflammatory process.
 :O:ntd::Nature to be determined.
