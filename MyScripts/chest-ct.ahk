@@ -34,6 +34,7 @@ SUGGESTION:
 
 )
 Clipboard := MyForm
+ClipWait
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -74,6 +75,7 @@ SUGGESTION:
 *N.A. means complete evaluation is not available due to absence of contrast enhancement however, from the limited information, there is no evident lesion.
 )
 Clipboard := MyForm
+ClipWait
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -109,6 +111,7 @@ IMPRESSION:
 SUGGESTION:
 )
 Clipboard := MyForm
+ClipWait
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -165,6 +168,7 @@ OTHER FINDINGS:
 IMPRESSION:
 )
 Clipboard := MyForm
+ClipWait
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
