@@ -9,4 +9,8 @@ $^k::
   MouseMove, %xpos%, %ypos%
   Send ^k
 return
+
+$^!k::
+  Send ^k
+Return
 #IfWinActive
