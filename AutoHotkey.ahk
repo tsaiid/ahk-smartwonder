@@ -95,6 +95,8 @@ return
 
 #Include MyScripts\chest-ct.ahk
 
+#Include MyScripts\ct-guide.ahk
+
 SetTitleMatchMode, 2
 
 #Include MyScripts\debug.ahk
