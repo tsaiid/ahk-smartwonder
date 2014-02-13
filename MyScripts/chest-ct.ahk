@@ -24,7 +24,7 @@ FINDINGS:
 (4) Lymph node enlargement > 1 cm: none for age
 (5) Pleura: not unusual for age
 (6) Pericardium and heart: not unusual for age
-(7) Aorta and pulmonary artery: not unusual  for age
+(7) Aorta and pulmonary artery: not unusual for age
 (8) Chest wall and bony structure: not unusual for age
 (9) Upper abdomen and adrenals: not unusual for age
 
