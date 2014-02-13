@@ -55,3 +55,4 @@
 :O:bllf::bilateral lower lung fields
 :O:lllf::left lower lung field
 :O:rllf::right lower lung field
+:O:nnp::No newly developed patch opacity in lung fields.
