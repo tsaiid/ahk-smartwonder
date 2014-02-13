@@ -46,3 +46,12 @@
 :O:ip::inflammatory process.
 :O:ntd::Nature to be determined.
 :O:abg::air-bronchogram
+:O:blf::bilateral lung fields
+:O:llf::left lung field
+:O:rlf::right lung field
+:O:bulf::bilateral upper lung fields
+:O:lulf::left upper lung fleld
+:O:rulf::right upper lung field
+:O:bllf::bilateral lower lung fields
+:O:lllf::left lower lung field
+:O:rllf::right lower lung field
