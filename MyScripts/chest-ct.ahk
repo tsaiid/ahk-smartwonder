@@ -24,7 +24,7 @@ FINDINGS:
 (4) Lymph node enlargement > 1 cm: none for age
 (5) Pleura: not unusual for age
 (6) Pericardium and heart: not unusual for age
-(7) Aorta and pulmonary artery: not unusual  for age
+(7) Aorta and pulmonary artery: not unusual for age
 (8) Chest wall and bony structure: not unusual for age
 (9) Upper abdomen and adrenals: not unusual for age
 
@@ -34,7 +34,12 @@ SUGGESTION:
 
 )
 Clipboard := MyForm
-ClipWait
+Loop,
+{
+  Sleep, 100
+  If (Clipboard = MyForm)
+    Break
+}
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -75,7 +80,12 @@ SUGGESTION:
 *N.A. means complete evaluation is not available due to absence of contrast enhancement however, from the limited information, there is no evident lesion.
 )
 Clipboard := MyForm
-ClipWait
+Loop,
+{
+  Sleep, 100
+  If (Clipboard = MyForm)
+    Break
+}
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -111,7 +121,12 @@ IMPRESSION:
 SUGGESTION:
 )
 Clipboard := MyForm
-ClipWait
+Loop,
+{
+  Sleep, 100
+  If (Clipboard = MyForm)
+    Break
+}
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -168,7 +183,12 @@ OTHER FINDINGS:
 IMPRESSION:
 )
 Clipboard := MyForm
-ClipWait
+Loop,
+{
+  Sleep, 100
+  If (Clipboard = MyForm)
+    Break
+}
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=

@@ -7,3 +7,5 @@
 :O:pul::pulmonary `
 :O:gbs::gallbladder stone
 :O:neo::No evidence of `
+:O:tb::tuberculosis
+:O:ln::lymph node
