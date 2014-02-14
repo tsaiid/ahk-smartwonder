@@ -97,6 +97,8 @@ return
 
 #Include MyScripts\ct-guide.ahk
 
+#Include MyScripts\barium-enema.ahk
+
 SetTitleMatchMode, 2
 
 #Include MyScripts\debug.ahk
