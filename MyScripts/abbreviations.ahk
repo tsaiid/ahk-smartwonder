@@ -9,3 +9,5 @@
 :O:neo::No evidence of `
 :O:tb::tuberculosis
 :O:ln::lymph node
+:O:met::metastasis
+:O:mets::metastases
