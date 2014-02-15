@@ -9,9 +9,9 @@
 :O:clnic::The condition of lung shows no obvious change as compared with previous study.
 :O:clat::Suggest correlation with lateral view.
 :O:ett::On endotracheal tube with tip at proper location.{Enter}
-:O:ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.{Enter}
-:O:ett-b::On endotracheal tube. The tip is in right main bronchus. Suggest adjusting the depth.{Enter}
-:O:ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.{Enter}
+:O:ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.
+:O:ett-b::On endotracheal tube. The tip is in right main bronchus. Suggest adjusting the depth.
+:O:ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
 :O:ng::On NG tube.{Enter}
 :O:rpig::s/p right chest pigtail drainage.
 :O:lpig::s/p left chest pigtail drainage.
