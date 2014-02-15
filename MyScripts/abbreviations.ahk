@@ -15,3 +15,5 @@
 :O:pri::primary `
 :O:sec::secondary `
 :O:ckd::chronic kidney disease
+:O:asd::atrial septal defect `
+:O:vsd::ventricular septal defect `
