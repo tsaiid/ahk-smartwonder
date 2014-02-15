@@ -1,7 +1,7 @@
 ; Chest CT Forms
 
 ;; Lung Routine
-:O:ct-lr::
+:O:cct-lr::
 ClipSave:=ClipboardAll ; store clipboard data
 MyForm =
 (
@@ -46,7 +46,7 @@ ClipSave:=
 Return
 
 ;; NCSD
-:O:ct-ncsd::
+:O:cct-ncsd::
 ClipSave:=ClipboardAll ; store clipboard data
 MyForm =
 (
@@ -92,7 +92,7 @@ ClipSave:=
 Return
 
 ;; CTA
-:O:ct-cta::
+:O:cct-cta::
 ClipSave:=ClipboardAll ; store clipboard data
 MyForm =
 (
