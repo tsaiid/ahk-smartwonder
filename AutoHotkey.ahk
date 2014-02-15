@@ -84,6 +84,9 @@ return
 
 #Hotstring EndChars `t
 
+;; My Own Lib
+#Include MyScripts\lib\copy-to-clipboard.ahk
+
 #Include MyScripts\others.ahk
 #Include MyScripts\abbreviations.ahk
 
