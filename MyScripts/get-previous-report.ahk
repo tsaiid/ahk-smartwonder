@@ -37,6 +37,10 @@ $^0::
   currExamDate := frmHistory2.document.getElementById("StudyDate").innerText
   currExamTime := frmHistory2.document.getElementById("StudyTime").innerText
 
+  ;; convert string to int for date and time
+  StringReplace currExamDate, currExamDate, -,, All
+  currExamTime := currExamTime + 0
+
   ; 檢查是否有歷史報告
   prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
   isNoPrevReport := (prevReportLists.children.length = 0)
@@ -63,24 +67,45 @@ $^0::
 
     If (currPattern = "")
       MsgBox % "AHK-SmartWonder: Currently, only CXR and KUB are supported."
-    Else { ; 找到最近相關報告
+    Else {
       prevReportListsLength := prevReportLists.children.length
       getPrevReport := 0
+      relatedReportCount := 0
       Loop %prevReportListsLength% {
         If RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) {
-          ; 必須要是比當前報告早的報告
+          ; 先找出所有相關報告
+          ;; 排除比目前日期晚的
           prevExamDate := prevReportLists.children[A_Index].children[4].innerText
-          prevExamTime := prevReportLists.children[A_Index].children[5].innerText
-
           ;; convert string to int for date and time
           StringReplace prevExamDate, prevExamDate, -,, All
-          StringReplace currExamDate, currExamDate, -,, All
-          prevExamTime := prevExamTime + 0
-          currExamTime := currExamTime + 0
-          If (currExamDate > prevExamDate || (currExamDate = prevExamDate && currExamTime > prevExamTime)) {
-            getPrevReport := A_Index
-            break
+
+          If (prevExamDate <= currExamDate) {
+            relatedReportCount += 1
+            arrayRelatedReportIndex%relatedReportCount% := A_Index + 0  ; convert to integer
           }
+
+          ;; 先抓 5 比出來就好，理論上一天應該不會超過五次相同的檢查
+          If (relatedReportCount >= 5)
+            Break
+        }
+      }
+
+      Loop %relatedReportCount% {
+        ; 必須要是比當前報告早的報告
+        index := arrayRelatedReportIndex%A_Index%
+        prevExamDate := prevReportLists.children[index].children[4].innerText
+        prevExamTime := prevReportLists.children[index].children[5].innerText
+
+        ;; convert string to int for date and time
+        StringReplace prevExamDate, prevExamDate, -,, All
+        prevExamTime := prevExamTime + 0
+
+        If (currExamDate > prevExamDate && getPrevReport = 0) {
+          getPrevReport := index
+          Break
+        } Else If (currExamDate = prevExamDate && currExamTime > prevExamTime) {
+          ; 因為同一日內更新的報告會在下方，所以先不 break, 繼續往下找
+          getPrevReport := index
         }
       }
 
@@ -106,7 +131,6 @@ $^0::
     MsgBox % tdMsgMore.innerText
   If (getPrevReport = 0) ; 有找到相關的報告，顯示訊息
     MsgBox % "AHK-SmartWonder: No related report found."
-  ;MsgBox % tabPrevReport.id
 return
 
 #IfWinActive
