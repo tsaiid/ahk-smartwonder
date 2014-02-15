@@ -7,3 +7,6 @@
 :O:rfcvp::On central venous catheter via right femoral vein.
 :O:lfcvp::On central venous catheter via left femoral vein.
 :O:ileus::Obvious small bowel gas, may be due to ileus.
+:O:rdj::s/p right side double-J ureteral stent.
+:O:ldj::s/p left side double-J ureteral stent.
+:O:bdj::s/p bilateral double-J ureteral stents.

@@ -6,3 +6,4 @@
 :O:cf::compression fracture `
 :O:si::(Ser/Img: ){Left}
 :O:sao::small amount of `
+:O:mao::moderate amount of `

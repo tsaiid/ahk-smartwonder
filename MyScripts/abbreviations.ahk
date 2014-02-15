@@ -1,5 +1,6 @@
 :O:lap::lymphadenopathy `
 :O:ggo::ground glass opacity `
+:O:ggos::ground glass opacities `
 :O:sup::superior `
 :O:inf::inferior `
 :O:lat::lateral `
@@ -11,3 +12,6 @@
 :O:ln::lymph node
 :O:met::metastasis
 :O:mets::metastases
+:O:pri::primary `
+:O:sec::secondary `
+:O:ckd::chronic kidney disease
