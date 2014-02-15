@@ -86,6 +86,7 @@ return
 
 ;; My Own Lib
 #Include MyScripts\lib\copy-to-clipboard.ahk
+#Include MyScripts\lib\ie-get.ahk
 
 #Include MyScripts\others.ahk
 #Include MyScripts\abbreviations.ahk
