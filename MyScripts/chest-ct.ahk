@@ -33,13 +33,7 @@ IMPRESSION:
 SUGGESTION:
 
 )
-Clipboard := MyForm
-Loop,
-{
-  Sleep, 100
-  If (Clipboard = MyForm)
-    Break
-}
+CopyToClipboard(MyForm)
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -79,13 +73,7 @@ SUGGESTION:
 *N.P. means no particular findings adjusted for patient's age.
 *N.A. means complete evaluation is not available due to absence of contrast enhancement however, from the limited information, there is no evident lesion.
 )
-Clipboard := MyForm
-Loop,
-{
-  Sleep, 100
-  If (Clipboard = MyForm)
-    Break
-}
+CopyToClipboard(MyForm)
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -120,13 +108,7 @@ IMPRESSION:
 
 SUGGESTION:
 )
-Clipboard := MyForm
-Loop,
-{
-  Sleep, 100
-  If (Clipboard = MyForm)
-    Break
-}
+CopyToClipboard(MyForm)
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
@@ -182,13 +164,7 @@ OTHER FINDINGS:
 
 IMPRESSION:
 )
-Clipboard := MyForm
-Loop,
-{
-  Sleep, 100
-  If (Clipboard = MyForm)
-    Break
-}
+CopyToClipboard(MyForm)
 Send, ^v
 Clipboard:=ClipSave ; restore clipboard data
 ClipSave:=
