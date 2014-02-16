@@ -20,9 +20,15 @@
 :O:oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 :O:calspur::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
 :O:nabl::No active bone lesion.
-:O:p/rthr::s/p right total hip replacement.
-:O:p/lthr::s/p left total hip replacement.
-:O:p/bthr::s/p bilateral total hip replacement.
+:O:rthr::s/p right total hip replacement.
+:O:lthr::s/p left total hip replacement.
+:O:bthr::s/p bilateral total hip replacements.
+:O:rhha::s/p right hip hemiarthroplasty.
+:O:lhha::s/p left hip hemiarthroplasty.
+:O:bhha::s/p bilateral hip hemiarthroplasties.
+:O:rtka::s/p right total knee arthroplasty.
+:O:ltka::s/p left total knee arthroplasty.
+:O:btka::s/p bilateral total knee arthroplasties.
 
 :O:flat::
 (
