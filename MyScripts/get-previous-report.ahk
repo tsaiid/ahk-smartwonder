@@ -2,16 +2,6 @@
 ;; for SmartWonder
 #IfWinActive, tedpc-
 
-IEGet(Name="")        ;Retrieve pointer to existing IE window/tab
-{
-  IfEqual, Name,, WinGetTitle, Name, ahk_class IEFrame
-    Name := ( Name="New Tab - Windows Internet Explorer" ) ? "about:Tabs"
-            : RegExReplace( Name, " - (Windows|Microsoft) Internet Explorer" )
-  For wb in ComObjCreate( "Shell.Application" ).Windows
-    If ( wb.LocationName = Name ) && InStr( wb.FullName, "iexplore.exe" )
-      Return wb
-} ;written by Jethrow
-
 $^0::
   wb := IEGet()
   frmWork := wb.document.frames["frameWork"]
@@ -22,16 +12,12 @@ $^0::
   ; 切換至歷史報告頁
   tabPrevReport.click()
 
-  Loop    ;optional check to wait for the page to completely load
-    Sleep, 100
-  Until (frmTabIframe2.document && frmTabIframe2.document.readyState && frmTabIframe2.document.readyState = "complete")
+  FrameWait(frmTabIframe2)
 
   ;; get current exam date and time
   frmHistory2 := frmTabIframe2.frames["History2"]
 
-  Loop    ;optional check to wait for the page to completely load
-    Sleep, 100
-  Until (frmHistory2.document && frmHistory2.document.readyState && frmHistory2.document.readyState = "complete")
+  FrameWait(frmHistory2)
 
   currExamName := frmHistory2.document.getElementById("BodyPart").innerText
   currExamDate := frmHistory2.document.getElementById("StudyDate").innerText
@@ -47,9 +33,7 @@ $^0::
 
   ; get no prev report message.
   frmHistory1 := frmTabIframe2.frames["History1"]
-  Loop    ;optional check to wait for the page to completely load
-    Sleep, 100
-  Until (frmHistory1.document && frmHistory1.document.readyState && frmHistory1.document.readyState = "complete")
+  FrameWait(frmHistory1)
   tdMsgMore := frmHistory1.document.getElementById("tdMsgMore")
 
   If !isNoPrevReport ; 有一筆以上的歷史報告
@@ -115,9 +99,7 @@ $^0::
 
         frmPrevReport := frmTabIframe2.document.frames["History3"]
 
-        Loop    ;optional check to wait for the page to completely load
-          Sleep, 100
-        Until (frmPrevReport.document && frmPrevReport.document.readyState && frmPrevReport.document.readyState = "complete")
+        FrameWait(frmPrevReport)
 
         btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
         btnCopyReport.click() ; 複製報告
