@@ -57,3 +57,4 @@
 :O:lllf::left lower lung field
 :O:rllf::right lower lung field
 :O:nnp::No newly developed patch opacity in lung fields.
+:O:ii::Exaggerated lung markings, may be due to inadequate inspiration.

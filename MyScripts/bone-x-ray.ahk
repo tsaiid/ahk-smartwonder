@@ -13,6 +13,7 @@
 :O:patts::Lateral tilting and subluxation of bilateral patellae, with severe PF joint space narrowing, subchondral sclerosis and marginal osteophyte formation at lateral facet.
 :O:acrd::Lateral downsloping of the acromion, narrowing the acromiohumeral distance, which may be associated with impingement of the supraspinatus tendon.
 :O:acrok::No lateral downsloping or hooking of the acromion.
+:O:acrsp::Presence of subacromial spur.
 :O:shok::No limitation in internal/external rotation of the shoulder.
 :O:p/csp::Post screws and plates fixation at L3~L6. {Enter}Post interbody cage placement at C3-4, C4-5, C5-6.{Up}{Left 5  }
 :O:p/lsp::Post laminectomy, transpedicular screws, rods fixation at L2~L5. {Enter}Post interbody cage placement at L2-3, L3-4.{Up}{Right 16}
@@ -29,6 +30,8 @@
 :O:rtka::s/p right total knee arthroplasty.
 :O:ltka::s/p left total knee arthroplasty.
 :O:btka::s/p bilateral total knee arthroplasties.
+:O:orif::s/p screw and plate fixation.
+:O:fr::fracture `
 
 :O:flat::
 (
