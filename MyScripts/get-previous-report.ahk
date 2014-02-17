@@ -3,7 +3,7 @@
 #IfWinActive, tedpc-
 
 $^0::
-  wb := IEGet()
+  wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
 
