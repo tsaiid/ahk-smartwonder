@@ -1,6 +1,7 @@
 ; 取得 IE DOM
-; Retrieve pointer to existing IE window/tab
+; Access an IE object by Window/Tab Name
 ; written by Jethrow
+; http://www.autohotkey.com/board/topic/47052-basic-webpage-controls-with-javascript-com-tutorial/
 
 IEGet(Name="")
 {
