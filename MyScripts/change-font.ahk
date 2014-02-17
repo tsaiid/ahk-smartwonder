@@ -3,7 +3,7 @@
 #IfWinActive, tedpc-
 ;;; Select Tabs
 $^!f:: ; 更改報告編輯區字體
-  wb := IEGet()
+  wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
   txtReportContent := frmTabIframe2.document.getElementsByName("ReportContent")[0]

@@ -1,6 +1,6 @@
 ; for debug
 $^9::
-  wb := IEGet()
+  wb := WBGet()
   ;; get current exam name
   ;str := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
   ;RegExMatch(str, "(.+) : (.+)", splitted)
@@ -45,7 +45,7 @@ return
 
 ;; to get bone density report by ajax.
 $^8::
-  wb := IEGet()
+  wb := WBGet()
 
   myL =
   (

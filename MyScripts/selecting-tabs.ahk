@@ -3,7 +3,7 @@
 #IfWinActive, tedpc-
 ;;; Select Tabs
 $^1:: ; 報告編輯
-  wb := IEGet()
+  wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
 
@@ -13,7 +13,7 @@ $^1:: ; 報告編輯
 return
 
 $^3:: ; 歷史報告
-  wb := IEGet()
+  wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
 
