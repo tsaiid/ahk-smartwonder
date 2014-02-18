@@ -85,6 +85,7 @@ return
 #Hotstring EndChars `t
 
 #Include Lib\WBGet.ahk
+#Include Lib\Paste.ahk
 
 ;; My Own Lib
 #Include MyScripts\lib\copy-to-clipboard.ahk
