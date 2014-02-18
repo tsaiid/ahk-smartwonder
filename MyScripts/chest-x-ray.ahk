@@ -37,6 +37,7 @@
 :O:bfa::Focal atelectasis of bilateral lower lungs.
 :O:plef::pleural effusion
 :O:inef::interlobar effusion
+:O:pcef::pericardial effusion
 :O:iabp::On IABP, with tip in the thoracic aorta.
 :O:sll::Scoliosis of L-spine with left lateral convexity.
 :O:slr::Scoliosis of L-spine with right lateral convexity.
