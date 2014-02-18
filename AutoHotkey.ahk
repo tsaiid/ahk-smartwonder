@@ -108,11 +108,14 @@ return
 SetTitleMatchMode, 2
 
 #Include MyScripts\debug.ahk
-#Include MyScripts\active-current-image-before-submit.ahk
 #Include MyScripts\selecting-tabs.ahk
 #Include MyScripts\get-previous-report.ahk
 #Include MyScripts\change-font.ahk
 #Include MyScripts\copy-order.ahk
+
+; Previously enabled but now disabled functions
+;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
+;;#Include MyScripts\active-current-image-before-submit.ahk
 
 ; HotKey
 ;; for SmartWonder
