@@ -2,8 +2,7 @@
 
 ;; Lung Routine
 :O:cct-lr::
-ClipSave:=ClipboardAll ; store clipboard data
-MyForm =
+  MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
@@ -33,16 +32,12 @@ IMPRESSION:
 SUGGESTION:
 
 )
-CopyToClipboard(MyForm)
-Send, ^v
-Clipboard:=ClipSave ; restore clipboard data
-ClipSave:=
+  Paste(MyForm)
 Return
 
 ;; NCSD
 :O:cct-ncsd::
-ClipSave:=ClipboardAll ; store clipboard data
-MyForm =
+  MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
@@ -73,16 +68,12 @@ SUGGESTION:
 *N.P. means no particular findings adjusted for patient's age.
 *N.A. means complete evaluation is not available due to absence of contrast enhancement however, from the limited information, there is no evident lesion.
 )
-CopyToClipboard(MyForm)
-Send, ^v
-Clipboard:=ClipSave ; restore clipboard data
-ClipSave:=
+  Paste(MyForm)
 Return
 
 ;; CTA
 :O:cct-cta::
-ClipSave:=ClipboardAll ; store clipboard data
-MyForm =
+  MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
@@ -108,16 +99,12 @@ IMPRESSION:
 
 SUGGESTION:
 )
-CopyToClipboard(MyForm)
-Send, ^v
-Clipboard:=ClipSave ; restore clipboard data
-ClipSave:=
+  Paste(MyForm)
 Return
 
 ;; Congenital Heart Disease
 :O:cct-chd::
-ClipSave:=ClipboardAll ; store clipboard data
-MyForm =
+  MyForm =
 ( %
 MDCT FOR CONGENITAL HEART DISEASE PERFORMED WITH 64-SLICE CT SCANNER
 Total DLP:
@@ -164,8 +151,5 @@ OTHER FINDINGS:
 
 IMPRESSION:
 )
-CopyToClipboard(MyForm)
-Send, ^v
-Clipboard:=ClipSave ; restore clipboard data
-ClipSave:=
+  Paste(MyForm)
 Return

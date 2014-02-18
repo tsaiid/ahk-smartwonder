@@ -16,7 +16,6 @@ $^!i::
   ; 再把 "History & Data:" 拿掉
   StringReplace, MyOrderDiag, OrderDiagSplit2, History & Data:, , All
 
-  CopyToClipboard(MyOrderDiag)
-  Send, ^v
+  Paste(MyOrderDiag)
 Return
 #IfWinActive

@@ -88,7 +88,6 @@ return
 #Include Lib\Paste.ahk
 
 ;; My Own Lib
-#Include MyScripts\lib\copy-to-clipboard.ahk
 #Include MyScripts\lib\frame-wait.ahk
 
 #Include MyScripts\others.ahk
