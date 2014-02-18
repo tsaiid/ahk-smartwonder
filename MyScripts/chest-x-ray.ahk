@@ -46,7 +46,6 @@
 :O:pi::Ill-defined pulmonary infiltration over `
 :O:po::Patch opacity over
 :O:ip::inflammatory process.
-:O:ntd::Nature to be determined.
 :O:abg::air-bronchogram
 :O:blf::bilateral lung fields
 :O:llf::left lung field
