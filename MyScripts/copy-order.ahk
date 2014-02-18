@@ -14,7 +14,9 @@ $^!i::
   StringReplace, NewOrderDiag, OrderDiag, Purpose :, ``, All
   StringSplit, OrderDiagSplit, NewOrderDiag, ``, %A_Space%%A_Tab%
   ; 再把 "History & Data:" 拿掉
-  StringReplace, MyOrderDiag, OrderDiagSplit2, History & Data:, , All
+  StringReplace, TmpOrderDiag, OrderDiagSplit2, History & Data:, , All
+  ; 有時候 "History & Data :" 會有空格
+  StringReplace, MyOrderDiag, TmpOrderDiag, History & Data :, , All
 
   Paste(MyOrderDiag)
 Return
