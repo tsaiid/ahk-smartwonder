@@ -7,7 +7,7 @@ Paste(text) {
   ClipSaved := ClipboardAll
   Clipboard := text
   Send ^v
-  Sleep 100 ; Probably more than enough. Depends on the system.
+  Sleep 200 ; Probably more than enough. Depends on the system.
   Clipboard := ClipSaved
 }
 
