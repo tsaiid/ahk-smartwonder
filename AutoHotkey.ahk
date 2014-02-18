@@ -112,6 +112,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\selecting-tabs.ahk
 #Include MyScripts\get-previous-report.ahk
 #Include MyScripts\change-font.ahk
+#Include MyScripts\copy-order.ahk
 
 ; HotKey
 ;; for SmartWonder
