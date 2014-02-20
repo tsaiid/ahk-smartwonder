@@ -17,3 +17,8 @@
 :O:ckd::chronic kidney disease
 :O:asd::atrial septal defect `
 :O:vsd::ventricular septal defect `
+:O:mi::myocardial infarction `
+:O:rul::right upper lobe
+:O:rll::right lower lobe
+:O:lul::left upper lobe
+:O:lll::left lower lobe
