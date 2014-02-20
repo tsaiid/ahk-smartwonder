@@ -37,8 +37,10 @@ $^l::
       url: "//bone-density.tsaiid.idv.tw/studies/report/" + acc_no + "/text",
       crossDomain: true
     }).done(function(data){
-      report_area.val(data.report);
-      //alert(data.report);
+      if (data.report)
+        report_area.val(data.report);
+      else
+        alert("No data available. Please check the database.");
     });
   )
 
