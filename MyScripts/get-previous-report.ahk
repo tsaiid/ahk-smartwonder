@@ -7,19 +7,37 @@ $^0::
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
 
+  ; 在切換至歷史報告頁之前先確認有無支援此類報告
+  ;; get current exam name
+  tmpStr := frmTabIframe2.document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
+  RegExMatch(tmpStr, "(.+) : (.+)", splittedTmpStr)
+  currExamName := splittedTmpStr2
+
+  ;; 參考用的 pattern
+  patternCXR := "i)chest (pa|ap)"
+  patternKUB := "i)kub"
+  ;; 分析目前為何種檢查
+  If RegExMatch(currExamName, patternCXR)
+    currPattern := patternCXR
+  Else If RegExMatch(currExamName, patternKUB)
+    currPattern := patternKUB
+  Else {
+    MsgBox % "AHK-SmartWonder: Currently, only CXR and KUB are supported."
+    currPattern := ""
+    Return
+  }
+
+  ; 切換至歷史報告頁
   tabEditReport := frmWork.document.getElementById("tabCaption0").children[1]
   tabPrevReport := frmWork.document.getElementById("tabCaption0").children[7]
-  ; 切換至歷史報告頁
   tabPrevReport.click()
-
   FrameWait(frmTabIframe2)
 
   ;; get current exam date and time
   frmHistory2 := frmTabIframe2.frames["History2"]
-
   FrameWait(frmHistory2)
 
-  currExamName := frmHistory2.document.getElementById("BodyPart").innerText
+  ;currExamName := frmHistory2.document.getElementById("BodyPart").innerText
   currExamDate := frmHistory2.document.getElementById("StudyDate").innerText
   currExamTime := frmHistory2.document.getElementById("StudyTime").innerText
 
@@ -38,72 +56,57 @@ $^0::
 
   If !isNoPrevReport ; 有一筆以上的歷史報告
   {
-    ; 參考用的 pattern
-    patternCXR := "i)chest (pa|ap)"
-    patternKUB := "i)kub"
-    ; 分析目前為何種檢查
-    If RegExMatch(currExamName, patternCXR)
-      currPattern := patternCXR
-    Else If RegExMatch(currExamName, patternKUB)
-      currPattern := patternKUB
-    Else
-      currPattern := ""
-
-    If (currPattern = "")
-      MsgBox % "AHK-SmartWonder: Currently, only CXR and KUB are supported."
-    Else {
-      prevReportListsLength := prevReportLists.children.length
-      getPrevReport := 0
-      relatedReportCount := 0
-      Loop %prevReportListsLength% {
-        If RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) {
-          ; 先找出所有相關報告
-          ;; 排除比目前日期晚的
-          prevExamDate := prevReportLists.children[A_Index].children[4].innerText
-          ;; convert string to int for date and time
-          StringReplace prevExamDate, prevExamDate, -,, All
-
-          If (prevExamDate <= currExamDate) {
-            relatedReportCount += 1
-            arrayRelatedReportIndex%relatedReportCount% := A_Index + 0  ; convert to integer
-          }
-
-          ;; 先抓 5 比出來就好，理論上一天應該不會超過五次相同的檢查
-          If (relatedReportCount >= 5)
-            Break
-        }
-      }
-
-      Loop %relatedReportCount% {
-        ; 必須要是比當前報告早的報告
-        index := arrayRelatedReportIndex%A_Index%
-        prevExamDate := prevReportLists.children[index].children[4].innerText
-        prevExamTime := prevReportLists.children[index].children[5].innerText
-
+    prevReportListsLength := prevReportLists.children.length
+    getPrevReport := 0
+    relatedReportCount := 0
+    Loop %prevReportListsLength% {
+      If RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) {
+        ; 先找出所有相關報告
+        ;; 排除比目前日期晚的
+        prevExamDate := prevReportLists.children[A_Index].children[4].innerText
         ;; convert string to int for date and time
         StringReplace prevExamDate, prevExamDate, -,, All
-        prevExamTime := prevExamTime + 0
 
-        If (currExamDate > prevExamDate && getPrevReport = 0) {
-          getPrevReport := index
-          Break
-        } Else If (currExamDate = prevExamDate && currExamTime > prevExamTime) {
-          ; 因為同一日內更新的報告會在下方，所以先不 break, 繼續往下找
-          getPrevReport := index
+        If (prevExamDate <= currExamDate) {
+          relatedReportCount += 1
+          arrayRelatedReportIndex%relatedReportCount% := A_Index + 0  ; convert to integer
         }
+
+        ;; 先抓 5 比出來就好，理論上一天應該不會超過五次相同的檢查
+        If (relatedReportCount >= 5)
+          Break
       }
+    }
 
-      If (getPrevReport > 0) {  ; 有找到相關的報告
-        latestRelatedReport := prevReportLists.children[getPrevReport].children[1]
-        latestRelatedReport.click() ; 點最近報告、開影像
+    Loop %relatedReportCount% {
+      ; 必須要是比當前報告早的報告
+      index := arrayRelatedReportIndex%A_Index%
+      prevExamDate := prevReportLists.children[index].children[4].innerText
+      prevExamTime := prevReportLists.children[index].children[5].innerText
 
-        frmPrevReport := frmTabIframe2.document.frames["History3"]
+      ;; convert string to int for date and time
+      StringReplace prevExamDate, prevExamDate, -,, All
+      prevExamTime := prevExamTime + 0
 
-        FrameWait(frmPrevReport)
-
-        btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
-        btnCopyReport.click() ; 複製報告
+      If (currExamDate > prevExamDate && getPrevReport = 0) {
+        getPrevReport := index
+        Break
+      } Else If (currExamDate = prevExamDate && currExamTime > prevExamTime) {
+        ; 因為同一日內更新的報告會在下方，所以先不 break, 繼續往下找
+        getPrevReport := index
       }
+    }
+
+    If (getPrevReport > 0) {  ; 有找到相關的報告
+      latestRelatedReport := prevReportLists.children[getPrevReport].children[1]
+      latestRelatedReport.click() ; 點最近報告、開影像
+
+      frmPrevReport := frmTabIframe2.document.frames["History3"]
+
+      FrameWait(frmPrevReport)
+
+      btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
+      btnCopyReport.click() ; 複製報告
     }
   }
 
@@ -111,8 +114,8 @@ $^0::
   tabEditReport.click()
   If isNoPrevReport ; 完全沒有歷史報告
     MsgBox % tdMsgMore.innerText
-  If (getPrevReport = 0) ; 有找到相關的報告，顯示訊息
+  If (getPrevReport = 0) ; 沒有找到相關的報告，顯示訊息
     MsgBox % "AHK-SmartWonder: No related report found."
-return
+Return
 
 #IfWinActive
