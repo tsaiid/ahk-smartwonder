@@ -2,7 +2,7 @@
 ;; for SmartWonder
 #IfWinActive, tedpc-
 
-$^!i::
+$^i::
   wb := WBGet()
 
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
