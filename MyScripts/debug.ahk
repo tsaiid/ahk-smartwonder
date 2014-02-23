@@ -49,6 +49,33 @@ $^9::
   MsgBox % MyArray2
 return
 
+$^8::
+  wb := WBGet()
+
+  frameWrkList := wb.document.frames["frameWrkList"]
+  lstBdylstWrk := frameWrkList.document.getElementById("lstBdylstWrk")
+
+  ; 找到目前在第幾個病人
+  accNo := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementsByName("OldAccNo")[0].value
+
+  lstLenth := lstBdylstWrk.children.length
+
+  If !lstLenth {
+    MsgBox, No list ?!
+    Return
+  }
+
+  Loop %lstLenth% {
+    MsgBox % A_Index + " " + lstBdylstWrk.children[A_Index].children[3].children[1].innerText + + " " + accNo
+    If (lstBdylstWrk.children[A_Index].children[3].children[1].innerText = accNo) {
+      MsgBox % A_Index
+      Break
+    }
+  }
+
+  ;MsgBox % lstBdylstWrk.children.length
+Return
+
 ;; to get bone density report by ajax.
 $^2::
   wb := WBGet()
