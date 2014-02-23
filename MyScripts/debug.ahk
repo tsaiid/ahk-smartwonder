@@ -58,19 +58,24 @@ $^8::
   ; 找到目前在第幾個病人
   accNo := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementsByName("OldAccNo")[0].value
 
-  lstLenth := lstBdylstWrk.children.length
+  lstLength := lstBdylstWrk.children.length
 
-  If !lstLenth {
+  If !lstLength {
     MsgBox, No list ?!
     Return
   }
 
-  Loop %lstLenth% {
-    MsgBox % A_Index + " " + lstBdylstWrk.children[A_Index].children[3].children[1].innerText + + " " + accNo
-    If (lstBdylstWrk.children[A_Index].children[3].children[1].innerText = accNo) {
-      MsgBox % A_Index
+  Loop %lstLength% {
+    lstAccNo := lstBdylstWrk.children[A_Index - 1].children[3].children[1].innerText
+    ;MsgBox % A_Index . " " . lstAccNo . " " . accNo
+    If (lstAccNo = accNo) {
+      nxtPatientIndex := A_Index
       Break
     }
+  }
+
+  If (nxtPatientIndex < lstLength) {
+    lstBdylstWrk.children[nxtPatientIndex].click
   }
 
   ;MsgBox % lstBdylstWrk.children.length
@@ -96,12 +101,15 @@ $^2::
     acc_no = $('iframe[name=frameWork]').contents().find('#tabIframe2').contents().find('input[name=OldAccNo]').val();
     report_area = $('iframe[name=frameWork]').contents().find('#tabIframe2').contents().find('textarea[name=ReportContent]');
 
+    //alert(acc_no);
+
     $.support.cors = true;
     $.ajax({
       dataType: "json",
       url: "//bone-density.tsaiid.idv.tw/studies/report/" + acc_no + "/text",
       crossDomain: true
     }).done(function(data){
+//      alert(data.report);
       my_p = $.map(data.report.match(/(\d+\s*%)/g), function(x){ return x.match(/(\d+)/)[1] });
       re_p = $.map(report_area.val().match(/(\d+\s*%)/g), function(x){ return x.match(/(\d+)/)[1] });
       my_s = $.map(data.report.match(/\([TZ]-score\s*=\s*-?[\d\.]+\)/g), function(x){ return x.match(/=\s*(-?[\d\.]+)/)[1] });
@@ -117,6 +125,8 @@ $^2::
       else
         alert("ok");
 //      alert(my_s);
+    }).fail(function(jqXHr, textStatus, errorThrown) {
+        alert("ajax failed: " + textStatus);
     });
   )
 
