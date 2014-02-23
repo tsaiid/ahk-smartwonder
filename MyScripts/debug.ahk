@@ -50,11 +50,22 @@ $^9::
 return
 
 ;; to get bone density report by ajax.
-$^8::
+$^2::
   wb := WBGet()
 
   myL =
-  (
+  ( %
+    var compareArrays = function(a, b) {
+      if (a === b)
+        return true;
+      if (a.length !== b.length)
+        return false;
+      for (var i = 0; i < a.length; i++){
+        if(!(a[i] == b[i])) return false;
+      };
+      return true;
+    };
+
     acc_no = $('iframe[name=frameWork]').contents().find('#tabIframe2').contents().find('input[name=OldAccNo]').val();
     report_area = $('iframe[name=frameWork]').contents().find('#tabIframe2').contents().find('textarea[name=ReportContent]');
 
@@ -64,8 +75,21 @@ $^8::
       url: "//bone-density.tsaiid.idv.tw/studies/report/" + acc_no + "/text",
       crossDomain: true
     }).done(function(data){
-      //report_area.val(data.report);
-      alert(data.report);
+      my_p = $.map(data.report.match(/(\d+\s*%)/g), function(x){ return x.match(/(\d+)/)[1] });
+      re_p = $.map(report_area.val().match(/(\d+\s*%)/g), function(x){ return x.match(/(\d+)/)[1] });
+      my_s = $.map(data.report.match(/\([TZ]-score\s*=\s*-?[\d\.]+\)/g), function(x){ return x.match(/=\s*(-?[\d\.]+)/)[1] });
+      re_s = $.map(report_area.val().match(/\([TZ]-score\s*=\s*-?[\d\.]+\)/g), function(x){ return x.match(/=\s*(-?[\d\.]+)/)[1] });
+      my_c = data.report.match(/normal limit|low bone mass|osteoporosis|within the expected|below the expected/);
+      re_c = data.report.match(/normal limit|low bone mass|osteoporosis|within the expected|below the expected/);
+
+      if (!compareArrays(my_p, re_p) || !compareArrays(my_s, re_s) || !compareArrays(my_c, re_c)) {
+        alert(data.report);
+        //alert(my_p);
+        //alert(re_p);
+      }
+      else
+        alert("ok");
+//      alert(my_s);
     });
   )
 
