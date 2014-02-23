@@ -23,3 +23,4 @@
 :O:rll::right lower lobe
 :O:lul::left upper lobe
 :O:lll::left lower lobe
+:O:ned::no evidence of disease.
