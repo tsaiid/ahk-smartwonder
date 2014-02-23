@@ -122,9 +122,34 @@ $^2::
         //alert(my_p);
         //alert(re_p);
       }
-      else
-        alert("ok");
-//      alert(my_s);
+      else {
+        lst_bdy_lst_wrk = $('iframe[name=frameWrkList]').contents().find('#lstBdylstWrk');
+        lst_length = lst_bdy_lst_wrk.children().length;
+
+//        alert(lst_length);
+        next_patient_index = -1;
+
+        if (lst_length) {
+          lst_bdy_lst_wrk.children().each(function(i){
+            lst_acc_no = $(this).children().eq(3).children().eq(1).text();
+            if (lst_acc_no == acc_no) {
+              //if (i + 1 < lst_length){
+                next_patient_index = i + 1;
+              //}
+
+              return false;
+            }
+          });
+          //alert(next_patient_index);
+        }
+
+        if (next_patient_index > 0) {
+          if (next_patient_index == lst_length)
+            alert("ok");
+          else
+            lst_bdy_lst_wrk.children().eq(next_patient_index).click();
+        }
+      }
     }).fail(function(jqXHr, textStatus, errorThrown) {
         alert("ajax failed: " + textStatus);
     });
