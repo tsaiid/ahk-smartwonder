@@ -14,7 +14,7 @@ $^0::
   currExamName := splittedTmpStr2
 
   ;; 參考用的 pattern
-  patternCXR := "i)chest (pa|ap)"
+  patternCXR := "i)chest (pa|ap|& kub)"
   patternKUB := "i)kub"
   ;; 分析目前為何種檢查
   If RegExMatch(currExamName, patternCXR)
