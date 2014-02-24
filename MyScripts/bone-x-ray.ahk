@@ -32,6 +32,9 @@
 :O:btka::s/p bilateral total knee arthroplasties.
 :O:orif::s/p screw and plate fixation.
 :O:fr::fracture `
+:O:rdhs::s/p right dynamic hip screw fixation.
+:O:ldhs::s/p left dynamic hip screw fixation.
+:O:bdhs::s/p bilateral dynamic hip screw fixation.
 
 :O:flat::
 (

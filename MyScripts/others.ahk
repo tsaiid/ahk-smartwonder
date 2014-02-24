@@ -8,3 +8,5 @@
 :O:sao::small amount of `
 :O:mao::moderate amount of `
 :O:ntd::nature to be determined.
+
+:O:fn::FOOTNOTE:{Enter}[{^}1]: `
