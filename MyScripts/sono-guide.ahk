@@ -23,7 +23,7 @@ Under sonography guidance, pleural effusion and lung atelectasis were noted in r
   Paste(MyForm)
 Return
 
-:O:sg-noplef::
+:O:sg-nopig::
   MyForm =
 (
 Due to the small amount of right/left side pleural effusion(<2cm thickness), pigtail drainage was not recommended.
