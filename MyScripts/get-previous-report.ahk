@@ -1,6 +1,6 @@
 ; HotKey
 ;; for SmartWonder
-#IfWinActive, tedpc-
+#IfWinActive, VGHKS-
 
 $^0::
   wb := WBGet()
@@ -64,12 +64,24 @@ $^0::
         ; 先找出所有相關報告
         ;; 排除比目前日期晚的
         prevExamDate := prevReportLists.children[A_Index].children[4].innerText
+        prevExamTime := prevReportLists.children[A_Index].children[5].innerText
         ;; convert string to int for date and time
-        StringReplace prevExamDate, prevExamDate, -,, All
+        prevExamTime := prevExamTime + 0
 
         If (prevExamDate <= currExamDate) {
-          relatedReportCount += 1
-          arrayRelatedReportIndex%relatedReportCount% := A_Index + 0  ; convert to integer
+          If (relatedReportCount > 0) { ; 裡面已經有資料
+            index := arrayRelatedReportIndex%relatedReportCount%
+            tmpExamDate := prevReportLists.children[index].children[4].innerText
+            If (tmpExamDate = prevExamDate) { ; 只要抓同一天的資料就可以了
+              relatedReportCount += 1
+              arrayRelatedReportIndex%relatedReportCount% := A_Index + 0  ; convert to integer
+            }
+          } Else {
+            If ((prevExamDate = currExamDate && prevExamTime < currExamTime) || prevExamDate < currExamDate) {
+              relatedReportCount += 1
+              arrayRelatedReportIndex%relatedReportCount% := A_Index + 0  ; convert to integer
+            }
+          }
         }
 
         ;; 先抓 5 比出來就好，理論上一天應該不會超過五次相同的檢查
@@ -79,25 +91,32 @@ $^0::
     }
 
     Loop %relatedReportCount% {
-      ; 必須要是比當前報告早的報告
-      index := arrayRelatedReportIndex%A_Index%
-      prevExamDate := prevReportLists.children[index].children[4].innerText
-      prevExamTime := prevReportLists.children[index].children[5].innerText
+      ; 從後面找回來，第一筆較早的報告
+      arrIndex := relatedReportCount - A_Index + 1
+      examIndex := arrayRelatedReportIndex%arrIndex%
+      prevExamDate := prevReportLists.children[examIndex].children[4].innerText
+      prevExamTime := prevReportLists.children[examIndex].children[5].innerText
 
       ;; convert string to int for date and time
-      StringReplace prevExamDate, prevExamDate, -,, All
       prevExamTime := prevExamTime + 0
 
-      If (currExamDate > prevExamDate && getPrevReport = 0) {
-        getPrevReport := index
+      If (currExamDate > prevExamDate) {
+        getPrevReport := examIndex
         Break
-      } Else If (currExamDate = prevExamDate && currExamTime > prevExamTime) {
-        ; 因為同一日內更新的報告會在下方，所以先不 break, 繼續往下找
-        getPrevReport := index
+      } Else If (currExamDate = prevExamDate) {
+        If (currExamTime > prevExamTime) {
+          getPrevReport := examIndex
+          Break
+        }
       }
     }
 
     If (getPrevReport > 0) {  ; 有找到相關的報告
+      ;prevExamDate := prevReportLists.children[getPrevReport].children[4].innerText
+      ;prevExamTime := prevReportLists.children[getPrevReport].children[5].innerText
+      ;MsgBox % "D: " . prevExamDate . "T: " . prevExamTime
+      ;Return
+
       latestRelatedReport := prevReportLists.children[getPrevReport].children[1]
       latestRelatedReport.click() ; 點最近報告、開影像
 
