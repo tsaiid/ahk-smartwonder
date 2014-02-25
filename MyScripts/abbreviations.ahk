@@ -24,3 +24,4 @@
 :O:lul::left upper lobe
 :O:lll::left lower lobe
 :O:ned::no evidence of disease.
+:O:hx::history `
