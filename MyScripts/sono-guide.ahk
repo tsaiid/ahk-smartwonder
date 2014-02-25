@@ -15,10 +15,30 @@ Under sonography guidance, ascites was noted in RLQ_ of abdomen. The skin was pr
   Paste(MyForm)
 Return
 
-:O:sg-pig::
+:O:sgrpig::
   MyForm =
 (
-Under sonography guidance, pleural effusion and lung atelectasis were noted in right/left chest. The skin was prepared and the area was draped. Under local anesthesia, a 8 Fr pigtail catheter, using Seldinger technique, was placed through intercostal space into the pleural cavity. Light yellow, serous fluid was aspirated. Then, the drain was fixed with Mefix. The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
+Under sonography guidance, pleural effusion and lung atelectasis were noted in right chest. The skin was prepared and the area was draped. Under local anesthesia, a 8 Fr pigtail catheter, using Seldinger technique, was placed through intercostal space into the pleural cavity. Light yellow, serous fluid was aspirated. Then, the drain was fixed with Mefix. The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
+)
+  Paste(MyForm)
+Return
+
+:O:sg-lpig::
+  MyForm =
+(
+Under sonography guidance, pleural effusion and lung atelectasis were noted in left chest. The skin was prepared and the area was draped. Under local anesthesia, a 8 Fr pigtail catheter, using Seldinger technique, was placed through intercostal space into the pleural cavity. Light yellow, serous fluid was aspirated. Then, the drain was fixed with Mefix. The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
+)
+  Paste(MyForm)
+Return
+
+:O:sgbpig::
+  MyForm =
+(
+Under sonography guidance, pleural effusion and lung atelectasis were noted in bilateral chests. The skin was prepared and the area was draped. Under local anesthesia, a 8 Fr pigtail catheter, using Seldinger technique, was placed through intercostal space into the right pleural cavity. Light yellow, serous fluid was aspirated. Then, the drain was fixed with Mefix.
+
+Then, the same procedure was performed at left side.
+
+The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
 )
   Paste(MyForm)
 Return
