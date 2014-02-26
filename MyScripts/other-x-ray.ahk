@@ -1,8 +1,8 @@
 ; Other plain films
 :O:cnic::The condition shows no obvious change as compared with previous study.
-:O:nic::No obvious interval change as comparing with previous study on .{Left}
+:O:nic::No obvious interval change as compared with previous study on .{Left}
 :O:nic0::no obvious interval change.
-:O:nic1::No obvious interval change as comparing with previous study.
+:O:nic1::No obvious interval change as compared with previous study.
 :O:pc::Mild progressive change as compared with previous study on .{Left}
 :O:pc0::progressive change.
 :O:pc1::Progressive change as compared with previous study.
