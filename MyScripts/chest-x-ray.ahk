@@ -6,6 +6,7 @@
 :O:np::No abnormal patch opacity in lung fields.
 :O:0::No previous film for comparison.{Enter 2}
 :O:1::No active lung lesion. {Enter}No cardiomegaly. {Enter}Intact bony thorax.
+:O:2::No active lung lesion. {Enter}No cardiomegaly.
 :O:clnic::The condition of lung shows no obvious change as compared with previous study.
 :O:clat::Suggest correlation with lateral view.
 :O:ett::On endotracheal tube with tip at proper location.
