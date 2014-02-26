@@ -1,4 +1,4 @@
-#IfWinActive, tedpc-
+#IfWinActive, VGHKS-
 ;;; Move mouse to SmartIris to activate current image, and then confirm the report (^k).
 $^s::
   MouseGetPos, xpos,ypos

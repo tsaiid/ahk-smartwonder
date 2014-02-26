@@ -1,6 +1,6 @@
 ; Copy Order After "Purpose"
 ;; for SmartWonder
-#IfWinActive, tedpc-
+#IfWinActive, VGHKS-
 
 $^i::
   wb := WBGet()

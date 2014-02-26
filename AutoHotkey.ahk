@@ -119,7 +119,7 @@ SetTitleMatchMode, 2
 
 ; HotKey
 ;; for SmartWonder
-#IfWinActive, tedpc-
+#IfWinActive, VGHKS-
 ;;; Select whole line and delete
 $^l::
 	Send {Home}+{End}

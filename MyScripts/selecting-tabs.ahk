@@ -1,6 +1,6 @@
 ; HotKey
 ;; for SmartWonder
-#IfWinActive, tedpc-
+#IfWinActive, VGHKS-
 ;;; Select Tabs
 $^1:: ; 報告編輯
   wb := WBGet()

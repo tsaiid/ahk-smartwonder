@@ -6,7 +6,7 @@
 ; By jethrow
 ; http://www.autohotkey.com/board/topic/47052-basic-webpage-controls-with-javascript-com-tutorial/
 
-#IfWinActive, tedpc-
+#IfWinActive, VGHKS-
 
 WBGet(WinTitle="ahk_class IEFrame", Svr#=1) {               ;// based on ComObjQuery docs
   static msg := DllCall("RegisterWindowMessage", "str", "WM_HTML_GETOBJECT")
@@ -36,10 +36,12 @@ $^l::
     // IE8, IE9 的 cross domain ajax 似乎會有問題，使用額外的 jquery plugin 來處理？
     // https://github.com/MoonScript/jQuery-ajaxTransport-XDomainRequest
     $.getScript( "http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js", function( data, textStatus, jqxhr ) {
+      /*
       console.log( data ); // Data returned
       console.log( textStatus ); // Success
       console.log( jqxhr.status ); // 200
       console.log( "Load was performed." );
+      */
     });
 
     $.ajax({

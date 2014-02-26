@@ -1,6 +1,6 @@
 ; HotKey
 ;; for SmartWonder
-#IfWinActive, tedpc-
+#IfWinActive, VGHKS-
 ;;; Select Tabs
 $^!f:: ; 更改報告編輯區字體
   wb := WBGet()
