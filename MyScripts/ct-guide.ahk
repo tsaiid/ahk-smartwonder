@@ -2,8 +2,7 @@
 
 ;; Lung Biopsy
 :O:ctg-lb::
-ClipSave := ClipboardAll ; store clipboard data
-MyForm =
+  MyForm =
 (
 CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
 Under CT guide, tissue specimens were smoothly taken for pathology examination.
@@ -28,14 +27,26 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
 
 The patient was sent back to the ward under stable condition without complaint. Recommend close f/u patient's vital signs, bed rest and compression for at least 4 hours. F/U CXR 6 hours later.
 )
-Clipboard := MyForm
-Loop,
-{
-  Sleep, 100
-  If (Clipboard = MyForm)
-    Break
-}
-Send, ^v
-Clipboard := ClipSave ; restore clipboard data
-ClipSave :=
+  Paste(MyForm)
+Return
+
+
+;; Drainage
+:O:ctg-d::
+ClipSave := ClipboardAll ; store clipboard data
+MyForm =
+(
+CT guide drainage was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
+Under CT guide, tissue specimens were smoothly taken for pathology examination.
+
+1. Position:
+2. Target lesion:
+3. Patient cooperation: good/fair/poor
+4. Complications: nil.
+5. Drain: 6 Fr one-step pigtail drain.
+6. Specimen: pus.
+
+The patient was sent back to the ward under stable condition without complaint.
+)
+  Paste(MyForm)
 Return
