@@ -33,8 +33,7 @@ Return
 
 ;; Drainage
 :O:ctg-d::
-ClipSave := ClipboardAll ; store clipboard data
-MyForm =
+  MyForm =
 (
 CT guide drainage was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
 Under CT guide, tissue specimens were smoothly taken for pathology examination.
@@ -47,6 +46,27 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
 6. Specimen: pus.
 
 The patient was sent back to the ward under stable condition without complaint.
+)
+  Paste(MyForm)
+Return
+
+
+;; Drainage
+:O:ctg-b::
+  MyForm =
+(
+CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
+Under CT guide, tissue specimens were smoothly taken for pathology examination.
+
+1. Position:
+2. Target lesion:
+3. Patient cooperation: good
+4. Complications: nil.
+5. Instrument: 18 G Biopsy needle in 17G coaxial needle.
+6. Specimen:
+    Formalin: x4
+
+The patient was sent back to the ward under stable condition without complaint. Recommend close f/u patient's vital signs, bed rest and compression for at least 4 hours.
 )
   Paste(MyForm)
 Return
