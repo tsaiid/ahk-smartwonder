@@ -23,3 +23,8 @@ SUGGESTION:
 )
   Paste(MyForm)
 Return
+
+
+;; Hotstrings
+:O:lap-ok::- No retroperitoneal or mesenteric lymphadenopathy.
+:O:l-b-ok::- In lung and bone windows, the findings are unremarkable.
