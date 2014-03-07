@@ -25,3 +25,6 @@
 :O:lll::left lower lobe
 :O:ned::no evidence of disease.
 :O:hx::history `
+:O:bph::benign prostatic hyperplasia
+:O:sma::superior mesenteric artery
+:O:ima::inferior mesenteric artery
