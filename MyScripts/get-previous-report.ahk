@@ -91,9 +91,7 @@ $^0::
     }
 
     Loop %relatedReportCount% {
-      ; 從後面找回來，第一筆較早的報告
-      arrIndex := relatedReportCount - A_Index + 1
-      examIndex := arrayRelatedReportIndex%arrIndex%
+      examIndex := arrayRelatedReportIndex%A_Index%
       prevExamDate := prevReportLists.children[examIndex].children[4].innerText
       prevExamTime := prevReportLists.children[examIndex].children[5].innerText
 
@@ -101,22 +99,29 @@ $^0::
       prevExamTime := prevExamTime + 0
 
       If (currExamDate > prevExamDate) {
-        getPrevReport := examIndex
-        Break
-      } Else If (currExamDate = prevExamDate) {
-        If (currExamTime > prevExamTime) {
+        If (getPrevReport = 0) {
           getPrevReport := examIndex
-          Break
+          tmpExamTime := prevExamTime
+        } Else {
+          If (prevExamTime > tmpExamTime) {
+            getPrevReport := examIndex
+          }
+        }
+      } Else If (currExamDate = prevExamDate) {
+        If (getPrevReport = 0) {
+          getPrevReport := examIndex
+          tmpTimeDelta := currExamTime - prevExamTime
+        } Else {
+          tmp2TimeDelta := currExamTime - prevExamTime
+          If (tmp2TimeDelta > 0 && tmp2TimeDelta < tmpTimeDelta) {
+            getPrevReport := examIndex
+            tmpTimeDelta := tmp2TimeDelta
+          }
         }
       }
     }
 
     If (getPrevReport > 0) {  ; 有找到相關的報告
-      ;prevExamDate := prevReportLists.children[getPrevReport].children[4].innerText
-      ;prevExamTime := prevReportLists.children[getPrevReport].children[5].innerText
-      ;MsgBox % "D: " . prevExamDate . "T: " . prevExamTime
-      ;Return
-
       latestRelatedReport := prevReportLists.children[getPrevReport].children[1]
       latestRelatedReport.click() ; 點最近報告、開影像
 
