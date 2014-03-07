@@ -82,7 +82,7 @@ $^8::
 Return
 
 ;; to get bone density report by ajax.
-$^2::
+$^!z::
   wb := WBGet()
 
   myL =
