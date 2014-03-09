@@ -30,6 +30,8 @@
 :O:lscvp::On central venous catheter via left subclavian vein with tip at superior vena cava.
 :O:rport::On Port-A catheter via right subclavian vein.
 :O:lport::On Port-A catheter via left subclavian vein.
+:O:rppm::s/p PPM implantation at right upper chest.
+:O:lppm::s/p PPM implantation at left upper chest.
 :O:ile::Inadequate inspiration crowds lung markings.
 :O:pe::Engorged hila and pulmonary vasculature indicate pulmonary edema.
 :O:clc::Increased linear opacity over bilatera lower lungs, in favor of chronic inflammatory change.
@@ -59,3 +61,6 @@
 :O:rllf::right lower lung field
 :O:nnp::No newly developed patch opacity in lung fields.
 :O:ii::Exaggerated lung markings, may be due to inadequate inspiration.
+:O:rrf::Old fractures of right ribs.
+:O:lrf::Old fractures of left ribs.
+:O:brf::Old fractures of bilateral ribs.
