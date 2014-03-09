@@ -99,6 +99,7 @@ return
 #Include MyScripts\other-x-ray.ahk
 #Include MyScripts\sono-guide.ahk
 
+#Include MyScripts\sono.ahk
 #Include MyScripts\abdomen-ct.ahk
 #Include MyScripts\chest-ct.ahk
 
