@@ -28,3 +28,4 @@
 :O:bph::benign prostatic hyperplasia
 :O:sma::superior mesenteric artery
 :O:ima::inferior mesenteric artery
+:O:iud::intrauterine device
