@@ -37,9 +37,42 @@
 :O:ldhs::s/p left dynamic hip screw fixation.
 :O:bdhs::s/p bilateral dynamic hip screw fixation.
 
+; Multiline
 :O:flat::
+  MyForm =
 (
 Lateral projection of the foot with weight-bearing:
 
 The angle formed by the inferior axis of the calcaneus and 5th metatarsal shaft measures _____ degree on the right side, and _____ degree on the left side.
 )
+  Paste(MyForm)
+Return
+
+:O:avn4::
+  MyForm =
+( %
+Bilateral hips:
+Collapse of femoral heads is present, and joint spaces are mild irregular. The findings are compatible with avascular necrosis, stage IV.
+
+Flattening or collapse of femoral head is present.
+Joint space may be irregular.
+CT scanning is more sensitive than radiography.
+Subclassification depends on the extent of collapsed surface, as follows:
+        Stage IVa: Less than 15% of surface is collapsed.
+        Stage IVb: Approximately 15-30% of surface is collapsed.
+        Stage IVc: More than 30% of surface is collapsed.
+)
+  Paste(MyForm)
+Return
+
+:O:avn5::Radiography findings include narrowing of the joint space, osteoarthritis with sclerosis of acetabulum, and marginal osteophytes.
+:O:avn6::
+  MyForm =
+(
+Extensive destruction of the femoral head and joint, compatible with avascular necrosis, stage VI.
+
+Ref:
+Findings include extensive destruction of the femoral head and joint.
+)
+  Paste(MyForm)
+Return
