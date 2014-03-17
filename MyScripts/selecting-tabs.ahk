@@ -10,6 +10,7 @@ $^1:: ; 報告編輯
   tabEditReport := frmWork.document.getElementById("tabCaption0").children[1]
   ; 切換至編輯報告頁
   tabEditReport.click()
+  ChangeFont()
 return
 
 $^3:: ; 歷史報告
