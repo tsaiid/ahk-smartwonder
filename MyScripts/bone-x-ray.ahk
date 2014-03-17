@@ -19,7 +19,7 @@
 :O:p/lsp::Post laminectomy, transpedicular screws, rods fixation at L2~L5. {Enter}Post interbody cage placement at L2-3, L3-4.{Up}{Right 16}
 :O:spok::No disc space narrowing. No spondylolisthesis. No fracture.
 :O:oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
-:O:calspur::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
+:O:calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
 :O:nabl::No active bone lesion.
 :O:rthr::s/p right total hip replacement.
 :O:lthr::s/p left total hip replacement.
@@ -73,6 +73,39 @@ Extensive destruction of the femoral head and joint, compatible with avascular n
 
 Ref:
 Findings include extensive destruction of the femoral head and joint.
+)
+  Paste(MyForm)
+Return
+
+:O:djdc::
+  MyForm =
+(
+DJD of Cervical spine:
+  - Osteophyte formation:
+  - Disk space narrowing:
+  - Encroachment of neuroforamen:
+  - Anterolisthesis:
+  - Retrolisthesis:
+)
+  Paste(MyForm)
+Return
+
+:O:sco::
+  MyForm =
+(
+Scoliosis :
+1. Major curve
+   extent:
+   convex to:
+   apex at:
+   degree:
+   rotation: ( + , - )
+2. Second  (compensatory) curve
+   extent:
+   convex to:
+   apex at:
+   degree:
+   rotation: ( +, - )
 )
   Paste(MyForm)
 Return
