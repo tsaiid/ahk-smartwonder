@@ -9,6 +9,10 @@ Paste(text) {
   Send ^v
   Sleep 300 ; Probably more than enough. Depends on the system.
   Clipboard := ClipSaved
+
+#IfWinActive, VGHKS-
+  ChangeFont()
+#IfWinActive
 }
 
 ; 原本的方法以為：
