@@ -106,6 +106,7 @@ return
 #Include MyScripts\ct-guide.ahk
 
 #Include MyScripts\barium-enema.ahk
+#Include MyScripts\intravenous-pyelogram.ahk
 
 SetTitleMatchMode, 2
 
