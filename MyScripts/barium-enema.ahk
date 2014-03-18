@@ -2,7 +2,6 @@
 
 ;; General Form
 :O:be::
-ClipSave:=ClipboardAll ; store clipboard data
 MyForm =
 (
 Double contrast barium enema was performed from rectum to cecum with the demonstration of appendix, ileocecal valve and terminal ileum:
@@ -11,16 +10,7 @@ Double contrast barium enema was performed from rectum to cecum with the demonst
 - The elasticity and distensibility of colon shows no unusual.
 - No mass lesion can be indentified throughout the colon and rectum.
 )
-Clipboard := MyForm
-Loop,
-{
-  Sleep, 100
-  If (Clipboard = MyForm)
-    Break
-}
-Send, ^v
-Clipboard:=ClipSave ; restore clipboard data
-ClipSave:=
+  Paste(MyForm)
 Return
 
 ;; Specific Conditions
