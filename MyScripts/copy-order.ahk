@@ -1,6 +1,6 @@
 ; Copy Order After "Purpose"
 ;; for SmartWonder
-#IfWinActive, VGHKS-
+#IfWinActive ahk_group SmartWonder
 
 $^i::
   wb := WBGet()

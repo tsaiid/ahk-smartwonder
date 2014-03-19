@@ -6,7 +6,11 @@
 ; By jethrow
 ; http://www.autohotkey.com/board/topic/47052-basic-webpage-controls-with-javascript-com-tutorial/
 
-#IfWinActive, VGHKS-
+; Group Control For SmartWonder
+GroupAdd, SmartWonder, VGHKS-
+GroupAdd, SmartWonder, tedpc-
+
+#IfWinActive ahk_group SmartWonder
 
 WBGet(WinTitle="ahk_class IEFrame", Svr#=1) {               ;// based on ComObjQuery docs
   static msg := DllCall("RegisterWindowMessage", "str", "WM_HTML_GETOBJECT")

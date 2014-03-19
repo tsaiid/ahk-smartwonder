@@ -13,6 +13,10 @@
 ; and it launches a new Notepad window (or activates an existing one).  To
 ; try out these hotkeys, run AutoHotkey again, which will load this file.
 
+; Group Control For SmartWonder
+GroupAdd, SmartWonder, VGHKS-
+GroupAdd, SmartWonder, tedpc-
+
 ; With Parameters
 #Include Lib\Hotstrings.ahk
 hotstrings("p/lsp(\d)(\d)\s", "plsp")
@@ -123,7 +127,7 @@ SetTitleMatchMode, 2
 
 ; HotKey
 ;; for SmartWonder
-#IfWinActive, VGHKS-
+#IfWinActive ahk_group SmartWonder
 ;;; Select whole line and delete
 $^l::
 	Send {Home}+{End}

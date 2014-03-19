@@ -10,7 +10,7 @@ Paste(text) {
   Sleep 300 ; Probably more than enough. Depends on the system.
   Clipboard := ClipSaved
 
-#IfWinActive, VGHKS-
+#IfWinActive ahk_group SmartWonder
   ChangeFont()
 #IfWinActive
 }

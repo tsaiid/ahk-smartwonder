@@ -1,7 +1,7 @@
 ; HotKey
 ;; for SmartWonder
 
-#IfWinActive, VGHKS-
+#IfWinActive ahk_group SmartWonder
 ;;; Select Tabs
 ChangeFont(font = "Source Code Pro")
 {

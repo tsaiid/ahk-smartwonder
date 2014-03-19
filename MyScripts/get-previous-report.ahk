@@ -1,6 +1,6 @@
 ; HotKey
 ;; for SmartWonder
-#IfWinActive, VGHKS-
+#IfWinActive ahk_group SmartWonder
 
 $^0::
   wb := WBGet()

@@ -1,6 +1,6 @@
 ; HotKey
 ;; for SmartWonder
-#IfWinActive, VGHKS-
+#IfWinActive ahk_group SmartWonder
 ;;; Select Tabs
 $^1:: ; 報告編輯
   wb := WBGet()
