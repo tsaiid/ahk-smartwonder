@@ -10,3 +10,5 @@
 :O:rdj::s/p right side double-J ureteral stent.
 :O:ldj::s/p left side double-J ureteral stent.
 :O:bdj::s/p bilateral double-J ureteral stents.
+:O:rfdl::On double-lumen catheter via right femoral vein.
+:O:lfdl::On double-lumen catheter via left femoral vein.
