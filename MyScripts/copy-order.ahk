@@ -2,7 +2,7 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 
-CopyOrder()
+CopyOrder(toLower = 0)
 {
   wb := WBGet()
 
@@ -18,6 +18,10 @@ CopyOrder()
   StringReplace, TmpOrderDiag, OrderDiagSplit2, History & Data:, , All
   ; 有時候 "History & Data :" 會有空格
   StringReplace, MyOrderDiag, TmpOrderDiag, History & Data :, , All
+
+  if (toLower) {
+    StringLower, MyOrderDiag, MyOrderDiag
+  }
 
   return MyOrderDiag
 }
