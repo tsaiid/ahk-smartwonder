@@ -110,6 +110,8 @@ return
 
 #Include MyScripts\ct-guide.ahk
 
+#Include MyScripts\neuro.ahk
+
 #Include MyScripts\barium-enema.ahk
 #Include MyScripts\intravenous-pyelogram.ahk
 
