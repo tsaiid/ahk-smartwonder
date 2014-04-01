@@ -2,7 +2,8 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 
-$^i::
+CopyOrder()
+{
   wb := WBGet()
 
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
@@ -18,6 +19,11 @@ $^i::
   ; 有時候 "History & Data :" 會有空格
   StringReplace, MyOrderDiag, TmpOrderDiag, History & Data :, , All
 
+  return MyOrderDiag
+}
+
+$^i::
+  MyOrderDiag := CopyOrder()
   Paste(MyOrderDiag)
 Return
 #IfWinActive
