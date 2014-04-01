@@ -331,3 +331,83 @@ Follow up or further evaluation.
 )
   Paste(MyForm)
 Return
+
+;; CTNEC
+:O:ctnec::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+TECHNIQUE:
+Multi-slice CT scanner with
+(1) Non-contrast and (2) Contrast-enhanced
+scanning in axial plane from skull base to thoracic inlet with 5-mm-thick contiguous slices and coronal reformatted images.
+Contrast medium: intravenous route, volume: 60 mL, rate: 1.0 mL/sec
+
+COMPARISON:
+Applicable previous CT of face and neck: none
+Applicable previous MRI of face and neck: none
+
+FINDINGS:
+
+Due to no contrast-enhanced CT performed, small enhancing lesion could not be evaluated.
+
+1. Primary tumor status:
+
+
+
+2. Cervical nodes:
+
+* right/left/bilateral level I, II, III, IV, V, VI, VII
+
+No evidence of bulky lymph nodes, and lymph nodes size smaller than 1 cm, over --------------- carotid space and --------------- posterior triangle of submandibular and neck regions was noted.
+
+No evidence of bulky lymph nodes (> 1cm) over bilateral carotid space and posterior cervical space noted.
+
+No evidence of bulky lymph nodes in shortest axis (> 1cm) over bilateral carotid space and posterior cervical space noted.
+
+No evidence of bulky lymph nodes in shortest axis (> 1cm) over bilateral supraclavicular fossas noted.
+
+No evidence of bulky lymph nodes in shortest axis (> 1.5cm) over bilateral submandibular and submental space noted.
+
+a. No evidence of bulky lymph nodes over --------------- carotid space and --------------- posterior triangle of submandibular and neck regions was noted.
+
+b. Presence of several/multiple lymph nodes noted over --------------- carotid space and --------------- posterior triangle of submandibular and neck regions, the biggest size about --------  cm, R/O inflammatory or metastatic lymph nodes.
+
+c. Presence of several lymph nodes noted over bilateral carotid space and posterior triangle of submandibular and upper neck regions, the biggest size about 1.1 cm, R/O inflammatory lymph nodes. However, lymphoma, metastatic lymph nodes can not be completely excluded.  Suggest clinical check up.
+
+d. Presence of several/multiple lymph nodes noted over ---------------, the biggest size about --------  cm, the differential diagnoses including lymphoma, metastasis, or inflammation, recommend biopsy or close follow up.
+
+
+3. Others:
+
+Orbits: normal
+Paranasal sinuses: normal
+Skull base: normal
+Nasopharynx: normal
+Oropharynx: normal
+Hypopharynx: normal
+Larynx: normal
+Oral cavity: normal/limited interpretation due to dental artifacts
+Thoracic inlet: normal
+Parotid gland: normal
+Submandibular gland: normal
+Thyroid gland: normal
+Lymph nodes: No evidence of bulky lymph nodes (> 1 cm) over bilateral carotid space and posterior triangle of submandibular and neck regions noted.
+
+a. No evidence of enhanced mass lesion in the submandibular and neck region.
+
+b. No particular findings of nasopharynx, parotid gland, and submandibular gland.
+
+c. No particular findings of nasopharynx, parotid gland, submandibular gland, and thyroid gland.
+
+d. The axilla region cannot be well evaluated due to small FOV of the head and neck CT.
+
+IMPRESSION:
+
+SUGGESTION:
+Suggest clinical correlation and follow up.
+)
+  Paste(MyForm)
+Return
