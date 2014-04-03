@@ -123,6 +123,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\change-font.ahk
 #Include MyScripts\copy-order.ahk
 #Include MyScripts\toggle-position-sync.ahk
+#Include MyScripts\insert-patient-exam-info.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
