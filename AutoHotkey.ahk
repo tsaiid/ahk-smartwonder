@@ -113,6 +113,7 @@ return
 #Include MyScripts\neuro.ahk
 
 #Include MyScripts\barium-enema.ahk
+#Include MyScripts\esophagraphy.ahk
 #Include MyScripts\intravenous-pyelogram.ahk
 
 SetTitleMatchMode, 2
