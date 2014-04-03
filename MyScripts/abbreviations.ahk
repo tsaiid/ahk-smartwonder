@@ -30,3 +30,4 @@
 :O:ima::inferior mesenteric artery
 :O:iud::intrauterine device
 :O:ppm::permanent pacemaker
+:O:ich::intracranial hemorrhage

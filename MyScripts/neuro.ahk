@@ -4,7 +4,8 @@
 :O:ath::Atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
 :O:sae::Presence of .... bilateral periventricular low density noted, the subcortical arteriosclerotic encephalopathy considered.
 :O:ubo::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
-
+:O:SUG::SUGGESTION:
+:O:imp2::Others as above descriptions.
 
 ;; MRSPC2
 :O:mrspc2::
@@ -408,6 +409,47 @@ IMPRESSION:
 
 SUGGESTION:
 Suggest clinical correlation and follow up.
+)
+  Paste(MyForm)
+Return
+
+;; MRB
+:O:mrb::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+The MRI of the brain performed with a 1.5-T scanner:
+METHOD: Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI,
+FLAIR (Fluid Attenuated Inversion Recovery), Coronal T1WI, T2WI
+Diffusion-weighted Imaging (DWI), post Gadolinium enhancement with axial and coronal T1 weighted image showed:
+SCAN RANGE: from the skull base to the vertex
+CONTRAST MEDIUM: IV route, 0.1mmol/kg
+
+The MRI of the brain performed with a 3-T scanner:
+METHOD: Sagittal T1WI (localizer)
+Axial T1WI, T2WI, T2*GRE, FLAIR (Fluid Attenuated Inversion Recovery), DWI (Diffusion-weighted Imaging)
+Coronal T1WI, T2WI
+Gd-enhanced 3D-SPACE and 3D-MPRAGE T1WI with fat suppression
+SCAN RANGE: From the skull base to the vertex
+CONTRAST MEDIUM: IV route, 0.1mmol/kg, 1ml/sec.
+
+COMPARISON:
+Applicable previous MRI of brain: no
+Applicable previous CT of brain: no
+
+FINDINGS:
+
+No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+
+The bilateral lateral ventricles showed symmetrical without dilatation.
+
+Post contrast study showed no abnormal enhancing lesion in the brain and no abnormal intracranial leptomeningeal enhancement noted.
+
+IMPRESSION:
+No significant intracranial finding
+SUGGESTION:
 )
   Paste(MyForm)
 Return

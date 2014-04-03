@@ -10,6 +10,7 @@
 :O:rc0::regressive change.
 :O:rc1::Mild regressive change as compared with previous study.
 :O:cc::Suggest clinical correlation.
+:O:cc0::clinical correlation
 :O:fe::Suggest further evaluation.
 :O:fu::Suggest follow-up.
 :O:ccfu::Suggest clinical correlation and follow-up.
