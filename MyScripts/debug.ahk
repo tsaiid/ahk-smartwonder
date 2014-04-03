@@ -1,8 +1,18 @@
-; for debug
+﻿; for debug
+
+$^7::
+  WinGet, test, ID, A
+  ;MsgBox % test
+  ;ID := DllCall("GetParent", UInt, WinExist("ahk_id" test)), ID := !ID ? WinExist("ahk_id" test) : ID
+  ID := DllCall("GetParent", UInt, WinExist("ahk_id" test))
+  WinGetClass, Class, ahk_id %id%
+  WinGetTitle, Title, ahk_id %id%
+  ;MsgBox,0, %ID%, % Title "`n" Class
+  ;MsgBox % WinExist("ahk_group SmartWonder")
+Return
+
 $^9::
-  wb := WBGet()
   ;; get current exam name
-  ;str := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
   ;RegExMatch(str, "(.+) : (.+)", splitted)
   ;currExam := splitted2
 
@@ -40,13 +50,6 @@ $^9::
   ;  str := "<"
 
   ;StringReplace currExamDate, currExamDate, -,, All
-  accNo := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementsByName("OldAccNo")[0].value
-  orderId = OrderDiag_%accNo%
-  orderDiag := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.getElementById(orderId).value
-  StringReplace, NewOrder, orderDiag, Purpose :, ``, All
-  StringSplit, MyArray, NewOrder, ``
-
-  MsgBox % MyArray2
 return
 
 $^8::
