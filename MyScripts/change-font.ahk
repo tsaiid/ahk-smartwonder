@@ -11,7 +11,7 @@ ChangeFont(font = "Source Code Pro")
   FrameWait(frmTabIframe2)
   txtReportContent := frmTabIframe2.document.getElementsByName("ReportContent")[0]
   txtReportContent.style.fontFamily := font
-  txtReportContent.style.fontSize := "12pt"
+  ;txtReportContent.style.fontSize := "12pt"
   return
 }
 
