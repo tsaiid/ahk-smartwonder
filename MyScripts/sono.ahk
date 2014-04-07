@@ -8,7 +8,7 @@ Right renal size about _ cm; left renal size about _ cm.
 Normal size and echogenicity over bilateral kidneys without hydronephrosis nor nephrolithiasis noted.
 Under Doppler Ultrasound, normal blood flow pattern is noted over bilateral kidneys.
 Normal appearance of urinary bladder. No stones nor sludge is noted.
-Prostate size about _ x _ x _ cm.
+Prostate volume is about _ ml.
 )
   Paste(MyForm)
 Return
