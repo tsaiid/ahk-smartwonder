@@ -114,6 +114,7 @@ return
 
 #Include MyScripts\barium-enema.ahk
 #Include MyScripts\esophagraphy.ahk
+#Include MyScripts\ugi-small-intestine.ahk
 #Include MyScripts\intravenous-pyelogram.ahk
 
 SetTitleMatchMode, 2
