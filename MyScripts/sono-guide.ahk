@@ -67,7 +67,7 @@ Under sonography guidance, the hypoechoic tumor was localized at S5-8_ of liver.
   Paste(MyForm)
 Return
 
-:O:sgla::
+:O:sgld::
   MyForm =
 (
 Under sonography guidance, the hypoechoic lesion was localized at S4 of liver. The skin was prepared and the area was draped. Under local anesthesia, a 6 Fr one-step pigtail catheter was placed transhepatically into the abscess. Milky pus about 5 ml was aspirated. Then, the drain was fixed with Mefix. The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
