@@ -95,27 +95,29 @@ return
 ;; My Own Lib
 #Include MyScripts\lib\frame-wait.ahk
 
-#Include MyScripts\others.ahk
-#Include MyScripts\abbreviations.ahk
+#IfWinActive ahk_group SmartWonder
+  #Include MyScripts\others.ahk
+  #Include MyScripts\abbreviations.ahk
 
-#Include MyScripts\chest-x-ray.ahk
-#Include MyScripts\kub.ahk
-#Include MyScripts\bone-x-ray.ahk
-#Include MyScripts\other-x-ray.ahk
-#Include MyScripts\sono-guide.ahk
+  #Include MyScripts\chest-x-ray.ahk
+  #Include MyScripts\kub.ahk
+  #Include MyScripts\bone-x-ray.ahk
+  #Include MyScripts\other-x-ray.ahk
+  #Include MyScripts\sono-guide.ahk
 
-#Include MyScripts\sono.ahk
-#Include MyScripts\abdomen-ct.ahk
-#Include MyScripts\chest-ct.ahk
+  #Include MyScripts\sono.ahk
+  #Include MyScripts\abdomen-ct.ahk
+  #Include MyScripts\chest-ct.ahk
 
-#Include MyScripts\ct-guide.ahk
+  #Include MyScripts\ct-guide.ahk
 
-#Include MyScripts\neuro.ahk
+  #Include MyScripts\neuro.ahk
 
-#Include MyScripts\barium-enema.ahk
-#Include MyScripts\esophagraphy.ahk
-#Include MyScripts\ugi-small-intestine.ahk
-#Include MyScripts\intravenous-pyelogram.ahk
+  #Include MyScripts\barium-enema.ahk
+  #Include MyScripts\esophagraphy.ahk
+  #Include MyScripts\ugi-small-intestine.ahk
+  #Include MyScripts\intravenous-pyelogram.ahk
+#IfWinActive
 
 SetTitleMatchMode, 2
 
