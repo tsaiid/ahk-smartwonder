@@ -51,7 +51,7 @@ $^l::
 
     $.ajax({
       dataType: "json",
-      url: "http://bone-density.tsaiid.idv.tw/studies/report/" + acc_no + "/text",
+      url: "http://vghks.tsai.it/bone-density/studies/report/" + acc_no + "/text",
       crossDomain: true
     }).done(function(data){
       if (data.report)
