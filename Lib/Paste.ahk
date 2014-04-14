@@ -3,7 +3,7 @@
 ; 如果直接把 Clipboard 復原，會貼到舊的內容
 ; Source: http://www.autohotkey.com/board/topic/44917-paste-but-preserve-clipboard-simple/
 
-Paste(text) {
+Paste(text, alsoChangeFont = 1) {
   ClipSaved := ClipboardAll
   Clipboard := text
   Send ^v
@@ -11,7 +11,9 @@ Paste(text) {
   Clipboard := ClipSaved
 
 #IfWinActive ahk_group SmartWonder
-  ChangeFont()
+  If (alsoChangeFont) {
+    ChangeFont()
+  }
 #IfWinActive
 }
 
