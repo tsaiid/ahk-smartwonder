@@ -15,7 +15,7 @@ $^h::
     PatGender := PatNameGenderArr2
     PatAge := RegExReplace(PatAgeRaw, "0([\S]+)\s*", "$1")
     LaiStr = Hx: %PatID%, Ac: %AccNo%, %PatGender%/%PatAge%, %ExamDate%
-    Paste(LaiStr)
+    Paste(LaiStr, 0)
   }
 Return
 #IfWinActive
