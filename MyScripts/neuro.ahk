@@ -356,8 +356,6 @@ Due to no contrast-enhanced CT performed, small enhancing lesion could not be ev
 
 1. Primary tumor status:
 
-
-
 2. Cervical nodes:
 
 * right/left/bilateral level I, II, III, IV, V, VI, VII
@@ -449,6 +447,499 @@ Post contrast study showed no abnormal enhancing lesion in the brain and no abno
 
 IMPRESSION:
 No significant intracranial finding
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; MRNEC
+:O:mrnec::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+MRI of the skull base and neck was performed with a 1.5-T scanner:
+METHOD: Sagittal T1WI and T2WI, Axial T1WI and T2WI with fat suppression, Coronal T1WI and T2WI with fat suppression, Post Gd-enhanced dynamic and conventional T1WI with fat suppression
+SCAN RANGE: from the skull base to the low neck
+CONTRAST MEDIUM: IV route, 0.1mmol/kg, rate: 2.0 mL/sec
+
+COMPARISION:
+PREVIOUS MRI of the skull base and neck: no
+PREVIOUS CT of the skull base and neck: no
+
+FINDINGS:
+
+1. Primary tumor status:
+
+2. Cervical nodes:
+a. No evidence of bulky lymph nodes over --------------- carotid space and --------------- posterior triangle of submandibular and neck regions was noted.
+
+b. Presence of several/multiple lymph nodes noted over --------------- carotid space and --------------- posterior triangle of submandibular and neck regions, the biggest size about --------  cm, R/O inflammatory or metastatic lymph nodes.
+
+c. Presence of several/multiple lymph nodes noted over ---------------, the biggest size about --------  cm, the differential diagnoses including lymphoma, metastasis, or inflammation, recommend biopsy or close follow up.
+
+3. Others:
+a. No evidence of enhanced mass lesion in the submandibular and neck region.
+
+b. No particular findings of nasopharynx, parotid gland, and submandibular gland.
+
+c. No particular findings of nasopharynx, parotid gland, submandibular gland, and thyroid gland.
+
+d. Presence of high signal intensity on T1WI over the C-spine, compatible with post radiation change.
+
+IMPRESSION:
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; NPC-CT
+:O:npcct::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+CT scan of head and neck was performed with a multi-slice CT scanner:
+METHOD: (1) Noncontrast and (2) Post-contrast enhancement
+SCAN RANGE: axial plane from the skull base to the low neck with 5-mm continuous scan slice thickness and coronal reconstruction
+CONTRAST MEDIUM: IV route, volume: 100 mL, rate: 1.0 mL/sec
+
+INDICATION: %MyOrder%
+
+PREVIOUS MRI/CT of the skull base and neck: no/2008-09-24
+
+FINDINGS:
+Primary tumor status and locoregional extension
+[T1] Tumor confined to the nasopharynx, or extends to oropharynx and/or nasal cavity without parapharyngeal extension
+[T2] Tumor with parapharyngeal extension.
+[T3] Tumor involves bony structures of skull base and/or paranasal sinuses.
+[T4] Tumor with intracranial extension and/or involvement of cranial nerves, hypopharynx, orbit, or with extension to the infratemporal fossa/masticator space.
+
+2. Regional lymph nodes:
+* right/left/bilateral level I, II, III, IV, V, VI, VII
+
+* right/left/bilateral
+retropharyngeal region
+submandibular and submental space (level I)
+carotid space (level II, III, IV)
+posterior cervical space (level V)
+anterior cervical space (level VI)
+superior mediastinal space (level VII)
+
+* right/left/bilateral level I > = 1.5cm: Nil, Yes, Necrosis
+* right/left/bilateral level II > = 1.5 cm: Nil, Yes, Necrosis
+* right/left/bilateral level III > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level IV > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level V > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level VI > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level VII > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral retropharyngeal > = 0.8 cm: Nil, Yes, Necrosis
+* right/left/bilateral supraclavicular > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral parotid > = 1cm: Nil, Yes, Necrosis
+
+Positive: right/left/bilateral, level-----, the maximal dimension about /// cm (short axis in axial plane), confluent dimension about /// cm (craniocaudal), with cental necrosis
+Equivocal: right/left/bilateral, level-----, the maximal dimension about /// cm (short axis in axial plane)
+Negative:
+
+[NX] Regional lymph nodes cannot be assessed.
+[N0] No evidence of regional lymph node metastasis.
+[N1] Unilateral metastasis in lymph node(s), 6 cm or less in greatest dimension, above the supraclavicular fossa, and/or unilateral or bilateral, retropharyngeal lymph nodes, 6 cm or less, in greatest dimension.
+[N2] Bilateral metastasis in lymph node(s), 6 cm or less in greatest dimension, above the supraclavicular fossa
+[N3] Metastasis to 1 or more lymph nodes that are larger than 6 cm and/or extension to the supraclavicular fossa
+[N3a] Larger than 6 cm
+[N3b] Extension to the supraclavicular fossa
+
+LN0: No evidence of bulky lymph nodes in ----- carotid space and ---- posterior cervical space.
+LN1: Presence of small lymph nodes (less than 1cm) in bil. carotid space and bil. posterior cervical space.
+LN2: Presence of small lymph nodes in bil. carotid space and bil. posterior cervical space, the maximal size about 1 cm.
+LN3: Presence of several lymph nodes in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal size about /// cm, R/O reactive or inflammatory hyperplasia, DDx: lymphoma, or nodal metastasis.
+LN4: Presence of multiple lymph nodes with variable size, some confluence and central necrosis in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal dimension about /// cm (craniocaudal), R/O nodal metastasis, DDx: infectious lymphadenitis, or lymphoma.
+LN5: Presence of multiple lymph nodes with variable size, some confluence and central necrosis in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal dimension about /// cm (craniocaudal), nodal metastasis considered.
+
+3. Others:
+Oropharynx: Unremarkable
+Oral cavity: Unremarkable / Limited film interpretation due to dental artifacts
+Hypopharynx: Unremarkable
+Parotid gland: Unremarkable
+Submandibular gland: Unremarkable
+Thyroid gland: Unremarkable
+
+Increased soft tissue density over  -----------, mastoid air sinus, in favor of mastoiditis or fluid collection in the mastoid.
+
+IMPRESSION:
+Nasopharyngeal cancer, imaging staging T N. AJCC 7th ed.
+Nasopharyngeal mass, Imaging staging T N if nasopharyngeal cancer proved. AJCC 7th ed.
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; NPC-MR
+:O:npcmr::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+MRI of the skull base and neck was performed with a 1.5-T scanner:
+METHOD: Sagittal T1WI and T2WI,
+   Axial T1WI and T2WI with fat suppression,
+   Coronal T1WI and T2WI with fat suppression,
+   Gd-enhanced dynamic and conventional T1WI with fat suppression
+SCAN RANGE: From the skull base to the low neck
+CONTRAST MEDIUM: IV route, 0.1mmol/kg, rate: 2.0 mL/sec
+
+INDICATION: %MyOrder%
+
+PREVIOUS MRI/CT of the skull base and neck: no/2008-09-24
+
+FINDINGS:
+Primary tumor status and locoregional extension
+[T1] Tumor confined to the nasopharynx, or extends to oropharynx and/or nasal cavity without parapharyngeal extension
+[T2] Tumor with parapharyngeal extension.
+[T3] Tumor involves bony structures of skull base and/or paranasal sinuses.
+[T4] Tumor with intracranial extension and/or involvement of cranial nerves, hypopharynx, orbit, or with extension to the infratemporal fossa/masticator space.
+
+[T4] Tumor over the nasopharynx (more on left), left posterior nasal cavity and left parapharyngeal and left pterygopalatine fissure extension, involves bony structures of skull base (clivus, occipital condyle, more on left) with intracranial extension and involvement of left hypoglossal canal, left parasella cavernous sinus and left temporal base dura region.
+
+[T4] Hx:13699837  A large tumor mass lesion involves nasopharynx(more on left side), left parapharyngeal space, left masticator space, left posterior nasal cavity, left upper oropharyngeal region, left retromaxillary space, left retropharyngeal space, bilateral  perivertebral spaces and left pterygopalatine fossa. Also, the tumor shows direct invasion to the nasopharyngeal roof, left skull base and clivus. This tumor also shows intracranial extension ro left temporal base region. Encasement of left internal carotid artery in the lacerum portion is noted.
+
+2. Regional lymph nodes:
+
+   ========================
+     # level I   : right (-);  left(-)
+     # level II  : right (-);  left(-)
+     # level III : right (-);  left(-)
+     # level IV : right (-);  left(-)
+     # level V  : right (-);  left(-)
+     # level VI : right (-);  left(-)
+     # level VII: right (-);  left(-)
+     ========================
+
+* right/left/bilateral level I, II, III, IV, V, VI, VII
+
+* right/left/bilateral
+retropharyngeal region
+submandibular and submental space (level I)
+carotid space (level II, III, IV)
+posterior cervical space (level V)
+anterior cervical space (level VI)
+superior mediastinal space (level VII)
+
+* right/left/bilateral level I > = 1.5cm: Nil, Yes, Necrosis
+* right/left/bilateral level II > = 1.5 cm: Nil, Yes, Necrosis
+* right/left/bilateral level III > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level IV > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level V > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level VI > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level VII > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral retropharyngeal > = 0.8 cm: Nil, Yes, Necrosis
+* right/left/bilateral supraclavicular > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral parotid > = 1cm: Nil, Yes, Necrosis
+
+Positive: right/left/bilateral, level-----, the maximal dimension about /// cm (short axis in axial plane), confluent dimension about /// cm (craniocaudal), with central necrosis
+Equivocal: right/left/bilateral, level-----, the maximal dimension about /// cm (short axis in axial plane)
+Negative:
+
+[NX] Regional lymph nodes cannot be assessed.
+[N0] No evidence of regional lymph node metastasis.
+[N1] Unilateral metastasis in lymph node(s), 6 cm or less in greatest dimension, above the supraclavicular fossa, and/or unilateral or bilateral, retropharyngeal lymph nodes, 6 cm or less, in greatest dimension.
+[N2] Bilateral metastasis in lymph node(s), 6 cm or less in greatest dimension, above the supraclavicular fossa
+[N3] Metastasis to 1 or more lymph nodes that are larger than 6 cm and/or extension to the supraclavicular fossa
+[N3a] Larger than 6 cm
+[N3b] Extension to the supraclavicular fossa
+
+LN0: No evidence of bulky lymph nodes in ----- carotid space and ---- posterior cervical space.
+LN1: Presence of small lymph nodes (less than 1cm) in bil. carotid space and bil. posterior cervical space.
+LN2: Presence of small lymph nodes in bil. carotid space and bil. posterior cervical space, the maximal size about 1 cm.
+LN3: Presence of several lymph nodes in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal size about /// cm, R/O reactive or inflammatory hyperplasia, DDx: lymphoma, or nodal metastasis.
+LN4: Presence of multiple lymph nodes with variable size, some confluence and central necrosis in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal dimension about /// cm (craniocaudal), R/O nodal metastasis, DDx: infectious lymphadenitis, or lymphoma.
+LN5: Presence of multiple lymph nodes with variable size, some confluence and central necrosis in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal dimension about /// cm (craniocaudal), nodal metastasis considered.
+
+3. Others:
+Oropharynx: Unremarkable
+Oral cavity: Unremarkable / Limited film interpretation due to dental artifacts
+Hypopharynx: Unremarkable
+Parotid gland: Unremarkable
+Submandibular gland: Unremarkable
+Thyroid gland: Unremarkable
+
+Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation change.
+Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+
+IMPRESSION:
+Nasopharyngeal cancer, imaging staging T N. AJCC 7th ed.
+Nasopharyngeal mass, Imaging staging T N if nasopharyngeal cancer proved. AJCC 7th ed.
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; Oral-CT
+:O:oralct::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+CT scan of head and neck was performed with a multi-slice CT scanner:
+METHOD: (1) Non-contrast and (2) Contrast enhancement
+SCAN RANGE: Axial plane from the skull base to the low neck with 5-mm continuous scan slice thickness and coronal reconstruction
+CONTRAST MEDIUM: IV route, volume: 100 mL, rate: 1.0 mL/sec
+
+INDICATION: %MyOrder%
+
+PREVIOUS CT of the head and neck:
+
+FINDINGS:
+1. Primary tumor/Lesion status:
+Mass lesion, maximum dimension ----- cm, noted over ------.
+[T1 (<= 2 cm), T2 (2~4 cm), T3 (>4 cm)]
+Locoregional tumor extension/Lesion extension:
+[T4a] Tumor/mass invades adjacent structures (eg, through cortical bone[mandible or maxilla], into deep [extrinsic] muscle of the tongue [genioglossus, hyoglossus, palatoglossus, and styloglossus], maxillary sinus, skin of face).
+[T4b] Tumor/mass invades masticator space, pterygoid plates, or skull base and/or encases internal carotid artery.
+
+2. Regional lymph nodes:
+* right/left/bilateral level I, II, III, IV, V, VI, VII
+
+* right/left/bilateral
+submandibular and submental space (level I)
+carotid space (level II, III, IV)
+posterior cervical space (level V)
+anterior cervical space (level VI)
+superior mediastinal space (level VII)
+
+* right/left/bilateral level I > = 1.5cm: Nil, Yes, Necrosis
+* right/left/bilateral level II > = 1.5 cm: Nil, Yes, Necrosis
+* right/left/bilateral level III > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level IV > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level V > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level VI > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level VII > = 1cm: Nil, Yes, Necrosis
+
+Positive: right/left/bilateral, level-----, the maximal dimension about /// cm (short axis in axial plane), confluent dimension about /// cm (craniocaudal), Necrosis
+Equivocal: right/left/bilateral, level-----, the maximal dimension about /// cm (short axis in axial plane)
+Negative:
+
+[NX] Regional lymph nodes cannot be assessed
+[N0] No regional lymph node metastasis
+[N1] Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimension
+[N2] Metastasis in a single ipsilateral lymph node, larger than 3 cm but 6 cm or less in greatest dimension; or in multiple ipsilateral lymph nodes, none larger than 6 cm in greatest dimension; or in bilateral or contralateral lymph nodes, none larger than 6 cm in greatest dimension
+[N2a] Metastasis in single ipsilateral lymph node larger than 3 cm but 6 cm or less in greatest dimension
+[N2b] Metastasis in multiple ipsilateral lymph nodes, none larger than 6 cm in greatest dimension
+[N2c] Metastasis in bilateral or contralateral lymph nodes, none larger than 6 cm in greatest dimension
+[N3] Metastasis in a lymph node larger than 6 cm in greatest dimension
+
+LN0: No evidence of bulky lymph nodes in ----- carotid space and ---- posterior cervical space.
+LN1: Presence of small lymph nodes (less than 1cm) in bil. carotid space and bil. posterior cervical space.
+LN2: Presence of small lymph nodes in bil. carotid space and bil. posterior cervical space, the maximal size about 1 cm.
+LN3: Presence of several lymph nodes in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal size about /// cm, R/O reactive or inflammatory hyperplasia, DDx: lymphoma, or nodal metastasis.
+LN4: Presence of multiple lymph nodes with variable size, some confluence and central necrosis in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal dimension about /// cm (craniocaudal), R/O nodal metastasis, DDx: infectious lymphadenitis, or lymphoma.
+LN5: Presence of multiple lymph nodes with variable size, some confluence and central necrosis in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal dimension about /// cm (craniocaudal), nodal metastasis considered.
+
+3. Others:
+Nasopharynx: Unremarkable
+Oropharynx: Unremarkable
+Hypopharynx: Unremarkable
+Parotid gland: Unremarkable
+Submandibular gland: Unremarkable
+Thyroid gland: Unremarkable
+
+IMPRESSION:
+Oral cancer, image staging T N . AJCC 7th ed.
+Oral mass, image staging T N if oral cancer proved. AJCC 7th ed.
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; Oral-MR
+:O:oralmr::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+MRI of the skull base and neck was performed with a 1.5-T scanner:
+METHOD: Sagittal T1WI and T2WI,
+   Axial T1WI and T2WI with fat suppression,
+   Coronal T1WI and T2WI with fat suppression,
+   Gd-enhanced dynamic and conventional T1WI with fat suppression
+SCAN RANGE: From the skull base to the low neck
+CONTRAST MEDIUM: IV route, 0.1mmol/kg, rate: 2.0 mL/sec
+
+INDICATION: %MyOrder%
+
+PREVIOUS MRI of the skull base and neck:
+
+FINDINGS:
+1. Primary tumor/Lesion status:
+Mass lesion, maximum dimension ----- cm, noted over ------.
+[T1 (<= 2 cm), T2 (2~4 cm), T3 (>4 cm)]
+Locoregional tumor extension/Lesion extension:
+[T4a] Tumor/mass invades adjacent structures (eg, through cortical bone[mandible or maxilla], into deep [extrinsic] muscle of the tongue [genioglossus, hyoglossus, palatoglossus, and styloglossus], maxillary sinus, skin of face).
+[T4b] Tumor/mass invades masticator space, pterygoid plates, or skull base and/or encases internal carotid artery.
+
+2. Regional lymph nodes:
+* right/left/bilateral level I, II, III, IV, V, VI, VII
+
+* right/left/bilateral
+submandibular and submental space (level I)
+carotid space (level II, III, IV)
+posterior cervical space (level V)
+anterior cervical space (level VI)
+superior mediastinal space (level VII)
+
+* right/left/bilateral level I > = 1.5cm: Nil, Yes, Necrosis
+* right/left/bilateral level II > = 1.5 cm: Nil, Yes, Necrosis
+* right/left/bilateral level III > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level IV > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level V > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level VI > = 1cm: Nil, Yes, Necrosis
+* right/left/bilateral level VII > = 1cm: Nil, Yes, Necrosis
+
+Positive: right/left/bilateral, level-----, the maximal dimension about /// cm (short axis in axial plane), confluent dimension about /// cm (craniocaudal), Necrosis
+Equivocal: right/left/bilateral, level-----, the maximal dimension about /// cm (short axis in axial plane)
+Negative:
+
+[N0] No regional lymph node metastasis
+[N1] Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimension
+[N2] Metastasis in a single ipsilateral lymph node, larger than 3 cm but 6 cm or less in greatest dimension; or in multiple ipsilateral lymph nodes, none larger than 6 cm in greatest dimension; or in bilateral or contralateral lymph nodes, none larger than 6 cm in greatest dimension
+[N2a] Metastasis in single ipsilateral lymph node larger than 3 cm but 6 cm or less in greatest dimension
+[N2b] Metastasis in multiple ipsilateral lymph nodes, none larger than 6 cm in greatest dimension
+[N2c] Metastasis in bilateral or contralateral lymph nodes, none larger than 6 cm in greatest dimension
+[N3] Metastasis in a lymph node larger than 6 cm in greatest dimension
+
+LN0: No evidence of bulky lymph nodes in ----- carotid space and ---- posterior cervical space.
+LN1: Presence of small lymph nodes (less than 1cm) in bil. carotid space and bil. posterior cervical space.
+LN2: Presence of small lymph nodes in bil. carotid space and bil. posterior cervical space, the maximal size about 1 cm.
+LN3: Presence of several lymph nodes in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal size about /// cm, R/O reactive or inflammatory hyperplasia, DDx: lymphoma, or nodal metastasis.
+LN4: Presence of multiple lymph nodes with variable size, some confluence and central necrosis in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal dimension about /// cm (craniocaudal), R/O nodal metastasis, DDx: infectious lymphadenitis, or lymphoma.
+LN5: Presence of multiple lymph nodes with variable size, some confluence and central necrosis in bil./right/left carotid space and bil./right/left posterior cervical space (level --------) noted, the maximal dimension about /// cm (craniocaudal), nodal metastasis considered.
+
+3. Others:
+Nasopharynx: Unremarkable
+Oropharynx: Unremarkable
+Hypopharynx: Unremarkable
+Parotid gland: Unremarkable
+Submandibular gland: Unremarkable
+Thyroid gland: Unremarkable
+
+Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation change.
+Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+
+IMPRESSION:
+Oral cancer, image staging T N . AJCC 7th ed.
+Oral mass, image staging T N if oral cancer proved. AJCC 7th ed.
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; MRSPT1
+:O:mrspt1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+The MRI of the T-spine performed:
+Coronal T2WI with fat sat (localized)
+Sagittal T1, T2WI
+Axial T1WI and T2WI with fat sat
+Post-contrast, sagittal and axial T1WI:
+
+PREVIOUS MRI of T-spine: no
+
+FINDINGS:
+
+Post-contrast, sagittal and axial T1WI:
+1. --------: No definite spinal stenosis.
+2. --------: Presence of diffuse bulging/protrusion/herniation disk causing mild/moderate/severe spinal stenosis.
+3. --------: Presence of diffuse bulging/protrusion/herniation  disk combined with ligament flavum hypertrophy and facet joint degenerative causing mild/moderate/severe spinal stenosis.
+4. --------: Presence of -------- herniated of nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac.
+5. Presence of -------- DJD/spondylolytic type spondylolisthesis over ----------.
+6. Presence of narrowing of intervertebral foramen over --.
+7. No evidence of fracture of thoracic spine.
+8. Presence of fracture/subluxation over --------------.
+9. Presence of high signal within the spinal cord at -----level, indicating edema/gliosis/compression with cord signal change
+10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
+11. Presence of abnormal signal intensity involving the -----spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
+12. No evidence of abnormal signal intensity lesion and no evidence of abnormal enhanced in the spinal cord of T-spine.
+13. Presence of abnormal signal intensity mass lesion, extradural/intradural extramedullary/intramedullary location, size about ------- cm, over the ------- spine level
+14. Post-contrast studies show enhancement of the abnormal signal intensity lesions.
+
+IMPRESSION:
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; CTP
+:O:ctp::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+Noncontrast CT of the paranasal sinuses was performed with a multi-slice CT scanner:
+SCAN RANGE: axial plane of the paranasal sinuses with 2 mm continuous scan slice thickness and coronal reconstruction
+
+PREVIOUS CT SCAN of the paranasal sinuses: no
+
+FINDINGS:
+
+
+IMPRESSION:
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; CTO1
+:O:cto1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+Noncontrast CT scan of orbit performed with axial and coronal section, 2-2mm slice thickness showed:
+
+Previous CT of orbit: no
+
+FINDINGS:
+
+1. ---------- of fracture over --------------- orbital wall.
+2. Presence of ---------- orbital floor fracture, with rectus muscle/orbital fat herniation.
+3. Presence of high density foreign body noted over ----------
+4. No evidence/presence of bony fragment noted near optic canal region.
+5. Presence of ----------- orbital emphysema noted.
+
+IMPRESSION:
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; CTO2
+:O:cto2::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+Noncontrast CT scan and post contrast CT scan of the orbit performed with axial and coronal section, 2-2mm slice thickness showed:
+
+Previous CT of orbit: no
+
+FINDINGS:
+
+1. Presence of cystic/mass lesion, size about ---------- cm, over ----------.
+2. ----------- of enlargement of -------------- rectus muscle and expophthalmos noted, ------- of tendon insertion, thyroid related ophthalmophathy/orbital pseudotumor more in favor.
+3. No evidence of mass lesion over orbital, retro-ocular, sellar, suprasellar regions.
+
+IMPRESSION:
+
 SUGGESTION:
 )
   Paste(MyForm)
