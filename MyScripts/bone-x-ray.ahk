@@ -7,7 +7,7 @@
 :O:oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
 :O:oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
 :O:oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage II.
-:O:oak3::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, compatible with osteoarthrosis, stage III.
+:O:oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, compatible with osteoarthrosis, stage III.
 :O:spf::Presence of suprapatellar effusion.
 :O:patok::No lateral tilting or subluxation of bilateral patellae. {Enter}No PF joint space narrowing.
 :O:pats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
@@ -38,6 +38,15 @@
 :O:rdhs::s/p right dynamic hip screw fixation.
 :O:ldhs::s/p left dynamic hip screw fixation.
 :O:bdhs::s/p bilateral dynamic hip screw fixation.
+:O:jsn::joint space narrowing `
+:O:dsn::disc space narrowing `
+:O:mof::marginal osteophyte formation
+:O:hs::in healing stage.
+:O:wbu::with bone union.
+:O:wobu::without bone union.
+:O:wmu::with malunion.
+:O:wol::without loosening.
+:O:anb::accessory navicular bone.
 
 ; Multiline
 :O:flat::
