@@ -7,6 +7,57 @@
 :O:SUG::SUGGESTION:
 :O:imp2::Others as above descriptions.
 
+;; MRSPC1
+:O:mrspc1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+The MRI of the C-spine performed with
+Coronal T1WI (localizer)
+Sagittal TIWI, T2WI, gradient echo T2*WI,
+Axial view with gradient echo T2* weighted imaging
+Axial TIWI and T2WI
+Post-contrast, sagittal and axial T1WI:
+
+PREVIOUS MRI C-spine: no
+
+FINDINGS:
+
+No obvious significant spinal stenosis of the C-spine.
+
+No evidence of focal herniation of nucleus pulposis (HIVD) in the C-spine region noted.
+
+No evidence of abnormal signal intensity lesion within the spinal cord of the C-spine.
+
+No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the C-spine.
+
+
+
+1. --------: No definite spinal stenosis.
+2. --------: Presence of diffuse bulging/protrusion/herniation disk causing mild/moderate/severe spinal stenosis.
+3. --------: Presence of diffuse bulging/protrusion/herniation  disk combined with ligament flavum hypertrophy and facet joint degenerative causing mild/moderate/severe spinal stenosis.
+4. --------: Presence of -------- herniated of nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac.
+5. Presence of -------- DJD/spondylolytic type spondylolisthesis over ----------.
+6. Presence of narrowing of intervertebral foramen over ---.
+7. No evidence of fracture of cervical spine.
+8. Presence of fracture/subluxation over --------------.
+9. Presence of high signal within the spinal cord at -------- level, indicating edema/gliosis/compression with cord signal change
+10. Presence of infectious osteomylitis involving the --------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
+11. Presence of abnormal signal intensity involving the --------spine, and compression of the spinal cord at ---------level, R/O metastasis, myeloma, or lymphoma
+12. No evidence of abnormal signal intensity lesion and no evidence of abnormal enhanced lesion within the spinal cord of the C-spine
+13. Presence of abnormal signal intensity mass lesion, extradural/intradural extramedullary/intramedullary location, size about ---------cm, over the ---------spine level.
+14. Post contrast studies show enhancement of the abnormal signal intensity lesion.
+
+IMPRESSION:
+As the above descriptions.
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
 ;; MRSPC2
 :O:mrspc2::
   MyOrder := CopyOrder()
@@ -22,6 +73,16 @@ Axial view with gradient echo T2* weighted imaging showed:
 PREVIOUS MRI of C-spine: no
 
 FINDINGS:
+
+No obvious significant spinal stenosis of the C-spine.
+
+No evidence of focal herniation of nucleus pulposis (HIVD) in the C-spine region noted.
+
+No evidence of abnormal signal intensity lesion within the spinal cord of the C-spine.
+
+No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the C-spine.
+
+
 
 C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: No definite spinal stenosis.
 
@@ -78,10 +139,139 @@ Presence of several nodular lesions noted over the right side thyroid gland, rec
 11. Presence of abnormal signal intensity involving the ------ spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
 
 IMPRESSION:
+As the above descriptions.
+
 SUGGESTION:
 )
   Paste(MyForm)
 Return
+
+;; MRSPT1
+:O:mrspt1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+The MRI of the T-spine performed:
+Coronal T2WI with fat sat (localized)
+Sagittal T1, T2WI
+Axial T1WI and T2WI with fat sat
+Post-contrast, sagittal and axial T1WI:
+
+PREVIOUS MRI of T-spine: no
+
+FINDINGS:
+
+No evidence of compression fracture of the T-spine noted.
+
+No evidence of abnormal signal intensity tumor mass lesion involving the T-spine.
+
+No obvious significant spinal stenosis of the T-spine.
+
+No evidence of abnormal signal intensity lesion in the spinal canal of the T-spine.
+
+No evidence of abnormal signal intensity lesion over the spinal canal of the lower C-spine and T-spine region noted.
+
+Presence of benign fat content hemangioma noted over the T2 spine vertebral body, size about 1cm.
+
+No evidence of abnormal signal intensity lesion and no evidence of abnormal enhanced in the spinal cord of T-spine.
+
+Presence of diffuse bulging disc noted over the T12-L1 region, and causing mild spinal stenosis noted.
+
+
+
+Post-contrast, sagittal and axial T1WI:
+1. --------: No definite spinal stenosis.
+2. --------: Presence of diffuse bulging/protrusion/herniation disk causing mild/moderate/severe spinal stenosis.
+3. --------: Presence of diffuse bulging/protrusion/herniation  disk combined with ligament flavum hypertrophy and facet joint degenerative causing mild/moderate/severe spinal stenosis.
+4. --------: Presence of -------- herniated of nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac.
+5. Presence of -------- DJD/spondylolytic type spondylolisthesis over ----------.
+6. Presence of narrowing of intervertebral foramen over --.
+7. No evidence of fracture of thoracic spine.
+8. Presence of fracture/subluxation over --------------.
+9. Presence of high signal within the spinal cord at -----level, indicating edema/gliosis/compression with cord signal change
+10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
+11. Presence of abnormal signal intensity involving the -----spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
+12. No evidence of abnormal signal intensity lesion and no evidence of abnormal enhanced in the spinal cord of T-spine.
+13. Presence of abnormal signal intensity mass lesion, extradural/intradural extramedullary/intramedullary location, size about ------- cm, over the ------- spine level
+14. Post-contrast studies show enhancement of the abnormal signal intensity lesions.
+
+IMPRESSION:
+No evidence of abnormal signal intensity lesion over the spinal canal of the lower C-spine and T-spine region noted.
+
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; MRSPL1
+:O:mrspl1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+The MRI of the L-spine performed:
+Coronal T2WI with fat sat (localized)
+Sagittal T1, T2WI
+Axial T1WI and T2WI with fat sat
+Post-contrast, sagittal and axial T1WI:
+
+PREVIOUS MRI of L-spine: no
+
+FINDINGS:
+
+No significant spinal stenosis of the L-spine.
+
+Slightly bulging disc noted over the L4-5, and with mild indentation of anterior dural sac and with mild spinal stenosis noted.
+
+No evidence of abnormal signal intensity mass lesion over the spinal canal of the lower T-spine and L-spine region noted.
+
+Postcontrast study shows no evidence of abnormal enhancing lesion over the spinal canal of the lower T-spine and L-spine region noted.
+
+No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region noted.
+
+No evidence of signal intensity lesion over the spinal cord of the lower T-spine region noted.
+
+No evidence of intraspinal hematoma noted over the L-spine region noted.
+
+No evidence of abnormal signal intensity lesion noted over the conus medullaris region.
+
+Post contrast study shows no evidence of abnormal enhancing lesion noted over the cauda equina.
+
+
+
+
+1. --------: No definite spinal stenosis.
+2. --------: Presence of diffuse bulging/protrusion/herniation disk causing mild/moderate/severe spinal stenosis.
+3. --------: Presence of diffuse bulging/protrusion/herniation  disk combined with ligament flavum hypertrophy and facet joint degenerative causing mild/moderate/severe spinal stenosis.
+4. --------: Presence of -------- herniated of nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac.
+5. Presence of -------- DJD/spondylolytic type spondylolisthesis over ----------.
+6. Presence of narrowing of intervertebral foramen over --.
+7. No evidence of fracture of lumbar spine.
+8. Presence of fracture/subluxation over --------------.
+9. Presence of high signal within the spinal cord at ------ level, indicating edema/gliosis/compression with cord signal change
+10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
+11. Presence of abnormal signal intensity involving the ------- spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
+12. Presence of increased soft tissue over ------------ level, solid/marginal enhancement, post-operative epidural fibrosis/recurrent disc more in favor
+13. No evidence of abnormal signal intensity lesion and no evidence of abnormal enhanced lesion over the spinal canal of L-spine.
+14. Presence of abnormal signal intensity mass lesion, extradural/intradural extramedullary/intramedullary location, size about ---------- cm, over the --------- spine level.
+15. Post-contrast studies show enhancement of the abnormal signal lesions.
+
+IMPRESSION:
+No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region noted.
+
+No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.
+
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+
 
 ;; MRSPL2
 :O:mrspl2::
@@ -98,6 +288,27 @@ Axial T1WI and T2WI with fat sat:
 PREVIOUS MRI L-spine: no
 
 FINDINGS:
+
+No significant spinal stenosis of the L-spine.
+
+Slightly bulging disc noted over the L4-5, and with mild indentation of anterior dural sac and with mild spinal stenosis noted.
+
+No evidence of abnormal signal intensity mass lesion over the spinal canal of the lower T-spine and L-spine region noted.
+
+Postcontrast study shows no evidence of abnormal enhancing lesion over the spinal canal of the lower T-spine and L-spine region noted.
+
+No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region noted.
+
+No evidence of signal intensity lesion over the spinal cord of the lower T-spine region noted.
+
+No evidence of intraspinal hematoma noted over the L-spine region noted.
+
+No evidence of abnormal signal intensity lesion noted over the conus medullaris region.
+
+Post contrast study shows no evidence of abnormal enhancing lesion noted over the cauda equina.
+
+
+
 
 Presence of scoliosis of the L-spine, convex to left/right side.
 Rotatory scoliosis of L-spine, convex to left/right side.
@@ -168,6 +379,11 @@ Presence of benign hemangioma noted over the L2 spine vertebral body, size about
 
 
 IMPRESSION:
+No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region noted.
+
+No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.
+
+
 SUGGESTION:
 )
   Paste(MyForm)
@@ -940,6 +1156,225 @@ FINDINGS:
 
 IMPRESSION:
 
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; MRSE
+:O:mrse::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+MRI of the sella performed with Sagittal T1WI (localizer)
+Sagittal  T1WI and T2WI
+Coronal T1WI and T2WI
+Post contrast dynamic and conventional T1WI with Fat sat showed:
+
+PREVIOUS MRI of the sella: no
+
+FINDINGS:
+
+Pituitary gland height about 5 mm.
+
+No evidence of ectopic post pituitary lobe noted.
+
+No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
+
+No evidence of abnormal enhancing mass lesion noted over the suprasellar region noted.
+
+
+
+Pituitary gland height about 7 mm.
+
+No evidence of ectopic post pituitary lobe noted.
+
+No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
+
+No evidence of abnormal enhancing mass lesion noted over the suprasellar region noted.
+
+No evidence of hyposignal intensity nodule noted within the pituitary gland in the conventional and dynamic scan. Suggest correlate with prolatin level.
+
+1. Presence of enhanced cystic/mass lesion over sellar and suprasellar arer, size about---------cm.
+2. Pituitary gland height about--------mm.
+3. No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
+4. Presence of hyposignal intensity nodule over the right/left pituitary gland in the conventional/dynamic scan
+5. No evidence of hyposignal intensity nodule noted within the pituitary gland in the conventional and dynamic scan
+6. Suggest correlate with serum prolactin level.
+
+IMPRESSION:
+No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
+
+From the imaging finding and clinical history, compatible with pituitary microadenoma over the right side pituitary gland and S/P treatment.
+No obvious interval change as compared with previous last study.
+
+SUGGESTION:
+Check hormone profile.
+Suggest correlate with serum prolactin level.
+Suggest correlate with serum prolactin and other pituitary gland hormone level.
+)
+  Paste(MyForm)
+Return
+
+;; MRSE1
+:O:mrse1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+MRI of the sella performed with
+Sagittal T1WI (localizer)
+Sagittal T1WI and T2WI
+Coronal T1WI and T2WI
+Post contrast conventional T1WI with Fat sat showed:
+
+FINDINGS:
+
+1. Presence of enhanced cystic/mass lesion over sellar and suprasellar arer, size about---------cm.
+2. Pituitary gland height about--------mm.
+3. No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
+4. Presence of hyposignal intensity nodule over the right/left pituitary gland in the conventional/dynamic scan.
+5. No evidence of hyposignal intensity nodule noted within the pituitary gland in the conventional and dynamic scan
+IMPRESSION:
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; MRPLE
+:O:mrple::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+The MRI of the brachial plexus performed with neurovascular coil
+Coronal T1WI, T2WI with Fat Sat images
+Sagittal T1WI, T2 STIR images
+Coronal 3D FIESTA
+Axial T1WI and T2 STIR images:
+
+PREVIOUS MRI of C-spine and brachial plexus: no
+
+FINDINGS:
+
+No evidence of obvious high signal in the brachial plexus noted on T2WI and STIR images.
+No obvious traumatic traction avulsion pseudomeningocele noted over the C-spine region noted.
+Recommend correlate with the EMG and NCV studies.
+
+Post contrast study shows no obvious enhancing mass lesion over the brachial plexus region.
+
+Presence of bulging disc noted over C4-5, C5-6, C6-7, causing mild spinal stenosis.
+
+No obvious significant spinal stenosis of the C-spine.
+
+No evidence of focal herniation of nucleus pulposis (HIVD) in the C-spine region noted.
+
+
+
+1. Presence of high signal in the ----------of the right/left brachial plexus on T2WI and STIR images.
+2. No evidence of obvious high signal in the brachial plexus noted on T2WI and STIR images.
+3. Presence of soft tissue swelling/hematoma noted over----
+4. Presence of bulging/protusion/herniated disc noted over----------, causing mild/moderate/severe spinal stenosis.
+
+IMPRESSION:
+No obvious traumatic traction avulsion pseudomeningocele noted over the C-spine region noted.
+No evidence of obvious high signal in the brachial plexus noted on T2WI and STIR images.
+No obvious enhancing mass lesion over the brachial plexus region.
+
+SUGGESTION:
+Recommend correlate with the EMG and NCV studies.
+)
+  Paste(MyForm)
+Return
+
+
+;; MRO1
+:O:mro1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+MRI of the orbit performed with Sagittal T1WI (localizer)
+Axial T1WI and FSE T2WI with Fat sat
+Coronal T1WI and FSE T2WI with Fat sat
+Post contrast conventional T1WI with Fat sat showed:
+
+Previous MRI of orbit: none
+
+Findings:
+No evidence of abnormal signal intensity mass lesion over the bil. orbital retrobulbar regions noted.
+
+No obvious high signal intensity on T2WI over the bil. orbital retrobulbar optic nerves noted.
+
+Post contrast study shows no obvious enhancement noted over the bil. orbital retrobulbar optic nerves noted.
+
+No evidence of abnormal hyperintense lesion noted over the white matter and corpus callosum on T2WI and FLAIR noted, no MRI evidence of multiple sclerosis plaques.
+
+No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+
+The bilateral lateral ventricles showed symmetrical without dilatation.
+
+Post contrast study showed no abnormal enhancing lesion in the brain and no abnormal leptomeningeal enhancement noted.
+
+
+
+1. Presence of soft tissue mass, size about----------cm, noted over--------
+2. No evidence of bulky lymph nodes over ---------------- carotid space and ----------------- posterior triangle of submandibular and neck regions was noted.
+3. Presence of several/ multiple lymph nodes noted over --------------- carotid space and ---------------- posterior triangle of submandibular and neck regions, the biggest size about-------cm.
+4. Presence of lymphadenopathy over ------------- carotid space and ------------ posterior triangle of submandibular and neck regions was noted.
+
+IMPRESSION:
+No evidence of abnormal signal intensity mass lesion over the bil. orbital retrobulbar regions noted.
+No obvious high signal intensity on T2WI over the bil. orbital retrobulbar optic nerves noted.
+Post contrast study shows no obvious enhancement noted over the bil. orbital retrobulbar optic nerves noted.
+No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+No MRI evidence of multiple sclerosis plaques.
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; MRTUMORCP
+:O:mrtumorcp::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+The MR of the brain performed with Sagittal T1WI (localizer)
+Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
+Coronal T1WI, T2WI
+Diffusion-weighted Imaging (DWI)
+3D FIESTA with 0.8mm thin slice thickness focusing on the brain stem
+And post Gadolinium enhancement with axial and coronal T1 weighted image showed:
+SCAN RANGE: from the skull base to the vertex
+CONTRAST MEDIUM: IV route, 0.1mmol/kg
+
+PREVIOUS MRI of the brain: no
+
+FINDINGS:
+
+Postcontrast study shows no evidence of abnormal enhancing tumor mass lesion over the bil. C-P angle cistern region noted.
+
+No evidence of abnormal enhancing tumor mass lesion over the skull base and bil. CP angle cistern and bil. pre-pontine cistern region noted.
+
+Presence of small area high signal intensity on T2WI noted over the left side mastoid air sinus, rule out small effusion or poor pneumatization of left side mastoid air sinus.
+
+No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+
+The bilateral lateral ventricles showed symmetrical without dilatation.
+
+Post contrast study showed no abnormal enhancing lesion in the brain and no abnormal leptomeningeal enhancement noted.
+
+IMPRESSION:
+No evidence of abnormal signal intensity tumor mass lesion over the bil. C-P angle cistern region noted.
+
+No evidence of abnormal enhancing tumor mass lesion over the brain stem, skull base, bil. CP angle cistern and bil. pre-pontine cistern region noted.
 SUGGESTION:
 )
   Paste(MyForm)
