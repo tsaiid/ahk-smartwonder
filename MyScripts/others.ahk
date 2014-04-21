@@ -9,5 +9,7 @@
 :O:mao::moderate amount of `
 :O:ntd::nature to be determined.
 :O:po::Presence of `
+:O:h::however, `
+:O:r::residual `
 
 :O:fn::FOOTNOTE:{Enter}[{^}1]: `
