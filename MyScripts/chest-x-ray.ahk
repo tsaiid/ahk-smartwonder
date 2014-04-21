@@ -67,3 +67,4 @@
 :O:rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 :O:ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 :O:tta::Tortuosity of thoracic descending aorta.
+:O:bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
