@@ -3,6 +3,9 @@
 :O:nic::No obvious interval change as compared with previous study on .{Left}
 :O:nic0::no obvious interval change.
 :O:nic1::No obvious interval change as compared with previous study.
+:O:nip::No obvious improvement as compared with previous study on .{Left}
+:O:nip0::no obvious improvement.
+:O:nip1::No obvious improvement as compared with previous study.
 :O:pc::Mild progressive change as compared with previous study on .{Left}
 :O:pc0::progressive change.
 :O:pc1::Progressive change as compared with previous study.

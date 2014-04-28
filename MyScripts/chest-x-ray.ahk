@@ -20,7 +20,9 @@
 :O:elm::Exaggerated lung markings.
 :O:lop0::s/p instrument fixation of L-spine.
 :O:lple::Left costophrenic angle blunting, suspect pleural effusion or changes.
+:O:lple1::Left costophrenic angle blunting and diffuse ground glass opacity in left lung, suspect pleural effusion.
 :O:rple::Right costophrenic angle blunting, suspect pleural effusion or changes.
+:O:rple1::Right costophrenic angle blunting and diffuse ground glass opacity in right lung, suspect pleural effusion.
 :O:bple::Bilateral costophrenic angles blunting, suspect pleural effusion or changes.
 :O:p/ster::Post median sternotomy with wire fixation.
 :O:p/c::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
@@ -68,3 +70,5 @@
 :O:ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 :O:tta::Tortuosity of thoracic descending aorta.
 :O:bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
+:O:ilo::increased linear opacity `
+:O:ao::acinar opacity `
