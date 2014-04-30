@@ -1,4 +1,4 @@
-#IfWinExist ahk_class TImgViewPort
+#IfWinActive ahk_class TImgViewPort
 
 $^!p::
   CoordMode, Mouse, Screen
