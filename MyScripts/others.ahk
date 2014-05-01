@@ -11,5 +11,7 @@
 :O:po::Presence of `
 :O:h::however, `
 :O:r::residual `
+:O:w::with `
+:O:wo::without `
 
 :O:fn::FOOTNOTE:{Enter}[{^}1]: `

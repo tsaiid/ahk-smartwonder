@@ -7,7 +7,10 @@
 :O:oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
 :O:oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
 :O:oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage II.
+:O:oak2a::Joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage II.
 :O:oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, compatible with osteoarthrosis, stage III.
+:O:scc::subchondral cyst
+:O:scs::subchondral sclerosis
 :O:spf::Presence of suprapatellar effusion.
 :O:patok::No lateral tilting or subluxation of bilateral patellae. {Enter}No PF joint space narrowing.
 :O:pats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
@@ -42,11 +45,11 @@
 :O:dsn::disc space narrowing `
 :O:mof::marginal osteophyte formation
 :O:hs::in healing stage.
-:O:wbu::with bone union.
-:O:wobu::without bone union.
-:O:wmu::with malunion.
+:O:bu::bone union.
+:O:mu::malunion.
 :O:wol::without loosening.
 :O:anb::accessory navicular bone.
+:O:l6::Presence of L6 (lumbarization of S1).
 
 ; Multiline
 :O:flat::
@@ -117,6 +120,23 @@ Scoliosis :
    apex at:
    degree:
    rotation: ( +, - )
+)
+  Paste(MyForm)
+Return
+
+:O:lld::
+  MyForm =
+(
+Triple film of lower extremities in standing AP projection :
+  1. Evidence of leg length discrepancy :
+     Rt low limb measures _____ cm
+     Lt low limb measures _____ cm
+     LLD : ____ cm
+  2. No evidence of leg length discrepancy.
+
+  3. The angle between lower limb mechanical axis and tibial shaft axis:
+     Rt knee: ----- degrees varus/valgus
+     Lt knee: ----- degrees varus/valgus
 )
   Paste(MyForm)
 Return
