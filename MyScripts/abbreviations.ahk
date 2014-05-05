@@ -1,20 +1,8 @@
-:O:lap::lymphadenopathy `
+;; Chest
 :O:ggo::ground glass opacity `
 :O:ggos::ground glass opacities `
-:O:sup::superior `
-:O:inf::inferior `
-:O:lat::lateral `
-:O:med::medial `
 :O:pul::pulmonary `
-:O:gbs::gallbladder stone
-:O:neo::No evidence of `
 :O:tb::tuberculosis
-:O:ln::lymph node
-:O:met::metastasis
-:O:mets::metastases
-:O:pri::primary `
-:O:sec::secondary `
-:O:ckd::chronic kidney disease
 :O:asd::atrial septal defect `
 :O:vsd::ventricular septal defect `
 :O:mi::myocardial infarction `
@@ -23,11 +11,36 @@
 :O:rll::right lower lobe
 :O:lul::left upper lobe
 :O:lll::left lower lobe
+:O:ppm::permanent pacemaker
+
+;; General
+:O:ant::anterior `
+:O:post::posterior `
+:O:sup::superior `
+:O:inf::inferior `
+:O:lat::lateral `
+:O:med::medial `
+:O:pri::primary `
+:O:sec::secondary `
 :O:ned::no evidence of disease.
 :O:hx::history `
+
+;; Bone
+:O:pf::patellofemoral `
+:O:gbs::gallbladder stone
+:O:neo::No evidence of `
+:O:plf::posterolateral fusion mass
+
+;; Abdomen
+:O:ln::lymph node
+:O:lap::lymphadenopathy `
+:O:met::metastasis
+:O:mets::metastases
+:O:ckd::chronic kidney disease
 :O:bph::benign prostatic hyperplasia
 :O:sma::superior mesenteric artery
 :O:ima::inferior mesenteric artery
 :O:iud::intrauterine device
-:O:ppm::permanent pacemaker
+
+;; Neuro
 :O:ich::intracranial hemorrhage
