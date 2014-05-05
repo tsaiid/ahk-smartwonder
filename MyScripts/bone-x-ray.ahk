@@ -11,7 +11,7 @@
 :O:oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, compatible with osteoarthrosis, stage III.
 :O:scc::subchondral cyst
 :O:scs::subchondral sclerosis
-:O:spf::Presence of suprapatellar effusion.
+:O:spef::suprapatellar effusion
 :O:patok::No lateral tilting or subluxation of bilateral patellae. {Enter}No PF joint space narrowing.
 :O:pats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
 :O:patt::Mild lateral tilting of bilateral patellae, with mild PF joint space narrowing at lateral facet.
@@ -22,7 +22,7 @@
 :O:shok::No limitation in internal/external rotation of the shoulder.
 :O:p/csp::Post screws and plates fixation at L3~L6. {Enter}Post interbody cage placement at C3-4, C4-5, C5-6.{Up}{Left 5  }
 :O:p/lsp::Post laminectomy, transpedicular screws, rods fixation at L2~L5. {Enter}Post interbody cage placement at L2-3, L3-4.{Up}{Right 16}
-:O:spok::No disc space narrowing. No spondylolisthesis. No fracture.
+:O:spok::No disc space narrowing. {Enter}No spondylolisthesis. {Enter}No fracture.
 :O:oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 :O:calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
 :O:nabl::No active bone lesion.
@@ -137,6 +137,16 @@ Triple film of lower extremities in standing AP projection :
   3. The angle between lower limb mechanical axis and tibial shaft axis:
      Rt knee: ----- degrees varus/valgus
      Lt knee: ----- degrees varus/valgus
+)
+  Paste(MyForm)
+Return
+
+:O:lstv::
+  MyForm =
+(
+Lumbosacral Transitional Vertebrae, _ side, type Ia/IIa/IIIa.
+Lumbosacral Transitional Vertebrae, type Ib/IIb/IIIb.
+Lumbosacral Transitional Vertebrae, type IV.
 )
   Paste(MyForm)
 Return
