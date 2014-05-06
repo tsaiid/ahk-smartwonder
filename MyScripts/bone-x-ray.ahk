@@ -49,6 +49,7 @@
 :O:mu::malunion.
 :O:wol::without loosening.
 :O:anb::accessory navicular bone.
+:O:l4::Sacralization of L5 vertebra.
 :O:l6::Presence of L6 (lumbarization of S1).
 
 ; Multiline
