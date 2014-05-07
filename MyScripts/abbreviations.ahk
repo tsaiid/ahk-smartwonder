@@ -24,12 +24,14 @@
 :O:sec::secondary `
 :O:ned::no evidence of disease.
 :O:hx::history `
+:O:subq::subcutaneous `
 
 ;; Bone
 :O:pf::patellofemoral `
 :O:gbs::gallbladder stone
 :O:neo::No evidence of `
 :O:plf::posterolateral fusion mass
+:O:ddh::developmental dysplasia of the hip
 
 ;; Abdomen
 :O:ln::lymph node
