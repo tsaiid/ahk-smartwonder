@@ -117,6 +117,7 @@ return
   #Include MyScripts\esophagraphy.ahk
   #Include MyScripts\ugi-small-intestine.ahk
   #Include MyScripts\intravenous-pyelogram.ahk
+  #Include MyScripts\special.ahk
 #IfWinActive
 
 SetTitleMatchMode, 2
