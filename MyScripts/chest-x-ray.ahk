@@ -72,3 +72,5 @@
 :O:bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
 :O:ilo::increased linear opacity `
 :O:ao::acinar opacity `
+:O:ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+:O:rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
