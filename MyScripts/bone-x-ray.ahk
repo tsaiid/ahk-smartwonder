@@ -53,6 +53,7 @@
 :O:l6::Presence of L6 (lumbarization of S1).
 :O:sij::sacroiliac joint
 :O:sts::soft tissue swelling
+:O:sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
 
 ; Multiline
 :O:flat::
