@@ -139,7 +139,95 @@ SetTitleMatchMode, 2
 #IfWinActive ahk_group SmartWonder
 ;;; Select whole line and delete
 $^l::
-	Send {Home}+{End}
-	Send {Del}
+	;Send {Home}+{End}
+
+  ; check selected string
+  wb := WBGet()
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  ReportContent := tabIframe2.document.getElementsByName("ReportContent")[0]
+
+  ; get Caret
+  ;; ref: http://stackoverflow.com/a/3373056
+  textRange := tabIframe2.document.selection.createRange()
+
+  len := StrLen(ReportContent.value)
+  normalizedValue := ReportContent.value
+  StringReplace, normalizedValue, normalizedValue, `r`n, `n, All
+
+  textInputRange := ReportContent.createTextRange()
+  textInputRange.moveToBookmark(textRange.getBookmark())
+
+  endRange := ReportContent.createTextRange()
+  ;endRange.setEndPoint("EndToStart", textInputRange)
+  endRange.collapse(false)
+
+  ;a := endRange.text
+  ;MsgBox % a
+
+  if (textInputRange.compareEndPoints("StartToEnd", endRange) > -1) {
+    startPos := endPos := len
+  } else {
+    startPos := -textInputRange.moveStart("character", -len)
+    startPos += normalizedValue.slice(0, startPos).split("\n").length - 1
+
+    if (textInputRange.compareEndPoints("EndToEnd", endRange) > -1) {
+      endPos := len
+    } else {
+      endPos := -textInputRange.moveEnd("character", -len)
+      endPos += normalizedValue.slice(0, endPos).split("\n").length - 1
+    }
+  }
+
+  ; get current line number
+  textToCursor := normalizedValue
+  ;StringReplace, currLine, currLine, `r`n, ¢, All
+  StringLeft textToCursor, textToCursor, endPos
+  StringSplit, ary, textToCursor, `n
+  currLine := ary0
+  If (endPos = 0) {
+    currLine := 1
+  }
+
+  ; parse and delete current line
+  finalText := ""
+  StringSplit, ary, normalizedValue, `n
+  Loop %ary0%
+  {
+    If (A_Index != currLine) {
+      finalText .= ary%A_Index%
+      If (A_Index != ary0) {
+        finalText .= "`n"
+      }
+    } Else {
+      ;MsgBox % A_Index
+    }
+  }
+  ;MsgBox % ary.join("`n")
+  ;MsgBox % finalText
+  ReportContent.value := finalText
+
+
+;MsgBox % ReportContent.value
+;MsgBox % endPos
+
+  ;StringReplace, currLine, currLine, `n, ¢, All
+  ;StringSplit, ary, currLine, ¢
+
+  ;MsgBox % startPos
+  ;MsgBox % StrLen(currLine)
+
+  ;MsgBox % rc.text.length
+
+  ;selectedText := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.selection.createRange().htmlText
+
+  ;if (StrLen(selectedText) > 0) {
+  ;  Send {Del}
+  ;} Else {
+  ;  Send {BS}
+  ;}
+  ;MsgBox % selectedText
+
+
+
 return
 #IfWinActive
