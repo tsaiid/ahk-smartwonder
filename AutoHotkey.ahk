@@ -139,10 +139,10 @@ SetTitleMatchMode, 2
 #IfWinActive ahk_group SmartWonder
 ;;; Select whole line and delete
 $^l::
-	;Send {Home}+{End}
+  Send {Home}+{End}
 
-  ; check selected string
   wb := WBGet()
+
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   ReportContent := tabIframe2.document.getElementsByName("ReportContent")[0]
 
@@ -150,7 +150,7 @@ $^l::
   ;; ref: http://stackoverflow.com/a/3373056
   textRange := tabIframe2.document.selection.createRange()
 
-  len := StrLen(ReportContent.value)
+  totalLen := StrLen(ReportContent.value)
   normalizedValue := ReportContent.value
   StringReplace, normalizedValue, normalizedValue, `r`n, `n, All
 
@@ -158,76 +158,37 @@ $^l::
   textInputRange.moveToBookmark(textRange.getBookmark())
 
   endRange := ReportContent.createTextRange()
-  ;endRange.setEndPoint("EndToStart", textInputRange)
   endRange.collapse(false)
 
-  ;a := endRange.text
-  ;MsgBox % a
-
   if (textInputRange.compareEndPoints("StartToEnd", endRange) > -1) {
-    startPos := endPos := len
+    startPos := endPos := totalLen
   } else {
-    startPos := -textInputRange.moveStart("character", -len)
+    startPos := -textInputRange.moveStart("character", -totalLen)
     startPos += normalizedValue.slice(0, startPos).split("\n").length - 1
 
     if (textInputRange.compareEndPoints("EndToEnd", endRange) > -1) {
-      endPos := len
+      endPos := totalLen
     } else {
-      endPos := -textInputRange.moveEnd("character", -len)
+      endPos := -textInputRange.moveEnd("character", -totalLen)
       endPos += normalizedValue.slice(0, endPos).split("\n").length - 1
     }
   }
 
-  ; get current line number
-  textToCursor := normalizedValue
-  ;StringReplace, currLine, currLine, `r`n, ¢, All
-  StringLeft textToCursor, textToCursor, endPos
-  StringSplit, ary, textToCursor, `n
-  currLine := ary0
-  If (endPos = 0) {
-    currLine := 1
-  }
-
-  ; parse and delete current line
-  finalText := ""
-  StringSplit, ary, normalizedValue, `n
-  Loop %ary0%
-  {
-    If (A_Index != currLine) {
-      finalText .= ary%A_Index%
-      If (A_Index != ary0) {
-        finalText .= "`n"
-      }
+  ; delete line according to the selected text
+  If (StrLen(textRange.text) > 0) {
+    If (endPos < totalLen) {
+      Send {Del}
     } Else {
-      ;MsgBox % A_Index
+      Send {BS 2}
+      Send {Home}
+    }
+  } Else {
+    If (endPos < totalLen) {
+      Send {Del}
+    } else {
+      Send {BS}
+      Send {Home}
     }
   }
-  ;MsgBox % ary.join("`n")
-  ;MsgBox % finalText
-  ReportContent.value := finalText
-
-
-;MsgBox % ReportContent.value
-;MsgBox % endPos
-
-  ;StringReplace, currLine, currLine, `n, ¢, All
-  ;StringSplit, ary, currLine, ¢
-
-  ;MsgBox % startPos
-  ;MsgBox % StrLen(currLine)
-
-  ;MsgBox % rc.text.length
-
-  ;selectedText := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.selection.createRange().htmlText
-
-  ;if (StrLen(selectedText) > 0) {
-  ;  Send {Del}
-  ;} Else {
-  ;  Send {BS}
-  ;}
-  ;MsgBox % selectedText
-
-
-
 return
 #IfWinActive
