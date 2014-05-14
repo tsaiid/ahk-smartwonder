@@ -1,14 +1,12 @@
 ﻿; for debug
 
 $^7::
-  WinGet, test, ID, A
-  ;MsgBox % test
-  ;ID := DllCall("GetParent", UInt, WinExist("ahk_id" test)), ID := !ID ? WinExist("ahk_id" test) : ID
-  ID := DllCall("GetParent", UInt, WinExist("ahk_id" test))
-  WinGetClass, Class, ahk_id %id%
-  WinGetTitle, Title, ahk_id %id%
-  ;MsgBox,0, %ID%, % Title "`n" Class
-  ;MsgBox % WinExist("ahk_group SmartWonder")
+  wb := WBGet()
+
+  a := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.selection.createRange()
+  abc := a.htmlText
+
+  MsgBox % abc
 Return
 
 $^9::
