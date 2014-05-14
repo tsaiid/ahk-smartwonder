@@ -1,12 +1,53 @@
 ﻿; for debug
 
 $^7::
+  Send {Home}+{End}
+
   wb := WBGet()
 
-  a := wb.document.frames["frameWork"].document.frames["tabIframe2"].document.selection.createRange()
-  abc := a.htmlText
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  ReportContent := tabIframe2.document.getElementsByName("ReportContent")[0]
 
-  MsgBox % abc
+  ; get Caret
+  ;; ref: http://stackoverflow.com/a/3373056
+  textRange := tabIframe2.document.selection.createRange()
+
+  totalLen := StrLen(ReportContent.value)
+  normalizedValue := ReportContent.value
+  StringReplace, normalizedValue, normalizedValue, `r`n, `n, All
+
+  textInputRange := ReportContent.createTextRange()
+  textInputRange.moveToBookmark(textRange.getBookmark())
+
+  endRange := ReportContent.createTextRange()
+  endRange.collapse(false)
+
+  if (textInputRange.compareEndPoints("StartToEnd", endRange) > -1) {
+    startPos := endPos := totalLen
+  } else {
+    startPos := -textInputRange.moveStart("character", -totalLen)
+    startPos += normalizedValue.slice(0, startPos).split("\n").length - 1
+
+    if (textInputRange.compareEndPoints("EndToEnd", endRange) > -1) {
+      endPos := totalLen
+    } else {
+      endPos := -textInputRange.moveEnd("character", -totalLen)
+      endPos += normalizedValue.slice(0, endPos).split("\n").length - 1
+    }
+  }
+
+  If (StrLen(textRange.text) > 0) {
+    Send {Del}
+  } Else {
+    If (endPos < totalLen) {
+      Send {Del}
+    } else {
+      Send {BS}
+      Send {Home}
+    }
+  }
+
+  ;MsgBox % abc
 Return
 
 $^9::
