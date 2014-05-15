@@ -25,6 +25,7 @@
 :O:ned::no evidence of disease.
 :O:hx::history `
 :O:subq::subcutaneous `
+:O:afl::air-fluid level
 
 ;; Bone
 :O:pf::patellofemoral `

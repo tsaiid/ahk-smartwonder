@@ -24,4 +24,5 @@ Return
 :O:be-nt::- No visualization of the terminal ileum. The evaluation of the ileocecal valve and terminal ileum is limited.
 :O:be-s::- Some residual feces might limit the interpretation.
 :O:be-na::- Nonvisualization of the appendix. May be due to previous appendectomy.
+:O:be-na1::- Nonvisualization of the appendix. Suggest correlate with previous operation history.
 
