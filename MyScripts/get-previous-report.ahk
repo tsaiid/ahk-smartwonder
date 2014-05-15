@@ -14,16 +14,19 @@ $^0::
   currExamName := splittedTmpStr2
 
   ;; 參考用的 pattern
-  patternCXR := "i)chest (pa|ap|& kub)"
-  patternKUB := "i)kub"
+  patterns := {   CXR: "i)chest (pa|ap|& kub)"
+                , KUB: "i)kub" }
+
   ;; 分析目前為何種檢查
-  If RegExMatch(currExamName, patternCXR)
-    currPattern := patternCXR
-  Else If RegExMatch(currExamName, patternKUB)
-    currPattern := patternKUB
-  Else {
+  For type, pattern in patterns {
+    If RegExMatch(currExamName, pattern) {
+      currPattern := pattern
+      Break
+    }
+  }
+
+  If (currPattern = "") {
     MsgBox % "AHK-SmartWonder: Currently, only CXR and KUB are supported."
-    currPattern := ""
     Return
   }
 
