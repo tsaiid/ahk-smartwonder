@@ -3,6 +3,9 @@
 #IfWinActive ahk_group SmartWonder
 
 $^0::
+  ; use global variables to store previous exam date
+  global prevExamDate
+
   wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
