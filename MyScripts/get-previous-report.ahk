@@ -14,10 +14,35 @@ $^0::
   currExamName := splittedTmpStr2
 
   ;; 參考用的 pattern
-  patterns := {   CXR: "i)chest (pa|ap|& kub)"
-                , KUB: "i)kub" }
+  patterns := {   CXR:        "i)chest (pa|ap|& kub)"
+                , KUB:        "i)kub"
+                , AnkleRt:    "Ankle RT"
+                , AnkleLt:    "Ankle LT"
+                , KneeRt:     "Knee RT"
+                , KneeLt:     "Knee LT"
+                , LowerLegRt: "Lower leg RT including 2 joints"
+                , LowerLegLt: "Lower leg LT including 2 joints"
+                , FemurRt:    "Femur, RT"
+                , FemurLt:    "Femur, LT"
+                , WristRt:    "Wrist RT"
+                , WristLt:    "Wrist LT"
+                , ElbowRt:    "Elbow RT"
+                , ElbowLt:    "Elbow LT"
+                , HumerusRt:  "Humerus RT"
+                , HumerusLt:  "Humerus LT"
+                , ClavicleRt: "Clavicle RT"
+                , ClavicleLt: "Clavicle LT"
+                , ShoulderRt: "Shoulder RT"
+                , ShoulderLt: "Shoulder LT"
+                , THRRtHip:   "THR \+ RT hip"
+                , THRLtHip:   "THR \+ LT hip"
+                , THRAP:   "THR, AP view"
+                , PelvisAP:   "Pelvis AP view"
+                , PelvisInlet:  "Pelvis inlet view"
+                , PelvisOutlet: "Pelvis outlet view"  }
 
   ;; 分析目前為何種檢查
+  currPattern := ""
   For type, pattern in patterns {
     If RegExMatch(currExamName, pattern) {
       currPattern := pattern
@@ -26,7 +51,7 @@ $^0::
   }
 
   If (currPattern = "") {
-    MsgBox % "AHK-SmartWonder: Currently, only CXR and KUB are supported."
+    MsgBox % "AHK-SmartWonder: Currently, only CXR, KUB, and some Bone plain films are supported."
     Return
   }
 
