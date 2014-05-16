@@ -18,6 +18,9 @@ GroupAdd, SmartWonder, VGHKS-
 GroupAdd, SmartWonder, vghks-
 GroupAdd, SmartWonder, tedpc-
 
+; Global Variables
+#Include MyScripts\vars.ahk
+
 ; With Parameters
 #Include Lib\Hotstrings.ahk
 hotstrings("p/lsp(\d)(\d)\s", "plsp")
