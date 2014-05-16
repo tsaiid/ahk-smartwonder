@@ -27,6 +27,8 @@ $^0::
                 , LowerLegLt: "Lower leg LT including 2 joints"
                 , FemurRt:    "Femur, RT"
                 , FemurLt:    "Femur, LT"
+                , FingerRt:   "Finger\(s\) RT"
+                , FingerLt:   "Finger\(s\) LT"
                 , WristRt:    "Wrist RT"
                 , WristLt:    "Wrist LT"
                 , ElbowRt:    "Elbow RT"
