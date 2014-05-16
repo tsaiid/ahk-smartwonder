@@ -1,17 +1,9 @@
 ; Other plain films
 :O:cnic::The condition shows no obvious change as compared with previous study.
-:O:nic::No obvious interval change as compared with previous study on .{Left}
 :O:nic0::no obvious interval change.
-:O:nic1::No obvious interval change as compared with previous study.
-:O:nip::No obvious improvement as compared with previous study on .{Left}
 :O:nip0::no obvious improvement.
-:O:nip1::No obvious improvement as compared with previous study.
-:O:pc::Mild progressive change as compared with previous study on .{Left}
 :O:pc0::progressive change.
-:O:pc1::Progressive change as compared with previous study.
-:O:rc::Mild regressive change as compared with previous study on .{Left}
 :O:rc0::regressive change.
-:O:rc1::Mild regressive change as compared with previous study.
 :O:cc::Suggest clinical correlation.
 :O:cc0::clinical correlation
 :O:fe::Suggest further evaluation.
@@ -19,3 +11,37 @@
 :O:ccfu::Suggest clinical correlation and follow-up.
 :O:fufe::Suggest follow-up or further evaluation.
 :O:nbd::Nature to be determined.
+
+SplitDate(dateStr)
+{
+  Return RegExReplace(dateStr, "(\d{4})(\d{2})(\d{2})", "$1-$2-$3")
+}
+
+StringWithPrevExamDate(strTemplate)
+{
+  global prevExamDate
+
+  output := strTemplate
+  If (StrLen(prevExamDate)) {
+    output .= " on " . splitDate(prevExamDate)
+  }
+  output .= "."
+
+  Paste(output, 0)
+}
+
+:O:nic::
+  StringWithPrevExamDate("No obvious interval change as compared with previous study")
+Return
+
+:O:nip::
+  StringWithPrevExamDate("No obvious improvement as compared with previous study")
+Return
+
+:O:pc::
+  StringWithPrevExamDate("Progressive change as compared with previous study")
+Return
+
+:O:rc::
+  StringWithPrevExamDate("Regressive change as compared with previous study")
+Return
