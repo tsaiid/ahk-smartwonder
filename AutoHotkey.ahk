@@ -20,6 +20,9 @@ GroupAdd, SmartWonder, tedpc-
 
 ; Global Variables
 #Include MyScripts\vars.ahk
+
+; RegEx Hotstrings
+;; Bug: need to be included first ???
 #Include MyScripts\regex-hotstrings.ahk
 
 #Hotstring EndChars `t
