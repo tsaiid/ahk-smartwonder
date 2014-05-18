@@ -19,6 +19,8 @@ $^0::
   ;; 參考用的 pattern
   patterns := {   CXR:        "i)chest (pa|ap|& kub)"
                 , KUB:        "i)kub"
+                , ToeRt:      "Toe\(s\) RT"
+                , ToeLt:      "Toe\(s\) LT"
                 , AnkleRt:    "Ankle RT"
                 , AnkleLt:    "Ankle LT"
                 , KneeRt:     "Knee RT"
