@@ -66,13 +66,15 @@ GroupAdd, SmartWonder, tedpc-
 SetTitleMatchMode, 2
 
 #Include MyScripts\debug.ahk
-#Include MyScripts\selecting-tabs.ahk
-#Include MyScripts\get-previous-report.ahk
-#Include MyScripts\change-font.ahk
-#Include MyScripts\copy-order.ahk
-#Include MyScripts\toggle-position-sync.ahk
-#Include MyScripts\insert-patient-exam-info.ahk
-#Include MyScripts\convert-case.ahk
+
+; HotKeys
+#Include MyScripts\hotkey\selecting-tabs.ahk
+#Include MyScripts\hotkey\get-previous-report.ahk
+#Include MyScripts\hotkey\change-font.ahk
+#Include MyScripts\hotkey\copy-order.ahk
+#Include MyScripts\hotkey\toggle-position-sync.ahk
+#Include MyScripts\hotkey\insert-patient-exam-info.ahk
+#Include MyScripts\hotkey\convert-case.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
