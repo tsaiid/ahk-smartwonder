@@ -25,8 +25,10 @@ GroupAdd, SmartWonder, tedpc-
 ;; Bug: need to be included first ???
 #Include MyScripts\regex-hotstrings.ahk
 
+; Settings
 #Hotstring EndChars `t
 
+; External Libraries
 #Include Lib\WBGet.ahk
 #Include Lib\Paste.ahk
 
