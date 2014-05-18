@@ -74,22 +74,6 @@ plsp:
 	SendInput, %cageStr%
 Return
 
-#z::Run www.autohotkey.com
-
-^!n::
-IfWinExist Untitled - Notepad
-	WinActivate
-else
-	Run Notepad
-return
-
-; Note: From now on whenever you run AutoHotkey directly, this script
-; will be loaded.  So feel free to customize it to suit your needs.
-
-; Please read the QUICK-START TUTORIAL near the top of the help file.
-; It explains how to perform common automation tasks such as sending
-; keystrokes and mouse clicks.  It also explains more about hotkeys.
-
 #Hotstring EndChars `t
 
 #Include Lib\WBGet.ahk
