@@ -77,6 +77,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\toggle-position-sync.ahk
 #Include MyScripts\hotkey\insert-patient-exam-info.ahk
 #Include MyScripts\hotkey\convert-case.ahk
+#Include MyScripts\hotkey\renumber-selected-text.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
