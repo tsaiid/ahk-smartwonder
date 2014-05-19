@@ -12,6 +12,7 @@
 :O:scc::subchondral cyst
 :O:scs::subchondral sclerosis
 :O:spef::suprapatellar effusion
+:O:jef::joint effusion
 :O:patok::No lateral tilting or subluxation of bilateral patellae. {Enter}No PF joint space narrowing.
 :O:pats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
 :O:patt::Mild lateral tilting of bilateral patellae, with mild PF joint space narrowing at lateral facet.
