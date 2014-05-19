@@ -33,6 +33,10 @@
 :O:neo::No evidence of `
 :O:plf::posterolateral fusion mass
 :O:ddh::developmental dysplasia of the hip
+:O:mcl::medial collateral ligament
+:O:lcl::lateral collateral ligament
+:O:acl::anterior cruciate ligament
+:O:pcl::posterior cruciate ligament
 
 ;; Abdomen
 :O:ln::lymph node
