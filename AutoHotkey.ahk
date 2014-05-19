@@ -59,6 +59,8 @@ GroupAdd, SmartWonder, tedpc-
   #Include MyScripts\intravenous-pyelogram.ahk
   #Include MyScripts\special.ahk
 
+  #Include MyScripts\ms-mri.ahk
+
   #Include MyScripts\mri.ahk
 
   ;;; HotKeys
