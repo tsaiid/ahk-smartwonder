@@ -45,7 +45,7 @@ $^!n::
       ;MsgBox, %A_Index%. %A_LoopField%
     }
 
-    Paste(finalText)
+    Paste(finalText, 0)
   }
 Return
 #IfWinActive
