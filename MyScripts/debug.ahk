@@ -1,7 +1,7 @@
 ﻿; for debug
 
 $^7::
-  Send {Home}+{End}
+  ;Send {Home}+{End}
 
   wb := WBGet()
 
@@ -26,31 +26,152 @@ $^7::
     startPos := endPos := totalLen
   } else {
     startPos := -textInputRange.moveStart("character", -totalLen)
-    startPos += normalizedValue.slice(0, startPos).split("\n").length - 1
-
     if (textInputRange.compareEndPoints("EndToEnd", endRange) > -1) {
       endPos := totalLen
     } else {
       endPos := -textInputRange.moveEnd("character", -totalLen)
-      endPos += normalizedValue.slice(0, endPos).split("\n").length - 1
     }
   }
 
-  If (StrLen(textRange.text) > 0) {
-    Send {Del}
+  ; special condition, at the beginning
+  strAry := Array()
+  StringLeft, leftStr, normalizedValue, startPos
+  StringSplit, strAry, leftStr, `n
+  If (startPos) {
+    startLine := strAry[0]
+    startLineOffset := StrLen(strAry[startLine])
   } Else {
-    If (endPos < totalLen) {
-      Send {Del}
-    } else {
-      Send {BS}
-      Send {Home}
-    }
+    startLine := 1
+    startLineOffset := 0
   }
 
-  ;MsgBox % abc
+  strAry := Array()
+  StringLeft, leftStr, normalizedValue, endPos
+  StringSplit, strAry, leftStr, `n
+  StringSplit, norAry, normalizedValue, `n
+  If (endPos) {
+    endLine := strAry[0]
+  } Else {
+    endLine := 1
+  }
+
+  If (StrLen(strAry[endLine]) = 0 && endLine > 1 && endLine > startLine) {
+    isEndNewLine := 1
+    endLine -= 1  ; 若最後一個字元是 \n 會多算一行
+  }
+  endLineOffset := StrLen(norAry[endLine]) - StrLen(strAry[endLine])
+
+  norLineText := norAry%endLine%
+  norLineTextLen := StrLen(norAry%endLine%)
+  endLineText := strAry[endLine]
+  ;MsgBox, nor: %norLineText%
+  ;MsgBox, start: %startLine%, end: %endLine%
+  ;MsgBox, start: %startLineOffset%, end: %endLineOffset%
+
+  textRange.moveStart("character", -startLineOffset)
+  textRange.moveEnd("character", endLineOffset)
+  ;Sleep 300   ; seems moveStart and moveEnd need some delay to work!
+  ;final := textRange.text
+;  MsgBox % final
+;  Return
+
+
+  ; numbering the selected text
+  selectedText := textRange.text
+  If (StrLen(selectedText) > 0) {
+    ;MsgBox, "%selectedText%"
+    ;finalText := textInputRange.text
+    ;finalText := ""
+    ;Loop, Parse, normalizedValue, `n
+    ;{
+    ;  If (A_Index >= startLine && A_Index <= endLine) {
+    ;    currNo := A_Index - startLine + 1
+    ;    finalText .= currNo . ". " . RegExReplace(A_LoopField, "^\d+\.(\s*)(.*)", "$2")
+    ;    ;MsgBox, %A_Index%. %A_LoopField%
+    ;  }
+    ;}
+    finalText := ""
+    currLineNo := 0
+    Loop, Parse, normalizedValue, `n
+    {
+      If (A_Index >= startLine && A_Index <= endLine) {
+        ;MsgBox, "%A_Index%"
+        If (!RegExMatch(A_LoopField, "^\s*$"))
+          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^\d+\.(\s*)(.*)", "$2") . "`n"
+        Else
+          finalText .= A_LoopField . "`n"
+      ;MsgBox, %A_Index%. %A_LoopField%
+      }
+    }
+    If (isEndNewLine){
+      ;finalText .= "`n"
+      ;MsgBox, newline end
+    }
+
+    ;MsgBox % finalText
+    textRange.text := finalText
+  } Else {
+    ;MsgBox, No selection?! startPos: %startPos%, endPos: %endPos%, startLine: %startLine%, endLine: %endLine%, slOff: %startLineOffset%, elOff: %endLineOffset%, norLineText: %norLineText%, endLineText: %endLineText%
+    MsgBox, leftStr: %leftStr%, %strAry0%, %strAry1%
+  }
+
+  ;MsgBox, start: %startPos%, end: %endPos%
 Return
 
+CheckHotstrings()
+{
+  global Hotstrings
+  Loop, read, %A_WorkingDir%\MyScripts\chest-x-ray.ahk
+  Gui, Hotstrings:New
+  Gui, Hotstrings:+Resize
+  Gui, Hotstrings:Add, ListView, vHotstrings, Name|Description
+  Gui, Hotstrings:Default
+  Loop, read, %A_WorkingDir%\MyScripts\chest-x-ray.ahk
+  {
+    If (SubStr(A_LoopReadLine, 1, 1) = ":")
+    {
+      RegExMatch(A_LoopReadLine, ":(.*)::", Hotstring, 2)
+      RegExMatch(A_LoopReadLine, ":.*::(.*)", Description, 2)
+      StringTrimLeft, Description, Description, 1
+      StringTrimLeft, Hotstring, Hotstring, 1
+      StringTrimRight, Hotstring, Hotstring, 2
+    }
+    If Hotstring != %Previoushotstring%
+      If Hotstring !=
+        LV_Add("", Hotstring, Description)
+    Previoushotstring := Hotstring
+    Lv_ModifyCol()
+  }
+  Gui, Hotstrings:Show, w560 h320, Hotstrings
+  return
+
+  HotstringsGuiClose:
+  HotstringsGuiEscape:
+  Gui Destroy
+  return
+
+  HotstringsGuiSize:
+  WinGetPos, , , width, height
+  w := width*0.85
+  h := height*0.85
+  GuiControl, Move, Hotstrings, w%w% h%h%
+  return
+}
+
 $^9::
+  wb := WBGet()
+
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  ReportContent := tabIframe2.document.getElementsByName("ReportContent")[0]
+
+  ; get Caret
+  ;; ref: http://stackoverflow.com/a/3373056
+  textRange := tabIframe2.document.selection.createRange()
+  a := textRange.text
+
+  MsgBox, "%a%"
+
+  ;MsgBox % WonderID
   ;; get current exam name
   ;RegExMatch(str, "(.+) : (.+)", splitted)
   ;currExam := splitted2
@@ -201,3 +322,18 @@ $^!z::
   window.execScript(myL)
 
 Return
+
+; Ctrl + Alt + Win + L
+; Login to SmartWonder
+;#IfWinActive ahk_class tedpc
+^!#l::
+  wb := WBGet()
+
+  WonderID := wb.document.getElementsByName("WonderID")[0]
+  WonderID.value := "4320"
+  WonderPassword := wb.document.getElementsByName("WonderPassword")[0]
+  WonderPassword.value := "RD4320"
+  LoginImg := wb.document.getElementsByName("login")[0]
+  LoginImg.click()
+Return
+;#IfWinActive
