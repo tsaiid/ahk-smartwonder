@@ -29,13 +29,15 @@ $^l::
     startPos := endPos := totalLen
   } else {
     startPos := -textInputRange.moveStart("character", -totalLen)
-    startPos += normalizedValue.slice(0, startPos).split("\n").length - 1
+    ;startPos += normalizedValue.slice(0, startPos).split("\n").length - 1
+    ;; seems no effect
 
     if (textInputRange.compareEndPoints("EndToEnd", endRange) > -1) {
       endPos := totalLen
     } else {
       endPos := -textInputRange.moveEnd("character", -totalLen)
-      endPos += normalizedValue.slice(0, endPos).split("\n").length - 1
+      ;endPos += normalizedValue.slice(0, endPos).split("\n").length - 1
+      ;; seems no effect
     }
   }
 
