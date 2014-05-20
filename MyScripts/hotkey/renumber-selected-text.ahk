@@ -77,7 +77,7 @@ $^!n::
     {
       If (A_Index >= startLine && A_Index <= endLine) {
         If (!RegExMatch(A_LoopField, "^\s*$"))
-          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^\d+\.(\s*)(.*)", "$2")
+          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*]))(\s*)(.*)", "$6")
         Else
           finalText .= A_LoopField
 
