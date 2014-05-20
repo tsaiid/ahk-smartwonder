@@ -27,7 +27,6 @@ $^!n::
     startPos := endPos := totalLen
   } else {
     startPos := -textInputRange.moveStart("character", -totalLen)
-
     if (textInputRange.compareEndPoints("EndToEnd", endRange) > -1) {
       endPos := totalLen
     } else {
@@ -35,17 +34,64 @@ $^!n::
     }
   }
 
-  ; renumbering the selected text
-  If (StrLen(textRange.text) > 0) {
-    selectedText := textRange.text
+  StringLeft, leftStr, normalizedValue, startPos
+  StringSplit, strAry, leftStr, `n
+  If (startPos) {
+    startLine := strAry0
+    startLineOffset := StrLen(strAry%startLine%)
+  } Else {  ; special condition, at the beginning: startPos == 0
+    startLine := 1
+    startLineOffset := 0
+  }
+
+  strAry1 := "" ; strange hack. traditional array do not GC ?
+  StringLeft, leftStr, normalizedValue, endPos
+  StringSplit, strAry, leftStr, `n
+  StringSplit, norAry, normalizedValue, `n
+  If (endPos) {
+    endLine := strAry0
+  } Else {  ; special condition, at the beginning and no selection: endPos == 0
+    endLine := 1
+  }
+
+  If (StrLen(strAry%endLine%) = 0 && endLine > 1 && endLine > startLine) {
+    isEndNewLine := 1
+    endLine -= 1  ; 若最後一個字元是 \n 會多算一行
+  }
+  endLineOffset := StrLen(norAry%endLine%) - StrLen(strAry%endLine%)
+
+  norLineText := norAry%endLine%
+  norLineTextLen := StrLen(norAry%endLine%)
+  endLineText := strAry%endLine%
+
+  textRange.moveStart("character", -startLineOffset)
+  textRange.moveEnd("character", endLineOffset)
+
+  ; numbering the selected text
+  selectedText := textRange.text
+  If (StrLen(selectedText) > 0) {
     finalText := ""
-    Loop, Parse, selectedText, `n
+    currLineNo := 0
+    Loop, Parse, normalizedValue, `n
     {
-      finalText .= A_Index . ". " . RegExReplace(A_LoopField, "^\d+\.(\s*)(.*)", "$2")
-      ;MsgBox, %A_Index%. %A_LoopField%
+      If (A_Index >= startLine && A_Index <= endLine) {
+        If (!RegExMatch(A_LoopField, "^\s*$"))
+          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^\d+\.(\s*)(.*)", "$2")
+        Else
+          finalText .= A_LoopField
+
+        If (A_Index < endLine)
+          finalText .= "`n"
+      }
+    }
+    If (isEndNewLine){
+      finalText .= "`n"
     }
 
-    Paste(finalText, 0)
+    textRange.text := finalText
+  } Else {
+    ; No selection. Do nothing.
   }
+
 Return
 #IfWinActive
