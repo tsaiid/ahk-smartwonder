@@ -54,6 +54,7 @@ $^!n::
     endLine := 1
   }
 
+  isEndNewLine := 0 ; strange hack. Variable do not GC ?
   If (StrLen(strAry%endLine%) = 0 && endLine > 1 && endLine > startLine) {
     isEndNewLine := 1
     endLine -= 1  ; 若最後一個字元是 \n 會多算一行
