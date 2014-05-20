@@ -38,32 +38,32 @@ $^7::
   StringLeft, leftStr, normalizedValue, startPos
   StringSplit, strAry, leftStr, `n
   If (startPos) {
-    startLine := strAry[0]
-    startLineOffset := StrLen(strAry[startLine])
+    startLine := strAry0
+    startLineOffset := StrLen(strAry%startLine%)
   } Else {
     startLine := 1
     startLineOffset := 0
   }
 
-  strAry := Array()
+  strAry1 := "" ; strange hack.
   StringLeft, leftStr, normalizedValue, endPos
   StringSplit, strAry, leftStr, `n
   StringSplit, norAry, normalizedValue, `n
   If (endPos) {
-    endLine := strAry[0]
+    endLine := strAry0
   } Else {
     endLine := 1
   }
 
-  If (StrLen(strAry[endLine]) = 0 && endLine > 1 && endLine > startLine) {
+  If (StrLen(strAry%endLine%) = 0 && endLine > 1 && endLine > startLine) {
     isEndNewLine := 1
     endLine -= 1  ; 若最後一個字元是 \n 會多算一行
   }
-  endLineOffset := StrLen(norAry[endLine]) - StrLen(strAry[endLine])
+  endLineOffset := StrLen(norAry%endLine%) - StrLen(strAry%endLine%)
 
   norLineText := norAry%endLine%
   norLineTextLen := StrLen(norAry%endLine%)
-  endLineText := strAry[endLine]
+  endLineText := strAry%endLine%
   ;MsgBox, nor: %norLineText%
   ;MsgBox, start: %startLine%, end: %endLine%
   ;MsgBox, start: %startLineOffset%, end: %endLineOffset%
@@ -97,9 +97,12 @@ $^7::
       If (A_Index >= startLine && A_Index <= endLine) {
         ;MsgBox, "%A_Index%"
         If (!RegExMatch(A_LoopField, "^\s*$"))
-          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^\d+\.(\s*)(.*)", "$2") . "`n"
+          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^\d+\.(\s*)(.*)", "$2")
         Else
-          finalText .= A_LoopField . "`n"
+          finalText .= A_LoopField
+
+        If (A_Index < endLine)
+          finalText .= "`n"
       ;MsgBox, %A_Index%. %A_LoopField%
       }
     }
@@ -109,10 +112,11 @@ $^7::
     }
 
     ;MsgBox % finalText
+    ;MsgBox, startPos: %startPos%, endPos: %endPos%, startLine: %startLine%, endLine: %endLine%, slOff: %startLineOffset%, elOff: %endLineOffset%, isEndNewLine: %isEndNewLine%
     textRange.text := finalText
   } Else {
     ;MsgBox, No selection?! startPos: %startPos%, endPos: %endPos%, startLine: %startLine%, endLine: %endLine%, slOff: %startLineOffset%, elOff: %endLineOffset%, norLineText: %norLineText%, endLineText: %endLineText%
-    MsgBox, leftStr: %leftStr%, %strAry0%, %strAry1%
+    ;MsgBox, leftStr: %leftStr%, %strAry0%, %strAry1%
   }
 
   ;MsgBox, start: %startPos%, end: %endPos%
@@ -167,7 +171,7 @@ $^9::
   ; get Caret
   ;; ref: http://stackoverflow.com/a/3373056
   textRange := tabIframe2.document.selection.createRange()
-  a := textRange.text
+  a := tabIframe2.document.getSelection()
 
   MsgBox, "%a%"
 
