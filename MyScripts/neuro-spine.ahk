@@ -217,6 +217,63 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
+;; MRSPT
+:O:mrspt::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+The MRI of the T-spine performed:
+Coronal T2WI with fat sat (localized)
+Sagittal TI, T2WI
+Axial T1WI and T2WI with fat sat:
+
+PREVIOUS MRI of T-spine: no
+
+FINDINGS:
+
+No evidence of compression fracture of the T-spine noted.
+
+No evidence of abnormal signal intensity tumor mass lesion involving the T-spine.
+
+No obvious significant spinal stenosis of the T-spine.
+
+No evidence of abnormal signal intensity lesion in the spinal canal of the T-spine.
+
+No evidence of abnormal signal intensity lesion over the spinal canal of the lower C-spine and T-spine region noted.
+
+Presence of benign fat content hemangioma noted over the T2 spine vertebral body, size about 1cm.
+
+No evidence of abnormal signal intensity lesion and no evidence of abnormal enhanced in the spinal cord of T-spine.
+
+Presence of diffuse bulging disc noted over the T12-L1 region, and causing mild spinal stenosis noted.
+
+
+
+1. --------: No definite spinal stenosis.
+2. --------: Presence of diffuse bulging/protrusion/herniation disk causing mild/moderate/severe spinal stenosis.
+3. --------: Presence of diffuse bulging/protrusion/herniation  disk combined with ligament flavum hypertrophy and facet joint degenerative causing mild/moderate/severe spinal stenosis.
+4. --------: Presence of -------- herniated of nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac.
+5. Presence of -------- DJD/spondylolytic type spondylolisthesis over ----------.
+6. Presence of narrowing of intervertebral foramen over --.
+7. No evidence of fracture of thoracic spine.
+8. Presence of fracture/subluxation over --------------.
+9. Presence of high signal within the spinal cord at ------ level, indicating edema/gliosis/compression with cord signal change
+10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
+11. Presence of abnormal signal intensity involving the ------spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
+12. No evidence of abnormal signal intensity lesion in the spinal cord of T-spine.
+13. Presence of abnormal signal intensity mass lesion, extradural/intradural extramedullary/intramedullary location, size about ------ cm, over the ------- spine level.
+14. Post-contrast studies show enhancement of the abnormal signal intensity lesions.
+
+IMPRESSION:
+No evidence of abnormal signal intensity lesion over the spinal canal of the lower C-spine and T-spine region noted.
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
 ;; MRSPT1
 :O:mrspt1::
   MyOrder := CopyOrder()
@@ -270,7 +327,6 @@ Post-contrast, sagittal and axial T1WI:
 
 IMPRESSION:
 No evidence of abnormal signal intensity lesion over the spinal canal of the lower C-spine and T-spine region noted.
-
 
 SUGGESTION:
 )
@@ -335,7 +391,6 @@ IMPRESSION:
 No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region noted.
 
 No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.
-
 
 SUGGESTION:
 )
@@ -453,7 +508,6 @@ IMPRESSION:
 No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region noted.
 
 No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.
-
 
 SUGGESTION:
 )

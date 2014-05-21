@@ -114,6 +114,9 @@ IMPRESSION:
 2. COM with cholesteatoma, ----------.
 3. COM with cholesteatoma or granulation tissue, ---------.
 4. Mastoiditis, ----------.
+
+SUGGESTION:
+Suggest clinical correlation and follow up.
 )
   Paste(MyForm)
 Return
