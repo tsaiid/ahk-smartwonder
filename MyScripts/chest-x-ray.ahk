@@ -74,3 +74,4 @@
 :O:ao::acinar opacity `
 :O:ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 :O:rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+:O:id::ill-defined `

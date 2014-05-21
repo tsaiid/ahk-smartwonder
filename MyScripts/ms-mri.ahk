@@ -2,6 +2,8 @@
 
 ;; Hotstrings
 :O:mrkok::The anterior cruciate ligament, posterior cruciate ligament, medial collateral ligament, lateral collateral ligament, medial meniscus, and lateral meniscus are preserved.
+:O:ftt::full-thickness tear `
+:O:ptt::partial-thickness tear `
 
 ;; MRI of Knee
 :O:mrk::
