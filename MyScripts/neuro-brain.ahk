@@ -103,6 +103,61 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
+;; CT3D
+:O:ct3d::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+Noncontrast CT scan of the face and skull, with thin slice 2 mm, and post reconstruction 3D display.
+
+COMPARISON:
+Applicable previous 3D-CT of face: no
+
+FINDINGS:
+
+1. Presence of fracture over anterior/posterior wall of ------- maxillary sinus.
+2. Presence of fracture over ---------- wall of right/left/bilateral orbit, with rectus muscle/orbital fat herniation.
+3. Presence of fracture over right/left/bilateral zygoma/zygomatic arch.
+4. Presence of fracture over --------- mandible.
+5. No evidence of fracture of the orbit/cheek.
+6. Presence of hematoma over ----------
+7. Presence of right/left/bilateral neck emphysema/soft tissue swelling.
+
+On endotracheal tube.
+
+Presence of fracture over bilateral lateral orbital bony wall and orbital floor, bilateral zygoma and zygoma arch.
+
+Presence of displaced fracture over anterior and posterior walls of bilateral maxillary sinuses.
+
+Presence of fracture over maxilla, alveolar process, and teeth rupture.
+
+Presence of fracture over nasal bone and pterygoid process bone.
+
+Presence of displaced fracture over mandible body.
+
+Presence of displaced fracture in the right coronoid process, bilateral condylar head and subluxation or dislocation of bilateral T-M joint.
+
+Hematoma in nasal cavity, bil. ethmoid, bil. sphenoid and bil. maxillary sinus noted.
+
+Presence of bilateral cheek soft tissue swelling, hematoma and subcutaneous emphysema.
+
+Presence of scalp soft tissue swelling and hematoma.
+
+Presence of bilateral periorbital region soft tissue swelling and hematoma.
+
+Presence of bilateral orbital emphysema noted.
+
+IMPRESSION:
+As the above description.
+
+SUGGESTION:
+Suggest clinical correlation and follow up.
+)
+  Paste(MyForm)
+Return
+
 ;; MRICVA
 :O:mricva::
   MyOrder := CopyOrder()
