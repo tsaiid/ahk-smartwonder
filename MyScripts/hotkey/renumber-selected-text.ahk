@@ -76,13 +76,17 @@ $^!n::
     Loop, Parse, normalizedValue, `n
     {
       If (A_Index >= startLine && A_Index <= endLine) {
-        If (!RegExMatch(A_LoopField, "^\s*$"))
+        If (!RegExMatch(A_LoopField, "^\s*$")) {
           finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*]))(\s*)(.*)", "$6")
-        Else
-          finalText .= A_LoopField
 
-        If (A_Index < endLine)
-          finalText .= "`n"
+          If (A_Index < endLine)
+            finalText .= "`n"
+        }
+        Else {
+          ; if all line is empty, ignore it, and do not append an \n
+          ; finalText .= A_LoopField
+        }
+
       }
     }
     If (isEndNewLine){
