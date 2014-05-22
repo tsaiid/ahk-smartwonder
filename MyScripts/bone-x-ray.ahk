@@ -21,8 +21,8 @@
 :O:acrok::No lateral downsloping or hooking of the acromion.
 :O:acrsp::Presence of subacromial spur.
 :O:shok::No limitation in internal/external rotation of the shoulder.
-:O:p/csp::Post screws and plates fixation at L3~L6. {Enter}Post interbody cage placement at C3-4, C4-5, C5-6.{Up}{Left 5  }
-:O:p/lsp::Post laminectomy, transpedicular screws, rods fixation at L2~L5. {Enter}Post interbody cage placement at L2-3, L3-4.{Up}{Right 16}
+:O:pcsp::Post screws and plates fixation at L3~L6. {Enter}Post interbody cage placement at C3-4, C4-5, C5-6.{Up}{Left 5  }
+:O:plsp::Post instrment fixation at lumbar spine.
 :O:spok::No disc space narrowing. {Enter}No spondylolisthesis. {Enter}No fracture.
 :O:oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 :O:calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.

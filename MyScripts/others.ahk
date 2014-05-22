@@ -8,7 +8,7 @@
 :O:sao::small amount of `
 :O:mao::moderate amount of `
 :O:ntd::nature to be determined.
-:O:po::presence of `
+:O:p::presence of `
 :O:h::however, `
 :O:r::residual `
 :O:w::with `

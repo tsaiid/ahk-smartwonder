@@ -1,6 +1,6 @@
 ; My RegEx HotStrings
 #Include Lib\Hotstrings.ahk
-hotstrings("p/lsp(\d)(\d)\s", "plsp")
+hotstrings("plsp(\d)(\d)\s", "plsp")
 Return
 
 plsp:

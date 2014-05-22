@@ -49,7 +49,8 @@
 :O:stl::Scoliosis of T-spine with left lateral convexity.
 :O:str::Scoliosis of T-spine with right lateral convexity.
 :O:pi::Ill-defined pulmonary infiltration over `
-:O:po::Patch opacity over
+:O:po::patch opacity
+:O:no::nodular opacity
 :O:ip::inflammatory process.
 :O:abg::air-bronchogram
 :O:blf::bilateral lung fields
