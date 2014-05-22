@@ -36,7 +36,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include MyScripts\lib\frame-wait.ahk
 
 #IfWinActive ahk_group SmartWonder
-  #Include MyScripts\others.ahk
+  ;;; HotStrings
   #Include MyScripts\abbreviations.ahk
 
   #Include MyScripts\chest-x-ray.ahk
@@ -62,6 +62,7 @@ GroupAdd, SmartWonder, tedpc-
   #Include MyScripts\ms-mri.ahk
 
   #Include MyScripts\mri.ahk
+  #Include MyScripts\others.ahk
 
   ;;; HotKeys
   #Include MyScripts\hotkey\delete-current-line.ahk
