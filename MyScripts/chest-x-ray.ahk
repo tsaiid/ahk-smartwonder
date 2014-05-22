@@ -2,7 +2,7 @@
 ::nall::No active lung lesion.
 ::ncm::No cardiomegaly.
 ::bcm::Borderline cardiomegaly.
-::cm::Cardiomegaly.
+:c:Cm::Cardiomegaly.
 ::np::No abnormal patch opacity in lung fields.
 ::0::No previous film for comparison.{Enter 2}
 ::1::No active lung lesion. {Enter}No cardiomegaly. {Enter}Intact bony thorax.

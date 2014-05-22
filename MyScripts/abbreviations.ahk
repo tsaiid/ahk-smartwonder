@@ -26,6 +26,7 @@
 ::hx::history `
 ::subq::subcutaneous `
 ::afl::air-fluid level
+:c:cm::contrast medium
 
 ;; Bone
 ::pf::patellofemoral `
