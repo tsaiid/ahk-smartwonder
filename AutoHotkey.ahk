@@ -27,6 +27,7 @@ GroupAdd, SmartWonder, tedpc-
 
 ; Settings
 #Hotstring EndChars `t
+#Hotstring O
 
 ; External Libraries
 #Include Lib\WBGet.ahk
