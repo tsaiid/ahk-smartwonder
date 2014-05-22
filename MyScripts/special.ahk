@@ -1,6 +1,6 @@
 ; Special
 
-:O:vcug::
+::vcug::
   MyForm =
 (
 Voiding cystourethrography was performed under fluoroscopy by using contrast medium dripping into urinary bladder through Foley catheter with supine position:
@@ -15,7 +15,7 @@ No vesicoureteral reflux or fistula.
   Paste(MyForm)
 Return
 
-:O:hsg::
+::hsg::
   MyForm =
 (
 Hysterosalpingography was performed under fluoroscopy by using contrast medium injected into patient's uterus :

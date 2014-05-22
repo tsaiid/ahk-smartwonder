@@ -1,7 +1,7 @@
 ; Neuro Brain Forms
 
 ;; CTN1
-:O:ctn1::
+::ctn1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -36,7 +36,7 @@ Follow up or further evaluation.
 Return
 
 ;; CTN2
-:O:ctn2::
+::ctn2::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -76,7 +76,7 @@ Follow up or further evaluation.
 Return
 
 ;; 1CTA
-:O:1cta::
+::1cta::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -104,7 +104,7 @@ SUGGESTION:
 Return
 
 ;; CT3D
-:O:ct3d::
+::ct3d::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -159,7 +159,7 @@ Suggest clinical correlation and follow up.
 Return
 
 ;; MRICVA
-:O:mricva::
+::mricva::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -244,7 +244,7 @@ Follow up or further evaluation.
 Return
 
 ;; MRB
-:O:mrb::
+::mrb::
   MyOrder := CopyOrder()
   MyForm =
 (

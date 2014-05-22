@@ -1,20 +1,20 @@
-:O:bil::bilateral `
-:O:lt::left `
-:O:rt::right `
-:O:ifo::in favor of `
-:O:acw::as compared with `
-:O:cf::compression fracture `
-:O:si::(Ser/Img: ){Left}
-:O:sao::small amount of `
-:O:mao::moderate amount of `
-:O:ntd::nature to be determined.
-:O:p::presence of `
-:O:h::however, `
-:O:r::residual `
-:O:w::with `
-:O:wo::without `
-:O:esp::especially `
-:O:cw::compatible with `
-:O:o::otherwise, `
+::bil::bilateral `
+::lt::left `
+::rt::right `
+::ifo::in favor of `
+::acw::as compared with `
+::cf::compression fracture `
+::si::(Ser/Img: ){Left}
+::sao::small amount of `
+::mao::moderate amount of `
+::ntd::nature to be determined.
+::p::presence of `
+::h::however, `
+::r::residual `
+::w::with `
+::wo::without `
+::esp::especially `
+::cw::compatible with `
+::o::otherwise, `
 
-:O:fn::FOOTNOTE:{Enter}[{^}1]: `
+::fn::FOOTNOTE:{Enter}[{^}1]: `

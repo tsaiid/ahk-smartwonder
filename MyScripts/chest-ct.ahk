@@ -1,7 +1,7 @@
 ; Chest CT Forms
 
 ;; Lung Routine
-:O:cct-lr::
+::cct-lr::
   MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
@@ -36,7 +36,7 @@ SUGGESTION:
 Return
 
 ;; NCSD
-:O:cct-ncsd::
+::cct-ncsd::
   MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
@@ -72,7 +72,7 @@ SUGGESTION:
 Return
 
 ;; CTA
-:O:cct-cta::
+::cct-cta::
   MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
@@ -103,7 +103,7 @@ SUGGESTION:
 Return
 
 ;; Congenital Heart Disease
-:O:cct-chd::
+::cct-chd::
   MyForm =
 ( %
 MDCT FOR CONGENITAL HEART DISEASE PERFORMED WITH 64-SLICE CT SCANNER

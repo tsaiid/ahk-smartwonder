@@ -1,12 +1,12 @@
 ; MS MRI Forms
 
 ;; Hotstrings
-:O:mrkok::The anterior cruciate ligament, posterior cruciate ligament, medial collateral ligament, lateral collateral ligament, medial meniscus, and lateral meniscus are preserved.
-:O:ftt::full-thickness tear `
-:O:ptt::partial-thickness tear `
+::mrkok::The anterior cruciate ligament, posterior cruciate ligament, medial collateral ligament, lateral collateral ligament, medial meniscus, and lateral meniscus are preserved.
+::ftt::full-thickness tear `
+::ptt::partial-thickness tear `
 
 ;; MRI of Knee
-:O:mrk::
+::mrk::
   MyOrder := CopyOrder()
   MyForm =
 (

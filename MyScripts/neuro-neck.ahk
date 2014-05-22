@@ -1,7 +1,7 @@
 ; Neuro Neck Forms
 
 ;; CTNEC
-:O:ctnec::
+::ctnec::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -79,7 +79,7 @@ Suggest clinical correlation and follow up.
 Return
 
 ;; CTNEC3HRCT
-:O:ctnec3hrct::
+::ctnec3hrct::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -122,7 +122,7 @@ Suggest clinical correlation and follow up.
 Return
 
 ;; MRNEC
-:O:mrnec::
+::mrnec::
   MyOrder := CopyOrder()
   MyForm =
 (

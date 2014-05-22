@@ -1,6 +1,6 @@
 ; Esophagraphy
 
-:O:eso::
+::eso::
   MyForm =
 (
 Esophagography was performed under fluoroscopy:
@@ -10,7 +10,7 @@ Smooth passage of the barium without definite mass effect or abnormal mucosa pat
   Paste(MyForm)
 Return
 
-:O:eso-ca::
+::eso-ca::
   MyForm =
 (
 Esophagography was performed under fluoroscopy:
@@ -20,7 +20,7 @@ A 11-cm long irregular area of narrowing, with mucosal nodularity and ulceration
   Paste(MyForm)
 Return
 
-:O:eso-p::
+::eso-p::
   MyForm =
 (
 Esophagography was performed under fluoroscopy:

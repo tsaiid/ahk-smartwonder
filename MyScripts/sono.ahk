@@ -1,5 +1,5 @@
 ; Sono-guide
-:O:s-labd::
+::s-labd::
   MyForm =
 (
 Sonography of lower abdomen shows:
@@ -13,7 +13,7 @@ Prostate volume is about _ ml.
   Paste(MyForm)
 Return
 
-:O:s-uabd::
+::s-uabd::
   MyForm =
 (
 The visualized portion of pancreas is unremarkable.

@@ -1,14 +1,14 @@
 ; Neuro Forms
 
 ;; Hotstrings
-:O:ath::Atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
-:O:sae::Presence of .... bilateral periventricular low density noted, the subcortical arteriosclerotic encephalopathy considered.
-:O:ubo::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
-:O:IND::INDICATION:
-:O:COM::COMPARISON:
-:O:IMP::IMPRESSION:
-:O:SUG::SUGGESTION:
-:O:imp2::Others as above descriptions.
+::ath::Atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
+::sae::Presence of .... bilateral periventricular low density noted, the subcortical arteriosclerotic encephalopathy considered.
+::ubo::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
+::IND::INDICATION:
+::COM::COMPARISON:
+::IMP::IMPRESSION:
+::SUG::SUGGESTION:
+::imp2::Others as above descriptions.
 
 ;; Templates
 #Include MyScripts\neuro-spine.ahk
@@ -18,7 +18,7 @@
 #Include MyScripts\neuro-neck.ahk
 
 ;; hemra
-:O:hemra::
+::hemra::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -51,7 +51,7 @@ Suggest clinical correlation and follow up.
 Return
 
 ;; CTP
-:O:ctp::
+::ctp::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -73,7 +73,7 @@ SUGGESTION:
 Return
 
 ;; MRSE
-:O:mrse::
+::mrse::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -130,7 +130,7 @@ Suggest correlate with serum prolactin and other pituitary gland hormone level.
 Return
 
 ;; MRSE1
-:O:mrse1::
+::mrse1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -156,7 +156,7 @@ SUGGESTION:
 Return
 
 ;; MRPLE
-:O:mrple::
+::mrple::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -203,7 +203,7 @@ Recommend correlate with the EMG and NCV studies.
 Return
 
 ;; mritumorCP
-:O:mritumorcp::
+::mritumorcp::
   MyOrder := CopyOrder()
   MyForm =
 (

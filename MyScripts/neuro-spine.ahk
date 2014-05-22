@@ -1,7 +1,7 @@
 ; Neuro Spine Forms
 
 ;; CTL
-:O:ctl::
+::ctl::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -48,7 +48,7 @@ Return
 
 
 ;; CTCS1
-:O:ctcs1::
+::ctcs1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -79,7 +79,7 @@ Others as the above descriptions.
 Return
 
 ;; MRSPC1
-:O:mrspc1::
+::mrspc1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -130,7 +130,7 @@ SUGGESTION:
 Return
 
 ;; MRSPC2
-:O:mrspc2::
+::mrspc2::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -218,7 +218,7 @@ SUGGESTION:
 Return
 
 ;; MRSPT
-:O:mrspt::
+::mrspt::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -275,7 +275,7 @@ SUGGESTION:
 Return
 
 ;; MRSPT1
-:O:mrspt1::
+::mrspt1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -334,7 +334,7 @@ SUGGESTION:
 Return
 
 ;; MRSPL1
-:O:mrspl1::
+::mrspl1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -400,7 +400,7 @@ Return
 
 
 ;; MRSPL2
-:O:mrspl2::
+::mrspl2::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -515,7 +515,7 @@ SUGGESTION:
 Return
 
 ;; MRSPT1
-:O:mrspt1::
+::mrspt1::
   MyOrder := CopyOrder()
   MyForm =
 (

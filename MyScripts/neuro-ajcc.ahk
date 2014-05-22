@@ -1,7 +1,7 @@
 ; Neuro AJCC Forms
 
 ;; Oral-CT-AJCC7
-:O:oralct::
+::oralct::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -78,7 +78,7 @@ SUGGESTION:
 Return
 
 ;; Oral-MR-AJCC7
-:O:oralmr::
+::oralmr::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -160,7 +160,7 @@ SUGGESTION:
 Return
 
 ;; NPC-CT-AJCC
-:O:npcct::
+::npcct::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -242,7 +242,7 @@ Return
 
 
 ;; NPC-MR-AJCC
-:O:npcmr::
+::npcmr::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -342,7 +342,7 @@ SUGGESTION:
 Return
 
 ;; Larynx-CT-AJCC
-:O:larynxct::
+::larynxct::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -404,7 +404,7 @@ SUGGESTION:
 Return
 
 ;; Larynx-MR-JACC
-:O:larynxmr::
+::larynxmr::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -468,7 +468,7 @@ Return
 
 
 ;; Hypo-CT-AJCC
-:O:hypoct::
+::hypoct::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -518,7 +518,7 @@ Return
 
 
 ;; Hypo-MR-AJCC
-:O:hypomr::
+::hypomr::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -571,7 +571,7 @@ Return
 
 
 ;; Salivary-CT-AJCC
-:O:salivaryct::
+::salivaryct::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -622,7 +622,7 @@ Return
 
 
 ;; Salivary-MR-AJCC
-:O:salivarymr::
+::salivarymr::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -676,7 +676,7 @@ Return
 
 
 ;; Oraph-CT-AJCC
-:O:oraphct::
+::oraphct::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -742,7 +742,7 @@ Return
 
 
 ;; Oraph-MR-AJCC
-:O:oraphmr::
+::oraphmr::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -813,7 +813,7 @@ Return
 
 
 ;; Thy-CT-AJCC
-:O:thyct::
+::thyct::
   MyOrder := CopyOrder()
   MyForm =
 (

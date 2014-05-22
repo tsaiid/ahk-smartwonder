@@ -1,16 +1,16 @@
 ; Other plain films
-:O:cnic::The condition shows no obvious change as compared with previous study.
-:O:nic0::no obvious interval change.
-:O:nip0::no obvious improvement.
-:O:pc0::progressive change.
-:O:rc0::regressive change.
-:O:cc::Suggest clinical correlation.
-:O:cc0::clinical correlation
-:O:fe::Suggest further evaluation.
-:O:fu::Suggest follow-up.
-:O:ccfu::Suggest clinical correlation and follow-up.
-:O:fufe::Suggest follow-up or further evaluation.
-:O:nbd::Nature to be determined.
+::cnic::The condition shows no obvious change as compared with previous study.
+::nic0::no obvious interval change.
+::nip0::no obvious improvement.
+::pc0::progressive change.
+::rc0::regressive change.
+::cc::Suggest clinical correlation.
+::cc0::clinical correlation
+::fe::Suggest further evaluation.
+::fu::Suggest follow-up.
+::ccfu::Suggest clinical correlation and follow-up.
+::fufe::Suggest follow-up or further evaluation.
+::nbd::Nature to be determined.
 
 SplitDate(dateStr)
 {
@@ -30,18 +30,18 @@ StringWithPrevExamDate(strTemplate)
   Paste(output, 0)
 }
 
-:O:nic::
+::nic::
   StringWithPrevExamDate("No obvious interval change as compared with previous study")
 Return
 
-:O:nip::
+::nip::
   StringWithPrevExamDate("No obvious improvement as compared with previous study")
 Return
 
-:O:pc::
+::pc::
   StringWithPrevExamDate("Progressive change as compared with previous study")
 Return
 
-:O:rc::
+::rc::
   StringWithPrevExamDate("Regressive change as compared with previous study")
 Return

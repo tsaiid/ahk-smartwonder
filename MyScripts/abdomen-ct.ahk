@@ -2,7 +2,7 @@
 
 ;; General
 
-:O:act::
+::act::
   MyForm =
 (
 INDICATION:
@@ -26,12 +26,12 @@ Return
 
 
 ;; Hotstrings
-:O:lap-ok::- No retroperitoneal or mesenteric lymphadenopathy.
-:O:l-b-ok::- In lung and bone windows, the findings are unremarkable.
-:O:l-ok::- In lung window, the findings are unremarkable.
-:O:b-ok::- In bone window, the findings are unremarkable.
+::lap-ok::- No retroperitoneal or mesenteric lymphadenopathy.
+::l-b-ok::- In lung and bone windows, the findings are unremarkable.
+::l-ok::- In lung window, the findings are unremarkable.
+::b-ok::- In bone window, the findings are unremarkable.
 
-:O:act-hcc::
+::act-hcc::
   MyForm =
 (
 INDICATION:
@@ -53,7 +53,7 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-:O:act-l::
+::act-l::
   MyForm =
 (
 ** Non-contrast and contrast-enhanced chest and abdominal CT scans.

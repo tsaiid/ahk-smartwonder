@@ -1,6 +1,6 @@
 ; UGI & Small Intestine
 
-:O:ugi::
+::ugi::
   MyForm =
 (
 Double-contrast upper GI study from esophagus to proximal duodenum was performed smoothly and showed:
@@ -15,7 +15,7 @@ IMPRESSION: No abnormal finding noted in this UGI study.
   Paste(MyForm)
 Return
 
-:O:smint::
+::smint::
   MyForm =
 (
 Single contrast small intestine and compressed spot view were performed under fluoroscope with well demonstration to the ileocecal valve:
@@ -26,7 +26,7 @@ Single contrast small intestine and compressed spot view were performed under fl
   Paste(MyForm)
 Return
 
-:O:ugisi::
+::ugisi::
   MyForm =
 (
 Double-contrast upper GI study from esophagus to proximal duodenum, and single contrast small intestine and compressed spot view were performed smoothly and showed:

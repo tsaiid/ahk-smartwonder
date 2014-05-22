@@ -1,7 +1,7 @@
 ; Neuro Orbital Forms
 
 ;; CTO1
-:O:cto1::
+::cto1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -27,7 +27,7 @@ SUGGESTION:
 Return
 
 ;; CTO2
-:O:cto2::
+::cto2::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -51,7 +51,7 @@ SUGGESTION:
 Return
 
 ;; MRO1
-:O:mro1::
+::mro1::
   MyOrder := CopyOrder()
   MyForm =
 (

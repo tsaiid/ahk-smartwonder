@@ -1,7 +1,7 @@
 ; CT-guide Forms
 
 ;; Lung Biopsy
-:O:ctg-lb::
+::ctg-lb::
   MyForm =
 (
 CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
@@ -32,7 +32,7 @@ Return
 
 
 ;; Drainage
-:O:ctg-d::
+::ctg-d::
   MyForm =
 (
 CT guide drainage was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
@@ -52,7 +52,7 @@ Return
 
 
 ;; Drainage
-:O:ctg-b::
+::ctg-b::
   MyForm =
 (
 CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.

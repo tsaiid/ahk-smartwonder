@@ -1,53 +1,53 @@
 ;; Chest
-:O:ggo::ground glass opacity `
-:O:ggos::ground glass opacities `
-:O:pul::pulmonary `
-:O:tb::tuberculosis
-:O:asd::atrial septal defect `
-:O:vsd::ventricular septal defect `
-:O:mi::myocardial infarction `
-:O:rul::right upper lobe
-:O:rml::right middle lobe
-:O:rll::right lower lobe
-:O:lul::left upper lobe
-:O:lll::left lower lobe
-:O:ppm::permanent pacemaker
+::ggo::ground glass opacity `
+::ggos::ground glass opacities `
+::pul::pulmonary `
+::tb::tuberculosis
+::asd::atrial septal defect `
+::vsd::ventricular septal defect `
+::mi::myocardial infarction `
+::rul::right upper lobe
+::rml::right middle lobe
+::rll::right lower lobe
+::lul::left upper lobe
+::lll::left lower lobe
+::ppm::permanent pacemaker
 
 ;; General
-:O:ant::anterior `
-:O:post::posterior `
-:O:sup::superior `
-:O:inf::inferior `
-:O:lat::lateral `
-:O:med::medial `
-:O:pri::primary `
-:O:sec::secondary `
-:O:ned::no evidence of disease.
-:O:hx::history `
-:O:subq::subcutaneous `
-:O:afl::air-fluid level
+::ant::anterior `
+::post::posterior `
+::sup::superior `
+::inf::inferior `
+::lat::lateral `
+::med::medial `
+::pri::primary `
+::sec::secondary `
+::ned::no evidence of disease.
+::hx::history `
+::subq::subcutaneous `
+::afl::air-fluid level
 
 ;; Bone
-:O:pf::patellofemoral `
-:O:gbs::gallbladder stone
-:O:neo::No evidence of `
-:O:plf::posterolateral fusion mass
-:O:ddh::developmental dysplasia of the hip
-:O:mcl::medial collateral ligament
-:O:lcl::lateral collateral ligament
-:O:acl::anterior cruciate ligament
-:O:pcl::posterior cruciate ligament
+::pf::patellofemoral `
+::gbs::gallbladder stone
+::neo::No evidence of `
+::plf::posterolateral fusion mass
+::ddh::developmental dysplasia of the hip
+::mcl::medial collateral ligament
+::lcl::lateral collateral ligament
+::acl::anterior cruciate ligament
+::pcl::posterior cruciate ligament
 
 ;; Abdomen
-:O:ln::lymph node
-:O:lap::lymphadenopathy `
-:O:met::metastasis
-:O:mets::metastases
-:O:ckd::chronic kidney disease
-:O:bph::benign prostatic hyperplasia
-:O:sma::superior mesenteric artery
-:O:ima::inferior mesenteric artery
-:O:iud::intrauterine device
+::ln::lymph node
+::lap::lymphadenopathy `
+::met::metastasis
+::mets::metastases
+::ckd::chronic kidney disease
+::bph::benign prostatic hyperplasia
+::sma::superior mesenteric artery
+::ima::inferior mesenteric artery
+::iud::intrauterine device
 
 ;; Neuro
-:O:ich::intracranial hemorrhage
+::ich::intracranial hemorrhage

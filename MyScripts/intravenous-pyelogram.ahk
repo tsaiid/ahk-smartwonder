@@ -1,5 +1,5 @@
 ; IVP
-:O:ivp::
+::ivp::
   MyForm =
 (
 IV urography was performed and demostrates as follows:

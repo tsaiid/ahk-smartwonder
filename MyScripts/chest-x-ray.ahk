@@ -1,78 +1,78 @@
 ; For CXR
-:O:nall::No active lung lesion.
-:O:ncm::No cardiomegaly.
-:O:bcm::Borderline cardiomegaly.
-:O:cm::Cardiomegaly.
-:O:np::No abnormal patch opacity in lung fields.
-:O:0::No previous film for comparison.{Enter 2}
-:O:1::No active lung lesion. {Enter}No cardiomegaly. {Enter}Intact bony thorax.
-:O:2::No active lung lesion. {Enter}No cardiomegaly.
-:O:clnic::The condition of lung shows no obvious change as compared with previous study.
-:O:clat::Suggest correlation with lateral view.
-:O:ett::On endotracheal tube with tip at proper location.
-:O:ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.
-:O:ett-b::On endotracheal tube. The tip is in right main bronchus. Suggest adjusting the depth.
-:O:ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
-:O:ng::On NG tube.{Enter}
-:O:rpig::s/p right chest pigtail drainage.
-:O:lpig::s/p left chest pigtail drainage.
-:O:bpig::s/p bilateral chest pigtail drainage.
-:O:elm::Exaggerated lung markings.
-:O:lop0::s/p instrument fixation of L-spine.
-:O:lple::Left costophrenic angle blunting, suspect pleural effusion or changes.
-:O:lple1::Left costophrenic angle blunting and diffuse ground glass opacity in left lung, suspect pleural effusion.
-:O:rple::Right costophrenic angle blunting, suspect pleural effusion or changes.
-:O:rple1::Right costophrenic angle blunting and diffuse ground glass opacity in right lung, suspect pleural effusion.
-:O:bple::Bilateral costophrenic angles blunting, suspect pleural effusion or changes.
-:O:p/ster::Post median sternotomy with wire fixation.
-:O:p/c::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
-:O:ricvp::On central venous catheter via right internal jegular vein with tip at superior vena cava.
-:O:licvp::On central venous catheter via left internal jegular vein with tip at superior vena cava.
-:O:rscvp::On central venous catheter via right subclavian vein with tip at superior vena cava.
-:O:lscvp::On central venous catheter via left subclavian vein with tip at superior vena cava.
-:O:rport::On Port-A catheter via right subclavian vein.
-:O:lport::On Port-A catheter via left subclavian vein.
-:O:rppm::s/p PPM implantation at right upper chest.
-:O:lppm::s/p PPM implantation at left upper chest.
-:O:ile::Inadequate inspiration crowds lung markings.
-:O:pe::Engorged hila and pulmonary vasculature indicate pulmonary edema.
-:O:clc::Increased linear opacity over bilatera lower lungs, in favor of chronic inflammatory change.
-:O:lfa::Atelectasis of left lower lung.
-:O:rfa::Atelectasis of right lower lung.
-:O:bfa::Atelectasis of bilateral lower lungs.
-:O:plef::pleural effusion
-:O:inef::interlobar effusion
-:O:pcef::pericardial effusion
-:O:iabp::On IABP, with tip in the thoracic aorta.
-:O:sll::Scoliosis of L-spine with left lateral convexity.
-:O:slr::Scoliosis of L-spine with right lateral convexity.
-:O:stl::Scoliosis of T-spine with left lateral convexity.
-:O:str::Scoliosis of T-spine with right lateral convexity.
-:O:pi::Ill-defined pulmonary infiltration over `
-:O:po::patch opacity
-:O:no::nodular opacity
-:O:ip::inflammatory process.
-:O:abg::air-bronchogram
-:O:blf::bilateral lung fields
-:O:llf::left lung field
-:O:rlf::right lung field
-:O:bulf::bilateral upper lung fields
-:O:lulf::left upper lung fleld
-:O:rulf::right upper lung field
-:O:bllf::bilateral lower lung fields
-:O:lllf::left lower lung field
-:O:rllf::right lower lung field
-:O:nnp::No newly developed patch opacity in lung fields.
-:O:ii::Exaggerated lung markings, may be due to inadequate inspiration.
-:O:rrf::Old fractures of right ribs.
-:O:lrf::Old fractures of left ribs.
-:O:brf::Old fractures of bilateral ribs.
-:O:rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
-:O:ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
-:O:tta::Tortuosity of thoracic descending aorta.
-:O:bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
-:O:ilo::increased linear opacity `
-:O:ao::acinar opacity `
-:O:ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
-:O:rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
-:O:id::ill-defined `
+::nall::No active lung lesion.
+::ncm::No cardiomegaly.
+::bcm::Borderline cardiomegaly.
+::cm::Cardiomegaly.
+::np::No abnormal patch opacity in lung fields.
+::0::No previous film for comparison.{Enter 2}
+::1::No active lung lesion. {Enter}No cardiomegaly. {Enter}Intact bony thorax.
+::2::No active lung lesion. {Enter}No cardiomegaly.
+::clnic::The condition of lung shows no obvious change as compared with previous study.
+::clat::Suggest correlation with lateral view.
+::ett::On endotracheal tube with tip at proper location.
+::ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.
+::ett-b::On endotracheal tube. The tip is in right main bronchus. Suggest adjusting the depth.
+::ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
+::ng::On NG tube.{Enter}
+::rpig::s/p right chest pigtail drainage.
+::lpig::s/p left chest pigtail drainage.
+::bpig::s/p bilateral chest pigtail drainage.
+::elm::Exaggerated lung markings.
+::lop0::s/p instrument fixation of L-spine.
+::lple::Left costophrenic angle blunting, suspect pleural effusion or changes.
+::lple1::Left costophrenic angle blunting and diffuse ground glass opacity in left lung, suspect pleural effusion.
+::rple::Right costophrenic angle blunting, suspect pleural effusion or changes.
+::rple1::Right costophrenic angle blunting and diffuse ground glass opacity in right lung, suspect pleural effusion.
+::bple::Bilateral costophrenic angles blunting, suspect pleural effusion or changes.
+::p/ster::Post median sternotomy with wire fixation.
+::p/c::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
+::ricvp::On central venous catheter via right internal jegular vein with tip at superior vena cava.
+::licvp::On central venous catheter via left internal jegular vein with tip at superior vena cava.
+::rscvp::On central venous catheter via right subclavian vein with tip at superior vena cava.
+::lscvp::On central venous catheter via left subclavian vein with tip at superior vena cava.
+::rport::On Port-A catheter via right subclavian vein.
+::lport::On Port-A catheter via left subclavian vein.
+::rppm::s/p PPM implantation at right upper chest.
+::lppm::s/p PPM implantation at left upper chest.
+::ile::Inadequate inspiration crowds lung markings.
+::pe::Engorged hila and pulmonary vasculature indicate pulmonary edema.
+::clc::Increased linear opacity over bilatera lower lungs, in favor of chronic inflammatory change.
+::lfa::Atelectasis of left lower lung.
+::rfa::Atelectasis of right lower lung.
+::bfa::Atelectasis of bilateral lower lungs.
+::plef::pleural effusion
+::inef::interlobar effusion
+::pcef::pericardial effusion
+::iabp::On IABP, with tip in the thoracic aorta.
+::sll::Scoliosis of L-spine with left lateral convexity.
+::slr::Scoliosis of L-spine with right lateral convexity.
+::stl::Scoliosis of T-spine with left lateral convexity.
+::str::Scoliosis of T-spine with right lateral convexity.
+::pi::Ill-defined pulmonary infiltration over `
+::po::patch opacity
+::no::nodular opacity
+::ip::inflammatory process.
+::abg::air-bronchogram
+::blf::bilateral lung fields
+::llf::left lung field
+::rlf::right lung field
+::bulf::bilateral upper lung fields
+::lulf::left upper lung fleld
+::rulf::right upper lung field
+::bllf::bilateral lower lung fields
+::lllf::left lower lung field
+::rllf::right lower lung field
+::nnp::No newly developed patch opacity in lung fields.
+::ii::Exaggerated lung markings, may be due to inadequate inspiration.
+::rrf::Old fractures of right ribs.
+::lrf::Old fractures of left ribs.
+::brf::Old fractures of bilateral ribs.
+::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::tta::Tortuosity of thoracic descending aorta.
+::bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
+::ilo::increased linear opacity `
+::ao::acinar opacity `
+::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::id::ill-defined `
