@@ -33,6 +33,8 @@ $^0::
                 , FingerLt:   "Finger\(s\) LT"
                 , WristRt:    "Wrist RT"
                 , WristLt:    "Wrist LT"
+                , ForearmRt:  "Forearm RT"
+                , ForearmLt:  "Forearm LT"
                 , ElbowRt:    "Elbow RT"
                 , ElbowLt:    "Elbow LT"
                 , HumerusRt:  "Humerus RT"
