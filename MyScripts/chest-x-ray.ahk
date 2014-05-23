@@ -51,6 +51,9 @@
 ::pi::Ill-defined pulmonary infiltration over `
 ::po::patch opacity
 ::no::nodular opacity
+::lo::linear opacity
+::flo::fibrolinear opacity
+::rno::reticulonodular oapcity
 ::ip::inflammatory process.
 ::abg::air-bronchogram
 ::blf::bilateral lung fields
