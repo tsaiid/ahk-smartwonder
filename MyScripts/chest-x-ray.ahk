@@ -13,7 +13,7 @@
 ::ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.
 ::ett-b::On endotracheal tube. The tip is in right main bronchus. Suggest adjusting the depth.
 ::ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
-::ng::On NG tube.{Enter}
+::ng::On NG tube.
 ::rpig::s/p right chest pigtail drainage.
 ::lpig::s/p left chest pigtail drainage.
 ::bpig::s/p bilateral chest pigtail drainage.
