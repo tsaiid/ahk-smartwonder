@@ -21,6 +21,8 @@ $^0::
                 , KUB:        "i)kub"
                 , ToeRt:      "Toe\(s\) RT"
                 , ToeLt:      "Toe\(s\) LT"
+                , FootRt:     "Foot RT"
+                , FootLt:     "Foot LT"
                 , AnkleRt:    "Ankle RT"
                 , AnkleLt:    "Ankle LT"
                 , KneeRt:     "Knee RT"
