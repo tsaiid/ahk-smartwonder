@@ -46,15 +46,17 @@
 ::dsn::disc space narrowing `
 ::mof::marginal osteophyte formation
 ::hs::in healing stage.
-::bu::bone union.
-::mu::malunion.
+::bu::bone union
+::mu::malunion
 ::wol::without loosening.
 ::anb::accessory navicular bone.
 ::l4::Sacralization of L5 vertebra.
 ::l6::Presence of L6 (lumbarization of S1).
 ::sij::sacroiliac joint
+::acj::acromioclavicular joint
 ::sts::soft tissue swelling
 ::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
+::wd::wedge deformity
 
 ; Multiline
 ::flat::
