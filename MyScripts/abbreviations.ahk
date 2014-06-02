@@ -41,7 +41,7 @@
 
 ;; Abdomen
 ::ln::lymph node
-::lap::lymphadenopathy `
+::lap::lymphadenopathy
 ::met::metastasis
 ::mets::metastases
 ::ckd::chronic kidney disease
@@ -49,6 +49,7 @@
 ::sma::superior mesenteric artery
 ::ima::inferior mesenteric artery
 ::iud::intrauterine device
+::gb::gallbladder
 
 ;; Neuro
 ::ich::intracranial hemorrhage
