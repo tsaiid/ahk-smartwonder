@@ -5,6 +5,7 @@
 ::tb::tuberculosis
 ::asd::atrial septal defect `
 ::vsd::ventricular septal defect `
+::pda::patent ductus arteriosus `
 ::mi::myocardial infarction `
 ::rul::right upper lobe
 ::rml::right middle lobe
@@ -13,6 +14,7 @@
 ::lll::left lower lobe
 ::llil::left lingular lobe
 ::ppm::permanent pacemaker
+::pmf::progressive massive fibrosis
 
 ;; General
 ::ant::anterior `
