@@ -22,15 +22,15 @@ Applicable previous CT of chest: no
 Applicable previous chest radiography:
 
 FINDINGS:
-(1) Lung nodule or mass: negative
-(2) Lung parenchyma and airway: not unusual for age
-(3) Mediastinum: not unusual
-(4) Lymph node enlargement > 1 cm: none for age
-(5) Pleura: not unusual for age
-(6) Pericardium and heart: not unusual for age
-(7) Aorta and pulmonary artery: not unusual for age
-(8) Chest wall and bony structure: not unusual for age
-(9) Upper abdomen and adrenals: not unusual for age
+1. Lung nodule or mass: negative
+2. Lung parenchyma and airway: not unusual for age
+3. Mediastinum: not unusual
+4. Lymph node enlargement > 1 cm: none for age
+5. Pleura: not unusual for age
+6. Pericardium and heart: not unusual for age
+7. Aorta and pulmonary artery: not unusual for age
+8. Chest wall and bony structure: not unusual for age
+9. Upper abdomen and adrenals: not unusual for age
 
 IMPRESSION:
 
@@ -71,8 +71,6 @@ IMPRESSION:
 SUGGESTION:
 
 *PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
-*N.P. means no particular findings adjusted for patient's age.
-*N.A. means complete evaluation is not available due to absence of contrast enhancement however, from the limited information, there is no evident lesion.
 )
   Paste(MyForm)
 Return
@@ -96,11 +94,11 @@ Applicable previous CT of chest: no
 Applicable previous chest radiography:
 
 FINDINGS:
-(1) AORTA: not unusual for age
-(2) PULMONARY ARTERY: Not definite filling defect
-(3) OTHER VESSELS: Not unusual for age
-(4) OTHER THORACIC ORGANS:
-(5) ABDOMIAL ORGANS SCANNED:
+1. AORTA: not unusual for age
+2. PULMONARY ARTERY: Not definite filling defect
+3. OTHER VESSELS: Not unusual for age
+4. OTHER THORACIC ORGANS:
+5. ABDOMIAL ORGANS SCANNED:
 
 IMPRESSION:
 
