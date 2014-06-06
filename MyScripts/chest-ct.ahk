@@ -2,6 +2,7 @@
 
 ;; Lung Routine
 ::cct-lr::
+  MyOrder := CopyOrder()
   MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
@@ -10,7 +11,7 @@ METHOD:
   - (1) HRCT (2) Noncontrast survey (3) contrast enhancement were performed
   - Scan range: lower neck to adrenal gland
 
-INDICATION:
+INDICATION: %MyOrder%
 
 COMPARISON:
 Applicable previous CT of chest: no
@@ -37,6 +38,7 @@ Return
 
 ;; NCSD
 ::cct-ncsd::
+  MyOrder := CopyOrder()
   MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
@@ -45,7 +47,7 @@ METHOD:
   - (1) HRCT (2) Noncontrast survey
   - Scan range: lower neck to adrenal gland
 
-INDICATION:
+INDICATION: %MyOrder%
 
 COMPARISON:
 Applicable previous CT of chest: no
@@ -73,6 +75,7 @@ Return
 
 ;; CTA
 ::cct-cta::
+  MyOrder := CopyOrder()
   MyForm =
 (
 CT scan of the thorax was performed with a multi-slice CT scanner.
@@ -82,7 +85,7 @@ METHOD:
   - Scan range: target vessel
   - Contrast medium: IV route, rate: as fast as IV route allowed
 
-INDICATION:
+INDICATION: %MyOrder%
 
 COMPARISON:
 Applicable previous CT of chest: no
@@ -104,11 +107,12 @@ Return
 
 ;; Congenital Heart Disease
 ::cct-chd::
+  MyOrder := CopyOrder()
   MyForm =
 ( %
 MDCT FOR CONGENITAL HEART DISEASE PERFORMED WITH 64-SLICE CT SCANNER
 Total DLP:
-INDICATION:
+INDICATION: %MyOrder%
 
 COMPARISON:
 Applicable previous CT of chest: no
