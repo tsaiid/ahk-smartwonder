@@ -109,7 +109,7 @@ Return
 ::cct-chd::
   MyOrder := CopyOrder()
   MyForm =
-( %
+(
 MDCT FOR CONGENITAL HEART DISEASE PERFORMED WITH 64-SLICE CT SCANNER
 Total DLP:
 INDICATION: %MyOrder%
@@ -118,7 +118,7 @@ COMPARISON:
 Applicable previous CT of chest: no
 
 PROTOCOL:
-  - EKG gating, prospective (65-85%)
+  - EKG gating, prospective (65-85`%)
   - EKG gating, retrospective
   - Delay image:
     1. Time: 10 min; Low dose: 80kV
@@ -154,6 +154,129 @@ OTHER FINDINGS:
   . Abdomen: Not unusual
 
 IMPRESSION:
+)
+  Paste(MyForm)
+Return
+
+;; Lung cancer, staging
+::cct-lcs::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+CT scan of the thorax was performed with a MDCT scanner.
+METHOD: (1) HRCT (2) NCCT (3) CECT were performed
+SCAN RANGE: lower neck to adrenal gland
+
+INDICATION: %MyOrder%
+
+PREVIOUS CHEST CT SCAN: Not available.
+
+FINDINGS:
+A. Tumor Profile
+(1) Tumor Location:
+(2) Tumor Size & Invasion (T):
+--- Greatest Diamter (cm):
+--- Tumor <= 2cm (T1a)
+--- 2cm < Tumor <= 3cm (T1b)
+--- 3cm < Tumor <= 5cm (T2a)
+--- 5cm < Tumor <= 7cm (T2b)
+--- Tumor > 7cm (T3)
+
+--- Surrounded by lung or visceral pleura (T1)
+--- Invades visceral pleura (T2)
+--- Invades chest wall, diaphragm, phrenic nerve, mediasinal pleura, parietal pericardium (T3)
+--- Invades mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina (T4)
+
+--- Not more proximal than lobar bronchus (T1)
+--- Involves main bronchus, >= 2cm from carina (T2)
+--- Tumor in the main bronchus( < 2cm from carina) (T3)
+
+--- Focal atelectasis or obstructive pneumonitis to hilum (T2)
+--- Atelectasis of entire lung (T3)
+
+--- Separate tumor nodule(s) in same lobe (T3)
+--- Separate tumor nodule(s) in a different lobe (T4)
+
+(3) Regional Lymph Nodes (N)
+--- No regional lymph node metastasis (N0)
+--- Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension (N1)
+--- Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s) (N2)
+--- Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s) (N3)
+
+(4) Distant Metastasis (M)
+--- M0: no evidence in the scanned range (M0)
+--- Separate tumor nodule(s) in a contralateral lobe (M1a)
+--- Tumor with pleural nodules or malignant pleural (or pericardial) effusion (M1a)
+--- Distant metastasis (M1b) at *
+--- Uncertain lesion in the scanned range, which could be metastatic lesion or not, and    require further study (Mx)
+
+B. Other Findings
+
+
+IMPRESSION:
+(1) Lung cancer of , cTNM (AJCC 2009, 7th ed.) if proved
+
+SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; Esophageal cancer, staging
+::cct-ecs::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+CT scan of the thorax was performed with a MDCT scanner.
+
+PROTOCOL:
+METHOD: (1) HRCT (2) NCCT (3) CECT were performed
+SCAN RANGE: lower neck to adrenal gland
+
+INDICATION: %MyOrder%
+
+Date of previous chest CT scan: YYYY/MM/DD
+
+FINDINGS:
+1. TUMOR LOCATION
+--- Cervical segment (hypopharynx to sternal notch)
+--- Upper third of thoracic segment (sternal notch to azygos vein)
+--- Middle third of thoracic segment (azygos vein to inferior pulmonary vein)
+--- Lower third of thoracic segment (inferior pulmonary vein to esophagogastric junction)
+2. TUMOR SIZE
+--- Measurable: Length________ cm , Max thickness ________ cm
+--- Non-measurable
+3. TUMOR INVASION
+--- No or Equivocal
+--- Yes, if yes:
+T3: Advantitia(+)
+T4a: pleura(+), pericardium(+), diaphragm(+), peritoneum(+),
+T4b: aortic wall(+), carina(+), left atrial wall (+), vertebral body(+),
+posterior wall of trachea(+), posterior wall of main bronchus(+),
+4. REGIONAL NODAL METASTASIS
+--- No or Equivocal
+--- Yes, if yes
+---Number of suspicious lymph node: 1-2 (N1), 3-6 (N2), or >7 (N3)
+--- Location (specified as below):
+Lower cervical(+), supraclavicular(+), and sternal notch (+),
+Right upper Paratracheal (+), Left upper paratracheal (+),
+Right lower paratracheal (+), Left lower paratracheal (+),
+Prevascular (+), Retrotracheal (+),
+Subaortic (A-P window) (+), Paraaortic (ascending aorta or phrenic) (+),
+Subcarinal (+), Paraesophageal(+),
+Right Hilar (+), Left Hilar (+),
+
+Others:
+5. DISTANT METASTASIS (IN THIS STUDY)
+--- No or Equivocal
+--- Yes, location: _________
+6. OTHER FINDINGS
+
+IMPRESSION:
+(1) Esophageal CA of , cTNM. (AJCC 2009, 7th ed.)
+(2)
+(3)
+
+SUGGESTION:
 )
   Paste(MyForm)
 Return
