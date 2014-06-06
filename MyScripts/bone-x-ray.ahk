@@ -21,11 +21,13 @@
 ::acrok::No lateral downsloping or hooking of the acromion.
 ::acrsp::Presence of subacromial spur.
 ::shok::No limitation in internal/external rotation of the shoulder.
-::pcsp::Post screws and plates fixation at L3~L6. {Enter}Post interbody cage placement at C3-4, C4-5, C5-6.{Up}{Left 5  }
+::pcsp::Post instrment fixation at cervical spine.
 ::plsp::Post instrment fixation at lumbar spine.
 ::spok::No disc space narrowing. {Enter}No spondylolisthesis. {Enter}No fracture.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
+::capsp1::Presence of calcaneal spur at the insertion of the plantar fascia.
+::calsp2::Presence of calcaneal spur at the insertion of the Achilles tendon.
 ::nabl::No active bone lesion.
 ::rthr::s/p right total hip replacement.
 ::lthr::s/p left total hip replacement.
