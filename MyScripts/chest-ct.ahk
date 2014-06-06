@@ -1,5 +1,9 @@
 ; Chest CT Forms
 
+;; Hotstrings
+::6mcct::Follow up chest CT scan 6 months later.
+::csono::Suggest correlate with sonography.
+
 ;; Lung Routine
 ::cct-lr::
   MyOrder := CopyOrder()

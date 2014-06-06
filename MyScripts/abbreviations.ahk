@@ -11,6 +11,7 @@
 ::rll::right lower lobe
 ::lul::left upper lobe
 ::lll::left lower lobe
+::llil::left lingular lobe
 ::ppm::permanent pacemaker
 
 ;; General
