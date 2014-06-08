@@ -15,6 +15,9 @@
 ::llil::left lingular lobe
 ::ppm::permanent pacemaker
 ::pmf::progressive massive fibrosis
+::lip::lymphocytic interstitial pneumonia
+::nsip::non-specific interstitial pneumonia
+::boop::bronchiolitis obliterans organizing pneumonia
 
 ;; General
 ::ant::anterior `
