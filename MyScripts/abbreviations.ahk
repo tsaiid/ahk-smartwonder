@@ -7,6 +7,7 @@
 ::vsd::ventricular septal defect `
 ::pda::patent ductus arteriosus `
 ::mi::myocardial infarction `
+::cad::coronary artery disease
 ::rul::right upper lobe
 ::rml::right middle lobe
 ::rll::right lower lobe

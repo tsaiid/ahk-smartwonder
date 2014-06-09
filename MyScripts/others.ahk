@@ -16,5 +16,7 @@
 ::esp::especially `
 ::cw::compatible with `
 ::o::otherwise, `
+::rm::remarkable
+::urm::unremarkable
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
