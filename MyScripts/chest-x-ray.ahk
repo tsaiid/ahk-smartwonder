@@ -72,6 +72,7 @@
 ::brf::Old fractures of bilateral ribs.
 ::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::copd::Hyperinflation with flattening of bilateral hemidiaphragms, suggestive the possibility of COPD.
 ::tta::Tortuosity of thoracic descending aorta.
 ::bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
 ::ilo::increased linear opacity `
