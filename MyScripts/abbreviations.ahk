@@ -38,7 +38,7 @@
 ;; Bone
 ::pf::patellofemoral `
 ::gbs::gallbladder stone
-::neo::No evidence of `
+::neo::no evidence of `
 ::plf::posterolateral fusion mass
 ::ddh::developmental dysplasia of the hip
 ::mcl::medial collateral ligament
