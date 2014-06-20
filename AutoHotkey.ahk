@@ -35,6 +35,7 @@ GroupAdd, SmartWonder, tedpc-
 
 ;; My Own Lib
 #Include MyScripts\lib\frame-wait.ahk
+#Include MyScripts\lib\dicom-sr.ahk
 
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
