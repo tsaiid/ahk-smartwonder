@@ -34,8 +34,6 @@ Return
 
   GetSonoSR2(AccNo, tabIframe2)
 
-  ;MsgBox % tabIframe2.document.getElementById("sr_left_kidney").value
-
   LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
   RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
   Spleen := tabIframe2.document.getElementById("sr_spleen") ? tabIframe2.document.getElementById("sr_spleen").value : "_ cm"
