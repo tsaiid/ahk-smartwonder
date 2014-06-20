@@ -98,11 +98,146 @@ GetSR() {
   SRWait(tabIframe2)
 }
 
+WriteBackSR(ResultFrame, SrTag, Value) {
+  Elem := ResultFrame.document.createElement("input")
+  Elem.type := "hidden"
+  Elem.id := SrTag
+  Elem.value := Value
+
+  ResultFrame.document.appendChild(Elem)
+}
+
+GetSRNew(AccNo, ResultFrame){
+  IID := "{332C4427-26CB-11D0-B483-00C04FD90119}" ; IID_IWebBrowserApp
+
+  wb := ComObjCreate("InternetExplorer.Application")
+  wb.Navigate("http://vghks.tsai.it/only-jquery.html")
+  ;wb.Visible := true
+  while wb.busy
+    sleep 10
+  window := ComObj(9,ComObjQuery(wb,IID,IID),1)
+  ;AccNo := "65842508"
+
+  var =
+(
+  (function() {
+    // Load the script
+    var script = document.createElement('script');
+    script.src = 'https://code.jquery.com/jquery-1.11.0.min.js';
+    script.type = 'text/javascript';
+    //document.getElementsByTagName('head')[0].appendChild(script);
+
+    // Poll for jQuery to come into existance
+    var checkReady = function(callback) {
+        if (window.jQuery) {
+            callback(jQuery);
+        }
+        else {
+            window.setTimeout(function() {
+              checkReady(callback);
+            }, 100);
+        }
+    };
+
+    // Start polling...
+    checkReady(function($) {
+      // Use $ here...
+      $('body').append('<div id="result">result</div>');
+
+      insert_result = function(label, value) {
+        return '<input type="hidden" name="sr_api" id="sr_' + label + '" value="' + value + '">';
+      }
+
+      $.getScript( "http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js", function( data, textStatus, jqxhr ) {
+      });
+
+      $.support.cors = true;
+      var result = $('#result');
+      $.ajax({
+        dataType: "json",
+        url: "http://vghks.tsai.it/dicom/sr/" + %AccNo% + "/json",
+        crossDomain: true
+      }).done(function(data){
+        //alert(data.status.message);
+        if (data.status.error) {
+          alert(data.status.message);
+          result.append(insert_result("message", data.status.message));
+        }
+        else {
+          // kidney
+          var kidney = data.result.kidney;
+          if (kidney) {
+            if (kidney.left) {
+              result.append(insert_result("left_kidney", kidney.left));
+            }
+            if (kidney.right) {
+              result.append(insert_result("right_kidney", kidney.right));
+            }
+          }
+
+          // spleen
+          var spleen = data.result.spleen;
+          if (spleen) {
+            result.append(insert_result("spleen", spleen));
+          }
+
+          // CBD
+          var cbd = data.result.cbd;
+          if (cbd) {
+            result.append(insert_result("cbd", cbd));
+          }
+
+          // Prostate
+          var prostate = data.result['Prostate Vol'];
+          if (prostate) {
+            result.append(insert_result("prostate", prostate));
+          }
+
+          // insert a message for AHK to detect finish.
+          result.append(insert_result("message", "data fetched."));
+        }
+      }).fail(function(jqxhr,textStatus,errorThrown) {
+        result.append(insert_result("message", "ajax error!"));
+      });
+
+    });
+  })();
+)
+
+  window.eval(var)
+  SRWait(window)
+  ;a := window.document.getElementById("sr_left_kidney").value
+  ;MsgBox % window.document.body.innerHTML
+  ;MsgBox % a
+
+  ; Write the result into the target frame
+  SupportedTags := ["sr_cbd", "sr_left_kidney", "sr_right_kidney", "sr_spleen", "sr_prostate", "sr_message"]
+  ;SupportedTags := ["sr_left_kidney", "sr_right_kidney"]
+  Loop % SupportedTags.MaxIndex() {
+    ; Clear ResultFrame Data
+    oldResult := ResultFrame.document.getElementById(SupportedTags[A_Index])
+    If (oldResult) {
+      oldResult.parentNode.removeChild(oldResult)
+    }
+    ; Insert New SR Data
+    If (window.document.getElementById(SupportedTags[A_Index])) {
+      WriteBackSR(ResultFrame, SupportedTags[A_Index], window.document.getElementById(SupportedTags[A_Index]).value)
+      ;MsgBox % SupportedTags[A_Index] ":" window.document.getElementById(SupportedTags[A_Index]).value
+    }
+  }
+
+  wb.quit()
+}
+
 ::s-labd::
-  GetSR()
+  ;GetSR()
 
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
+
+  GetSRNew(AccNo, tabIframe2)
+
   LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
   RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
   Prostate := tabIframe2.document.getElementById("sr_prostate") ? tabIframe2.document.getElementById("sr_prostate").value : "_ cm"
@@ -121,10 +256,16 @@ Prostate volume is about %Prostate%.
 Return
 
 ::s-uabd::
-  GetSR()
+  ;GetSR()
 
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
+
+  GetSRNew(AccNo, tabIframe2)
+
+  ;MsgBox % tabIframe2.document.getElementById("sr_left_kidney").value
+
   LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
   RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
   Spleen := tabIframe2.document.getElementById("sr_spleen") ? tabIframe2.document.getElementById("sr_spleen").value : "_ cm"
