@@ -2,13 +2,17 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 
-CopyPreviousReport(AlsoLoadImages=false) {
+GetPreviousReport(CopyReport=true, LoadImages=false) {
   ; use global variables to store previous exam date
   global prevExamDate
+  global currAccNo
 
   wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
+
+  ; 把目前的 acc_no 存起來做為比對用
+  currAccNo := frmTabIframe2.document.getElementsByName("OldAccNo")[0].value
 
   ; 在切換至歷史報告頁之前先確認有無支援此類報告
   ;; get current exam name
@@ -17,40 +21,41 @@ CopyPreviousReport(AlsoLoadImages=false) {
   currExamName := splittedTmpStr2
 
   ;; 參考用的 pattern
-  patterns := {   CXR:        "i)chest (pa|ap|& kub)"
-                , KUB:        "i)kub"
-                , ToeRt:      "Toe\(s\) RT"
-                , ToeLt:      "Toe\(s\) LT"
-                , FootRt:     "Foot RT"
-                , FootLt:     "Foot LT"
-                , AnkleRt:    "Ankle RT"
-                , AnkleLt:    "Ankle LT"
-                , KneeRt:     "Knee RT"
-                , KneeLt:     "Knee LT"
-                , LowerLegRt: "Lower leg RT including 2 joints"
-                , LowerLegLt: "Lower leg LT including 2 joints"
-                , FemurRt:    "Femur, RT"
-                , FemurLt:    "Femur, LT"
-                , FingerRt:   "Finger\(s\) RT"
-                , FingerLt:   "Finger\(s\) LT"
-                , WristRt:    "Wrist RT"
-                , WristLt:    "Wrist LT"
-                , ForearmRt:  "Forearm RT"
-                , ForearmLt:  "Forearm LT"
-                , ElbowRt:    "Elbow RT"
-                , ElbowLt:    "Elbow LT"
-                , HumerusRt:  "Humerus RT"
-                , HumerusLt:  "Humerus LT"
-                , ClavicleRt: "Clavicle RT"
-                , ClavicleLt: "Clavicle LT"
-                , ShoulderRt: "Shoulder RT"
-                , ShoulderLt: "Shoulder LT"
-                , THRRtHip:   "THR \+ RT hip"
-                , THRLtHip:   "THR \+ LT hip"
-                , THRAP:   "THR, AP view"
-                , PelvisAP:   "Pelvis AP view"
+  patterns := {   CXR:          "i)chest (pa|ap|& kub)"
+                , KUB:          "i)kub"
+                , ToeRt:        "Toe\(s\) RT"
+                , ToeLt:        "Toe\(s\) LT"
+                , FootRt:       "Foot RT"
+                , FootLt:       "Foot LT"
+                , AnkleRt:      "Ankle RT"
+                , AnkleLt:      "Ankle LT"
+                , KneeRt:       "Knee RT"
+                , KneeLt:       "Knee LT"
+                , LowerLegRt:   "Lower leg RT including 2 joints"
+                , LowerLegLt:   "Lower leg LT including 2 joints"
+                , FemurRt:      "Femur, RT"
+                , FemurLt:      "Femur, LT"
+                , FingerRt:     "Finger\(s\) RT"
+                , FingerLt:     "Finger\(s\) LT"
+                , WristRt:      "Wrist RT"
+                , WristLt:      "Wrist LT"
+                , ForearmRt:    "Forearm RT"
+                , ForearmLt:    "Forearm LT"
+                , ElbowRt:      "Elbow RT"
+                , ElbowLt:      "Elbow LT"
+                , HumerusRt:    "Humerus RT"
+                , HumerusLt:    "Humerus LT"
+                , ClavicleRt:   "Clavicle RT"
+                , ClavicleLt:   "Clavicle LT"
+                , ShoulderRt:   "Shoulder RT"
+                , ShoulderLt:   "Shoulder LT"
+                , THRRtHip:     "THR \+ RT hip"
+                , THRLtHip:     "THR \+ LT hip"
+                , THRAP:        "THR, AP view"
+                , PelvisAP:     "Pelvis AP view"
                 , PelvisInlet:  "Pelvis inlet view"
-                , PelvisOutlet: "Pelvis outlet view"  }
+                , PelvisOutlet: "Pelvis outlet view"
+                , CTChest:      "CT chest (with/)?no contrast" }
 
   ;; 分析目前為何種檢查
   currPattern := ""
@@ -161,15 +166,17 @@ CopyPreviousReport(AlsoLoadImages=false) {
     }
 
     If (getPrevReport > 0) {  ; 有找到相關的報告
-      latestRelatedReport := prevReportLists.children[getPrevReport].children[(AlsoLoadImages? 1 : 3)]
-      latestRelatedReport.click() ; 點最近報告、開影像
+      If (CopyReport) { ; 如果不 CopyReport, 就只會把 prevExamDate 存在 global var 裡
+        latestRelatedReport := prevReportLists.children[getPrevReport].children[(LoadImages? 1 : 3)]
+        latestRelatedReport.click() ; 點最近報告、開影像
 
-      frmPrevReport := frmTabIframe2.document.frames["History3"]
+        frmPrevReport := frmTabIframe2.document.frames["History3"]
 
-      FrameWait(frmPrevReport)
+        FrameWait(frmPrevReport)
 
-      btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
-      btnCopyReport.click() ; 複製報告
+        btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
+        btnCopyReport.click() ; 複製報告
+      }
     }
   }
 
@@ -183,11 +190,11 @@ CopyPreviousReport(AlsoLoadImages=false) {
 
 
 $^0::
-  CopyPreviousReport(true)
+  GetPreviousReport(true, true)
 Return
 
 $^!0::
-  CopyPreviousReport(false)
+  GetPreviousReport(true, false)
 Return
 
 #IfWinActive
