@@ -55,6 +55,7 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
                 , PelvisAP:     "Pelvis AP view"
                 , PelvisInlet:  "Pelvis inlet view"
                 , PelvisOutlet: "Pelvis outlet view"
+                , CTAChest:     "CTA, Chest-Aorta, PE"
                 , CTChest:      "CT chest (with/)?no contrast" }
 
   ;; 分析目前為何種檢查
