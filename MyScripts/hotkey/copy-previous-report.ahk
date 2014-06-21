@@ -2,7 +2,7 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 
-$^0::
+CopyPreviousReport(AlsoLoadImages=false) {
   ; use global variables to store previous exam date
   global prevExamDate
 
@@ -161,7 +161,7 @@ $^0::
     }
 
     If (getPrevReport > 0) {  ; 有找到相關的報告
-      latestRelatedReport := prevReportLists.children[getPrevReport].children[1]
+      latestRelatedReport := prevReportLists.children[getPrevReport].children[(AlsoLoadImages? 1 : 3)]
       latestRelatedReport.click() ; 點最近報告、開影像
 
       frmPrevReport := frmTabIframe2.document.frames["History3"]
@@ -179,6 +179,15 @@ $^0::
     MsgBox % tdMsgMore.innerText
   If (getPrevReport = 0) ; 沒有找到相關的報告，顯示訊息
     MsgBox % "AHK-SmartWonder: No related report found."
+}
+
+
+$^0::
+  CopyPreviousReport(true)
+Return
+
+$^!0::
+  CopyPreviousReport(false)
 Return
 
 #IfWinActive
