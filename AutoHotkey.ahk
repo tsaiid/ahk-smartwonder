@@ -77,6 +77,7 @@ SetTitleMatchMode, 2
 ; HotKeys
 #Include MyScripts\hotkey\selecting-tabs.ahk
 #Include MyScripts\hotkey\get-previous-report.ahk
+#Include MyScripts\hotkey\get-previous-report-with-far-image.ahk
 #Include MyScripts\hotkey\get-previous-exam-date.ahk
 #Include MyScripts\hotkey\change-font.ahk
 #Include MyScripts\hotkey\copy-order.ahk
