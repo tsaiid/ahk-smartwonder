@@ -21,11 +21,13 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
    C. Hemoptysis: No
    D. Chest tightness: No
    E. Asthma: No
-6. Specimen:
+6. Specimen: (4 attempts to biopsy)
    Formalin: x3; normal saline: x1;
    Bacterial culture swab: aerobic x1; anaerobic x1.
 
-The patient was sent back to the ward under stable condition without complaint. Recommend close f/u patient's vital signs, bed rest and compression for at least 4 hours. F/U CXR 6 hours later.
+The patient was sent back to the ward under stable condition without complaint.
+Recommend close f/u patient's vital signs, bed rest and compression for at least 4 hours.
+F/U CXR 6 hours later.
 )
   Paste(MyForm)
 Return
@@ -52,7 +54,7 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
    C. Hemoptysis: No
    D. Chest tightness: No
    E. Asthma: No
-6. Specimen:
+6. Specimen: (4 attempts to biopsy)
    Formalin: x2; normal saline: x1; TB culture: x1.
    Bacterial culture swab: aerobic x1; anaerobic x1.
 
