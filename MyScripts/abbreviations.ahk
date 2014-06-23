@@ -19,6 +19,8 @@
 ::lip::lymphocytic interstitial pneumonia
 ::nsip::non-specific interstitial pneumonia
 ::boop::bronchiolitis obliterans organizing pneumonia
+::ptx::pneumothorax
+::htx::hemothorax
 
 ;; General
 ::ant::anterior `
