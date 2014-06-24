@@ -18,12 +18,18 @@ GetPrevExamDate() {
 }
 
 InsertPrevExamDate(){
+  global currAccNo
+
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
   prevExamDate := GetPrevExamDate()
   FrameWait(tabIframe2) ; 要等如果是從歷史報告頁面切回來的時間
-  Paste(prevExamDate)
+
+  If (currAccNo = AccNo && StrLen(prevExamDate)) {
+    Paste(prevExamDate)
+  }
 }
 
 #IfWinActive
