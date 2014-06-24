@@ -96,12 +96,19 @@ SetTitleMatchMode, 2
 ; Define hotkeys
 #IfWinActive ahk_group SmartWonder
 
+; 複製最近相關報告並開啟影像
 $^0::
   GetPreviousReport(true, true)
 Return
 
+; 複製最近相關報告但不開啟影像
 $^!0::
   GetPreviousReport(true, false)
+Return
+
+; 吳主任版: 複製最近相關報告, 開啟最近兩次影像, 如皆在三個月內, 開另一更久遠的影像
+$^9::
+  GetPreviousReportWithImages(true, true, 2, true, false)
 Return
 
 ; 更改報告編輯區字體
@@ -109,6 +116,7 @@ $^!f::
   ChangeFont()
 Return
 
+; 將選取的文字改為字首大寫
 $^!t::
   ConvertSelectedTextToSentenceCase()
 Return
@@ -128,15 +136,6 @@ Return
 $^!d::
   InsertPrevExamDate()
 Return
-
-
-$^9::
-  GetPreviousReportWithImages(true, true, 2, true, false)
-Return
-
-;$^!9::
-;  GetPreviousReportWithFarImage(true, false)
-;Return
 
 ; Insert Patient Exam Info
 $^h::
