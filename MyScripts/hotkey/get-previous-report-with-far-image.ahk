@@ -2,7 +2,7 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 
-GetPreviousReportWithImages(CopyReport=true, LoadImages=false, TotalRecentImages=2, LoadFarImage=true) {
+GetPreviousReportWithImages(CopyReport=true, LoadImages=false, TotalRecentImages=2, LoadFarImage=true, ShowAlert=true) {
   ; use global variables to store previous exam date
   global prevExamDate
   global currAccNo
@@ -136,12 +136,21 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=false, TotalRecentImages
 
   ; 切回報告編輯頁
   tabEditReport.click()
-  If isNoPrevReport ; 完全沒有歷史報告
-    MsgBox % tdMsgMore.innerText
-  If (relatedReportCount = 0) ; 沒有找到相關的報告，顯示訊息
-    MsgBox % "AHK-SmartWonder: No related report found."
-  Else If (farRelatedReportIndex = 0)
-    MsgBox % "AHK-SmartWonder: No related report > 90 days found."
+  If (ShowAlert) {
+    If isNoPrevReport ; 完全沒有歷史報告
+      MsgBox % tdMsgMore.innerText
+    If (relatedReportCount = 0) ; 沒有找到相關的報告，顯示訊息
+      MsgBox % "AHK-SmartWonder: No related report found."
+    Else If (farRelatedReportIndex = 0)
+      MsgBox % "AHK-SmartWonder: No related report > 90 days found."
+  } Else {
+    ; 輸出沒得比較的字串
+    If (isNoPrevReport || relatedReportCount = 0) {
+      FrameWait(frmTabIframe2)
+      ReportContent := frmTabIframe2.document.getElementsByName("ReportContent")[0]
+      ReportContent.innerText := "No related previous image for comparison." . Chr(13) . ReportContent.innerHTML
+    }
+  }
 }
 
 #IfWinActive
