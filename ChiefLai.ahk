@@ -41,8 +41,13 @@ GroupAdd, SmartWonder, tedpc-
 Return
 
 ; 複製最近相關報告並開啟最近兩張及三個月前影像
+^2::
+  GetPreviousReportWithImages(true, true, 2, false, true)
+Return
+
+; 複製最近相關報告並開啟最近兩張及三個月前影像
 ^3::
-  GetPreviousReportWithFarImage(true, true)
+  GetPreviousReportWithImages(true, true, 2, true, true)
 Return
 
 ; 複製最近相關報告但不開啟影像
