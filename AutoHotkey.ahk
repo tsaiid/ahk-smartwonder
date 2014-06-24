@@ -46,6 +46,7 @@ GroupAdd, SmartWonder, tedpc-
   #Include MyScripts\kub.ahk
   #Include MyScripts\bone-x-ray.ahk
   #Include MyScripts\other-x-ray.ahk
+  #Include MyScripts\comparisons.ahk
   #Include MyScripts\sono-guide.ahk
 
   #Include MyScripts\sono.ahk
