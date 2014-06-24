@@ -2,7 +2,13 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 
-GetPreviousReportWithImages(CopyReport=true, LoadImages=false, TotalRecentImages=2, LoadFarImage=true, ShowAlert=true) {
+;; Get previous related reports with images
+;;; CopyReport: true or false, copy the latest report or not.
+;;; LoadImages: true or false, load previous images or not.
+;;; TotalRecentImages: numeric, how many previous images to be loaded.
+;;; LoadFarImage: true or false, if TotalRecentImages all within 3 months, find a > 3 months images.
+;;; ShowAlert: true or false, show alert message or directly insert the message into the report area.
+GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=2, LoadFarImage=true, ShowAlert=true) {
   ; use global variables to store previous exam date
   global prevExamDate
   global currAccNo
