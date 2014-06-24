@@ -22,7 +22,16 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
 
   ;; 參考用的 pattern
   patterns := {   CXR:          "i)chest (pa|ap|& kub)"
+                , KUBLSpine:    "KUB, L-Spine"
                 , KUB:          "i)kub"
+                , CSpineApLat:  "C-Spine AP, LAT"
+                , CSpineObl:    "C-Spine both obliques"
+                , CSpineFlxExt: "C-Spine lateral flex\."
+                , CSpineMouth:  "C-Spine open mouth"
+                , TSpineApLat:  "T-Spine AP, LAT"
+                , LSpineApLat:  "L-Spine AP, LAT"
+                , LSpineFlxExt: "L-Spine LAT\. \(Flex\. & Ext\.\)"
+                , LSpineLat:    "L-Spine LAT"
                 , ToeRt:        "Toe\(s\) RT"
                 , ToeLt:        "Toe\(s\) LT"
                 , FootRt:       "Foot RT"
