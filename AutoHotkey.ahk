@@ -131,7 +131,7 @@ Return
 
 
 $^9::
-  GetPreviousReportWithFarImage(true, true)
+  GetPreviousReportWithImages(true, true, 2, true, false)
 Return
 
 ;$^!9::
