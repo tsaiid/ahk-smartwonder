@@ -26,8 +26,4 @@ CopyOrder(toLower = 0)
   return MyOrderDiag
 }
 
-$^i::
-  MyOrderDiag := CopyOrder()
-  Paste(MyOrderDiag)
-Return
 #IfWinActive

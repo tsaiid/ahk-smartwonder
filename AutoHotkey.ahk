@@ -73,9 +73,9 @@ GroupAdd, SmartWonder, tedpc-
 
 SetTitleMatchMode, 2
 
-#Include MyScripts\debug.ahk
+;#Include MyScripts\debug.ahk
 
-; HotKeys
+; HotKeys Lib
 #Include MyScripts\hotkey\selecting-tabs.ahk
 #Include MyScripts\hotkey\get-previous-report.ahk
 #Include MyScripts\hotkey\get-previous-report-with-far-image.ahk
@@ -92,3 +92,69 @@ SetTitleMatchMode, 2
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
 ;;#Include MyScripts\active-current-image-before-submit.ahk
 
+; Define hotkeys
+#IfWinActive ahk_group SmartWonder
+
+$^0::
+  GetPreviousReport(true, true)
+Return
+
+$^!0::
+  GetPreviousReport(true, false)
+Return
+
+; 更改報告編輯區字體
+$^!f::
+  ChangeFont()
+Return
+
+$^!t::
+  ConvertSelectedTextToSentenceCase()
+Return
+
+; CopyIndication
+$^i::
+  MyOrderDiag := CopyOrder()
+  Paste(MyOrderDiag)
+Return
+
+; Delete current line
+$^l::
+  DeleteCurrentLine()
+Return
+
+; Insert Previous Exam Date
+$^!d::
+  InsertPrevExamDate()
+Return
+
+
+$^9::
+  GetPreviousReportWithFarImage(true, true)
+Return
+
+;$^!9::
+;  GetPreviousReportWithFarImage(true, false)
+;Return
+
+; Insert Patient Exam Info
+$^h::
+  InsertPatientExamInfo()
+Return
+
+; Renumber Seleted Text
+$^!n::
+  RenumberSeletedText()
+Return
+
+; Select tabs
+; 報告編輯
+^1::
+  ClickReportEditing()
+Return
+
+; 歷史報告
+^3::
+  ClickPreviousReports()
+Return
+#IfWinActive

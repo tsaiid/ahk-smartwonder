@@ -1,6 +1,7 @@
 ; HotKey
 ; Convert selected text to sentence case.
-$^!t::
+#IfWinActive ahk_group SmartWonder
+ConvertSelectedTextToSentenceCase() {
   wb := WBGet()
 
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
@@ -12,4 +13,5 @@ $^!t::
     selectedText := RegExReplace(selectedText, "((?:^|[.!?]\s+)[a-z])", "$u1")
     Paste(selectedText, 0)
   }
-Return
+}
+#IfWinActive

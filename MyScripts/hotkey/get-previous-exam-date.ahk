@@ -17,13 +17,13 @@ GetPrevExamDate() {
   Return SplitDate(prevExamDate)
 }
 
-$^!d::
+InsertPrevExamDate(){
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
 
   prevExamDate := GetPrevExamDate()
   FrameWait(tabIframe2) ; 要等如果是從歷史報告頁面切回來的時間
   Paste(prevExamDate)
-Return
+}
 
 #IfWinActive

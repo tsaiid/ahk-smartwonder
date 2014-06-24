@@ -2,7 +2,7 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 ;;; Select Tabs
-$^1:: ; 報告編輯
+ClickReportEditing() {
   wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
@@ -11,9 +11,9 @@ $^1:: ; 報告編輯
   ; 切換至編輯報告頁
   tabEditReport.click()
   ChangeFont()
-return
+}
 
-$^3:: ; 歷史報告
+ClickPreviousReports() {
   wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
@@ -21,5 +21,5 @@ $^3:: ; 歷史報告
   tabPrevReport := frmWork.document.getElementById("tabCaption0").children[7]
   ; 切換至歷史報告頁
   tabPrevReport.click()
-return
+}
 #IfWinActive

@@ -3,7 +3,7 @@
 ;; for SmartWonder
 
 #IfWinActive ahk_group SmartWonder
-$^!n::
+RenumberSeletedText(){
   wb := WBGet()
 
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
@@ -97,6 +97,5 @@ $^!n::
   } Else {
     ; No selection. Do nothing.
   }
-
-Return
+}
 #IfWinActive

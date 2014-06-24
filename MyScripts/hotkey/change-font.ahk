@@ -3,8 +3,7 @@
 
 #IfWinActive ahk_group SmartWonder
 ;;; Select Tabs
-ChangeFont(font = "Source Code Pro")
-{
+ChangeFont(font = "Source Code Pro") {
   wb := WBGet()
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
@@ -14,8 +13,4 @@ ChangeFont(font = "Source Code Pro")
   ;txtReportContent.style.fontSize := "12pt"
   return
 }
-
-$^!f:: ; 更改報告編輯區字體
-  ChangeFont()
-Return
 #IfWinActive

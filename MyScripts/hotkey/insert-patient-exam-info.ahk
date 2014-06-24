@@ -2,7 +2,7 @@
 ; Only work in IE.
 
 #IfWinActive ahk_class IEFrame
-$^h::
+InsertPatientExamInfo(){
   SmartWonderWinID := WinExist("ahk_group SmartWonder")
   wb := WBGet("ahk_id" SmartWonderWinID)
   If (wb) {
@@ -17,5 +17,5 @@ $^h::
     LaiStr = Hx: %PatID%, Ac: %AccNo%, %PatGender%/%PatAge%, %ExamDate%
     Paste(LaiStr, 0)
   }
-Return
+}
 #IfWinActive

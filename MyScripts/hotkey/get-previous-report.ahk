@@ -198,13 +198,4 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
     MsgBox % "AHK-SmartWonder: No related report found."
 }
 
-
-$^0::
-  GetPreviousReport(true, true)
-Return
-
-$^!0::
-  GetPreviousReport(true, false)
-Return
-
 #IfWinActive

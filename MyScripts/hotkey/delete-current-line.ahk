@@ -3,7 +3,7 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 ;;; Select whole line and delete
-$^l::
+DeleteCurrentLine(){
   Send {Home}+{End}
 
   wb := WBGet()
@@ -57,5 +57,5 @@ $^l::
       Send {Home}
     }
   }
-return
+}
 #IfWinActive

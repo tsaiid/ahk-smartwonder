@@ -140,13 +140,4 @@ GetPreviousReportWithFarImage(CopyReport=true, LoadImages=false) {
     MsgBox % "AHK-SmartWonder: No related report > 90 days found."
 }
 
-
-$^9::
-  GetPreviousReportWithFarImage(true, true)
-Return
-
-;$^!9::
-;  GetPreviousReportWithFarImage(true, false)
-;Return
-
 #IfWinActive
