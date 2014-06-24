@@ -2,7 +2,7 @@
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 
-GetPreviousReportWithFarImage(CopyReport=true, LoadImages=false) {
+GetPreviousReportWithImages(CopyReport=true, LoadImages=false, TotalRecentImages=2, LoadFarImage=true) {
   ; use global variables to store previous exam date
   global prevExamDate
   global currAccNo
@@ -97,7 +97,7 @@ GetPreviousReportWithFarImage(CopyReport=true, LoadImages=false) {
       deltaExamDate := currExamDate
       theExamDate := StrSplit(key, "_")[1]
       EnvSub, deltaExamDate, %theExamDate%, Days
-      If (deltaExamDate > 90 && relatedReportCountIndex >= 2) {
+      If (deltaExamDate > 90 && relatedReportCountIndex >= TotalRecentImages) {
         farRelatedReportIndex := value
       }
     }
@@ -117,12 +117,16 @@ GetPreviousReportWithFarImage(CopyReport=true, LoadImages=false) {
       btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
       btnCopyReport.click() ; 複製報告
 
-      ; load second latest image
+      ; load image other than latest
       If (LoadImages && relatedReportCount > 1) {
-        secondRelatedReport := prevReportLists.children[prevReportArray[2]].children[1]
-        secondRelatedReport.click()
+        Loop %TotalRecentImages% {
+          If (A_Index > 1 && A_Index <= relatedReportCount) {
+            theRelatedReport := prevReportLists.children[prevReportArray[A_Index]].children[1]
+            theRelatedReport.click()
+          }
+        }
 
-        If (farRelatedReportIndex > 0) {
+        If (LoadFarImage && farRelatedReportIndex > 0) {
           farRelatedReport := prevReportLists.children[farRelatedReportIndex].children[1]
           farRelatedReport.click()
         }
