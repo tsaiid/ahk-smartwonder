@@ -14,22 +14,7 @@
 ::fufe::Suggest follow-up or further evaluation.
 ::nbd::Nature to be determined.
 
-SplitDate(dateStr) {
-  Return RegExReplace(dateStr, "(\d{4})(\d{2})(\d{2})", "$1-$2-$3")
-}
-
-StringWithPrevExamDate(strTemplate) {
-  global prevExamDate
-
-  output := strTemplate
-  If (StrLen(prevExamDate)) {
-    output .= " on " . splitDate(prevExamDate)
-  }
-  output .= "."
-
-  Paste(output, 0)
-}
-
+; need other string and date lib
 ::nic::
   StringWithPrevExamDate("No obvious interval change as compared with previous study")
 Return
