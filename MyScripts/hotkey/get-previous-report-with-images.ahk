@@ -73,6 +73,7 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=false, TotalRecentImages
     relatedReportCount := 0
     prevReportHash := {}
     prevReportArray := []
+    prevReportDateArray := []
     Loop %prevReportListsLength% {
       If RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) {
         ; 先找出所有相關報告
@@ -91,14 +92,28 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=false, TotalRecentImages
     farRelatedReportIndex := 0
     relatedReportCountIndex := relatedReportCount
     For key, value in prevReportHash {
-      prevReportArray[relatedReportCountIndex--] := value
+      prevReportArray[relatedReportCountIndex] := value
+      prevReportDateArray[relatedReportCountIndex] := StrSplit(key, "_")[1]
+      relatedReportCountIndex--
+    }
 
-      ; 取得古早影像, 暫時定義 > 3 月前
+    ; 取得古早影像, 暫時定義 > 3 月前, 且最近的幾份都在三個月內
+    If (LoadFarImage) {
       deltaExamDate := currExamDate
-      theExamDate := StrSplit(key, "_")[1]
-      EnvSub, deltaExamDate, %theExamDate%, Days
-      If (deltaExamDate > 90 && relatedReportCountIndex >= TotalRecentImages) {
-        farRelatedReportIndex := value
+      relatedExamDate := prevReportDateArray[TotalRecentImages]
+      EnvSub, deltaExamDate, %relatedExamDate%, Days
+      If (StrLen(relatedExamDate) && deltaExamDate < 90) {
+        Loop %relatedReportCount% {
+          If (A_Index > TotalRecentImages) {
+            deltaExamDate := currExamDate
+            relatedExamDate := prevReportDateArray[A_Index]
+            EnvSub, deltaExamDate, %relatedExamDate%, Days
+            If (deltaExamDate > 90) {
+              farRelatedReportIndex := prevReportArray[A_Index]
+              Break
+            }
+          }
+        }
       }
     }
 
@@ -123,12 +138,14 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=false, TotalRecentImages
           If (A_Index > 1 && A_Index <= relatedReportCount) {
             theRelatedReport := prevReportLists.children[prevReportArray[A_Index]].children[1]
             theRelatedReport.click()
+            ;MsgBox % prevReportLists.children[prevReportArray[A_Index]].children[4].innerText
           }
         }
 
         If (LoadFarImage && farRelatedReportIndex > 0) {
           farRelatedReport := prevReportLists.children[farRelatedReportIndex].children[1]
           farRelatedReport.click()
+          ;MsgBox, far = %farRelatedReportIndex%
         }
       }
     }
