@@ -5,9 +5,14 @@ SplitDate(dateStr) {
 
 StringWithPrevExamDate(strTemplate) {
   global prevExamDate
+  global currAccNo
+
+  wb := WBGet()
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
   output := strTemplate
-  If (StrLen(prevExamDate)) {
+  If (currAccNo = AccNo && StrLen(prevExamDate)) {
     output .= " on " . splitDate(prevExamDate)
   }
   output .= "."
