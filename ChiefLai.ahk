@@ -21,11 +21,12 @@ GroupAdd, SmartWonder, tedpc-
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
   #Include MyScripts\neuro.ahk
+  #Include MyScripts\comparisons.ahk
 #IfWinActive
 
 ; HotKeys
 #Include MyScripts\hotkey\get-previous-report.ahk
-#Include MyScripts\hotkey\get-previous-report-with-far-image.ahk
+#Include MyScripts\hotkey\get-previous-report-with-images.ahk
 #Include MyScripts\hotkey\get-previous-exam-date.ahk
 #Include MyScripts\hotkey\change-font.ahk
 #Include MyScripts\hotkey\copy-order.ahk
