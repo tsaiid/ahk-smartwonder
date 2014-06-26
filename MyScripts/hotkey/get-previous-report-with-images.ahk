@@ -61,7 +61,7 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
   StringReplace currExamDate, currExamDate, -,, All
   currExamTime := currExamTime + 0
 
-  currExamDateTime := (currExamDate . "_" . currExamTime) + 0
+  currExamDateTime := (currExamDate . currExamTime)
 
   ; 檢查是否有歷史報告
   prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
@@ -83,15 +83,20 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
     Loop %prevReportListsLength% {
       If RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) {
         ; 先找出所有相關報告
-        ;; 排除比目前日期晚的
         prevExamDate := prevReportLists.children[A_Index].children[4].innerText
         prevExamTime := prevReportLists.children[A_Index].children[5].innerText
         ;; convert string to int for date and time
         ;prevExamTime := prevExamTime + 0
-        prevExamDateTime := (prevExamDate . "_" . prevExamTime)
+        prevExamDateTime := (prevExamDate . prevExamTime)
 
-        prevReportHash[prevExamDateTime] := A_Index
-        relatedReportCount += 1
+        ;; 排除比目前日期晚的
+        deltaDateTime := currExamDateTime
+        EnvSub, deltaDateTime, %prevExamDateTime%, Seconds
+        If (deltaDateTime > 0) {
+          prevExamDate_Time := (prevExamDate . "_" . prevExamTime)
+          prevReportHash[prevExamDate_Time] := A_Index
+          relatedReportCount += 1
+        }
       }
     }
 
