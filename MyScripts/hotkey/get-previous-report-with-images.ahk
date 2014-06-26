@@ -59,7 +59,8 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
 
   ;; convert string to int for date and time
   StringReplace currExamDate, currExamDate, -,, All
-  currExamTime := currExamTime + 0
+  ; currExamTime format is strange, ex 095224.000, need to be trimmed.
+  currExamTime := RegExReplace(currExamTime, "\.\d+", "")
 
   currExamDateTime := (currExamDate . currExamTime)
 
@@ -92,6 +93,7 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
         ;; 排除比目前日期晚的
         deltaDateTime := currExamDateTime
         EnvSub, deltaDateTime, %prevExamDateTime%, Seconds
+        ;MsgBox, c = %currExamDateTime%, p = %prevExamDateTime%, d = %deltaDateTime%
         If (deltaDateTime > 0) {
           prevExamDate_Time := (prevExamDate . "_" . prevExamTime)
           prevReportHash[prevExamDate_Time] := A_Index
@@ -101,6 +103,8 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
     }
 
     farRelatedReportIndex := 0
+    far3MonthsRelatedReportIndex := 0
+    far6MonthsRelatedReportIndex := 0
     relatedReportCountIndex := relatedReportCount
     For key, value in prevReportHash {
       prevReportArray[relatedReportCountIndex] := value
@@ -108,7 +112,7 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
       relatedReportCountIndex--
     }
 
-    ; 取得古早影像, 暫時定義 > 3 月前, 且最近的幾份都在三個月內
+    ; 取得古早影像, 找出 3 個月內最遠的，以及 3-6 個月間最遠的, 且最近的幾份都在三個月內
     If (LoadFarImage) {
       deltaExamDate := currExamDate
       relatedExamDate := prevReportDateArray[TotalRecentImages]
@@ -119,9 +123,10 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
             deltaExamDate := currExamDate
             relatedExamDate := prevReportDateArray[A_Index]
             EnvSub, deltaExamDate, %relatedExamDate%, Days
-            If (deltaExamDate > 90) {
-              farRelatedReportIndex := prevReportArray[A_Index]
-              Break
+            If (deltaExamDate <= 90) {
+              far3MonthsRelatedReportIndex := prevReportArray[A_Index]
+            } Else If (deltaExamDate > 90 && deltaExamDate < 180) {
+              far6MonthsRelatedReportIndex := prevReportArray[A_Index]
             }
           }
         }
@@ -153,10 +158,19 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
           }
         }
 
-        If (LoadFarImage && farRelatedReportIndex > 0) {
-          farRelatedReport := prevReportLists.children[farRelatedReportIndex].children[1]
-          farRelatedReport.click()
-          ;MsgBox, far = %farRelatedReportIndex%
+        If (LoadFarImage) {
+          ; 先找 3-6 個月的，再找 3 個月內最遠的
+          If (far6MonthsRelatedReportIndex > 0) {
+            farRelatedReportIndex := far6MonthsRelatedReportIndex
+          } Else If (far3MonthsRelatedReportIndex > 0) {
+            farRelatedReportIndex := far3MonthsRelatedReportIndex
+          }
+
+          If (farRelatedReportIndex > 0) {
+            farRelatedReport := prevReportLists.children[farRelatedReportIndex].children[1]
+            farRelatedReport.click()
+            ;MsgBox, far = %farRelatedReportIndex%
+          }
         }
       }
     }
