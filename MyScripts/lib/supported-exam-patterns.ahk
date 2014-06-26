@@ -9,7 +9,7 @@ SupportedExamPatterns() {
                 , CSpineFlxExt: "C-Spine lateral flex\."
                 , CSpineMouth:  "C-Spine open mouth"
                 , TSpineApLat:  "T-Spine AP, LAT"
-                , LSpineApLat:  "L-Spine AP, LAT"
+                , LSpineApLat:  "L-Spine AP[,\+] LAT"
                 , LSpineFlxExt: "L-Spine LAT\. \(Flex\. & Ext\.\)"
                 , LSpineLat:    "L-Spine LAT"
                 , ToeRt:        "Toe\(s\) RT"
