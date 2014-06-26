@@ -89,6 +89,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\convert-case.ahk
 #Include MyScripts\hotkey\renumber-selected-text.ahk
 #Include MyScripts\hotkey\remapping-original-hotkeys.ahk
+#Include MyScripts\hotkey\click-none-tb-none-ot.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
@@ -146,6 +147,11 @@ Return
 ; Renumber Seleted Text
 $^!n::
   RenumberSeletedText()
+Return
+
+; Click TB(-)Ot(-)
+^!o::
+  ClickNoneTBNoneOt()
 Return
 
 ; Select tabs
