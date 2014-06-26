@@ -37,6 +37,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include MyScripts\lib\frame-wait.ahk
 #Include MyScripts\lib\dicom-sr.ahk
 #Include MyScripts\lib\date.ahk
+#Include MyScripts\lib\supported-exam-patterns.ahk
 
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
