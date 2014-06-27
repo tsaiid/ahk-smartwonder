@@ -38,24 +38,24 @@ GroupAdd, SmartWonder, tedpc-
 #IfWinActive ahk_group SmartWonder
 
 ; 複製最近相關報告並開啟影像
+^0::
+  GetPreviousReportWithImages(true, true, 1, false, false)
+Return
+
+; 複製最近相關報告並開啟影像
 ^1::
-  GetPreviousReport(true, true)
+  GetPreviousReportWithImages(true, true, 1, false, false)
 Return
 
 ; 複製最近相關報告並開啟最近兩張及三個月前影像
 ^2::
-  GetPreviousReportWithImages(true, true, 2, false, true)
+  GetPreviousReportWithImages(true, true, 2, false, false)
 Return
 
 ; 複製最近相關報告並開啟最近兩張及三個月前影像
 ^3::
-  GetPreviousReportWithImages(true, true, 2, true, true)
+  GetPreviousReportWithImages(true, true, 2, true, false)
 Return
-
-; 複製最近相關報告但不開啟影像
-;$^!0::
-;  GetPreviousReport(true, false)
-;Return
 
 ; CopyIndication
 $^i::
