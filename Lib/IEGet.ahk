@@ -1,4 +1,4 @@
-; 取得 IE DOM
+﻿; 取得 IE DOM
 ; Access an IE object by Window/Tab Name
 ; written by Jethrow
 ; http://www.autohotkey.com/board/topic/47052-basic-webpage-controls-with-javascript-com-tutorial/

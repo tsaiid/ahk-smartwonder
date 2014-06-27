@@ -1,4 +1,4 @@
-; Comparisons
+﻿; Comparisons
 ; need other string and date lib
 ::nic::
   StringWithPrevExamDate("No obvious interval change as compared with previous study")

@@ -1,4 +1,4 @@
-; For LiberaBMD
+﻿; For LiberaBMD
 ; Standalone AHK script to get the report of BMD from server.
 
 ; WBGet()

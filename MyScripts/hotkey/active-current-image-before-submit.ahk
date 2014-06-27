@@ -1,4 +1,4 @@
-#IfWinActive ahk_group SmartWonder
+﻿#IfWinActive ahk_group SmartWonder
 ;;; Move mouse to SmartIris to activate current image, and then confirm the report (^k).
 $^s::
   MouseGetPos, xpos,ypos

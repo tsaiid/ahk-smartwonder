@@ -1,4 +1,4 @@
-; Insert PatID, AccNo, PatGender, PatAge, ExamDate for Chief Lai
+﻿; Insert PatID, AccNo, PatGender, PatAge, ExamDate for Chief Lai
 ; Only work in IE.
 
 #IfWinActive ahk_class IEFrame

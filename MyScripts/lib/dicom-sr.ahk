@@ -1,4 +1,4 @@
-; Lib for dicom-sr
+﻿; Lib for dicom-sr
 
 ;; Wait for SR ajax to complete, by detecting if the 'sr_message' DOM presents or more than 3 seconds.
 SRWait(TargetFrame)

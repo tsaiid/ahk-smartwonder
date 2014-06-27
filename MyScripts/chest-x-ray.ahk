@@ -1,4 +1,4 @@
-; For CXR
+﻿; For CXR
 ::nall::No active lung lesion.
 ::ncm::No cardiomegaly.
 ::bcm::Borderline cardiomegaly.

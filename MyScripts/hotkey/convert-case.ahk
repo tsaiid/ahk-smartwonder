@@ -1,4 +1,4 @@
-; HotKey
+﻿; HotKey
 ; Convert selected text to sentence case.
 #IfWinActive ahk_group SmartWonder
 ConvertSelectedTextToSentenceCase() {

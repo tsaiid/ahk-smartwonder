@@ -1,10 +1,10 @@
-/*
+﻿/*
 	Function: hotstrings
 		Dynamically adds regular expression hotstrings.
 
 	Parameters:
 		c - regular expression hotstring
-		a - (optional) text to replace hotstring with or a label to goto, 
+		a - (optional) text to replace hotstring with or a label to goto,
 			leave blank to remove hotstring definition from triggering an action
 
 	Examples:

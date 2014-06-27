@@ -1,4 +1,4 @@
-; Special
+﻿; Special
 
 ::vcug::
   MyForm =

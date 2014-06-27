@@ -1,4 +1,4 @@
-; Sono-guide
+﻿; Sono-guide
 ::sg-ptgbd::
   MyForm =
 (

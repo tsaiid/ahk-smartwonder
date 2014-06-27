@@ -1,4 +1,4 @@
-; WBGet()
+﻿; WBGet()
 ; Access an IE object by WinTitle and Internet Explorer_Server Number
 ; By jethrow
 ; http://www.autohotkey.com/board/topic/47052-basic-webpage-controls-with-javascript-com-tutorial/

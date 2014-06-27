@@ -1,4 +1,4 @@
-; My RegEx HotStrings
+﻿; My RegEx HotStrings
 #Include Lib\Hotstrings.ahk
 hotstrings("plsp(\d)(\d)\s", "plsp")
 Return

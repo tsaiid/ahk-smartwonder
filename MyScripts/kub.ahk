@@ -1,4 +1,4 @@
-; For KUB
+﻿; For KUB
 ::kub::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
 ::kub-b::The bowel gas pattern is unremarkable.
 ::kub-s::Residual stool in the colon and rectum.

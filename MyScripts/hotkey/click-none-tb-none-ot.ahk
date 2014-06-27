@@ -1,4 +1,4 @@
-; HotKey
+﻿; HotKey
 ;; for SmartWonder
 ;; As Chief Wu's request, for clicking the radio button of TB(-)Ot(-)
 #IfWinActive ahk_group SmartWonder

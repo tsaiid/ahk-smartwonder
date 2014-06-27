@@ -1,4 +1,4 @@
-; HotKey
+﻿; HotKey
 ;; Delete current line
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder

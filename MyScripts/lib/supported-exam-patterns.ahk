@@ -1,4 +1,4 @@
-; My Lib
+﻿; My Lib
 
 SupportedExamPatterns() {
   patterns := {   CXR:          "i)chest (pa|ap|& kub)"

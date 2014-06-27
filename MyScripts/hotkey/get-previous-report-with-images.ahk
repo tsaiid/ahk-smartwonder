@@ -1,4 +1,4 @@
-; HotKey
+﻿; HotKey
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 

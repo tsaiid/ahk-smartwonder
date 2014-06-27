@@ -1,4 +1,4 @@
-; Hotkey: get previous exam date
+﻿; Hotkey: get previous exam date
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 

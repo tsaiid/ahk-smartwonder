@@ -1,4 +1,4 @@
-; Copy Order After "Purpose"
+﻿; Copy Order After "Purpose"
 ;; for SmartWonder
 #IfWinActive ahk_group SmartWonder
 

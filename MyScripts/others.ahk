@@ -1,4 +1,4 @@
-::bil::bilateral `
+﻿::bil::bilateral `
 ::lt::left `
 ::rt::right `
 ::ifo::in favor of `

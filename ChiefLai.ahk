@@ -1,4 +1,4 @@
-; Group Control For SmartWonder
+﻿; Group Control For SmartWonder
 GroupAdd, SmartWonder, VGHKS-
 GroupAdd, SmartWonder, vghks-
 GroupAdd, SmartWonder, tedpc-

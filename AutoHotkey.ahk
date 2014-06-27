@@ -1,4 +1,4 @@
-; IMPORTANT INFO ABOUT GETTING STARTED: Lines that start with a
+﻿; IMPORTANT INFO ABOUT GETTING STARTED: Lines that start with a
 ; semicolon, such as this one, are comments.  They are not executed.
 
 ; This script has a special filename and path because it is automatically

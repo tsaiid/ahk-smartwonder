@@ -1,3 +1,3 @@
-; Global Variables
+﻿; Global Variables
 prevExamDate := ""
 currAccNo := ""

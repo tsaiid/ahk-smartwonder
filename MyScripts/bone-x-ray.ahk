@@ -1,4 +1,4 @@
-; For Bone Plain Film
+﻿; For Bone Plain Film
 ::bok::No joint space narrowing, dislocation, or fracture.{Enter}
 ::djdl::DJD change of L-spine.{Enter}
 ::djdt::DJD change of T-spine.{Enter}

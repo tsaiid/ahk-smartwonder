@@ -1,4 +1,4 @@
-; HotKey
+﻿; HotKey
 ;; Renumbering the selected text
 ;; for SmartWonder
 
