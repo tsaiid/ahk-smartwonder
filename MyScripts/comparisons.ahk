@@ -12,6 +12,14 @@ Return
   StringWithPrevExamDate("Progressive change as compared with previous study")
 Return
 
+::mpc::
+  StringWithPrevExamDate("Mild progressive change as compared with previous study")
+Return
+
 ::rc::
   StringWithPrevExamDate("Regressive change as compared with previous study")
+Return
+
+::mrc::
+  StringWithPrevExamDate("Mild regressive change as compared with previous study")
 Return

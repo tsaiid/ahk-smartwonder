@@ -59,6 +59,7 @@
 ::ima::inferior mesenteric artery
 ::iud::intrauterine device
 ::gb::gallbladder
+::hn::hydronephrosis
 
 ;; Neuro
 ::ich::intracranial hemorrhage
