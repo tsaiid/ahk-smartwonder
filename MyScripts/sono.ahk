@@ -22,7 +22,7 @@ Under Doppler Ultrasound, normal blood flow pattern is noted over bilateral kidn
 Normal appearance of urinary bladder. No stones nor sludge is noted.
 Prostate volume is about %Prostate%.
 )
-  Paste(MyForm)
+  Paste(MyForm, false)
 Return
 
 ::s-uabd::
@@ -47,8 +47,6 @@ Normal liver parenchyma echo pattern without focal lesion noted.
 The gallbladder is well distended with smooth wall.
 No abnormal dilatation of IHDs and CBD noted.
 
-The portal vein is patent.
-
 The visualized portion of spleen is unremarkable. Spleen size about %Spleen%.
 
 Bilateral kidneys are normal in echogenicity.
@@ -57,5 +55,5 @@ No abnormal dilatation of bilateral urinary collecting systems noted.
 
 No pleural effusion or ascites noted.
 )
-  Paste(MyForm)
+  Paste(MyForm, false)
 Return
