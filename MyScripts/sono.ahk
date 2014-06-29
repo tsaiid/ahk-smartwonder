@@ -10,6 +10,8 @@
 
   LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
   RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
+
+  Sex := StrSplit(tabIframe2.document.getElementById("tabPatient").children(0).children(0).children(0).children(0).innerText, "/")[2]
   Prostate := tabIframe2.document.getElementById("sr_prostate") ? tabIframe2.document.getElementById("sr_prostate").value : "_ cm"
 
   MyForm =
@@ -20,8 +22,12 @@ Right renal size about %RightKidney%; left renal size about %LeftKidney%.
 Normal size and echogenicity over bilateral kidneys without hydronephrosis nor nephrolithiasis noted.
 Under Doppler Ultrasound, normal blood flow pattern is noted over bilateral kidneys.
 Normal appearance of urinary bladder. No stones nor sludge is noted.
-Prostate volume is about %Prostate%.
 )
+
+  If (Sex = "M") {
+    MyForm .= "`nProstate volume is about " . Prostate . "."
+  }
+
   Paste(MyForm, false)
 Return
 
