@@ -139,11 +139,6 @@ $^!d::
   InsertPrevExamDate()
 Return
 
-; Insert Patient Exam Info
-$^h::
-  InsertPatientExamInfo()
-Return
-
 ; Renumber Seleted Text
 $^!n::
   RenumberSeletedText()
@@ -165,3 +160,9 @@ Return
   ClickPreviousReports()
 Return
 #IfWinActive
+
+; Insert Patient Exam Info
+;; This hotkey cannot be included in SmartWonder window group
+$^h::
+  InsertPatientExamInfo()
+Return
