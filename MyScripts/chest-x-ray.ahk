@@ -37,9 +37,9 @@
 ::ile::Inadequate inspiration crowds lung markings.
 ::pe::Engorged hila and pulmonary vasculature indicate pulmonary edema.
 ::clc::Increased linear opacity over bilatera lower lungs, in favor of chronic inflammatory change.
-::lfa::Atelectasis of left lower lung.
-::rfa::Atelectasis of right lower lung.
-::bfa::Atelectasis of bilateral lower lungs.
+::lla::Linear atelectasis of left lower lung.
+::rla::Linear atelectasis of right lower lung.
+::bla::Linear atelectasis of bilateral lower lungs.
 ::plef::pleural effusion
 ::inef::interlobar effusion
 ::pcef::pericardial effusion
