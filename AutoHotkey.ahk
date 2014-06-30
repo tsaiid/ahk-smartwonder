@@ -88,8 +88,9 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\insert-patient-exam-info.ahk
 #Include MyScripts\hotkey\convert-case.ahk
 #Include MyScripts\hotkey\renumber-selected-text.ahk
-#Include MyScripts\hotkey\remapping-original-hotkeys.ahk
+;#Include MyScripts\hotkey\remapping-original-hotkeys.ahk
 #Include MyScripts\hotkey\click-none-tb-none-ot.ahk
+#Include MyScripts\hotkey\click-confirm.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
@@ -159,6 +160,12 @@ Return
 ^3::
   ClickPreviousReports()
 Return
+
+; 皆可確認報告
+^s::
+  ClickConfirm()
+Return
+
 #IfWinActive
 
 ; Insert Patient Exam Info
