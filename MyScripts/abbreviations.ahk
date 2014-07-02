@@ -36,6 +36,7 @@
 ::subq::subcutaneous `
 ::afl::air-fluid level
 :c:cm::contrast medium
+::wnl::within normal limits
 
 ;; Bone
 ::pf::patellofemoral `
