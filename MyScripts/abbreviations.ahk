@@ -61,6 +61,10 @@
 ::iud::intrauterine device
 ::gb::gallbladder
 ::hn::hydronephrosis
+::ub::urinary bladder
 
 ;; Neuro
 ::ich::intracranial hemorrhage
+
+;; Others
+::dvt::deep vein thrombosis
