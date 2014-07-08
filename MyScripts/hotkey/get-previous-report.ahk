@@ -64,10 +64,10 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
   FrameWait(frmHistory1)
   tdMsgMore := frmHistory1.document.getElementById("tdMsgMore")
 
+  getPrevReport := 0
   If !isNoPrevReport ; 有一筆以上的歷史報告
   {
     prevReportListsLength := prevReportLists.children.length
-    getPrevReport := 0
     relatedReportCount := 0
     Loop %prevReportListsLength% {
       If RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) {
@@ -148,10 +148,18 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
 
   ; 切回報告編輯頁
   tabEditReport.click()
-  If isNoPrevReport ; 完全沒有歷史報告
-    MsgBox % tdMsgMore.innerText
-  If (getPrevReport = 0) ; 沒有找到相關的報告，顯示訊息
-    MsgBox % "AHK-SmartWonder: No related report found."
+  If (getPrevReport = 0) {
+    ; 清除 prevExamDate
+    prevExamDate := ""
+
+    ; 完全沒有歷史報告
+    If isNoPrevReport {
+      MsgBox % tdMsgMore.innerText
+    } Else {
+      ; 沒有找到相關的報告，顯示訊息
+      MsgBox % "AHK-SmartWonder: No related report found."
+    }
+  }
 }
 
 #IfWinActive

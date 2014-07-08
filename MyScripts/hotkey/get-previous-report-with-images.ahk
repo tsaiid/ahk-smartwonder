@@ -73,11 +73,11 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
   FrameWait(frmHistory1)
   tdMsgMore := frmHistory1.document.getElementById("tdMsgMore")
 
+  relatedReportCount := 0
   ; 有一筆以上的歷史報告
   If !isNoPrevReport {
     prevReportListsLength := prevReportLists.children.length
     getPrevReport := 0
-    relatedReportCount := 0
     prevReportHash := {}
     prevReportArray := []
     prevReportDateArray := []
@@ -179,12 +179,23 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
   ; 切回報告編輯頁
   tabEditReport.click()
   If (ShowAlert) {
-    If isNoPrevReport ; 完全沒有歷史報告
-      MsgBox % tdMsgMore.innerText
-    If (relatedReportCount = 0) ; 沒有找到相關的報告，顯示訊息
-      MsgBox % "AHK-SmartWonder: No related report found."
-    Else If (farRelatedReportIndex = 0)
+    ; 沒有找到相關的報告，顯示訊息
+    If (relatedReportCount = 0) {
+      ; Reset prevExamDate
+      prevExamDate := ""
+
+      ; 完全沒有歷史報告
+      If isNoPrevReport {
+        MsgBox % tdMsgMore.innerText
+      } Else {
+        MsgBox % "AHK-SmartWonder: No related report found."
+      }
+
+    }
+
+    If (farRelatedReportIndex = 0) {
       MsgBox % "AHK-SmartWonder: No related report > 90 days found."
+    }
   } Else {
     ; 輸出沒得比較的字串
     If (isNoPrevReport || relatedReportCount = 0) {
