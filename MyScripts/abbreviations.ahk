@@ -20,6 +20,7 @@
 ::nsip::non-specific interstitial pneumonia
 ::boop::bronchiolitis obliterans organizing pneumonia
 ::ptx::pneumothorax
+::pna::pneumonia
 ::htx::hemothorax
 
 ;; General

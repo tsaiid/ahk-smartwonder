@@ -15,8 +15,11 @@
 ::ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
 ::ng::On NG tube.
 ::rpig::s/p right chest pigtail drainage.
+::rpig1::s/p right chest pigtail drainage, with decreased pleural effusion.
 ::lpig::s/p left chest pigtail drainage.
+::lpig1::s/p left chest pigtail drainage, with decreased pleural effusion.
 ::bpig::s/p bilateral chest pigtail drainage.
+::bpig1::s/p bilateral chest pigtail drainage, with decreased pleural effusion.
 ::elm::Exaggerated lung markings.
 ::lop0::s/p instrument fixation of L-spine.
 ::lple::Left costophrenic angle blunting, suspect pleural effusion or changes.
@@ -24,6 +27,7 @@
 ::rple::Right costophrenic angle blunting, suspect pleural effusion or changes.
 ::rple1::Right costophrenic angle blunting and diffuse ground glass opacity in right lung, suspect pleural effusion.
 ::bple::Bilateral costophrenic angles blunting, suspect pleural effusion or changes.
+::bple1::Bilateral costophrenic angles blunting and diffuse ground glass opacity in both lungs, suspect pleural effusion.
 ::p/ster::Post median sternotomy with wire fixation.
 ::p/c::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
 ::ricvp::On central venous catheter via right internal jegular vein with tip at superior vena cava.
@@ -36,7 +40,7 @@
 ::lppm::s/p PPM implantation at left upper chest.
 ::ile::Inadequate inspiration crowds lung markings.
 ::pe::Engorged hila and pulmonary vasculature indicate pulmonary edema.
-::clc::Increased linear opacity over bilatera lower lungs, in favor of chronic inflammatory change.
+::clc::Increased linear opacity over bilateral lower lungs, in favor of chronic inflammatory change.
 ::lla::Linear atelectasis of left lower lung.
 ::rla::Linear atelectasis of right lower lung.
 ::bla::Linear atelectasis of bilateral lower lungs.
