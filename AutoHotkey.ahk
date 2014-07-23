@@ -36,6 +36,7 @@ GroupAdd, SmartWonder, tedpc-
 ;; My Own Lib
 #Include MyScripts\lib\frame-wait.ahk
 #Include MyScripts\lib\dicom-sr.ahk
+#Include MyScripts\lib\dicom-sr-ocr.ahk
 #Include MyScripts\lib\date.ahk
 #Include MyScripts\lib\supported-exam-patterns.ahk
 
@@ -68,6 +69,8 @@ GroupAdd, SmartWonder, tedpc-
 
   #Include MyScripts\mri.ahk
   #Include MyScripts\others.ahk
+
+  #Include MyScripts\spg.ahk
 
   ;;; HotKeys
   #Include MyScripts\hotkey\delete-current-line.ahk
