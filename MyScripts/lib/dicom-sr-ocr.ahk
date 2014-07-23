@@ -116,6 +116,25 @@ GetSpgOcr2(AccNo, ResultFrame){
             }
           }
 
+          // SEG
+          var seg = {}
+          seg['right_abi'] = data.result.RtABI;
+          seg['left_abi'] = data.result.LtABI;
+          seg['right_brachial'] = data.result.RtBrachial;
+          seg['left_brachial'] = data.result.LtBrachial;
+          seg['right_upper_thigh'] = data.result.RtUpperThigh;
+          seg['left_upper_thigh'] = data.result.LtUpperThigh;
+          seg['right_lower_thigh'] = data.result.RtLowerThigh;
+          seg['left_lower_thigh'] = data.result.LtLowerThigh;
+          seg['right_calf'] = data.result.RtCalf;
+          seg['left_calf'] = data.result.LtCalf;
+          seg['right_ankle'] = data.result.RtAnkle;
+          seg['left_ankle'] = data.result.LtAnkle;
+
+          for (var tag in seg) {
+            result.append(insert_result("seg_" + tag, seg[tag]));
+          }
+
           // insert a message for AHK to detect finish.
           result.append(insert_result("message", "data fetched."));
         }
@@ -137,6 +156,18 @@ GetSpgOcr2(AccNo, ResultFrame){
                   , "ocr_spg_left_VO"
                   , "ocr_spg_left_VC"
                   , "ocr_spg_left_AF"
+                  , "ocr_seg_right_abi"
+                  , "ocr_seg_right_brachial"
+                  , "ocr_seg_right_upper_thigh"
+                  , "ocr_seg_right_lower_thigh"
+                  , "ocr_seg_right_calf"
+                  , "ocr_seg_right_ankle"
+                  , "ocr_seg_left_abi"
+                  , "ocr_seg_left_brachial"
+                  , "ocr_seg_left_upper_thigh"
+                  , "ocr_seg_left_lower_thigh"
+                  , "ocr_seg_left_calf"
+                  , "ocr_seg_left_ankle"
                   , "ocr_message"]
   Loop % SupportedTags.MaxIndex() {
     ; Clear ResultFrame Data

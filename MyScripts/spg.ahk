@@ -27,3 +27,40 @@ Abbreviation: Venous Outflow (VO, `%/min); Venous Capacitance (VC, `%); Arterial
 
   Paste(MyForm, false)
 Return
+
+; SEG
+::seg::
+  wb := WBGet()
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
+
+  GetSpgOcr2(AccNo, tabIframe2)
+
+  RtABI := StrLen(tabIframe2.document.getElementById("ocr_seg_right_abi").value) ? tabIframe2.document.getElementById("ocr_seg_right_abi").value : "___"
+  RtBrachial := StrLen(tabIframe2.document.getElementById("ocr_seg_right_brachial").value) ? tabIframe2.document.getElementById("ocr_seg_right_brachial").value : "___"
+  RtUpperThigh := StrLen(tabIframe2.document.getElementById("ocr_seg_right_upper_thigh").value) ? tabIframe2.document.getElementById("ocr_seg_right_upper_thigh").value : "___"
+  RtLowerThigh := StrLen(tabIframe2.document.getElementById("ocr_seg_right_lower_thigh").value) ? tabIframe2.document.getElementById("ocr_seg_right_lower_thigh").value : "___"
+  RtCalf := StrLen(tabIframe2.document.getElementById("ocr_seg_right_calf").value) ? tabIframe2.document.getElementById("ocr_seg_right_calf").value : "___"
+  RtAnkle := StrLen(tabIframe2.document.getElementById("ocr_seg_right_ankle").value) ? tabIframe2.document.getElementById("ocr_seg_right_ankle").value : "___"
+  LtABI := StrLen(tabIframe2.document.getElementById("ocr_seg_left_abi").value) ? tabIframe2.document.getElementById("ocr_seg_left_abi").value : "___"
+  LtBrachial := StrLen(tabIframe2.document.getElementById("ocr_seg_left_brachial").value) ? tabIframe2.document.getElementById("ocr_seg_left_brachial").value : "___"
+  LtUpperThigh := StrLen(tabIframe2.document.getElementById("ocr_seg_left_upper_thigh").value) ? tabIframe2.document.getElementById("ocr_seg_left_upper_thigh").value : "___"
+  LtLowerThigh := StrLen(tabIframe2.document.getElementById("ocr_seg_left_lower_thigh").value) ? tabIframe2.document.getElementById("ocr_seg_left_lower_thigh").value : "___"
+  LtCalf := StrLen(tabIframe2.document.getElementById("ocr_seg_left_calf").value) ? tabIframe2.document.getElementById("ocr_seg_left_calf").value : "___"
+  LtAnkle := StrLen(tabIframe2.document.getElementById("ocr_seg_left_ankle").value) ? tabIframe2.document.getElementById("ocr_seg_left_ankle").value : "___"
+
+  MyForm =
+(
+SEGMENTAL ARTERIAL PRESSURE WITH DOPPLER OF LOWER LIMBS
+FINDINGS:
+-- R'T ABI: %RtABI%
+-- L'T ABI: %LtABI%
+MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
+-- R'T: %RtBrachial%/%RtUpperThigh%/%RtLowerThigh%/%RtCalf%/%RtAnkle%
+-- L'T: %LtBrachial%/%LtUpperThigh%/%LtLowerThigh%/%LtCalf%/%LtAnkle%
+COMMENT:
+-- Low probability of occlusive lesion in bilateral lower limbs.
+)
+
+  Paste(MyForm, false)
+Return
