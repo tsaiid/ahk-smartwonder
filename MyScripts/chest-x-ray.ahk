@@ -71,6 +71,7 @@
 ::rllf::right lower lung field
 ::nnp::No newly developed patch opacity in lung fields.
 ::ii::Exaggerated lung markings, may be due to inadequate inspiration.
+::ii0::inadequate inspiration
 ::rrf::Old fractures of right ribs.
 ::lrf::Old fractures of left ribs.
 ::brf::Old fractures of bilateral ribs.
