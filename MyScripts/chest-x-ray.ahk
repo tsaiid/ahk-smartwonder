@@ -40,6 +40,7 @@
 ::lppm::s/p PPM implantation at left upper chest.
 ::ile::Inadequate inspiration crowds lung markings.
 ::pe::Engorged hila and pulmonary vasculature indicate pulmonary edema.
+::pe0::pulmonary edema
 ::clc::Increased linear opacity over bilateral lower lungs, in favor of chronic inflammatory change.
 ::lla::Linear atelectasis of left lower lung.
 ::rla::Linear atelectasis of right lower lung.
