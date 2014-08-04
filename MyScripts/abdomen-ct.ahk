@@ -97,3 +97,57 @@ Lymphoma with relapse/ progression/ partial remission/ complete remission.
 )
   Paste(MyForm)
 Return
+
+; Abd CTA - bleeding
+::act-cta::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+METHOD:
+Non-contrast and contrast-enhanced abdominal CT scans.
+Scanning range: Liver to symphysis, 5-mm contiguous scan.
+Contrast medium: arterial and venous phases.
+
+Previous abdominal CT: none.
+
+FINDINGS:
+
+No definite bleeder or contrast extravasion identified in this study.
+No other apparent focal lesion noted at liver, spleen, pancreas and kidneys
+The lower abdomen showed no significant unusual.
+No evident bowel dilatation or wall thickening noted.
+No intraabdominal lymphadenopathy noted.
+
+IMPRESSION:
+No active bleeder found.
+
+SUGGESTION:
+
+)
+  Paste(MyForm)
+Return
+
+; Abd CT - Non-contrast
+::act-nc::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+METHOD:
+Non-contrast enhanced abdominal CT scans.
+Scanning range: Liver to symphysis, 5-mm contiguous scan.
+
+Previous abdominal CT: none.
+
+FINDINGS:
+
+IMPRESSION:
+
+SUGGESTION:
+
+)
+  Paste(MyForm)
+Return
