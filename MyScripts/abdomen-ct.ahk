@@ -3,9 +3,10 @@
 ;; General
 
 ::act::
+  MyOrder := CopyOrder()
   MyForm =
 (
-INDICATION:
+INDICATION: %MyOrder%
 
 METHOD:
 Non-contrast and contrast-enhanced abdominal CT scans.
@@ -32,9 +33,10 @@ Return
 ::b-ok::- In bone window, the findings are unremarkable.
 
 ::act-hcc::
+  MyOrder := CopyOrder()
   MyForm =
 (
-INDICATION:
+INDICATION: %MyOrder%
 
 METHOD:
 Non-contrast and contrast-enhanced abdominal CT scans.
