@@ -13,6 +13,7 @@
 ::ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.
 ::ett-b::On endotracheal tube. The tip is in right main bronchus. Suggest adjusting the depth.
 ::ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
+::tr::On tracheostomy tube.
 ::ng::On NG tube.
 ::rpig::s/p right chest pigtail drainage.
 ::rpig1::s/p right chest pigtail drainage, with decreased pleural effusion.
@@ -86,3 +87,5 @@
 ::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::id::ill-defined `
+::luqd::A drain in the LUQ of abdomen.
+::ruqd::A drain in the RUQ of abdomen.
