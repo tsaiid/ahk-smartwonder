@@ -53,6 +53,7 @@ GroupAdd, SmartWonder, tedpc-
 
   #Include MyScripts\sono.ahk
   #Include MyScripts\abdomen-ct.ahk
+  #Include MyScripts\abdomen-mr.ahk
   #Include MyScripts\chest-ct.ahk
 
   #Include MyScripts\ct-guide.ahk
