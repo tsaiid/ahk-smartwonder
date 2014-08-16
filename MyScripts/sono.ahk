@@ -63,3 +63,43 @@ No pleural effusion or ascites noted.
 )
   Paste(MyForm, false)
 Return
+
+::stas::
+  wb := WBGet()
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
+
+  GetTasSR2(AccNo, tabIframe2)
+
+  LeftOvaryL := tabIframe2.document.getElementById("sr_LeftOvaryL") ? tabIframe2.document.getElementById("sr_LeftOvaryL").value : "_ cm"
+  LeftOvaryW := tabIframe2.document.getElementById("sr_LeftOvaryW") ? tabIframe2.document.getElementById("sr_LeftOvaryW").value : "_ cm"
+  LeftOvaryH := tabIframe2.document.getElementById("sr_LeftOvaryH") ? tabIframe2.document.getElementById("sr_LeftOvaryH").value : "_ cm"
+  LeftOvaryVol := tabIframe2.document.getElementById("sr_LeftOvaryVol") ? tabIframe2.document.getElementById("sr_LeftOvaryVol").value : "_ ml"
+  RightOvaryL := tabIframe2.document.getElementById("sr_RightOvaryL") ? tabIframe2.document.getElementById("sr_RightOvaryL").value : "_ cm"
+  RightOvaryW := tabIframe2.document.getElementById("sr_RightOvaryW") ? tabIframe2.document.getElementById("sr_RightOvaryW").value : "_ cm"
+  RightOvaryH := tabIframe2.document.getElementById("sr_RightOvaryH") ? tabIframe2.document.getElementById("sr_RightOvaryH").value : "_ cm"
+  RightOvaryVol := tabIframe2.document.getElementById("sr_RightOvaryVol") ? tabIframe2.document.getElementById("sr_RightOvaryVol").value : "_ ml"
+  UterusL := tabIframe2.document.getElementById("sr_UterusL") ? tabIframe2.document.getElementById("sr_UterusL").value : "_ cm"
+  UterusW := tabIframe2.document.getElementById("sr_UterusW") ? tabIframe2.document.getElementById("sr_UterusW").value : "_ cm"
+  UterusH := tabIframe2.document.getElementById("sr_UterusH") ? tabIframe2.document.getElementById("sr_UterusH").value : "_ cm"
+  UterusVol := tabIframe2.document.getElementById("sr_UterusVol") ? tabIframe2.document.getElementById("sr_UterusVol").value : "_ ml"
+  Endometrium := tabIframe2.document.getElementById("sr_Endometrium") ? tabIframe2.document.getElementById("sr_Endometrium").value : "_ cm"
+
+  MyForm =
+(
+Transabdominal ultrasonography of the pelvis
+
+Well distended bladder. No focal lesion of the UB noted.
+The uterus was measured as %UterusL% x %UterusW% x %UterusH% cm in size.
+
+The endometrium was measured about %Endometrium% in thickness.
+
+The RT ovary was measured as %RightOvaryL% x %RightOvaryW% x %RightOvaryH% cm (%RightOvaryVol% ml) in size.
+
+The LT ovary was measured as %LeftOvaryL% x %LeftOvaryW% x %LeftOvaryH% cm (%LeftOvaryVol% ml) in size.
+
+
+Impression: Essentially unremarkable study.
+)
+  Paste(MyForm, false)
+Return
