@@ -243,3 +243,128 @@ GetSonoSR2(AccNo, ResultFrame){
 
   wb.quit()
 }
+
+;; Inject an Ajax javascript code indirectly into a new IE window,
+;;   and then write back the result into SmartWonder page.
+;; Get sonography related SR data.
+;; Currently supports: upper and lower abdomen.
+GetTasSR2(AccNo, ResultFrame){
+  IID := "{332C4427-26CB-11D0-B483-00C04FD90119}" ; IID_IWebBrowserApp
+
+  wb := ComObjCreate("InternetExplorer.Application")
+  ; navigate an empty page including preloaded jQuery for further ajax use.
+  wb.Navigate("http://vghks.tsai.it/only-jquery.html")
+  ;wb.Visible := true     ; uncomment for debug
+  while wb.busy
+    sleep 10
+  window := ComObj(9,ComObjQuery(wb,IID,IID),1)
+
+  var =
+(
+  // Load jQuery with javascript
+  // ref: http://stackoverflow.com/a/10113434
+  (function() {
+    // Load the script
+    var script = document.createElement('script');
+    script.src = 'https://code.jquery.com/jquery-1.11.0.min.js';
+    script.type = 'text/javascript';
+    //document.getElementsByTagName('head')[0].appendChild(script);
+
+    // Poll for jQuery to come into existance
+    var checkReady = function(callback) {
+        if (window.jQuery) {
+            callback(jQuery);
+        }
+        else {
+            window.setTimeout(function() {
+              checkReady(callback);
+            }, 100);
+        }
+    };
+
+    // Start polling...
+    checkReady(function($) {
+      // Use $ here...
+      $('body').append('<div id="result">result</div>');
+
+      insert_result = function(label, value) {
+        return '<input type="hidden" name="sr_api" id="sr_' + label + '" value="' + value + '">';
+      }
+
+      $.getScript( "http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js", function( data, textStatus, jqxhr ) {
+      });
+
+      $.support.cors = true;
+      var result = $('#result');
+      $.ajax({
+        dataType: "json",
+        url: "http://vghks.tsai.it/dicom/sr/" + %AccNo% + "/json",
+        crossDomain: true
+      }).done(function(data){
+        //alert(data.status.message);
+        if (data.status.error) {
+          alert(data.status.message);
+          result.append(insert_result("message", data.status.message));
+        }
+        else {
+          var measures = ["L", "W", "H", "Vol"];
+          var sides = ["Left", "Right"];
+
+          // Ovary
+          $.each(measures, function(i, measure){
+            var label = 'Ovary' + measure;
+            $.each(sides, function(i, side){
+              if (data.result[label][side]) {
+                result.append(insert_result(label + side, data.result[label][side]));
+              }
+            });
+          });
+
+          // endometrium
+          var endometrium = data.result.Endometrium;
+          if (endometrium) {
+            result.append(insert_result("endometrium", endometrium));
+          }
+
+          // Uterus
+          $.each(measures, function(i, measure){
+            var label = 'Uterus' + measure;
+            if (data.result[label]) {
+              result.append(insert_result(label, data.result[label]));
+            }
+          });
+
+          // insert a message for AHK to detect finish.
+          result.append(insert_result("message", "data fetched."));
+        }
+      }).fail(function(jqxhr,textStatus,errorThrown) {
+        result.append(insert_result("message", "ajax error!"));
+      });
+
+    });
+  })();
+)
+
+  window.eval(var)
+  SRWait(window)
+
+  ; Write the result into the target frame
+  SupportedTags := [  "sr_endometrium"
+                    , "sr_OvaryLLeft", "sr_OvaryWLeft", "sr_OvaryHLeft", "sr_OvaryVolLeft"
+                    , "sr_OvaryLRight", "sr_OvaryWRight", "sr_OvaryHRight", "sr_OvaryVolRight"
+                    , "sr_UterusL", "sr_UterusW", "sr_UterusH", "sr_UterusVol"
+                    , "sr_message"  ]
+  Loop % SupportedTags.MaxIndex() {
+    ; Clear ResultFrame Data
+    oldResult := ResultFrame.document.getElementById(SupportedTags[A_Index])
+    If (oldResult) {
+      oldResult.parentNode.removeChild(oldResult)
+    }
+    ; Insert New SR Data
+    If (window.document.getElementById(SupportedTags[A_Index])) {
+      WriteBackSR(ResultFrame, SupportedTags[A_Index], window.document.getElementById(SupportedTags[A_Index]).value)
+    }
+  }
+
+  wb.quit()
+}
