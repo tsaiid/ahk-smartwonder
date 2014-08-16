@@ -315,15 +315,15 @@ GetTasSR2(AccNo, ResultFrame){
             var label = 'Ovary' + measure;
             $.each(sides, function(i, side){
               if (data.result[label][side]) {
-                result.append(insert_result(label + side, data.result[label][side]));
+                result.append(insert_result(side + label, data.result[label][side]));
               }
             });
           });
 
           // endometrium
-          var endometrium = data.result.Endometrium;
-          if (endometrium) {
-            result.append(insert_result("endometrium", endometrium));
+          var Endometrium = data.result.Endometrium;
+          if (Endometrium) {
+            result.append(insert_result("Endometrium", Endometrium));
           }
 
           // Uterus
@@ -349,9 +349,9 @@ GetTasSR2(AccNo, ResultFrame){
   SRWait(window)
 
   ; Write the result into the target frame
-  SupportedTags := [  "sr_endometrium"
-                    , "sr_OvaryLLeft", "sr_OvaryWLeft", "sr_OvaryHLeft", "sr_OvaryVolLeft"
-                    , "sr_OvaryLRight", "sr_OvaryWRight", "sr_OvaryHRight", "sr_OvaryVolRight"
+  SupportedTags := [  "sr_Endometrium"
+                    , "sr_LeftOvaryL", "sr_LeftOvaryW", "sr_LeftOvaryH", "sr_LeftOvaryVol"
+                    , "sr_RightOvaryL", "sr_RightOvaryW", "sr_RightOvaryH", "sr_RightOvaryVol"
                     , "sr_UterusL", "sr_UterusW", "sr_UterusH", "sr_UterusVol"
                     , "sr_message"  ]
   Loop % SupportedTags.MaxIndex() {
