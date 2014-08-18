@@ -23,6 +23,7 @@ Return
 ;;; Comments
 ::be-nt::- No visualization of the terminal ileum. The evaluation of the ileocecal valve and terminal ileum is limited.
 ::be-s::- Some residual feces might limit the interpretation.
+:*:be-pc::- Poor barium coating of the mucosa might limit the interpretation.
 ::be-na::- Nonvisualization of the appendix. May be due to previous appendectomy.
 ::be-na1::- Nonvisualization of the appendix. Suggest correlate with previous operation history.
 

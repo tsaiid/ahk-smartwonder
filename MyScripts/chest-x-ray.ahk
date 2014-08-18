@@ -37,6 +37,8 @@
 ::lscvp::On central venous catheter via left subclavian vein with tip at superior vena cava.
 ::rport::On Port-A catheter via right subclavian vein.
 ::lport::On Port-A catheter via left subclavian vein.
+::rpicc::On PICC via right arm.
+::lpicc::On PICC via left arm.
 ::rppm::s/p PPM implantation at right upper chest.
 ::lppm::s/p PPM implantation at left upper chest.
 ::ile::Inadequate inspiration crowds lung markings.
@@ -55,6 +57,7 @@
 ::stl::Scoliosis of T-spine with left lateral convexity.
 ::str::Scoliosis of T-spine with right lateral convexity.
 ::pi::Ill-defined pulmonary infiltration over `
+::pi0::pulmonary infiltration
 ::po::patch opacity
 ::no::nodular opacity
 ::lo::linear opacity

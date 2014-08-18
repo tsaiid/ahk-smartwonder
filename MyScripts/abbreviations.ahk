@@ -63,6 +63,9 @@
 ::gb::gallbladder
 ::hn::hydronephrosis
 ::ub::urinary bladder
+::rh::right hemicolectomy
+::lh::left hemicolectomy
+::acc::acute calculus cholecystitis
 
 ;; Neuro
 ::ich::intracranial hemorrhage

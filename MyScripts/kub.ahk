@@ -12,3 +12,5 @@
 ::bdj::s/p bilateral double-J ureteral stents.
 ::rfdl::On double-lumen catheter via right femoral vein.
 ::lfdl::On double-lumen catheter via left femoral vein.
+::nfa::No evidence of subphrenic free air.
+
