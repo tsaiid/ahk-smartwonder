@@ -308,14 +308,15 @@ GetTasSR2(AccNo, ResultFrame){
         }
         else {
           var measures = ["L", "W", "H", "Vol"];
-          var sides = ["Left", "Right"];
+          var sides = ["left", "right"];
 
           // Ovary
           $.each(measures, function(i, measure){
-            var label = 'Ovary' + measure;
+            var label = 'Ovary ' + measure;
+            var label_nosp = label.replace(" ", "");
             $.each(sides, function(i, side){
               if (data.result[label][side]) {
-                result.append(insert_result(side + label, data.result[label][side]));
+                result.append(insert_result(side + label_nosp, data.result[label][side]));
               }
             });
           });
@@ -328,9 +329,10 @@ GetTasSR2(AccNo, ResultFrame){
 
           // Uterus
           $.each(measures, function(i, measure){
-            var label = 'Uterus' + measure;
+            var label = 'Uterus ' + measure;
+            var label_nosp = label.replace(" ", "");
             if (data.result[label]) {
-              result.append(insert_result(label, data.result[label]));
+              result.append(insert_result(label_nosp, data.result[label]));
             }
           });
 
