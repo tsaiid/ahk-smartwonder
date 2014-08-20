@@ -27,10 +27,10 @@ Return
 
 
 ;; Hotstrings
-::lap-ok::- No retroperitoneal or mesenteric lymphadenopathy.
-::l-b-ok::- In lung and bone windows, the findings are unremarkable.
-::l-ok::- In lung window, the findings are unremarkable.
-::b-ok::- In bone window, the findings are unremarkable.
+::lap-ok::No retroperitoneal or mesenteric lymphadenopathy.
+::l-b-ok::In lung and bone windows, the findings are unremarkable.
+::l-ok::In lung window, the findings are unremarkable.
+::b-ok::In bone window, the findings are unremarkable.
 ::gbs-nac::Presence of gallbladder stones without obvious GB dilatation or wall thickening.
 ::act-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable.
 ::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}
@@ -142,6 +142,29 @@ INDICATION: %MyOrder%
 METHOD:
 Non-contrast enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
+
+Previous abdominal CT: none.
+
+FINDINGS:
+
+IMPRESSION:
+
+SUGGESTION:
+
+)
+  Paste(MyForm)
+Return
+
+::act-ad::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+METHOD:
+Non-contrast and contrast-enhanced abdominal CT scans.
+Scanning range: Liver to symphysis, 3-mm contiguous scan.
+Contrast medium: Yes, 80-100 ml, 1-2 ml/sec, with 100 seconds scanning delay.
 
 Previous abdominal CT: none.
 
