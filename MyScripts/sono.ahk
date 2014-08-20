@@ -71,19 +71,32 @@ Return
 
   GetTasSR2(AccNo, tabIframe2)
 
-  LeftOvaryL := tabIframe2.document.getElementById("sr_LeftOvaryL") ? tabIframe2.document.getElementById("sr_LeftOvaryL").value : "_ cm"
-  LeftOvaryW := tabIframe2.document.getElementById("sr_LeftOvaryW") ? tabIframe2.document.getElementById("sr_LeftOvaryW").value : "_ cm"
-  LeftOvaryH := tabIframe2.document.getElementById("sr_LeftOvaryH") ? tabIframe2.document.getElementById("sr_LeftOvaryH").value : "_ cm"
-  LeftOvaryVol := tabIframe2.document.getElementById("sr_LeftOvaryVol") ? tabIframe2.document.getElementById("sr_LeftOvaryVol").value : "_ ml"
-  RightOvaryL := tabIframe2.document.getElementById("sr_RightOvaryL") ? tabIframe2.document.getElementById("sr_RightOvaryL").value : "_ cm"
-  RightOvaryW := tabIframe2.document.getElementById("sr_RightOvaryW") ? tabIframe2.document.getElementById("sr_RightOvaryW").value : "_ cm"
-  RightOvaryH := tabIframe2.document.getElementById("sr_RightOvaryH") ? tabIframe2.document.getElementById("sr_RightOvaryH").value : "_ cm"
-  RightOvaryVol := tabIframe2.document.getElementById("sr_RightOvaryVol") ? tabIframe2.document.getElementById("sr_RightOvaryVol").value : "_ ml"
-  UterusL := tabIframe2.document.getElementById("sr_UterusL") ? tabIframe2.document.getElementById("sr_UterusL").value : "_ cm"
-  UterusW := tabIframe2.document.getElementById("sr_UterusW") ? tabIframe2.document.getElementById("sr_UterusW").value : "_ cm"
-  UterusH := tabIframe2.document.getElementById("sr_UterusH") ? tabIframe2.document.getElementById("sr_UterusH").value : "_ cm"
-  UterusVol := tabIframe2.document.getElementById("sr_UterusVol") ? tabIframe2.document.getElementById("sr_UterusVol").value : "_ ml"
-  Endometrium := tabIframe2.document.getElementById("sr_Endometrium") ? tabIframe2.document.getElementById("sr_Endometrium").value : "_ cm"
+  LeftOvaryL := tabIframe2.document.getElementById("sr_leftOvaryL")
+              ? StrSplit(tabIframe2.document.getElementById("sr_leftOvaryL").value, A_Space)[1] : "_"
+  LeftOvaryW := tabIframe2.document.getElementById("sr_leftOvaryW")
+              ? StrSplit(tabIframe2.document.getElementById("sr_leftOvaryW").value, A_Space)[1] : "_"
+  LeftOvaryH := tabIframe2.document.getElementById("sr_leftOvaryH")
+              ? StrSplit(tabIframe2.document.getElementById("sr_leftOvaryH").value, A_Space)[1] : "_"
+  LeftOvaryVol := tabIframe2.document.getElementById("sr_leftOvaryVol")
+                ? StrSplit(tabIframe2.document.getElementById("sr_leftOvaryVol").value, A_Space)[1] : "_"
+  RightOvaryL := tabIframe2.document.getElementById("sr_rightOvaryL")
+               ? StrSplit(tabIframe2.document.getElementById("sr_rightOvaryL").value, A_Space)[1] : "_"
+  RightOvaryW := tabIframe2.document.getElementById("sr_rightOvaryW")
+               ? StrSplit(tabIframe2.document.getElementById("sr_rightOvaryW").value, A_Space)[1] : "_"
+  RightOvaryH := tabIframe2.document.getElementById("sr_rightOvaryH")
+               ? StrSplit(tabIframe2.document.getElementById("sr_rightOvaryH").value, A_Space)[1] : "_"
+  RightOvaryVol := tabIframe2.document.getElementById("sr_rightOvaryVol")
+                 ? StrSplit(tabIframe2.document.getElementById("sr_rightOvaryVol").value, A_Space)[1] : "_"
+  UterusL := tabIframe2.document.getElementById("sr_UterusL")
+           ? StrSplit(tabIframe2.document.getElementById("sr_UterusL").value, A_Space)[1] : "_"
+  UterusW := tabIframe2.document.getElementById("sr_UterusW")
+           ? StrSplit(tabIframe2.document.getElementById("sr_UterusW").value, A_Space)[1] : "_"
+  UterusH := tabIframe2.document.getElementById("sr_UterusH")
+           ? StrSplit(tabIframe2.document.getElementById("sr_UterusH").value, A_Space)[1] : "_"
+  UterusVol := tabIframe2.document.getElementById("sr_UterusVol")
+             ? StrSplit(tabIframe2.document.getElementById("sr_UterusVol").value, A_Space)[1] : "_"
+  Endometrium := tabIframe2.document.getElementById("sr_Endometrium")
+               ? StrSplit(tabIframe2.document.getElementById("sr_Endometrium").value, A_Space)[1] : "_"
 
   MyForm =
 (
