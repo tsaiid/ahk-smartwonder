@@ -103,17 +103,16 @@ GetSpgOcr2(AccNo, ResultFrame){
         }
         else {
           // SPG
-          var right = data.result.right;
-          var left = data.result.left;
-          if (right) {
-            for (var tag in right) {
-              result.append(insert_result("spg_right_" + tag, right[tag]));
-            }
-          }
-          if (left) {
-            for (var tag in left) {
-              result.append(insert_result("spg_left_" + tag, left[tag]));
-            }
+          var spg = {}
+          spg['right_vo'] = data.result.RtVO;
+          spg['left_vo'] = data.result.LtVO;
+          spg['right_vc'] = data.result.RtVC;
+          spg['left_vc'] = data.result.LtVC;
+          spg['right_af'] = data.result.RtAF;
+          spg['left_af'] = data.result.LtAF;
+
+          for (var tag in spg) {
+            result.append(insert_result("spg_" + tag, spg[tag]));
           }
 
           // SEG

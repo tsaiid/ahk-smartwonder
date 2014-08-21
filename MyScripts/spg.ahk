@@ -6,12 +6,12 @@
 
   GetSpgOcr2(AccNo, tabIframe2)
 
-  RtVO := tabIframe2.document.getElementById("ocr_spg_right_VO") ? tabIframe2.document.getElementById("ocr_spg_right_VO").value : "___"
-  RtVC := tabIframe2.document.getElementById("ocr_spg_right_VC") ? tabIframe2.document.getElementById("ocr_spg_right_VC").value : "___"
-  RtAF := tabIframe2.document.getElementById("ocr_spg_right_AF") ? tabIframe2.document.getElementById("ocr_spg_right_AF").value : "___"
-  LtVO := tabIframe2.document.getElementById("ocr_spg_left_VO") ? tabIframe2.document.getElementById("ocr_spg_left_VO").value : "___"
-  LtVC := tabIframe2.document.getElementById("ocr_spg_left_VC") ? tabIframe2.document.getElementById("ocr_spg_left_VC").value : "___"
-  LtAF := tabIframe2.document.getElementById("ocr_spg_left_AF") ? tabIframe2.document.getElementById("ocr_spg_left_AF").value : "___"
+  RtVO := tabIframe2.document.getElementById("ocr_spg_right_vo") ? tabIframe2.document.getElementById("ocr_spg_right_vo").value : "___"
+  RtVC := tabIframe2.document.getElementById("ocr_spg_right_vc") ? tabIframe2.document.getElementById("ocr_spg_right_vc").value : "___"
+  RtAF := tabIframe2.document.getElementById("ocr_spg_right_af") ? tabIframe2.document.getElementById("ocr_spg_right_af").value : "___"
+  LtVO := tabIframe2.document.getElementById("ocr_spg_left_vo") ? tabIframe2.document.getElementById("ocr_spg_left_vo").value : "___"
+  LtVC := tabIframe2.document.getElementById("ocr_spg_left_vc") ? tabIframe2.document.getElementById("ocr_spg_left_vc").value : "___"
+  LtAF := tabIframe2.document.getElementById("ocr_spg_left_af") ? tabIframe2.document.getElementById("ocr_spg_left_af").value : "___"
 
   MyForm =
 (
