@@ -38,6 +38,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include MyScripts\lib\dicom-sr.ahk
 #Include MyScripts\lib\dicom-sr-ocr.ahk
 #Include MyScripts\lib\date.ahk
+#Include MyScripts\lib\string.ahk
 #Include MyScripts\lib\supported-exam-patterns.ahk
 
 #IfWinActive ahk_group SmartWonder
