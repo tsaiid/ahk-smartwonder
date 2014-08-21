@@ -3,6 +3,8 @@
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
+  OrderId = OrderDiag_%accNo%
+  OrderDiag := tabIframe2.document.getElementById(OrderId).value
 
   GetSpgOcr2(AccNo, tabIframe2)
 
@@ -13,6 +15,33 @@
   LtVC := tabIframe2.document.getElementById("ocr_spg_left_vc") ? tabIframe2.document.getElementById("ocr_spg_left_vc").value : "___"
   LtAF := tabIframe2.document.getElementById("ocr_spg_left_af") ? tabIframe2.document.getElementById("ocr_spg_left_af").value : "___"
 
+  ; interpretation
+  ;; VO < 30 -> suspicious of DVT
+  ;; VO > 100 and clinically has varicose vein -> c/w venous insufficiency
+  has_varicose := RegExMatch(OrderDiag, "i)varicose")
+  If (RtVO < 30 || LtVO < 30) {
+    If (RtVO < 30) {
+      side := (LtVO < 30) ? "bilateral" : "RT"
+    } Else {
+      side := "LT"
+    }
+    limb_text := (side = "bilateral") ? "lower limbs" : "lower limb"
+
+    comment = -- Suspicion of deep venous occlusion of %side% %limb_text%. Suggest correlate with color Doppler ultrasound.
+  }  Else If (has_varicose && (RtVO > 100 || LtVO > 100)) {
+    If (RtVO > 100) {
+      side := (LtVO > 100) ? "bilateral" : "RT"
+    } Else {
+      side := "LT"
+    }
+    side_text := (side = "bilateral") ? "sides" : "side"
+
+    comment = c/w venous insufficiency, %side% %side_text%.
+  }
+  Else {
+    comment = -- Low probability of deep venous occlusion of bilateral lower limbs.
+  }
+
   MyForm =
 (
 Pneumo Maximum Venous Outflow study of lower limbs
@@ -20,7 +49,7 @@ FINDINGS:
 -- R't VO/VC/AF: %RtVO%/%RtVC%/%RtAF%
 -- L't VO/VC/AF: %LtVO%/%LtVC%/%LtAF%
 COMMENT:
--- Low probability of deep venous occlusion of bilateral lower limbs.
+%comment%
 ............................................................
 Abbreviation: Venous Outflow (VO, `%/min); Venous Capacitance (VC, `%); Arterial inflow (`%/min).
 )
