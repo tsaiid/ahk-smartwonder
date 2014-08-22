@@ -98,18 +98,23 @@ Return
   Endometrium := tabIframe2.document.getElementById("sr_Endometrium")
                ? StrSplit(tabIframe2.document.getElementById("sr_Endometrium").value, A_Space)[1] : "_"
 
+  ; Chief Huang seems like to use cm as unit
+  If (Endometrium != "_" && StrSplit(tabIframe2.document.getElementById("sr_Endometrium").value, A_Space)[2] = "mm") {
+    Endometrium := Round(Endometrium / 10, 1)
+  }
+
   MyForm =
 (
 Transabdominal ultrasonography of the pelvis
 
 Well distended bladder. No focal lesion of the UB noted.
-The uterus was measured as %UterusL% x %UterusW% x %UterusH% cm in size.
+The uterus was measured as %UterusL% x %UterusH% x %UterusW% cm in size.
 
-The endometrium was measured about %Endometrium% in thickness.
+The endometrium was measured about %Endometrium% cm in thickness.
 
-The RT ovary was measured as %RightOvaryL% x %RightOvaryW% x %RightOvaryH% cm (%RightOvaryVol% ml) in size.
+The RT ovary was measured as %RightOvaryL% x %RightOvaryH% x %RightOvaryW% cm (%RightOvaryVol% ml) in size.
 
-The LT ovary was measured as %LeftOvaryL% x %LeftOvaryW% x %LeftOvaryH% cm (%LeftOvaryVol% ml) in size.
+The LT ovary was measured as %LeftOvaryL% x %LeftOvaryH% x %LeftOvaryW% cm (%LeftOvaryVol% ml) in size.
 
 
 Impression: Essentially unremarkable study.
