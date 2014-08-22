@@ -22,6 +22,7 @@
 ::bpig::s/p bilateral chest pigtail drainage.
 ::bpig1::s/p bilateral chest pigtail drainage, with decreased pleural effusion.
 ::elm::Exaggerated lung markings.
+::selm::Slightly exaggerated lung markings.
 ::lop0::s/p instrument fixation of L-spine.
 ::lple::Left costophrenic angle blunting, suspect pleural effusion or changes.
 ::lple1::Left costophrenic angle blunting and diffuse ground glass opacity in left lung, suspect pleural effusion.
