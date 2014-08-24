@@ -44,6 +44,8 @@ SupportedExamPatterns() {
                 , PelvisAP:     "Pelvis AP view"
                 , PelvisInlet:  "Pelvis inlet view"
                 , PelvisOutlet: "Pelvis outlet view"
+                , SonoUpperAbd: "Sono, Upper abdomen"
+                , SonoLowerAbd: "Sono, Lower abdomen"
                 , CTBrain:      "CT brain (with/)?no contrast"
                 , CTNeck:       "CT face \+ neck with/no contrast"
                 , CPS:          "CT paranasal sinus (with/)?no contr"
