@@ -148,18 +148,28 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
 
   RtStenosis := []
   Loop % RtValues.MaxIndex() {
+    DeltaLimit := (RtABI < 0.9) ? "20" : "30"
+
     If (RtValues[A_Index] != "nil") {
-      ratio := Round(RtValues[A_Index] / ArmBP, 2) + 0
-      ;MsgBox % ratio
-      If (ratio < 0.9 && !RtStenosis.MaxIndex()) {
-        RtStenosis.Insert(stenotic_region_map[A_Index])
-        ;MsgBox % RtStenosis
-        ;Break
-      } Else {
-        If (A_Index > 1 && RtValues[A_Index-1] != "nil" && (RtValues[A_Index-1] - RtValues[A_Index] >= 30)) {
+      ; upper thigh use ratio as criteria
+      If (A_Index = 1) {
+        ratio := Round(RtValues[A_Index] / ArmBP, 2) + 0
+        If (ratio < 0.9) {
           RtStenosis.Insert(stenotic_region_map[A_Index])
-          ;MsgBox % RtStenosis
-          ;Break
+        }
+      } Else {
+        ; others use delta as criteria
+        If (RtValues[A_Index-1] = "nil") {
+          ratio := Round(RtValues[A_Index] / ArmBP, 2) + 0
+          If (ratio < 0.9) {
+            RtStenosis.Insert(stenotic_region_map[A_Index])
+          }
+        } Else {
+          If (RtValues[A_Index-1] - RtValues[A_Index] >= DeltaLimit) {
+            RtStenosis.Insert(stenotic_region_map[A_Index])
+            ;MsgBox % RtStenosis
+            ;Break
+          }
         }
       }
     }
@@ -167,18 +177,28 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
 
   LtStenosis := []
   Loop % LtValues.MaxIndex() {
+    DeltaLimit := (LtABI < 0.9) ? "20" : "30"
+
     If (LtValues[A_Index] != "nil") {
-      ratio := Round(LtValues[A_Index] / ArmBP, 2) + 0
-      ;MsgBox % ratio
-      If (ratio < 0.9 && !LtStenosis.MaxIndex()) {
-        LtStenosis.Insert(stenotic_region_map[A_Index])
-        ;MsgBox % LtStenosis
-        ;Break
-      } Else {
-        If (A_Index > 1 && LtValues[A_Index-1] != "nil" && (LtValues[A_Index-1] - LtValues[A_Index] >= 30)) {
+      ; upper thigh use ratio as criteria
+      If (A_Index = 1) {
+        ratio := Round(LtValues[A_Index] / ArmBP, 2) + 0
+        If (ratio < 0.9) {
           LtStenosis.Insert(stenotic_region_map[A_Index])
-          ;MsgBox % LtStenosis
-          ;Break
+        }
+      } Else {
+        ; others use delta as criteria
+        If (LtValues[A_Index-1] = "nil") {
+          ratio := Round(LtValues[A_Index] / ArmBP, 2) + 0
+          If (ratio < 0.9) {
+            LtStenosis.Insert(stenotic_region_map[A_Index])
+          }
+        } Else {
+          If (LtValues[A_Index-1] - LtValues[A_Index] >= DeltaLimit) {
+            LtStenosis.Insert(stenotic_region_map[A_Index])
+            ;MsgBox % LtStenosis
+            ;Break
+          }
         }
       }
     }
