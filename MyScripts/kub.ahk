@@ -14,3 +14,4 @@
 ::lfdl::On double-lumen catheter via left femoral vein.
 ::nfa::No evidence of subphrenic free air.
 ::foley::s/p Foley catheterization.
+::haic-ok::On HAIC. The tip position shows no migration as compared with previous angiography.

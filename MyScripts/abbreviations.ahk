@@ -66,6 +66,7 @@
 ::rh::right hemicolectomy
 ::lh::left hemicolectomy
 ::acc::acute calculus cholecystitis
+::gda::gastroduodenal artery
 
 ;; Neuro
 ::ich::intracranial hemorrhage
