@@ -69,7 +69,7 @@ Return
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
-  GetSpgOcr2(AccNo, tabIframe2)
+  ;GetSpgOcr2(AccNo, tabIframe2)
 
   RtABI := StrLen(tabIframe2.document.getElementById("ocr_seg_right_abi").value)
          ? tabIframe2.document.getElementById("ocr_seg_right_abi").value : "nil"
@@ -144,13 +144,77 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
   LtValues := [LtUpperThigh, LtLowerThigh, LtCalf, LtAnkle]
 
   ;;; find stenotic region
+  measure_region_map := ["upper thigh", "lower thigh", "calf", "ankle"]
+  high_pressure_region_map := ["aortoiliac", "femoral", "popliteal", "infragenicular"]
   stenotic_region_map := ["aortoiliac", "thigh", "popliteal", "calf"]
+  HighPressureRegionCodeMap := { "1---": "upper thigh"
+                               , "-2--": "lower thigh"
+                               , "--3-": "calf"
+                               , "---4": "ankle"
+                               , "12--": "12--"
+                               , "1-3-": "1-3-"
+                               , "1--4": "1--4"
+                               , "-23-": "-23-"
+                               , "-2-4": "-2-4"
+                               , "--34": "--34"
+                               , "123-": "123-"
+                               , "12-4": "12-4"
+                               , "1-34": "1-34"
+                               , "-234": "-234"
+                               , "1234": "1234" }
+
+  HighPressureArteryCodeMap := { "----": ""
+                               , "1---": "upper thigh"
+                               , "-2--": "lower thigh"
+                               , "--3-": "infragenicular"
+                               , "---4": "ankle"
+                               , "12--": "12--"
+                               , "1-3-": "1-3-"
+                               , "1--4": "1--4"
+                               , "-23-": "-23-"
+                               , "-2-4": "-2-4"
+                               , "--34": "--34"
+                               , "123-": "123-"
+                               , "12-4": "12-4"
+                               , "1-34": "1-34"
+                               , "-234": "-234"
+                               , "1234": "1234" }
+
+  HighPressureStenosisCodeMap := { "1---": "upper thigh"
+                                 , "-2--": "lower thigh"
+                                 , "--3-": "calf"
+                                 , "---4": "ankle"
+                                 , "12--": "12--"
+                                 , "1-3-": "1-3-"
+                                 , "1--4": "1--4"
+                                 , "-23-": "-23-"
+                                 , "-2-4": "-2-4"
+                                 , "--34": "--34"
+                                 , "123-": "123-"
+                                 , "12-4": "12-4"
+                                 , "1-34": "1-34"
+                                 , "-234": "-234"
+                                 , "1234": "1234" }
 
   RtStenosis := []
+  RtHighPressure := []
+  RtHighPressureCode := ""
+  HighPressureRegionCount := 0
   Loop % RtValues.MaxIndex() {
+    ; Check if stenosis
     DeltaLimit := (RtABI < 0.9) ? "20" : "30"
 
     If (RtValues[A_Index] != "nil") {
+      ; Check if high pressure
+      If (RtValues[A_Index] >= 300) {
+        HighPressureRegionCount += 1
+        RtHighPressure[A_Index] := measure_region_map[A_Index]
+        RtHighPressureCode .= A_Index
+      } Else {
+        RtHighPressure[A_Index] := ""
+        RtHighPressureCode .= "-"
+      }
+
       ; upper thigh use ratio as criteria
       If (A_Index = 1) {
         ratio := Round(RtValues[A_Index] / ArmBP, 2) + 0
@@ -172,14 +236,29 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
           }
         }
       }
+    } Else {
+      RtHighPressureCode .= "-"
     }
   }
 
   LtStenosis := []
+  LtHighPressure := []
+  LtHighPressureCode := ""
   Loop % LtValues.MaxIndex() {
+    ; Check if stenosis
     DeltaLimit := (LtABI < 0.9) ? "20" : "30"
 
     If (LtValues[A_Index] != "nil") {
+      ; Check if high pressure
+      If (LtValues[A_Index] >= 300) {
+        HighPressureRegionCount += 1
+        LtHighPressure[A_Index] := measure_region_map[A_Index]
+        LtHighPressureCode .= A_Index
+      } Else {
+        LtHighPressure[A_Index] := ""
+        LtHighPressureCode .= "-"
+      }
+
       ; upper thigh use ratio as criteria
       If (A_Index = 1) {
         ratio := Round(LtValues[A_Index] / ArmBP, 2) + 0
@@ -201,6 +280,8 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
           }
         }
       }
+    } Else {
+      LtHighPressureCode .= "-"
     }
   }
 
@@ -226,6 +307,42 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
     comment = -- Low probability of occlusive lesion in bilateral lower limbs.
   }
 
+  high_pressure := ""
+  If (HighPressureRegionCount > 0) {
+    TmpHPArr := []
+    TmpHPAArr := []
+    Loop % RtHighPressure.MaxIndex() {
+      If (StrLen(RtHighPressure[A_Index]) || StrLen(LtHighPressure[A_Index])) {
+        ; determine side
+        If (StrLen(RtHighPressure[A_Index]) && StrLen(LtHighPressure[A_Index])) {
+          side := "bilateral"
+        } Else If (StrLen(RtHighPressure[A_Index])) {
+          side := "right"
+        } Else {
+          side := "left"
+        }
+
+        HPRegion := measure_region_map[A_Index]
+        ;HPArtery := high_pressure_region_map[A_Index]
+
+        TmpHPArr.Insert(side . " " . HPRegion)
+        ;TmpHPAArr.Insert(side . " " . HPArtery)
+      }
+    }
+
+    If (RtHighPressureCode != "----")
+      TmpHPAArr.Insert(HighPressureArteryCodeMap[RtHighPressureCode])
+    If (LtHighPressureCode != "----")
+      TmpHPAArr.Insert(HighPressureArteryCodeMap[LtHighPressureCode])
+
+    region_text := (HighPressureRegionCount > 1 ? "regions" : "region")
+    artery_text := (HighPressureRegionCount > 1 ? "arteries" : "artery")
+
+    high_pressure_regions := ArrayStrJoin(TmpHPArr) . " " . region_text
+    high_pressure_arteries := ArrayStrJoin(TmpHPAArr) . " " . artery_text
+    high_pressure := "-- High pressure gradient at " . high_pressure_regions . ", probably due to wall calcification of " . high_pressure_arteries . " or truely significant stenosis at " . high_pressure_regions "."
+  }
+
   MyForm =
 (
 SEGMENTAL ARTERIAL PRESSURE WITH DOPPLER OF LOWER LIMBS
@@ -235,6 +352,7 @@ FINDINGS:
 %measure_form%
 COMMENT:
 %comment%
+%high_pressure%
 )
 
   Paste(MyForm, false)
