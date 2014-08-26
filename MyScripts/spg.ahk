@@ -165,7 +165,7 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
 
   HighPressureArteryCodeMap := { "----": ""
                                , "1---": "upper thigh"
-                               , "-2--": "lower thigh"
+                               , "-2--": "femoral"
                                , "--3-": "infragenicular"
                                , "---4": "ankle"
                                , "12--": "12--"
@@ -229,7 +229,7 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
             RtStenosis.Insert(stenotic_region_map[A_Index])
           }
         } Else {
-          If (RtValues[A_Index-1] - RtValues[A_Index] >= DeltaLimit) {
+          If (RtValues[A_Index-1] - RtValues[A_Index] >= DeltaLimit && RtValues[A_Index-1] < 300) {
             RtStenosis.Insert(stenotic_region_map[A_Index])
             ;MsgBox % RtStenosis
             ;Break
@@ -273,7 +273,7 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
             LtStenosis.Insert(stenotic_region_map[A_Index])
           }
         } Else {
-          If (LtValues[A_Index-1] - LtValues[A_Index] >= DeltaLimit) {
+          If (LtValues[A_Index-1] - LtValues[A_Index] >= DeltaLimit && LtValues[A_Index-1] < 300) {
             LtStenosis.Insert(stenotic_region_map[A_Index])
             ;MsgBox % LtStenosis
             ;Break
@@ -303,7 +303,7 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
       }
       comment .= "Suspicion of significant stenotic lesion at Lt " . LtStenosisText . " " . RegionText . ".`n"
     }
-  } Else {
+  } Else If (HighPressureRegionCount = 0) {
     comment = -- Low probability of occlusive lesion in bilateral lower limbs.
   }
 
