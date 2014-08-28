@@ -40,6 +40,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include MyScripts\lib\date.ahk
 #Include MyScripts\lib\string.ahk
 #Include MyScripts\lib\supported-exam-patterns.ahk
+#Include MyScripts\lib\libera-bmd.ahk
 
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
@@ -73,6 +74,7 @@ GroupAdd, SmartWonder, tedpc-
   #Include MyScripts\others.ahk
 
   #Include MyScripts\spg.ahk
+  #Include MyScripts\bone-density.ahk
 
   ;;; HotKeys
   #Include MyScripts\hotkey\delete-current-line.ahk
