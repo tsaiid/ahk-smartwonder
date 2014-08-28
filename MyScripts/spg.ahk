@@ -63,6 +63,15 @@ Abbreviation: Venous Outflow (VO, `%/min); Venous Capacitance (VC, `%); Arterial
   Paste(MyForm, false)
 Return
 
+; Temp Function
+::ocr::
+  wb := WBGet()
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
+  GetSpgOcr2(AccNo, tabIframe2)
+  MsgBox, OCR done
+Return
+
 ; SEG
 ::seg::
   wb := WBGet()
@@ -173,7 +182,7 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
                                , "1--4": "1--4"
                                , "-23-": "-23-"
                                , "-2-4": "-2-4"
-                               , "--34": "--34"
+                               , "--34": "lower limb"
                                , "123-": "123-"
                                , "12-4": "12-4"
                                , "1-34": "1-34"
