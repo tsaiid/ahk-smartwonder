@@ -38,6 +38,7 @@ SupportedExamPatterns() {
                 , ClavicleLt:   "Clavicle LT"
                 , ShoulderRt:   "Shoulder RT"
                 , ShoulderLt:   "Shoulder LT"
+                , SkullRoutine: "Skull routine"
                 , THRRtHip:     "THR \+ RT hip"
                 , THRLtHip:     "THR \+ LT hip"
                 , THRAP:        "THR, AP view"
