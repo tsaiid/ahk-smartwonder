@@ -67,6 +67,7 @@
 ::lh::left hemicolectomy
 ::acc::acute calculus cholecystitis
 ::gda::gastroduodenal artery
+::ipmn::intraductal papillary mucinous neoplasm
 
 ;; Neuro
 ::ich::intracranial hemorrhage
