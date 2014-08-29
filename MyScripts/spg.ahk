@@ -24,7 +24,7 @@
   ; interpretation
   ;; VO < 30 -> suspicious of DVT
   ;; VO > 100 and clinically has varicose vein -> c/w venous insufficiency
-  has_varicose := RegExMatch(OrderDiag, "i)varicose")
+  has_varicose := RegExMatch(OrderDiag, "i)varicose|spider")
   If (RtVO < 30 || LtVO < 30) {
     If (RtVO < 30) {
       side := (LtVO < 30) ? "bilateral" : "RT"
@@ -78,7 +78,7 @@ Return
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
-  ;GetSpgOcr2(AccNo, tabIframe2)
+  GetSpgOcr2(AccNo, tabIframe2)
 
   RtABI := StrLen(tabIframe2.document.getElementById("ocr_seg_right_abi").value)
          ? tabIframe2.document.getElementById("ocr_seg_right_abi").value : "nil"
@@ -160,50 +160,50 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
                                , "-2--": "lower thigh"
                                , "--3-": "calf"
                                , "---4": "ankle"
-                               , "12--": "12--"
-                               , "1-3-": "1-3-"
-                               , "1--4": "1--4"
-                               , "-23-": "-23-"
-                               , "-2-4": "-2-4"
-                               , "--34": "--34"
-                               , "123-": "123-"
-                               , "12-4": "12-4"
-                               , "1-34": "1-34"
-                               , "-234": "-234"
-                               , "1234": "1234" }
+                               , "12--": "thigh"
+                               , "1-3-": "upper thigh and calf"
+                               , "1--4": "upper thigh and ankle"
+                               , "-23-": "lower thigh and calf"
+                               , "-2-4": "lower thigh and ankle"
+                               , "--34": "calf and ankle"
+                               , "123-": "thigh and calf"
+                               , "12-4": "thigh and ankle"
+                               , "1-34": "upper thigh, calf and ankle"
+                               , "-234": "lower thigh, calf and ankle"
+                               , "1234": "whole lower limb" }
 
   HighPressureArteryCodeMap := { "----": ""
-                               , "1---": "upper thigh"
+                               , "1---": "infrainguinal"
                                , "-2--": "femoral"
                                , "--3-": "infragenicular"
-                               , "---4": "ankle"
-                               , "12--": "12--"
-                               , "1-3-": "1-3-"
-                               , "1--4": "1--4"
-                               , "-23-": "-23-"
-                               , "-2-4": "-2-4"
+                               , "---4": "infragenicular"
+                               , "12--": "femoral"
+                               , "1-3-": "infrainguinal"
+                               , "1--4": "infrainguinal"
+                               , "-23-": "femoral"
+                               , "-2-4": "lower limb"
                                , "--34": "lower limb"
-                               , "123-": "123-"
-                               , "12-4": "12-4"
-                               , "1-34": "1-34"
-                               , "-234": "-234"
-                               , "1234": "1234" }
+                               , "123-": "infrainguinal"
+                               , "12-4": "infrainguinal"
+                               , "1-34": "infrainguinal"
+                               , "-234": "lower limb"
+                               , "1234": "lower limb" }
 
   HighPressureStenosisCodeMap := { "1---": "upper thigh"
                                  , "-2--": "lower thigh"
-                                 , "--3-": "calf"
+                                 , "--3-": "popliteal"
                                  , "---4": "ankle"
-                                 , "12--": "12--"
-                                 , "1-3-": "1-3-"
-                                 , "1--4": "1--4"
-                                 , "-23-": "-23-"
-                                 , "-2-4": "-2-4"
-                                 , "--34": "--34"
-                                 , "123-": "123-"
-                                 , "12-4": "12-4"
-                                 , "1-34": "1-34"
-                                 , "-234": "-234"
-                                 , "1234": "1234" }
+                                 , "12--": "thigh"
+                                 , "1-3-": "thigh and popliteal"
+                                 , "1--4": "thigh and ankle"
+                                 , "-23-": "popliteal"
+                                 , "-2-4": "lower thigh and ankle"
+                                 , "--34": "calf and ankle"
+                                 , "123-": "thigh and calf"
+                                 , "12-4": "thigh and ankle"
+                                 , "1-34": ""
+                                 , "-234": ""
+                                 , "1234": "" }
 
   RtStenosis := []
   RtHighPressure := []
@@ -349,7 +349,7 @@ MEASURED BP AT ARM/UPPER THIGH/LOWER THIGH/CALF/ANKLE (MMHG):
 
     high_pressure_regions := ArrayStrJoin(TmpHPArr) . " " . region_text
     high_pressure_arteries := ArrayStrJoin(TmpHPAArr) . " " . artery_text
-    high_pressure := "-- High pressure gradient at " . high_pressure_regions . ", probably due to wall calcification of " . high_pressure_arteries . " or truely significant stenosis at " . high_pressure_regions "."
+    high_pressure := "-- High pressure gradient at " . high_pressure_regions . ", probably due to wall calcification of " . high_pressure_arteries . " or truely significant stenosis."
   }
 
   MyForm =
