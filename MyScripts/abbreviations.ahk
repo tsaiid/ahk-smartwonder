@@ -38,6 +38,7 @@
 ::afl::air-fluid level
 :c:cm::contrast medium
 ::wnl::within normal limits
+::prev::previous
 
 ;; Bone
 ::pf::patellofemoral `
@@ -49,6 +50,7 @@
 ::lcl::lateral collateral ligament
 ::acl::anterior cruciate ligament
 ::pcl::posterior cruciate ligament
+::thr::total hip replacement
 
 ;; Abdomen
 ::ln::lymph node
@@ -68,6 +70,9 @@
 ::acc::acute calculus cholecystitis
 ::gda::gastroduodenal artery
 ::ipmn::intraductal papillary mucinous neoplasm
+::rcc::renal cell carcinoma
+::rp::retrograde pyelography
+::pv::portal vein
 
 ;; Neuro
 ::ich::intracranial hemorrhage

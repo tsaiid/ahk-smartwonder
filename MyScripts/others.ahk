@@ -13,6 +13,7 @@
 ::h::however, `
 ::r::residual `
 ::reg::regular `
+::e::enhancement
 ::w::with `
 ::wo::without `
 ::esp::especially `
@@ -22,5 +23,6 @@
 ::urm::unremarkable
 ::mcne::malignancy cannot be excluded.
 ::msbe::malignancy should be excluded.
+::m::multiple `
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `

@@ -1,6 +1,10 @@
 ﻿; Sono
 ;; Hotstrings
 ::s-foley::s/p Foley catheterization. The urinary bladder is not distended enough for evaluation.
+::ruus::A tiny stone at upper third of right ureter, with mild hydronephrosis.
+::rlus::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
+::luus::A tiny stone at upper third of left ureter, with mild hydronephrosis.
+::llus::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
 
 ;; Forms
 ::s-labd::
