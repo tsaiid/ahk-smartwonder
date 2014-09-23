@@ -33,6 +33,7 @@ Return
 ::b-ok::In bone window, the findings are unremarkable.
 ::gbs-nac::Presence of gallbladder stones without obvious GB dilatation or wall thickening.
 ::act-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable.
+::act-nc-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable. Due to non-contrast study, the evaluation of solid organs is limited.
 ::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}
 
 ::act-hcc::
@@ -177,3 +178,54 @@ SUGGESTION:
 )
   Paste(MyForm)
 Return
+
+::act-crc::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+PROCEDURE: Non-contrast and contrast-enhanced abdominal CT scans.
+TECHNIQUE description:
+   Scanning range: Liver to symphysis, 5-mm contiguous scan.
+   Contrast medium: Yes, 100 ml, 1-2 ml/sec, with 100 seconds scanning delay.
+
+Clinical indications: colorectal tumor staging.
+
+Previous similar study reviewed/comparison: Yes. (<date>) | NONE
+
+Findings:
+
+Rectal tumor
+Size: [  x  x  cm]
+
+T-stage of the tumor
+[T1 (tumor invades the submucosa]]
+[T2 (tumor invades the muscularis propria]]
+[T3 (tumor invades the perirectal fat]]
+[T4a: Tumor penetrates to the surface of the visceral peritoneum]
+[T4b: Tumor directly invades or is adherent to other organs or structures ]
+
+Lymph nodes: [No enlarged nodes / number and size of the lymph nodes in the perirectal space as well as along the major pelvic vessels]
+N0: No regional lymph node metastasis
+N1a: Metastasis in 1 regional lymph node
+N1b: Metastasis in 2-3 regional lymph nodes
+N1c: Tumor deposit(s) in the subserosa, mesentery, or non-peritonealized pericolic or perirectal tissues without regional nodal metastasis
+N2a: Metastasis in 4 to 6 regional lymph nodes
+N2b: Metastasis in 7 or more regional lymph nodes
+
+M1a: Metastasis confined to one organ or site (e.g., liver, lung, ovary, non-regional node).
+M1b: Metastases in more than one organ/site or the peritoneum.
+
+NOTE: in case of mucinous-type of rectal tumor the involved lymph nodes may
+have fluid-like density.
+
+Bony metastases: [None] visible / number and size of any bony metastases
+No abnormal findings in the liver, GB, biliary system, pancreas, spleen, and both kidneys.
+Under lung window, no definite pulmonary nodules detected from available images
+
+IMPRESSION:
+[Rectal /sigmoid ] colon carcinoma
+Tentative image staging based on AJCC 7th edition, 2009: T N Mx
+)
+  Paste(MyForm)
+Return
+
