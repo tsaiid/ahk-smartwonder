@@ -9,6 +9,7 @@
 ::sao::small amount of `
 ::mao::moderate amount of `
 ::ntd::nature to be determined.
+::std::significance to be determined.
 ::p::presence of `
 ::h::however, `
 ::r::residual `
@@ -26,3 +27,9 @@
 ::m::multiple `
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
+
+:c:IND::INDICATION:
+:c:C::COMPARISON:
+:c:IMP::IMPRESSION:
+:c:S::SUGGESTION:
+:c:F::FINDINGS:

@@ -4,10 +4,6 @@
 ::ath::Atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
 ::sae::Presence of .... bilateral periventricular low density noted, the subcortical arteriosclerotic encephalopathy considered.
 ::ubo::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
-::IND::INDICATION:
-::COM::COMPARISON:
-::IMP::IMPRESSION:
-::SUG::SUGGESTION:
 ::imp2::Others as above descriptions.
 
 ;; Templates
