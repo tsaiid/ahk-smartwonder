@@ -1,6 +1,6 @@
 ﻿#IfWinActive ahk_class TImgViewPort
 
-$^!p::
+$^!+p::
   CoordMode, Mouse, Screen
   MouseGetPos, xpos,ypos
   Click, Right, 2500, -500
