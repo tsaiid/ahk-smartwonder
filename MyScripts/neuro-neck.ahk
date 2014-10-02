@@ -78,6 +78,57 @@ Suggest clinical correlation and follow up.
   Paste(MyForm)
 Return
 
+;; srCTNec
+::srctnec::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+TECHNIQUE:
+Multi-slice CT scanner with
+(1) Non-contrast and (2) Contrast-enhanced
+scanning in axial plane from skull base to thoracic inlet with 5-mm-thick contiguous slices and coronal reformatted images.
+Contrast medium: intravenous route, volume: 60 mL, rate: 1.0 mL/sec
+
+COMPARISON:
+Applicable previous CT of face and neck: none
+Applicable previous MRI of face and neck: none
+
+FINDINGS:
+
+*Post-surgical change: none
+
+*Skull base: normal
+*Orbits: normal
+*Nasal cavity: normal
+*Paranasal sinuses: normal
+
+*Nasopharynx: normal / symmetrical thickening, adenoidal hyperplasia favored
+*Oropharynx: normal
+*Hypopharynx: normal
+*Larynx: normal
+*Oral cavity: normal / limited interpretation due to dental artifacts
+*Thoracic inlet, visualized lung and mediastinum: normal
+
+*Parotid gland: normal
+*Submandibular gland: normal
+*Thyroid gland: normal / several small nodules
+
+*Lymph nodes: normal
+*Vascular structures: normal
+
+*Neck soft tissue and muscles: normal
+
+*Others: none
+
+
+IMPRESSION:
+No significant finding in face and neck region
+)
+  Paste(MyForm)
+Return
+
 ;; CTNEC3HRCT
 ::ctnec3hrct::
   MyOrder := CopyOrder()
@@ -121,6 +172,64 @@ Suggest clinical correlation and follow up.
   Paste(MyForm)
 Return
 
+;; srHRCT
+::srhrct::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+TECHNIQUE:
+Multi-slice CT scanner with ultra-thin slice (<1mm) axial scan of temporal bone using high-resolution bone algorithm, with coronal reconstruction
+
+COMPARISON:
+Applicable previous HRCT of temporal bone: none
+
+FINDINGS:
+
+*Temporal bone
+
+ Right side:
+
+     Middle ear cavity: clear / filled with soft tissue or fluid
+     Ossicles: intact / eroded / absent
+     Cochlea: normal
+     Vestibule: normal
+     Vestibular and cochlear aqueduct: normal
+     Semicircular canals: normal
+     Internal auditory canal: normal
+     External auditory canal: normal
+     Petrous apex: normal
+     Mastoid antrum: normal
+     Mastoid air cells: normal / poor pneumatization / fluid-filled
+
+ Left side:
+
+     Middle ear cavity: clear / filled with soft tissue or fluid
+     Ossicles: intact / eroded / absent
+     Cochlea: normal
+     Vestibule: normal
+     Vestibular and cochlear aqueduct: normal
+     Semicircular canals: normal
+     Internal auditory canal: normal
+     External auditory canal: normal
+     Petrous apex: normal
+     Mastoid antrum: normal
+     Mastoid air cells: normal / poor pneumatization / fluid-filled
+
+*Visualized paranasal sinuses: normal
+*Visualized calvarium and skull base: normal
+
+*Others: none
+
+
+IMPRESSION:
+Acute otitis media
+Left chronic otitis media with acquired cholesteatoma and ossicular preservation / erosion
+)
+  Paste(MyForm)
+Return
+
 ;; MRNEC
 ::mrnec::
   MyOrder := CopyOrder()
@@ -159,6 +268,121 @@ d. Presence of high signal intensity on T1WI over the C-spine, compatible with p
 
 IMPRESSION:
 SUGGESTION:
+)
+  Paste(MyForm)
+Return
+
+;; srMRNec
+::srmrnec::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+TECHNIQUE:
+1.5 Tesla scanner
+Sagittal T1WI and T2WI,
+Axial T1WI and T2WI with fat suppression,
+Coronal T1WI and T2WI with fat suppression,
+Post Gd-enhanced dynamic and conventional T1WI with fat suppression
+Contrast medium: intravenous route, 0.1 mmol/kg, rate: 2.0 mL/sec
+
+COMPARISON:
+Applicable previous CT of face and neck: none
+Applicable previous MRI of face and neck: none
+
+FINDINGS:
+
+*Post-surgical change: none
+
+*Skull base: normal
+*Orbits: normal
+*Nasal cavity: normal
+*Paranasal sinuses: normal
+
+*Nasopharynx: normal / symmetrical thickening, adenoidal hyperplasia favored / mild thickening, post-therapeutic change favored.
+*Oropharynx: normal
+*Hypopharynx: normal
+*Larynx: normal
+*Oral cavity: normal / limited interpretation due to dental artifacts
+*Thoracic inlet, visualized lung and mediastinum: normal
+
+*Parotid gland: normal
+*Submandibular gland: normal
+*Thyroid gland: normal / several small nodules
+
+*Lymph nodes: normal
+*Vascular structures: normal
+
+*Cervical spine: normal / increased bone marrow signal on T1WI, consistent with post radiation change
+*Neck soft tissue and muscles: normal
+
+*Others: none
+
+
+IMPRESSION:
+No significant finding in face and neck region
+No evident tumor recurrence
+)
+  Paste(MyForm)
+Return
+
+;; srMRANec
+::srmranec::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+TECHNIQUE:
+1.5 Tesla scanner
+Magnetic resonance angiography (MRA) of the brain focused on circle of Willis using 3D SPGR time of flight method with MIP (maximum intensity projection) reformatted images and raw data display.
+Contrast-enhanced MRA of neck with coronal acquisition and MIP reformatted images and raw data display.
+Contrast medium: intravenous route, 0.1mmol/kg
+
+COMPARISON:
+Applicable previous CT angiography: none
+Applicable previous MR angiography: none
+
+FINDINGS:
+
+*Intracranial artery anatomy
+
+Distal internal carotid artery (ICA): normal
+Anterior cerebral artery complex (ACA): normal
+Middle cerebral artery complex (MCA): normal
+Distal vertebral artery (VA): normal
+Basilar artery (BA): normal
+Posterior cerebral artery (PCA): normal
+(Other intracranial arteries are usually hard to see in MRA)
+
+*Extracranial artery anatomy
+
+Aortic arch: normal
+Brachiocephalic trunk: normal
+Common carotid artery, right: normal
+Common carotid artery, left: normal
+Internal carotid artery, right: normal
+Internal carotid artery, left: normal
+External carotid artery, right: normal
+External carotid artery, left: normal
+Subclavian artery, right: normal
+Subclavian artery, left: normal
+Vertebral artery, right: normal
+Vertebral artery, left: normal
+
+*Vascular pathology
+
+Aneurysm: none
+Vascular malformation: none
+Arteriovenous fistula: none
+
+*Developmental variants: none / fetal origin PCA / hypoplasia of A1 segment of ACA
+
+*Others: none
+
+IMPRESSION:
+No significant finding
 )
   Paste(MyForm)
 Return
