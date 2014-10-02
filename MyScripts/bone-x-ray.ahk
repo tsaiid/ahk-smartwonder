@@ -21,9 +21,9 @@
 ::acrok::No lateral downsloping or hooking of the acromion.
 ::acrsp::Presence of subacromial spur.
 ::shok::No limitation in internal/external rotation of the shoulder.
-::pcsp::Post instrment fixation at cervical spine.
+::pcsp::Post instrument fixation at cervical spine.
 ::pcsp1::Prevertebral soft tissue swelling. May be due to recent operation.
-::plsp::Post instrment fixation at lumbar spine.
+::plsp::Post instrument fixation at lumbar spine.
 ::spok::No disc space narrowing. {Enter}No spondylolisthesis. {Enter}No fracture.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.

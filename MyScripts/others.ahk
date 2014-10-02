@@ -25,6 +25,13 @@
 ::mcne::malignancy cannot be excluded.
 ::msbe::malignancy should be excluded.
 ::m::multiple `
+::nob::no obvious `
+::hyperi::hyperintensity
+::hypoi::hypointensity
+::isoi::intermediate signal intensity
+::hyperd::hyperdense
+::hypod::hypodense
+::isod::isodense
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 

@@ -1,6 +1,7 @@
 ﻿; Other plain films
 ::cnic::The condition shows no obvious change as compared with previous study.
 ::nic0::no obvious interval change.
+::woic::without interval change
 ::nip0::no obvious improvement.
 ::pc0::progressive change.
 ::rc0::regressive change.

@@ -35,6 +35,7 @@ Return
 ::act-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable.
 ::act-nc-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable. Due to non-contrast study, the evaluation of solid organs is limited.
 ::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}
+::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
 
 ::act-hcc::
   MyOrder := CopyOrder()
