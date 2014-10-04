@@ -4,6 +4,7 @@
 ::kub-s::Residual stool in the colon and rectum.
 ::lpcn::s/p left side percutaneous nephrostomy.
 ::rpcn::s/p right side percutaneous nephrostomy.
+::bpcn::s/p bilateral percutaneous nephrostomies.
 ::rfcvp::On central venous catheter via right femoral vein.
 ::lfcvp::On central venous catheter via left femoral vein.
 ::ileus::Obvious small bowel gas, may be due to ileus.
