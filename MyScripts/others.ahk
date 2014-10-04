@@ -32,6 +32,8 @@
 ::hyperd::hyperdense
 ::hypod::hypodense
 ::isod::isodense
+::hypere::hyperechoic
+::hypoe::hypoechoic
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
