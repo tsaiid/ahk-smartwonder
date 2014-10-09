@@ -64,6 +64,7 @@
 ::iud::intrauterine device
 ::gb::gallbladder
 ::hn::hydronephrosis
+::hu::hydroureter
 ::ub::urinary bladder
 ::rh::right hemicolectomy
 ::lh::left hemicolectomy

@@ -42,3 +42,4 @@
 :c:IMP::IMPRESSION:
 :c:S::SUGGESTION:
 :c:F::FINDINGS:
+:c:f::findings
