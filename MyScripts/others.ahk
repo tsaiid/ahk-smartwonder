@@ -34,6 +34,11 @@
 ::isod::isodense
 ::hypere::hyperechoic
 ::hypoe::hypoechoic
+::fd::filling defect
+::pg::progresion
+::rg::regression
+::csd::considered
+::spd::suspected
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 

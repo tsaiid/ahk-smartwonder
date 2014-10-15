@@ -26,4 +26,5 @@ Return
 :*:be-pc::- Poor barium coating of the mucosa might limit the interpretation.
 ::be-na::- Nonvisualization of the appendix. May be due to previous appendectomy.
 ::be-na1::- Nonvisualization of the appendix. Suggest correlate with previous operation history.
+::be-na2::- Nonvisualization of the appendix. However, no obvious lesion noted at the cecal base.
 
