@@ -33,6 +33,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include MyScripts\hotkey\copy-order.ahk
 #Include MyScripts\hotkey\insert-patient-exam-info.ahk
 #Include MyScripts\hotkey\renumber-selected-text.ahk
+#Include MyScripts\hotkey\toggle-hanging-protocol.ahk
 
 ; Define hotkeys
 #IfWinActive ahk_group SmartWonder

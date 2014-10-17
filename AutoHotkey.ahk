@@ -92,6 +92,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\change-font.ahk
 #Include MyScripts\hotkey\copy-order.ahk
 #Include MyScripts\hotkey\toggle-position-sync.ahk
+#Include MyScripts\hotkey\toggle-hanging-protocol.ahk
 #Include MyScripts\hotkey\insert-patient-exam-info.ahk
 #Include MyScripts\hotkey\convert-case.ahk
 #Include MyScripts\hotkey\renumber-selected-text.ahk
