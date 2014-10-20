@@ -51,6 +51,7 @@
 ::acl::anterior cruciate ligament
 ::pcl::posterior cruciate ligament
 ::thr::total hip replacement
+::as::ankylosing spondylitis
 
 ;; Abdomen
 ::ln::lymph node
