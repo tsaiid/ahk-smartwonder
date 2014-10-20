@@ -1,59 +1,51 @@
 #IfWinActive ahk_class TImgViewPort
 
+ToggleHangingProtocol(Row, Column){
+  ; calculate how many windows.
+  WinGetPos, , , WindowWidth, WindowHeight
+  ControlGetPos, , , ViewWidth, ViewHeight, TLEADAnn1, A
+  MaxRow := Floor((WindowHeight - 64 * 2) / ViewHeight)
+  MaxColumn := Floor(WindowWidth / ViewWidth)
+
+  If (Row * Column > 0 && Row <= MaxRow && Column <= MaxColumn) {
+    MouseGetPos, xpos, ypos
+    targetX := (10 + ViewWidth) * Column - 15
+    targetY := 20 + 64 * 2 + (30 + ViewHeight) * (Row - 1) + 20
+    Click %targetX% %targetY%
+    MouseMove, %xpos%, %ypos%
+  }
+}
+
 $q::
-  ;CoordMode, Mouse, Relative
-  MouseGetPos, xpos, ypos
-  Click, 812, 167
-  MouseMove, %xpos%, %ypos%
+  ToggleHangingProtocol(1,1)
 Return
 
 $w::
-  ;CoordMode, Mouse, Relative
-  MouseGetPos, xpos, ypos
-  Click, 1624, 167
-  MouseMove, %xpos%, %ypos%
+  ToggleHangingProtocol(1,2)
 Return
 
 $e::
-  ;CoordMode, Mouse, Relative
-  MouseGetPos, xpos, ypos
-  Click, 2431, 167
-  MouseMove, %xpos%, %ypos%
+  ToggleHangingProtocol(1,3)
 Return
 
 $r::
-  ;CoordMode, Mouse, Relative
-  MouseGetPos, xpos, ypos
-  Click, 3258, 167
-  MouseMove, %xpos%, %ypos%
+  ToggleHangingProtocol(1,4)
 Return
 
 $a::
-  ;CoordMode, Mouse, Relative
-  MouseGetPos, xpos, ypos
-  Click, 812, 1084
-  MouseMove, %xpos%, %ypos%
+  ToggleHangingProtocol(2,1)
 Return
 
 $s::
-  ;CoordMode, Mouse, Relative
-  MouseGetPos, xpos, ypos
-  Click, 1624, 1084
-  MouseMove, %xpos%, %ypos%
+  ToggleHangingProtocol(2,2)
 Return
 
 $d::
-  ;CoordMode, Mouse, Relative
-  MouseGetPos, xpos, ypos
-  Click, 2431, 1084
-  MouseMove, %xpos%, %ypos%
+  ToggleHangingProtocol(2,3)
 Return
 
 $f::
-  ;CoordMode, Mouse, Relative
-  MouseGetPos, xpos, ypos
-  Click, 3258, 1084
-  MouseMove, %xpos%, %ypos%
+  ToggleHangingProtocol(2,4)
 Return
 
 #IfWinExist
