@@ -1,4 +1,11 @@
 ﻿; IVP
+
+;; HotStrings
+::lextra::Dilatation of left side renal pelvis without obstruction level or stasis of contrast medium, in favor of extrarenal pelvis.
+::rextra::Dilatation of right side renal pelvis without obstruction level or stasis of contrast medium, in favor of extrarenal pelvis.
+::bextra::Dilatation of bilateral renal pelvis without obstruction level or stasis of contrast medium, in favor of extrarenal pelvis.
+
+;; Form
 ::ivp::
   MyForm =
 (
