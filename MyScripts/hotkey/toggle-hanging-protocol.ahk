@@ -48,4 +48,20 @@ $f::
   ToggleHangingProtocol(2,4)
 Return
 
+$z::
+  ToggleHangingProtocol(3,1)
+Return
+
+$x::
+  ToggleHangingProtocol(3,2)
+Return
+
+$c::
+  ToggleHangingProtocol(3,3)
+Return
+
+$v::
+  ToggleHangingProtocol(3,4)
+Return
+
 #IfWinExist
