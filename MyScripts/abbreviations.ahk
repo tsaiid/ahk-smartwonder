@@ -75,6 +75,7 @@
 ::rcc::renal cell carcinoma
 ::rp::retrograde pyelography
 ::pv::portal vein
+::abd::abdomen
 
 ;; Neuro
 ::ich::intracranial hemorrhage

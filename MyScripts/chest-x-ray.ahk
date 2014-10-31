@@ -65,6 +65,7 @@
 ::flo::fibrolinear opacity
 ::rno::reticulonodular oapcity
 ::ip::inflammatory process.
+::cic::chronic inflammatory change
 ::abg::air-bronchogram
 ::blf::bilateral lung fields
 ::llf::left lung field
