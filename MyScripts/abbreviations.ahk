@@ -76,6 +76,7 @@
 ::rp::retrograde pyelography
 ::pv::portal vein
 ::abd::abdomen
+::vur::vesicoureteral reflux
 
 ;; Neuro
 ::ich::intracranial hemorrhage

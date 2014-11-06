@@ -40,15 +40,15 @@
 ::ltka::s/p left total knee arthroplasty.
 ::btka::s/p bilateral total knee arthroplasties.
 ::orif::s/p screw and plate fixation.
-::fr::fracture `
-::frs::fractures `
+::fr::fracture
+::frs::fractures
 ::rdhs::s/p right dynamic hip screw fixation.
 ::ldhs::s/p left dynamic hip screw fixation.
 ::bdhs::s/p bilateral dynamic hip screw fixation.
 ::jsn::joint space narrowing `
 ::dsn::disc space narrowing `
 ::mof::marginal osteophyte formation
-::hs::in healing stage.
+::hs::in healing stage
 ::bu::bone union
 ::mu::malunion
 ::wol::without loosening.
