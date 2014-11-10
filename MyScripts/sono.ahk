@@ -5,6 +5,7 @@
 ::rlus::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
 ::luus::A tiny stone at upper third of left ureter, with mild hydronephrosis.
 ::llus::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
+::s-scr-ok::The size and vascularity of bilateral testes and epididymides are within normal limits.
 
 ;; Forms
 ::s-labd::
@@ -48,9 +49,12 @@ Return
 
   GetSonoSR2(AccNo, tabIframe2)
 
-  LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
-  RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
-  Spleen := tabIframe2.document.getElementById("sr_spleen") ? tabIframe2.document.getElementById("sr_spleen").value : "_ cm"
+  LeftKidney := tabIframe2.document.getElementById("sr_left_kidney")
+              ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
+  RightKidney := tabIframe2.document.getElementById("sr_right_kidney")
+               ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
+  Spleen := tabIframe2.document.getElementById("sr_spleen")
+          ? tabIframe2.document.getElementById("sr_spleen").value : "_ cm"
 
   MyForm =
 (
@@ -69,6 +73,8 @@ No abnormal dilatation of bilateral urinary collecting systems noted.
 
 No pleural effusion or ascites noted.
 )
+
+  Sleep 300 ; Probably more than enough. Depends on the system.
   Paste(MyForm, false)
 Return
 
