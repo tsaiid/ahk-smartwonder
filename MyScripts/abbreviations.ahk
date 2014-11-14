@@ -52,6 +52,7 @@
 ::pcl::posterior cruciate ligament
 ::thr::total hip replacement
 ::as::ankylosing spondylitis
+::ra::rheumatoid arthritis
 
 ;; Abdomen
 ::ln::lymph node

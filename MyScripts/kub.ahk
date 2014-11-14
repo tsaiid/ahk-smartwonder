@@ -1,6 +1,6 @@
 ﻿; For KUB
 ::kub::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
-::kub-b::The bowel gas pattern is unremarkable.
+::kub-b::the bowel gas pattern is unremarkable.
 ::kub-s::Residual stool in the colon and rectum.
 ::lpcn::s/p left side percutaneous nephrostomy.
 ::rpcn::s/p right side percutaneous nephrostomy.
