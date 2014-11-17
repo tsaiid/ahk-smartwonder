@@ -16,3 +16,5 @@
 ::nfa::No evidence of subphrenic free air.
 ::foley::s/p Foley catheterization.
 ::haic-ok::On HAIC. The tip position shows no migration as compared with previous angiography.
+::p/a::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
+::aacal::Calcification of abdominal aortic wall.
