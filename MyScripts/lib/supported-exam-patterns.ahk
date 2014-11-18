@@ -43,7 +43,7 @@ SupportedExamPatterns() {
                 , SkullRoutine: "Skull routine"
                 , THRRtHip:     "THR \+ (RT hip|hip \(RT\))"
                 , THRLtHip:     "THR \+ (LT hip|hip \(LT\))"
-                , THRAP:        "THR, AP view"
+                , THR:          "THR"
                 , PelvisAP:     "Pelvis AP view"
                 , PelvisInlet:  "Pelvis inlet view"
                 , PelvisOutlet: "Pelvis outlet view"
