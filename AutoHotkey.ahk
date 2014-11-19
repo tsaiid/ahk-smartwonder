@@ -145,7 +145,7 @@ $^l::
 Return
 
 ; Insert Previous Exam Date
-$^!d::
+$^d::
   InsertPrevExamDate()
 Return
 
