@@ -99,6 +99,7 @@ SetTitleMatchMode, 2
 ;#Include MyScripts\hotkey\remapping-original-hotkeys.ahk
 #Include MyScripts\hotkey\click-none-tb-none-ot.ahk
 #Include MyScripts\hotkey\click-confirm.ahk
+#Include MyScripts\hotkey\set-predefined-exam-flow.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
@@ -123,7 +124,7 @@ $^9::
 Return
 
 ; 更改報告編輯區字體
-$^!f::
+$^!+f::
   ChangeFont()
 Return
 
@@ -172,6 +173,11 @@ Return
 ; 皆可確認報告
 ^s::
   ClickConfirm()
+Return
+
+; Set predefined exam flow
+^!f::
+  SetPredefinedExamFlow()
 Return
 
 #IfWinActive
