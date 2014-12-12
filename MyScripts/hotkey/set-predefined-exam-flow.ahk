@@ -50,21 +50,29 @@ SetPredefinedExamFlow() {
                   , "UGI + Small intestine":        "UGI"
                   , "Antegrade pyelography, RT":    "SPE"
                   , "Antegrade pyelography, LT":    "SPE"
-                  , "T-tube cholangiography":       "SPE" }
+                  , "T-tube cholangiography":       "SPE"
+                  , "CTA, Chest-Aorta, PE":         "CCT"
+                  , "CT chest with/no contrast":    "CCT"
+                  , "CT chest no contrast":         "CCT" }
 
   wdayMap := {  1: {  "UGI":  "4320_0750"
-                    , "IVP":  "4320_0750" }
+                    , "IVP":  "4320_0750"
+                    , "CCT":  "4320_0176" }
               , 2: {  "BE":   "4320_0750"
-                    , "IVP":  "4320_0750" }
+                    , "IVP":  "4320_0750"
+                    , "CCT":  "4320_0176" }
               , 3: {  "BE":   "4320_3519"
                     , "UGI":  "4320_3519"
                     , "SPE":  "4320_3519"
-                    , "IVP":  "4320_3519" }
+                    , "IVP":  "4320_3519"
+                    , "CCT":  "4320_0176" }
               , 4: {  "UGI":  "4320_1796"
-                    , "IVP":  "4320_1796" }
+                    , "IVP":  "4320_1796"
+                    , "CCT":  "4320_0176" }
               , 5: {  "BE":   "4320_0750"
                     , "SPE":  "4320_0750"
-                    , "IVP":  "4320_0750" } }
+                    , "IVP":  "4320_0750"
+                    , "CCT":  "4320_0176" } }
 
   newFlow := wdayMap[examWday][examNameMap[examName]]
   If (!newFlow) {
