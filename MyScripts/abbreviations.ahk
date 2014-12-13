@@ -22,6 +22,7 @@
 ::ptx::pneumothorax
 ::pna::pneumonia
 ::htx::hemothorax
+::pjp::pneumocystis jiroveci pneumonia
 
 ;; General
 ::ant::anterior `
