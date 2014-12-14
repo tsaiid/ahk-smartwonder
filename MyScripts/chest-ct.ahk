@@ -3,6 +3,7 @@
 ;; Hotstrings
 ::6mcct::Follow up chest CT scan 6 months later.
 ::csono::Suggest correlate with sonography.
+::tacal::Atherosclerotic change and calcification of aortic wall.
 
 ;; Lung Routine
 ::cct-lr::
@@ -19,7 +20,6 @@ INDICATION: %MyOrder%
 
 COMPARISON:
 Applicable previous CT of chest: no
-Applicable previous chest radiography:
 
 FINDINGS:
 1. Lung nodule or mass: negative
@@ -55,7 +55,6 @@ INDICATION: %MyOrder%
 
 COMPARISON:
 Applicable previous CT of chest: no
-Applicable previous chest radiography:
 
 FINDINGS:
 1. Lung and large airways: no pulmonary nodules.
@@ -91,7 +90,6 @@ INDICATION: %MyOrder%
 
 COMPARISON:
 Applicable previous CT of chest: no
-Applicable previous chest radiography:
 
 FINDINGS:
 1. AORTA: not unusual for age
