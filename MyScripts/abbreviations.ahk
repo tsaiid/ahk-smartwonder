@@ -3,6 +3,7 @@
 ::ggos::ground glass opacities `
 ::pul::pulmonary `
 ::tb::tuberculosis
+::ntm::nontuberculous mycobacterium
 ::asd::atrial septal defect `
 ::vsd::ventricular septal defect `
 ::pda::patent ductus arteriosus `
@@ -23,6 +24,7 @@
 ::pna::pneumonia
 ::htx::hemothorax
 ::pjp::pneumocystis jiroveci pneumonia
+::ate::atelectasis
 
 ;; General
 ::ant::anterior `
@@ -40,6 +42,7 @@
 :c:cm::contrast medium
 ::wnl::within normal limits
 ::prev::previous
+::htn::hypertension
 
 ;; Bone
 ::pf::patellofemoral `
@@ -78,6 +81,7 @@
 ::rp::retrograde pyelography
 ::pv::portal vein
 ::abd::abdomen
+::hep::hepatic
 ::vur::vesicoureteral reflux
 
 ;; Neuro
@@ -85,3 +89,4 @@
 
 ;; Others
 ::dvt::deep vein thrombosis
+::op::operation

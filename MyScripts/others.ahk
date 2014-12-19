@@ -32,6 +32,8 @@
 ::hyperd::hyperdense
 ::hypod::hypodense
 ::isod::isodense
+::hia::high-attenuation
+::loa::low-attenuation
 ::hypere::hyperechoic
 ::hypoe::hypoechoic
 ::fd::filling defect
