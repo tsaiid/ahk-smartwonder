@@ -100,6 +100,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\click-none-tb-none-ot.ahk
 #Include MyScripts\hotkey\click-confirm.ahk
 #Include MyScripts\hotkey\set-predefined-exam-flow.ahk
+#Include MyScripts\hotkey\cgst32-related-mouse-control.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
