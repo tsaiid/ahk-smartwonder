@@ -77,7 +77,7 @@ RenumberSeletedText(){
     {
       If (A_Index >= startLine && A_Index <= endLine) {
         If (!RegExMatch(A_LoopField, "^\s*$")) {
-          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*])|(\(?\d+\)))(\s*)(.*)", "$7")
+          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*])|(\(?\d+\)))?(\s*)(.*)", "$7")
 
           If (A_Index < endLine)
             finalText .= "`n"
