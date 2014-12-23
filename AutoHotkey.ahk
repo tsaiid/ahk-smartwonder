@@ -155,6 +155,11 @@ $^!n::
   RenumberSeletedText()
 Return
 
+; Deorder Seleted Text
+$^!+n::
+  RenumberSeletedText(true)
+Return
+
 ; Click TB(-)Ot(-)
 ^!o::
   ClickNoneTBNoneOt()
