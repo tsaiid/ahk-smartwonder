@@ -3,7 +3,7 @@
 ;; for SmartWonder
 
 #IfWinActive ahk_group SmartWonder
-RenumberSeletedText(){
+RenumberSeletedText(deOrder = false){
   wb := WBGet()
 
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
@@ -77,7 +77,10 @@ RenumberSeletedText(){
     {
       If (A_Index >= startLine && A_Index <= endLine) {
         If (!RegExMatch(A_LoopField, "^\s*$")) {
-          finalText .= ++currLineNo . ". " . RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*])|(\(?\d+\)))?(\s*)(.*)", "$7")
+          If (!deOrder) {
+            finalText .= ++currLineNo . ". "
+          }
+          finalText .= RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*])|(\(?\d+\)))?(\s*)(.*)", "$7")
 
           If (A_Index < endLine)
             finalText .= "`n"
