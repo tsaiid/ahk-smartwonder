@@ -25,6 +25,7 @@
 ::htx::hemothorax
 ::pjp::pneumocystis jiroveci pneumonia
 ::ate::atelectasis
+::brec::bronchiectasis
 
 ;; General
 ::ant::anterior `

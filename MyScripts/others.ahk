@@ -41,6 +41,7 @@
 ::rg::regression
 ::csd::considered
 ::spd::suspected
+::ic::inflammatory change
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
