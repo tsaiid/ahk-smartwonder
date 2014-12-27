@@ -2,12 +2,29 @@
 ;; for SmartWonder
 
 #IfWinActive ahk_group SmartWonder
-return
+#IfWinActive
 
-^k:: ; 不要用 Ctrl-k 來確認報告
+;; for SmartIris
+#IfWinActive ahk_class TImgViewPort
+
+l::
+  Send, ^+l
 Return
 
-^s::
-  Send, ^k
+`;::
+  Send, ^+`;
 Return
+
+'::
+  Send, ^+'
+Return
+
+[::
+  Send, ^+[
+Return
+
+]::
+  Send, ^+]
+Return
+
 #IfWinActive
