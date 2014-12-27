@@ -64,4 +64,4 @@ $v::
   ToggleHangingProtocol(3,4)
 Return
 
-#IfWinExist
+#IfWinActive

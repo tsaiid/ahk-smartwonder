@@ -8,4 +8,4 @@ $^!+p::
   MouseMove, %xpos%, %ypos%
 Return
 
-#IfWinExist
+#IfWinActive
