@@ -1,6 +1,7 @@
 ﻿; My RegEx HotStrings
 #Include Lib\Hotstrings.ahk
 hotstrings("plsp(\d)(\d)\s", "plsp")
+hotstrings("g(\d+)\s", "g")
 Return
 
 plsp:
@@ -50,3 +51,11 @@ plsp:
   SendInput, {Enter}
   SendInput, %cageStr%
 Return
+
+#IfWinActive ahk_class TImgViewPort
+
+g:
+  GoToImage($1)
+Return
+
+#IfWinActive
