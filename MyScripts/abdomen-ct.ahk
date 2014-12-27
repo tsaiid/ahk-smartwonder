@@ -31,7 +31,7 @@ Return
 ::l-b-ok::In lung and bone windows, the findings are unremarkable.
 ::l-ok::In lung window, the findings are unremarkable.
 ::b-ok::In bone window, the findings are unremarkable.
-::gbs-nac::Presence of gallbladder stones without obvious GB dilatation or wall thickening.
+::gbs-nac::Presence of gallbladder stones without obvious GB distention or wall thickening.
 ::act-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable.
 ::act-nc-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable. Due to non-contrast study, the evaluation of solid organs is limited.
 ::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}

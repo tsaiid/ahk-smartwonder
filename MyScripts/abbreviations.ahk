@@ -14,7 +14,7 @@
 ::rll::right lower lobe
 ::lul::left upper lobe
 ::lll::left lower lobe
-::llil::left lingular lobe
+::linll::lingula of left lung
 ::ppm::permanent pacemaker
 ::pmf::progressive massive fibrosis
 ::lip::lymphocytic interstitial pneumonia
@@ -44,6 +44,9 @@
 ::wnl::within normal limits
 ::prev::previous
 ::htn::hypertension
+::a::artery
+::aa::arteries
+::v::vein
 
 ;; Bone
 ::pf::patellofemoral `
@@ -84,6 +87,7 @@
 ::abd::abdomen
 ::hep::hepatic
 ::vur::vesicoureteral reflux
+::ccc::cholangiocarcinoma
 
 ;; Neuro
 ::ich::intracranial hemorrhage

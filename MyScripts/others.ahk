@@ -42,6 +42,7 @@
 ::csd::considered
 ::spd::suspected
 ::ic::inflammatory change
+::cd::consolidation
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
