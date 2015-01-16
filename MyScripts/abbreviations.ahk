@@ -59,8 +59,10 @@
 ::acl::anterior cruciate ligament
 ::pcl::posterior cruciate ligament
 ::thr::total hip replacement
+::tka::total knee arthroplasty
 ::as::ankylosing spondylitis
 ::ra::rheumatoid arthritis
+::ha::hemiarthroplasty
 
 ;; Abdomen
 ::ln::lymph node
