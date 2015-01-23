@@ -43,6 +43,7 @@
 ::spd::suspected
 ::ic::inflammatory change
 ::cd::consolidation
+::nc::臨床不打藥
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
