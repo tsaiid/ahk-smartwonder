@@ -3,7 +3,7 @@
 ToggleHangingProtocol(Row, Column){
   ; calculate how many windows.
   WinGetPos, , , WindowWidth, WindowHeight
-  ControlGetPos, , , ViewWidth, ViewHeight, TLEADAnn1, A
+  ControlGetPos, , , ViewWidth, ViewHeight, TLEADAnn3, A
   MaxRow := Floor((WindowHeight - 64 * 2) / ViewHeight)
   MaxColumn := Floor(WindowWidth / ViewWidth)
 
