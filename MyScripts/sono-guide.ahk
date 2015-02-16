@@ -15,9 +15,9 @@ Return
 :*:sg-a::
   MyForm =
 (
-Under sonography guidance, ascites was noted in RLQ_ of abdomen.
+Under sonography guidance, ascites was noted in RLQ of abdomen.
 The skin was prepared and the area was draped.
-Under local anesthesia, a 8_ Fr pigtail catheter, using Seldinger technique, was placed into the peritoneal cavity.
+Under local anesthesia, a 6 Fr pigtail catheter, using Seldinger technique, was placed into the peritoneal cavity.
 Light yellow, serous fluid was aspirated.
 Then, the drain was fixed with Mefix.
 The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
