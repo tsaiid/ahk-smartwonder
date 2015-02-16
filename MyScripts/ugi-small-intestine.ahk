@@ -15,6 +15,24 @@ IMPRESSION: No abnormal finding noted in this UGI study.
   Paste(MyForm)
 Return
 
+::ugieso::
+  MyForm =
+(
+Double-contrast upper GI study from esophagus to proximal duodenum was performed smoothly and showed:
+Esophagography was performed under fluoroscopy:
+
+Normal elasticity and distensibility of stomach.
+No significant filling defect or mass lesion noted in the stomach.
+The mucosal fold of esophagus and stomach shows no significant unusual.
+Well distension of duodenal bulb without obvious mass effect.
+Smooth passage of the barium without definite mass effect or abnormal mucosa pattern of the esophagus.
+
+IMPRESSION:
+No abnormal finding noted in this UGI study.
+)
+  Paste(MyForm)
+Return
+
 ::smint::
   MyForm =
 (

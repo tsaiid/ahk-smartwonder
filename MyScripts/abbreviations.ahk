@@ -90,6 +90,7 @@
 ::hep::hepatic
 ::vur::vesicoureteral reflux
 ::ccc::cholangiocarcinoma
+::gerd::gastroesophageal reflux disease
 
 ;; Neuro
 ::ich::intracranial hemorrhage
