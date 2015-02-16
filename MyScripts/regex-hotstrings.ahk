@@ -1,7 +1,7 @@
 ﻿; My RegEx HotStrings
 #Include Lib\Hotstrings.ahk
 hotstrings("plsp(\d)(\d)\s", "plsp")
-hotstrings("g(\d+)\s", "g")
+hotstrings("g(\d+)\n", "g")
 Return
 
 plsp:
