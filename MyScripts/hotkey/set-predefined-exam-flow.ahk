@@ -35,29 +35,33 @@ SetPredefinedExamFlow() {
   examDate := tabIframe2.document.getElementById("orderTemplate_rptFlowProcess").children[0].children[3].children[1].innerText
   examWday := Weekday(examDate)
 
-  examNameMap := {  "Double contrast Barium enema": "BE"
-                  , "IVP & PV":                     "IVP"
-                  , "IVP (IV urography)":           "IVP"
-                  , "HSG -Hysterosalpingography":   "SPE"
-                  , "Voiding cystourethrography":   "SPE"
-                  , "Defecography":                 "SPE"
-                  , "Fistulography":                "SPE"
-                  , "Retrograde urethrography":     "SPE"
-                  , "Cystography":                  "SPE"
-                  , "Esophagography":               "UGI"
-                  , "Upper G-I Series":             "UGI"
-                  , "Small intestine":              "UGI"
-                  , "UGI + Small intestine":        "UGI"
-                  , "Antegrade pyelography, RT":    "SPE"
-                  , "Antegrade pyelography, LT":    "SPE"
-                  , "T-tube cholangiography":       "SPE"
-                  , "CTA, Chest-Aorta, PE":         "CCT"
-                  , "CT chest with/no contrast":    "CCT"
-                  , "CT chest no contrast":         "CCT" }
+  examNameMap := {  "Double contrast Barium enema":           "BE"
+                  , "IVP & PV":                               "IVP"
+                  , "IVP (IV urography)":                     "IVP"
+                  , "HSG -Hysterosalpingography":             "SPE"
+                  , "Voiding cystourethrography":             "SPE"
+                  , "Defecography":                           "SPE"
+                  , "Fistulography":                          "SPE"
+                  , "Retrograde urethrography":               "SPE"
+                  , "Cystography":                            "SPE"
+                  , "Esophagography":                         "UGI"
+                  , "Upper G-I Series":                       "UGI"
+                  , "Small intestine":                        "UGI"
+                  , "UGI + Small intestine":                  "UGI"
+                  , "Antegrade pyelography, RT":              "SPE"
+                  , "Antegrade pyelography, LT":              "SPE"
+                  , "T-tube cholangiography":                 "SPE"
+                  , "CT whole abdomen with/no contras":       "ACT"
+                  , "CT Stomach with/no contrast":            "ACT"
+                  , "CT Pan or Liver with/no contrast":       "ACT"
+                  , "CTA, Chest-Aorta, PE":                   "CCT"
+                  , "CT chest with/no contrast":              "CCT"
+                  , "CT chest no contrast":                   "CCT" }
 
   wdayMap := {  1: {  "UGI":  "4320_0750"
                     , "IVP":  "4320_0750"
-                    , "CCT":  "4320_0176" }
+                    , "CCT":  "4320_0176"
+                    , "ACT":  "4320_0174" }
               , 2: {  "BE":   "4320_0750"
                     , "IVP":  "4320_0750"
                     , "CCT":  "4320_0176" }
