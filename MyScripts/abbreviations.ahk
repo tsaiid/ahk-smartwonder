@@ -26,6 +26,7 @@
 ::pjp::pneumocystis jiroveci pneumonia
 ::ate::atelectasis
 ::brec::bronchiectasis
+::ttn::transient tachypnea of the newborn
 
 ;; General
 ::ant::anterior `
