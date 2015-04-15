@@ -92,6 +92,7 @@
 ::vur::vesicoureteral reflux
 ::ccc::cholangiocarcinoma
 ::gerd::gastroesophageal reflux disease
+::fnh::focal nodular hyperplasia
 
 ;; Neuro
 ::ich::intracranial hemorrhage
