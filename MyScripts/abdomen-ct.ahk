@@ -36,6 +36,7 @@ Return
 ::act-nc-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable. Due to non-contrast study, the evaluation of solid organs is limited.
 ::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
+::act-hh::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
 
 ::act-hcc::
   MyOrder := CopyOrder()
@@ -93,6 +94,29 @@ METHOD:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
 Contrast medium: Yes, 80-100 ml, 1-2 ml/sec, with 30 and 80 seconds scanning delay.
+
+Previous abdominal CT: none.
+
+FINDINGS:
+
+IMPRESSION:
+
+SUGGESTION:
+
+)
+  Paste(MyForm)
+Return
+
+::act-tcc::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+METHOD:
+Non-contrast and contrast-enhanced abdominal CT scans.
+Scanning range: Liver to symphysis, 5-mm contiguous scan.
+Contrast medium: Yes, 80-100 ml, 1-2 ml/sec, with 100 and 420 seconds scanning delay.
 
 Previous abdominal CT: none.
 
