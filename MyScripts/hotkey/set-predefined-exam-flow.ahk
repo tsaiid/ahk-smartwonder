@@ -48,6 +48,7 @@ SetPredefinedExamFlow() {
                   , "Upper G-I Series":                       "UGI"
                   , "Small intestine":                        "UGI"
                   , "UGI + Small intestine":                  "UGI"
+                  , "Hypotonic duodenography":                "UGI"
                   , "Antegrade pyelography, RT":              "SPE"
                   , "Antegrade pyelography, LT":              "SPE"
                   , "T-tube cholangiography":                 "SPE"
