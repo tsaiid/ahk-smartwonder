@@ -93,6 +93,7 @@
 ::ccc::cholangiocarcinoma
 ::gerd::gastroesophageal reflux disease
 ::fnh::focal nodular hyperplasia
+::hh::hepatic henamgioma
 
 ;; Neuro
 ::ich::intracranial hemorrhage
