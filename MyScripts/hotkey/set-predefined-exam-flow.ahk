@@ -55,6 +55,7 @@ SetPredefinedExamFlow() {
                   , "CT whole abdomen with/no contras":       "ACT"
                   , "CT Stomach with/no contrast":            "ACT"
                   , "CT Pan or Liver with/no contrast":       "ACT"
+                  , "CTA,Abdomen":                            "ACT"
                   , "CTA, Chest-Aorta, PE":                   "CCT"
                   , "CT chest with/no contrast":              "CCT"
                   , "CT chest no contrast":                   "CCT" }
@@ -77,11 +78,14 @@ SetPredefinedExamFlow() {
               , 5: {  "BE":   "4320_0750"
                     , "SPE":  "4320_0750"
                     , "IVP":  "4320_0750"
-                    , "CCT":  "4320_0176" } }
+                    , "CCT":  "4320_0176" }
+              , 6: {  "ACT":  "4320_0174" }
+              , 0: {  "ACT":  "4320_0174" } }
 
   newFlow := wdayMap[examWday][examNameMap[examName]]
+  map := examNameMap[examName]
   If (!newFlow) {
-    MsgBox, The flow is not defined.
+    MsgBox, The flow is not defined: "%examName%", "%map%", "%examWday%".
   } Else {
     selFlow.click()
 
