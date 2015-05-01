@@ -27,18 +27,19 @@ Return
 
 
 ;; Hotstrings
-::lap-ok::No retroperitoneal or mesenteric lymphadenopathy.
+::lapok::No retroperitoneal or mesenteric lymphadenopathy.
 ::l-b-ok::In lung and bone windows, the findings are unremarkable.
 ::l-ok::In lung window, the findings are unremarkable.
 ::b-ok::In bone window, the findings are unremarkable.
-::gbs-nac::Presence of gallbladder stones without obvious GB distention or wall thickening.
-::act-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable.
-::act-nc-ok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable. Due to non-contrast study, the evaluation of solid organs is limited.
+::gbsnac::Presence of gallbladder stones without obvious GB distention or wall thickening.
+::actok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable.
+::actncok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable. Due to non-contrast study, the evaluation of solid organs is limited.
 ::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
-::act-hh::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
+::hhact::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
+::hhmr::A -cm nodule over S of liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
 
-::act-hcc::
+::acthcc::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -61,7 +62,7 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-::act-hccf::
+::acthccf::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -84,7 +85,7 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-::act-pan::
+::actpan::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -107,7 +108,7 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-::act-tcc::
+::acttcc::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -130,7 +131,7 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-::act-l::
+::actl::
   MyForm =
 (
 ** Non-contrast and contrast-enhanced chest and abdominal CT scans.
@@ -174,7 +175,7 @@ Lymphoma with relapse/ progression/ partial remission/ complete remission.
 Return
 
 ; Abd CTA - bleeding
-::act-cta::
+::actcta::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -205,7 +206,7 @@ SUGGESTION:
 Return
 
 ; Abd CT - Non-contrast
-::act-nc::
+::actnc::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -227,7 +228,7 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-::act-ad::
+::actad::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -250,7 +251,7 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-::act-crc::
+::actcrc::
   MyOrder := CopyOrder()
   MyForm =
 (

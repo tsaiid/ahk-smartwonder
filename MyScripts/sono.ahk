@@ -7,6 +7,7 @@
 ::llus::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
 ::s-scr-ok::The size and vascularity of bilateral testes and epididymides are within normal limits.
 ::s-fl::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver change.
+::s-ngb::The gallbladder is not seen, may be due to previous cholecystectomy.
 
 ;; Forms
 ::s-labd::

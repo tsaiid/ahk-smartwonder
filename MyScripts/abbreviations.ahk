@@ -90,10 +90,13 @@
 ::abd::abdomen
 ::hep::hepatic
 ::vur::vesicoureteral reflux
+::hcc::hepatocellular carcinoma
 ::ccc::cholangiocarcinoma
 ::gerd::gastroesophageal reflux disease
 ::fnh::focal nodular hyperplasia
 ::hh::hepatic henamgioma
+::rn::regenerative nodule
+::dn::dysplastic nodule
 
 ;; Neuro
 ::ich::intracranial hemorrhage
