@@ -18,6 +18,10 @@ CopyOrder(toLower = 0)
   StringReplace, TmpOrderDiag, OrderDiagSplit2, History & Data:, , All
   ; 有時候 "History & Data :" 會有空格
   StringReplace, MyOrderDiag, TmpOrderDiag, History & Data :, , All
+  ; 再把 "History &amp; Data:" 拿掉
+  StringReplace, TmpOrderDiag, MyOrderDiag, History &amp`; Data:, , All
+  ; 有時候 "History &amp; Data :" 會有空格
+  StringReplace, MyOrderDiag, TmpOrderDiag, History &amp`; Data :, , All
 
   if (toLower) {
     StringLower, MyOrderDiag, MyOrderDiag
