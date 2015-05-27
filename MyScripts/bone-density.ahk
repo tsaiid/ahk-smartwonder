@@ -4,3 +4,7 @@
 ::bmd::
   LiberaBMD()
 Return
+
+::bd::
+  LiberaBMDSR()
+Return
