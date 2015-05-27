@@ -26,7 +26,7 @@ GroupAdd, SmartWonder, tedpc-
 
 ; to get bone density report by ajax.
 $^l::
-  LiberaBMD()
+  LiberaBMDSR()
 Return
 
 ; to get STAS template with SR data
