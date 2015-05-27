@@ -11,17 +11,9 @@ CopyOrder(toLower = 0)
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
   OrderId = OrderDiag_%accNo%
   OrderDiag := tabIframe2.document.getElementById(OrderId).value
-  ; 只取 "Purpose :" 以後的字串
-  StringReplace, NewOrderDiag, OrderDiag, Purpose :, ``, All
-  StringSplit, OrderDiagSplit, NewOrderDiag, ``, %A_Space%%A_Tab%
-  ; 再把 "History & Data:" 拿掉
-  StringReplace, TmpOrderDiag, OrderDiagSplit2, History & Data:, , All
-  ; 有時候 "History & Data :" 會有空格
-  StringReplace, MyOrderDiag, TmpOrderDiag, History & Data :, , All
-  ; 再把 "History &amp; Data:" 拿掉
-  StringReplace, TmpOrderDiag, MyOrderDiag, History &amp`; Data:, , All
-  ; 有時候 "History &amp; Data :" 會有空格
-  StringReplace, MyOrderDiag, TmpOrderDiag, History &amp`; Data :, , All
+
+  ; 只取 "Purpose :" 以後的字串, 把 "History & Data:" 拿掉
+  MyOrderDiag := RegExReplace(OrderDiag, "^.*Purpose :\s*(.*?)(History &(amp;)? Data\s*:(.*))?$", "$1$4")
 
   if (toLower) {
     StringLower, MyOrderDiag, MyOrderDiag
