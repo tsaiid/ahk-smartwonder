@@ -1,6 +1,7 @@
 ﻿;; Chest
 ::ggo::ground glass opacity `
 ::ggos::ground glass opacities `
+::ggn::ground glass nodule `
 ::pul::pulmonary `
 ::tb::tuberculosis
 ::ntm::nontuberculous mycobacterium
@@ -14,6 +15,7 @@
 ::rll::right lower lobe
 ::lul::left upper lobe
 ::lll::left lower lobe
+::llnl::left lingular lobe
 ::linll::lingula of left lung
 ::ppm::permanent pacemaker
 ::pmf::progressive massive fibrosis
@@ -27,6 +29,7 @@
 ::ate::atelectasis
 ::brec::bronchiectasis
 ::ttn::transient tachypnea of the newborn
+::ild::interstitial lung disease
 
 ;; General
 ::ant::anterior `
@@ -104,3 +107,4 @@
 ;; Others
 ::dvt::deep vein thrombosis
 ::op::operation
+::avm::arteriovenous malformation

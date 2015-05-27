@@ -8,8 +8,9 @@
 ::si::(Ser/Img: ){Left}
 ::sao::small amount of `
 ::mao::moderate amount of `
-::ntd::nature to be determined.
-::std::significance to be determined.
+::ntbd::nature to be determined.
+::stbd::significance to be determined.
+::ctbd::cause to be determined.
 ::p::presence of `
 ::h::however, `
 ::r::residual `
@@ -25,6 +26,8 @@
 ::mcne::malignancy cannot be excluded.
 ::msbe::malignancy should be excluded.
 ::m::multiple `
+::mf::multifocal `
+::n::nodule
 ::nob::no obvious `
 ::hyperi::hyperintensity
 ::hypoi::hypointensity
@@ -44,6 +47,7 @@
 ::ic::inflammatory change
 ::cd::consolidation
 ::nc::臨床不打藥
+::sc::surgical clips
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 

@@ -94,3 +94,7 @@
 ::id::ill-defined `
 ::luqd::A drain in the LUQ of abdomen.
 ::ruqd::A drain in the RUQ of abdomen.
+::prrct::Post removal of right chest tube. No pneumothorax noted.
+::prlct::Post removal of left chest tube. No pneumothorax noted.
+::prrpg::Post removal of right pigtail drain. No pneumothorax noted.
+::prlpg::Post removal of left pigtail drain. No pneumothorax noted.
