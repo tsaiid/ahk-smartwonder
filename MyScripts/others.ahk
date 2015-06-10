@@ -15,19 +15,24 @@
 ::h::however, `
 ::r::residual `
 ::reg::regular `
+::i::increased `
+::d::decreased `
 ::e::enhancement
 ::w::with `
 ::wo::without `
 ::esp::especially `
 ::cw::compatible with `
 ::o::otherwise, `
-::rm::remarkable
-::urm::unremarkable
-::mcne::malignancy cannot be excluded.
+::rm::remarkable `
+::urm::unremarkable `
+::cnbe::cannot be excluded.
+::mcnbe::malignancy cannot be excluded.
 ::msbe::malignancy should be excluded.
 ::m::multiple `
 ::mf::multifocal `
+::s::several `
 ::n::nodule
+:c:f::findings
 ::nob::no obvious `
 ::hyperi::hyperintensity
 ::hypoi::hypointensity
@@ -48,12 +53,14 @@
 ::cd::consolidation
 ::nc::臨床不打藥
 ::sc::surgical clips
+::mrt::more on right side
+::mlt::more on left side
+::adj::adjacent
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
 :c:IND::INDICATION:
 :c:C::COMPARISON:
 :c:IMP::IMPRESSION:
-:c:S::SUGGESTION:
-:c:F::FINDINGS:
-:c:f::findings
+:c:SG::SUGGESTION:
+:c:FD::FINDINGS:
