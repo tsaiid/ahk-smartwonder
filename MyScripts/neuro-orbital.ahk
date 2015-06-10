@@ -6,7 +6,6 @@
   MyForm =
 (
 INDICATION: %MyOrder%
-
 Noncontrast CT scan of orbit performed with axial and coronal section, 2-2mm slice thickness showed:
 
 Previous CT of orbit: no
@@ -26,66 +25,12 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-;; srCTO1
-::srcto1::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-Multi-slice CT scanner with non-contrast scanning in axial plane and coronal reformatted images.
-
-COMPARISON:
-Applicable previous CT of orbit: none
-Applicable previous MRI of orbit: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Orbit
-
- Right side:
-
-   Globe: normal
-   Bony orbit: normal
-   Pre-septal soft tissues: normal
-   Lacrimal apparatus: normal
-   Optic nerve: normal
-   Orbital muscles: normal
-   Retro-ocular fat: normal
-   Orbital apex: normal
-
- Left side:
-
-   Globe: normal
-   Bony orbit: normal
-   Pre-septal soft tissues: normal
-   Lacrimal apparatus: normal
-   Optic nerve: normal
-   Orbital muscles: normal
-   Retro-ocular fat: normal
-   Orbital apex: normal
-
-*Optic chiasm and suprasellar cistern: normal
-
-*Others: none
-
-
-IMPRESSION:
-No significant finding in bilateral orbital regions
-)
-  Paste(MyForm)
-Return
-
 ;; CTO2
 ::cto2::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 Noncontrast CT scan and post contrast CT scan of the orbit performed with axial and coronal section, 2-2mm slice thickness showed:
 
 Previous CT of orbit: no
@@ -103,69 +48,12 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-;; srCTO2
-::srcto2::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-Multi-slice CT scanner with
-(1) Non-contrast and (2) Contrast-enhanced
-scanning in axial plane and coronal reformatted images.
-Contrast medium: intravenous route, volume: 60 mL, rate: 1.0 mL/sec
-
-COMPARISON:
-Applicable previous CT of orbit: none
-Applicable previous MRI of orbit: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Orbit
-
- Right side:
-
-   Globe: normal
-   Bony orbit: normal
-   Pre-septal soft tissues: normal
-   Lacrimal apparatus: normal
-   Optic nerve: normal
-   Orbital muscles: normal
-   Retro-ocular fat: normal
-   Orbital apex: normal
-
- Left side:
-
-   Globe: normal
-   Bony orbit: normal
-   Pre-septal soft tissues: normal
-   Lacrimal apparatus: normal
-   Optic nerve: normal
-   Orbital muscles: normal
-   Retro-ocular fat: normal
-   Orbital apex: normal
-
-*Optic chiasm and suprasellar cistern: normal
-
-*Others: none
-
-
-IMPRESSION:
-No significant finding in bilateral orbital regions
-)
-  Paste(MyForm)
-Return
-
 ;; MRO1
 ::mro1::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 MRI of the orbit performed with Sagittal T1WI (localizer)
 Axial T1WI and FSE T2WI with Fat sat
 Coronal T1WI and FSE T2WI with Fat sat
@@ -202,64 +90,6 @@ Post contrast study shows no obvious enhancement noted over the bil. orbital ret
 No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 No MRI evidence of multiple sclerosis plaques.
 SUGGESTION:
-)
-  Paste(MyForm)
-Return
-
-;; srMRO1
-::srmro1::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Axial T1WI and T2WI with Fat sat,
-Coronal T1WI and T2WI with Fat sat,
-Post contrast enhancement dynamic axial T1WI,
-Post contrast enhancement conventional coronal and axial T1WI with Fat sat
-Contrast medium: intravenous route, 0.1 mmol/kg, rate: 2.0 mL/sec
-
-COMPARISON:
-Applicable previous CT of orbit: none
-Applicable previous MRI of orbit: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Orbit
-
- Right side:
-
-   Globe: normal
-   Bony orbit: normal
-   Pre-septal soft tissues: normal
-   Lacrimal apparatus: normal
-   Optic nerve: normal
-   Orbital muscles: normal
-   Retro-ocular fat: normal
-   Orbital apex: normal
-
- Left side:
-
-   Globe: normal
-   Bony orbit: normal
-   Pre-septal soft tissues: normal
-   Lacrimal apparatus: normal
-   Optic nerve: normal
-   Orbital muscles: normal
-   Retro-ocular fat: normal
-   Orbital apex: normal
-
-*Optic chiasm and suprasellar cistern: normal
-
-*Others: none
-
-
-IMPRESSION:
-No significant finding in bilateral orbital regions
 )
   Paste(MyForm)
 Return

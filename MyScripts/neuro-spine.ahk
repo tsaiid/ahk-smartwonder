@@ -6,7 +6,6 @@
   MyForm =
 (
 INDICATION: %MyOrder%
-
 Non-contrast and post-contrast helical axial CT of lumbar spine with coronal and sagittal MPR reformations shows:
 
 PREVIOUS CT SCAN of L-spine: no
@@ -53,7 +52,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 Noncontrast CT of C-spine was performed with a multi-slice CT scanner:
 SCAN RANGE: axial plane performed from C1 to T1, and oblique axial reconstruction from C1 to C2 with 2-mm and C3 to T1 with 3-mm continuous scan slice thickness, and with sagittal and coronal reconstruction 3-mm continuous scan slice thickness
 
@@ -78,51 +76,12 @@ Others as the above descriptions.
   Paste(MyForm)
 Return
 
-;; srCTCS1
-::srctcs1::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-Multi-slice CT scanner;
-Non-contrast axial contiguous scanning of cervical spine with sagittal and coronal reformatted images
-
-COMPARISON:
-Applicable previous CT of cervical spine: none
-
-FINDINGS:
-
-*Vertebral body
-  Morphology: normal
-  Alignment: normal
-
-*Vertebra, posterior elements: normal
-*Spinal canal: normal
-*Neuroforamen: normal
-*Intervertebral disc space: normal
-*Prevertebral space: normal
-
-*Spinal cord and disc condition: cannot be well evaluated by CT scan
-
-*Others: none
-
-
-IMPRESSION:
-No evident fracture or dislocation of cervical spine
-No significant finding in cervical spine region
-)
-  Paste(MyForm)
-Return
-
 ;; MRSPC1
 ::mrspc1::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRI of the C-spine performed with
 Coronal T1WI (localizer)
 Sagittal TIWI, T2WI, gradient echo T2*WI,
@@ -167,73 +126,12 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-;; srMRSPC1
-::srmrspc1::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Coronal T2WI (localizer)
-Sagittal T1WI, T2WI, gradient echo T2*WI
-Axial gradient echo T2*WI
-
-COMPARISON:
-Applicable previous MRI of cervical spine: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Spinal stenosis:
-
-C4-5:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-C5-6:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-
-*Vertebral body
-  Morphology: normal
-  Alignment: normal
-
-*Vertebra, posterior elements: normal
-*Prevertebral space: normal
-*Intervertebral disc: normal / see above
-*Intradural extramedullary space: normal
-*Spinal cord: normal
-
-*Others: none
-
-
-IMPRESSION:
-Spinal canal stenosis
-)
-  Paste(MyForm)
-Return
-
 ;; MRSPC2
 ::mrspc2::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRI of the C-spine performed with
 Coronal T1WI (localizer)
 Sagittal TIWI, T2WI, gradient echo T2*WI,
@@ -315,73 +213,12 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-;; srMRSPC2
-::srmrspc2::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Coronal T2WI (localizer)
-Sagittal T1WI, T2WI, gradient echo T2*WI
-Axial gradient echo T2*WI
-post Gadolinium enhancement with axial and sagittal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
-
-COMPARISON:
-Applicable previous MRI of cervical spine: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Spinal stenosis:
-
-C4-5:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-C5-6:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-*Vertebral body
-  Morphology: normal
-  Alignment: normal
-
-*Vertebra, posterior elements: normal
-*Prevertebral space: normal
-*Intervertebral disc: normal / see above
-*Intradural extramedullary space: normal
-*Spinal cord: normal
-
-*Others: none
-
-
-IMPRESSION:
-Spinal canal stenosis
-)
-  Paste(MyForm)
-Return
-
 ;; MRSPT
 ::mrspt::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRI of the T-spine performed:
 Coronal T2WI with fat sat (localized)
 Sagittal TI, T2WI
@@ -432,73 +269,12 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-;; srMRSPT
-::srmrspt::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Lumbar spine localization (sagittal T2WI)
-Coronal T2WI with fat sat
-Sagittal T1WI, T2WI
-Axial T1WI and T2WI with fat sat
-post Gadolinium enhancement with axial and sagittal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
-
-COMPARISON:
-Applicable previous MRI of thoracic spine: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Spinal stenosis:
-
-T8-9:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-T11-12:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-*Vertebral body
-  Morphology: normal
-  Alignment: normal
-
-*Vertebra, posterior elements: normal
-*Intervertebral disc: normal / see above
-*Intradural extramedullary space: normal
-*Spinal cord: normal
-
-*Others: none
-
-
-IMPRESSION:
-Spinal canal stenosis
-)
-  Paste(MyForm)
-Return
-
 ;; MRSPT1
 ::mrspt1::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRI of the T-spine performed:
 Coronal T2WI with fat sat (localized)
 Sagittal T1, T2WI
@@ -557,7 +333,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRI of the L-spine performed:
 Coronal T2WI with fat sat (localized)
 Sagittal T1, T2WI
@@ -615,71 +390,12 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-;; srMRSPL1
-::srmrspl1::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Coronal T2WI with fat sat (localizer)
-Sagittal T1WI, T2WI
-Axial T1WI and T2WI
-
-COMPARISON:
-Applicable previous MRI of lumbar spine: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Spinal stenosis:
-
-L4-5:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-L5-S1:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-*Vertebral body
-  Morphology: normal
-  Alignment: normal
-
-*Vertebra, posterior elements: normal
-*Paravertebral space: normal
-*Intervertebral disc: normal / see above
-*Intradural space: normal
-
-*Others: none
-
-
-IMPRESSION:
-Spinal canal stenosis
-)
-  Paste(MyForm)
-Return
-
 ;; MRSPL2
 ::mrspl2::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRI of the L-spine performed:
 Coronal T2WI with fat sat (localized)
 Sagittal T1, T2WI
@@ -784,126 +500,6 @@ No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region
 No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.
 
 SUGGESTION:
-)
-  Paste(MyForm)
-Return
-
-;; srMRSPL2
-::srmrspl2::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Coronal T2WI with fat sat (localizer)
-Sagittal T1WI, T2WI
-Axial T1WI and T2WI
-post Gadolinium enhancement with axial and sagittal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
-
-COMPARISON:
-Applicable previous MRI of lumbar spine: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Spinal stenosis:
-
-L4-5:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-L5-S1:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-*Vertebral body
-  Morphology: normal
-  Alignment: normal
-
-*Vertebra, posterior elements: normal
-*Paravertebral space: normal
-*Intervertebral disc: normal / see above
-*Intradural space: normal
-
-*Others: none
-
-
-IMPRESSION:
-Spinal canal stenosis
-)
-  Paste(MyForm)
-Return
-
-;; srMRSP
-::srmrsp::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Cervical spine localization (sagittal T2WI)
-Coronal T2WI with fat sat
-Sagittal T1WI, T2WI, Iterative Decomposition of water and fat with Echo Asymmetry and Least Squares reconstruction (IDEAL) sequence
-Post-contrast sagittal T1WI IDEAL
-post Gadolinium enhancement with axial and sagittal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
-Scan range: whole spine
-
-COMPARISON:
-Applicable previous MRI of spine: none
-
-FINDINGS:
-
-*Post-surgical change: none
-
-*Spinal stenosis:
-
-T8-9:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-T11-12:
-  Spinal canal stenosis: moderate
-  Neuroforaminal stenosis: no
-  Intervertebral disc: bulging / posterior protrusion / extrusion in central / subarticular / foraminal / extraforaminal zone
-  Disc space narrowing: yes
-  Hypertrophy of ligamentum flavum: yes
-  Uncovertebral / facet joint hypertrophy and osteophytes: no
-  Spondylolisthesis: no / degenerative, grade I
-
-*Vertebral body
-  Morphology: normal
-  Alignment: normal
-
-*Vertebra, posterior elements: normal
-*Intervertebral disc: normal / see above
-*Intradural extramedullary space: normal
-*Spinal cord: normal
-
-*Others: none
-
-
-IMPRESSION:
-Spinal canal stenosis
 )
   Paste(MyForm)
 Return

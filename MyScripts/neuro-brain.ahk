@@ -6,7 +6,6 @@
   MyForm =
 (
 INDICATION: %MyOrder%
-
 CT scan of brain was performed with a multi-slice CT scanner:
 METHOD: (1) Noncontrast and (2) Post-contrast enhancement
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 5-mm continuous scan slice thickness
@@ -16,7 +15,7 @@ COMPARISON:
 Applicable previous CT of brain: no
 
 FINDINGS:
-Presence of beam-hardening skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
+Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
 
 No definite abnormal enhancing mass lesion in the brain noted.
 
@@ -41,7 +40,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 5-mm continuous scan slice thickness
 
@@ -51,7 +49,7 @@ Applicable previous CT of brain: no
 FINDINGS:
 Presence of motion artifact in this study, film interpretation is limited.
 
-Presence of beam-hardening skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
+Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
 
 No definite area of obvious abnormal density in the brain noted.
 
@@ -71,101 +69,6 @@ No definite acute intracranial parenchymal hemorrhage or acute epidural or acute
 SUGGESTION:
 Suggest clinical correlation and follow up.
 Follow up or further evaluation.
-)
-  Paste(MyForm)
-Return
-
-;; srCTN1
-::srctn1::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-Multi-slice CT scanner with (1) non-contrast and (2) contrast-enhanced
-scanning in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices;
-Contrast medium: intravenous route, 60 mL in volume (adjusted according to body weight); injection rate 1.0 mL/sec
-
-COMPARISON:
-Applicable previous CT of brain: none
-Applicable previous MRI of brain: none
-
-FINDINGS:
-
-*Cerebral lobes: normal
-*Basal ganglia and thalami: normal
-*White matter tracts: normal
-
-*Midline shift: none
-
-*Cerebellum: normal
-*Brainstem: normal
-*Sella and skull base: normal
-*Pineal region: normal
-
-*Extra-axial spaces: normal for the patient's age
-*Basal cisterns: normal for the patient's age
-*Ventricular system: normal for the patient's age
-
-*Visualized vascular system: normal / atherosclerotic change with vessel wall calcifications
-*Visualized nasopharynx and paranasal sinuses: clear
-*Visualized orbits: normal
-*Calvarium and scalp: normal
-
-*Others: none
-
-
-IMPRESSION:
-No evident acute intracranial hemorrhage
-No significant intracranial finding
-No evident brain metastasis
-)
-  Paste(MyForm)
-Return
-
-;; srCTN2
-::srctn2::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-Multi-slice CT scanner without contrast medium in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices
-
-COMPARISON:
-Applicable previous CT of brain: none
-Applicable previous MRI of brain: none
-
-FINDINGS:
-
-*Cerebral lobes: normal
-*Basal ganglia and thalami: normal
-*White matter tracts: normal
-
-*Midline shift: none
-
-*Cerebellum: normal
-*Brainstem: normal
-*Sella and skull base: normal
-*Pineal region: normal
-
-*Extra-axial spaces: normal for the patient's age
-*Basal cisterns: normal for the patient's age
-*Ventricular system: normal for the patient's age
-
-*Visualized vascular system: normal / atherosclerotic change with vessel wall calcifications
-*Visualized nasopharynx and paranasal sinuses: clear
-*Visualized orbits: normal
-*Calvarium and scalp: normal
-
-*Others: none
-
-
-IMPRESSION:
-No evident acute intracranial hemorrhage
-No significant intracranial finding
 )
   Paste(MyForm)
 Return
@@ -198,106 +101,12 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-;; srCTABrain
-::srctabrain::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-Multi-slice CT scanner with
-(1) Non-contrast scanning in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices.
-(2) Bolus injection of contrast medium and thin-slice scanning from skull base to vertex in arterial and venous phases.
-(3) Contrast-enhanced scanning in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices.
-(4) Image post-processing in the workstation with multiplanar reconstruction (MPR), maximal intensity projection (MIP), and volume rendering techinique (VRT)
-Contrast medium: intravenous route, 80 mL in volume (adjusted according to body weight); injection rate 3.5 mL/sec
-
-
-COMPARISON:
-Applicable previous digital subtraction angiography: none
-Applicable previous CT angiography of brain: none
-Applicable previous MR angiography of brain: none
-
-FINDINGS:
-
-*Anatomy
-
-Distal internal carotid artery (ICA): normal
-Anterior cerebral artery complex (ACA): normal
-Middle cerebral artery complex (MCA): normal
-Vertebral artery (VA), V3 & V4 segments: normal
-Posterior inferior cerebellar artery (PICA): normal
-Basilar artery (BA): normal
-Anterior inferior cerebellar artery (AICA): normal
-Superior cerebellar artery (SCA): normal
-Posterior cerebral artery (PCA): normal
-
-*Pathology
-
-Aneurysm:
-  size  mm x  mm
-  type: saccular
-  artery of origin: anterior communicating artery / junction of distal ICA and posterior communicating artery / MCA bifurcation
-  neck dimension: 2 mm
-  dome direction projected: superior
-  thrombosis: none
-
-Aneurysm follow-up:
-  previous intervention: surgical clipping / endovascular embolization
-  artery of origin: anterior communicating artery / junction of distal ICA and posterior communicating artery / MCA bifurcation
-  residual or recurrent sac: none
-
-Vascular malformation:
-  type: pial
-  location: right frontal lobe
-  nidus size:  mm x  mm x  mm
-  arterial feeders: MCA
-  associated aneurysms: none
-
-Arteriovenous fistula:
-  type: direct (traumatic) / indirect (dural)
-  location: right cavernous sinus
-  arterial feeders: ICA
-  drainage veins:
-
-*Developmental variants: none / fetal origin posterior cerebral artery / hypoplasia of A1 segment of ACA
-
-*Cerebral lobes: normal
-*Basal ganglia and thalami: normal
-*White matter tracts: normal
-
-*Midline shift: none
-
-*Cerebellum: normal
-*Brainstem: normal
-*Sella and skull base: normal
-*Pineal region: normal
-
-*Extra-axial spaces: normal for the patient's age
-*Basal cisterns: normal for the patient's age
-*Ventricular system: normal for the patient's age
-
-*Visualized nasopharynx and paranasal sinuses: clear
-*Visualized orbits: normal
-*Calvarium and scalp: normal
-
-*Others: none
-
-
-IMPRESSION:
-Aneurysm rupture
-)
-  Paste(MyForm)
-Return
-
 ;; CT3D
 ::ct3d::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 Noncontrast CT scan of the face and skull, with thin slice 2 mm, and post reconstruction 3D display.
 
 COMPARISON:
@@ -346,112 +155,7 @@ Suggest clinical correlation and follow up.
   Paste(MyForm)
 Return
 
-;; srCT3D
-::srct3d::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
 
-TECHNIQUE:
-Multi-slice CT scanner;
-Non-contrast axial contiguous scanning of face in bone algorithm with coronal and 3D reconstruction images
-
-COMPARISON:
-Applicable previous CT of face: none
-
-FINDINGS:
-
-*Facial bones, right side
-
-Frontal bone: normal / fracture, frontal sinus involved / spared
-Ethmoid bone: normal / fracture
-Bony orbit: normal / fracture of lateral wall, medial wall, orbital floor
-Zygoma: normal / fracture of zygomatic arch and zygomaticofrontal suture
-Maxilla / Maxillary sinus: normal / fracture of anterior and posterolateral wall
-Pterygoid plates: normal / fracture
-
-
-*Facial bones, left side
-
-Frontal bone: normal / fracture, frontal sinus involved / spared
-Ethmoid bone: normal / fracture
-Bony orbit: normal / fracture of lateral wall, medial wall, orbital floor
-Zygoma: normal / fracture of zygomatic arch and zygomaticofrontal suture
-Maxilla / Maxillary sinus: normal / fracture of anterior and posterolateral wall
-Pterygoid plates: normal / fracture
-
-*Mandible: normal
-*Nasal bone, septum and nasal cavity: normal
-*Sphenoid bones: normal
-*Temporal bones: normal
-*Parietal bones: normal
-*Occipital bones: normal
-
-*Hematoma: none / paranasal sinuses / nasal cavity / periorbital region / scalp / cheek
-
-*Others: none
-
-
-IMPRESSION:
-Multiple facial bone fracture, left side
-)
-  Paste(MyForm)
-Return
-
-;; srCTANec
-::srctanec::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-Multi-slice CT scanner with
-(1) Non-contrast scanning in axial plane from aortic arch to skull base with 4 to 5-mm-thick contiguous slices.
-(2) Bolus injection of contrast medium and thin-slice scanning from aortic arch to skull base in arterial and venous phases.
-(3) Image post-processing in the workstation with multiplanar reconstruction (MPR), maximal intensity projection (MIP), and volume rendering techinique (VRT)
-Contrast medium: intravenous route, 80 mL in volume (adjusted according to body weight); injection rate 3.5 mL/sec
-
-
-COMPARISON:
-Applicable previous digital subtraction angiography: none
-Applicable previous CT angiography of brain: none
-Applicable previous MR angiography of brain: none
-
-FINDINGS:
-
-*Anatomy
-
-Aortic arch: normal
-Brachiocephalic trunk: normal
-Common carotid artery, right: normal
-Common carotid artery, left: normal
-Internal carotid artery, right: normal
-Internal carotid artery, left: normal
-External carotid artery, right: normal
-External carotid artery, left: normal
-Subclavian artery, right: normal
-Subclavian artery, left: normal
-Vertebral artery, right: normal
-Vertebral artery, left: normal
-
-
-*Pathology
-
-Aneurysm: none
-Arteriovenous fistula: none
-
-*Developmental variants: none / hypoplasia of right vertebral artery / common origin of brachiocephalic trunk and left common carotid artery
-
-*Others: none
-
-
-IMPRESSION:
-carotid stenosis
-)
-  Paste(MyForm)
-Return
 
 ;; MRICVA
 ::mricva::
@@ -459,7 +163,6 @@ Return
   MyForm =
 (
 Indication: %MyOrder%
-
 The MR of the brain performed with Sagittal T1WI (localizer)
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Coronal T1WI, T2WI
@@ -538,80 +241,12 @@ Follow up or further evaluation.
   Paste(MyForm)
 Return
 
-;; srMRICVA
-::srmricva::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-Indication: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
-Coronal T1WI, T2WI,
-post Gadolinium enhancement with axial and coronal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
-Magnetic resonance angiography (MRA) of the brain focused on circle of Willis using 3D SPGR time of flight method with MIP (maximum intensity projection) reformatted images and raw data display.
-
-COMPARISON:
-Applicable previous CT of brain: none
-Applicable previous MRI of brain: none
-
-FINDINGS:
-
-*Cerebral lobes: normal
-*Basal ganglia and thalami: normal
-*White matter tracts: normal
-
-*Midline shift: none
-
-*Cerebellum: normal
-*Brainstem: normal
-*Sella and skull base: normal
-*Pineal region: normal
-
-*Extra-axial spaces: normal for the patient's age
-*Basal cisterns: normal for the patient's age
-*Ventricular system: normal for the patient's age
-
-*Visualized vascular system: normal / see below
-*Visualized nasopharynx and paranasal sinuses: clear
-*Visualized orbits: normal
-*Calvarium and scalp: normal
-
-*Artery anatomy
-
-Distal internal carotid artery (ICA): normal
-Anterior cerebral artery complex (ACA): normal
-Middle cerebral artery complex (MCA): normal
-Distal vertebral artery (VA): normal
-Basilar artery (BA): normal
-Posterior cerebral artery (PCA): normal
-(Other intracranial arteries are usually hard to see in MRA)
-
-*Vascular pathology
-
-Aneurysm: none
-Vascular malformation: none
-Arteriovenous fistula: none
-
-*Developmental variants: none / fetal origin PCA / hypoplasia of A1 segment of ACA
-
-*Others: none
-
-
-IMPRESSION:
-No significant intracranial finding
-)
-  Paste(MyForm)
-Return
-
 ;; MRB
 ::mrb::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRI of the brain performed with a 1.5-T scanner:
 METHOD: Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI,
 FLAIR (Fluid Attenuated Inversion Recovery), Coronal T1WI, T2WI
@@ -642,54 +277,6 @@ Post contrast study showed no abnormal enhancing lesion in the brain and no abno
 IMPRESSION:
 No significant intracranial finding
 SUGGESTION:
-)
-  Paste(MyForm)
-Return
-
-;; srMRB
-::srmrb::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
-Coronal T1WI, T2WI,
-post Gadolinium enhancement with axial and coronal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
-
-COMPARISON:
-Applicable previous CT of brain: none
-Applicable previous MRI of brain: none
-
-FINDINGS:
-
-*Cerebral lobes: normal
-*Basal ganglia and thalami: normal
-*White matter tracts: normal
-
-*Midline shift: none
-
-*Cerebellum: normal
-*Brainstem: normal
-*Sella and skull base: normal
-*Pineal region: normal
-
-*Extra-axial spaces: normal for the patient's age
-*Basal cisterns: normal for the patient's age
-*Ventricular system: normal for the patient's age
-
-*Visualized vascular system: normal
-*Visualized nasopharynx and paranasal sinuses: clear
-*Visualized orbits: normal
-*Calvarium and scalp: normal
-
-*Others: none
-
-
-IMPRESSION:
-No significant intracranial finding
 )
   Paste(MyForm)
 Return
