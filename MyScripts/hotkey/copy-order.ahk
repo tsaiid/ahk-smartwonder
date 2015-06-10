@@ -13,7 +13,7 @@ CopyOrder(toLower = 0)
   OrderDiag := tabIframe2.document.getElementById(OrderId).value
 
   ; 只取 "Purpose :" 以後的字串, 把 "History & Data:" 拿掉
-  MyOrderDiag := RegExReplace(OrderDiag, "^.*Purpose :\s*(.*?)(History &(amp;)? Data\s*:(.*))?$", "$1$4")
+  MyOrderDiag := RegExReplace(OrderDiag, "^.*?(Reason :\s*(.*?))?((No history of i|I)mpaired renal func.*?)Purpose :\s*(.*?)(History &(amp;)? Data\s*:(.*))?$", "$2$5$8")
 
   if (toLower) {
     StringLower, MyOrderDiag, MyOrderDiag
