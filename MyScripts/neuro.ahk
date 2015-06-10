@@ -2,8 +2,10 @@
 
 ;; Hotstrings
 ::ath::Atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
+::ath1::Presence of diffuse atherosclerotic change and with vessels wall calcification noted in the intracranial portion of the bil. internal carotid arteries noted.
 ::sae::Presence of .... bilateral periventricular low density noted, the subcortical arteriosclerotic encephalopathy considered.
 ::ubo::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
+::imp::As the above descriptions.
 ::imp2::Others as above descriptions.
 
 ;; Templates
@@ -12,6 +14,7 @@
 #Include MyScripts\neuro-orbital.ahk
 #Include MyScripts\neuro-brain.ahk
 #Include MyScripts\neuro-neck.ahk
+#Include MyScripts\neuro-sr.ahk
 
 ;; hemra
 ::hemra::
@@ -64,61 +67,6 @@ FINDINGS:
 IMPRESSION:
 
 SUGGESTION:
-)
-  Paste(MyForm)
-Return
-
-;; srCTP
-::srctp::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-Multi-slice CT scanner with non-contrast scanning in axial plane and coronal reformatted images.
-
-COMPARISON:
-Applicable previous CT of paranasal sinus: none
-Applicable previous MRI of paranasal sinus: none
-
-FINDINGS:
-
-Post-surgical changes: none / post functional endoscopic sinus surgery (FESS) / post Caldwell-Luc procedure (sublabial antrostomy)
-
-*Nasal cavity
-   Right: normal / several soft tissue lesions, nasal polyposis favored
-   Left: normal / several soft tissue lesions, nasal polyposis favored
-   Septum: normal / deviation to left side
-
-*Sinuses and drainage pathways
-
- Right side:
-
-  Frontal sinus: normal / hypoplasia / mucosal thickening / mucous or soft tissue filling
-  Maxillary sinus: normal / retention cyst or polyp / mucosal thickening / mucous or soft tissue filling
-  Ethmoid sinus: normal / mucosal thickening / mucous or soft tissue filling
-  Ostiomeatal complex: normal / removed / obstructed by polyp, mucosal thickening, or tumor
-  Sphenoid sinus: normal / hypoplasia / mucosal thickening / mucous or soft tissue filling
-
- Left side:
-
-  Frontal sinus: normal / hypoplasia / mucosal thickening / mucous or soft tissue filling
-  Maxillary sinus: normal / retention cyst or polyp / mucosal thickening / mucous or soft tissue filling
-  Ethmoid sinus: normal / mucosal thickening / mucous or soft tissue filling
-  Ostiomeatal complex: normal / removed / obstructed by polyp, mucosal thickening, or tumor
-  Sphenoid sinus: normal / hypoplasia / mucosal thickening / mucous or soft tissue filling
-
-
-*Others: none
-
-
-IMPRESSION:
-no significant finding in paranasal sinuses
-chronic paranasal sinusitis
-nasal polyposis with obstructive sinusitis
-obstructive sinusitis, due to polyp, mucosal thickening, or tumor
-DDx: antrochoanal polyp, inverted papilloma, or polyp with obstructive sinusitis, left side
 )
   Paste(MyForm)
 Return
@@ -176,131 +124,6 @@ SUGGESTION:
 Check hormone profile.
 Suggest correlate with serum prolactin level.
 Suggest correlate with serum prolactin and other pituitary gland hormone level.
-)
-  Paste(MyForm)
-Return
-
-;; srMRSe
-::srmrse::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Sagittal T1WI (localizer)
-Coronal T1WI and T2WI
-Sagittal T1WI and T2WI
-Post contrast dynamic T1WI and conventional T1WI with Fat sat
-
-COMPARISON:
-Applicable previous MRI of sella: none
-
-FINDINGS:
-
-*Post-surgical change: none / transsphenoidal resection of pituitary adenoma
-
-*Mass:
-   Size: 1.5 x 1 x 1 cm
-   Location: sella and suprasella, right cavernous sinus
-   Enhancement: homogeneous
-   Compression: optic chiasm
-   DDx: Pituitary macroadenoma favored
-
-*Pituitary gland:
-   Morphology: normal / compressed by the mass / incorporated with the mass
-   Height: 6 mm (normal for the patient's age)
-   Posterior lobe T1WI hyperintensity: normal
-   Intraglandular lesion: none / cyst / microadenoma presented as delayed enhancing nodule
-
-*Sella turcica: normal
-*Cavernous sinus: normal
-*Sphenoid sinus: normal
-
-*Pituitary stalk: normal
-*Hypothalamus: normal
-
-*Others: none
-
-IMPRESSION:
-Pituitary macroadenoma
-)
-  Paste(MyForm)
-Return
-
-;; srMRSeB
-::srmrseb::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-
-TECHNIQUE:
-1.5 Tesla scanner
-Sella:
-Sagittal T1WI (localizer)
-Coronal T1WI and T2WI
-Sagittal T1WI and T2WI
-Post contrast dynamic T1WI and conventional T1WI with Fat sat
-Brain:
-Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
-post Gadolinium enhancement with axial and coronal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
-
-COMPARISON:
-Applicable previous MRI of sella and brain: none
-
-
-FINDINGS:
-
-*Post-surgical change: none / transsphenoidal resection of pituitary adenoma
-
-*Mass:
-   Size: 1.5 x 1 x 1 cm
-   Location: sella and suprasella, right cavernous sinus
-   Enhancement: homogeneous
-   Compression: optic chiasm
-   DDx: Pituitary macroadenoma favored
-
-*Pituitary gland:
-   Morphology: normal / compressed by the mass / incorporated with the mass
-   Height: 6 mm (normal for the patient's age)
-   Posterior lobe T1WI hyperintensity: normal
-   Intraglandular lesion: none / cyst / microadenoma presented as delayed enhancing nodule
-
-*Sella turcica: normal
-*Cavernous sinus: normal
-*Sphenoid sinus: normal
-
-*Pituitary stalk: normal
-*Hypothalamus: normal
-
-
-*Cerebral lobes: normal
-*Basal ganglia and thalami: normal
-*White matter tracts: normal
-
-*Midline shift: none
-
-*Cerebellum: normal
-*Brainstem: normal
-*Sella and skull base: normal / see above
-*Pineal region: normal
-
-*Extra-axial spaces: normal for the patient's age
-*Basal cisterns: normal for the patient's age
-*Ventricular system: normal for the patient's age
-
-*Visualized vascular system: normal
-*Visualized nasopharynx and paranasal sinuses: clear
-*Visualized orbits: normal
-*Calvarium and scalp: normal
-
-*Others: none
-
-
-IMPRESSION:
-Pituitary macroadenoma
 )
   Paste(MyForm)
 Return
