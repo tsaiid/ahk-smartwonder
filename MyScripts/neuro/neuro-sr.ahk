@@ -4,7 +4,6 @@
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner;
 Non-contrast axial contiguous scanning of face in bone algorithm with coronal and 3D reconstruction images
@@ -57,7 +56,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast scanning in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices.
@@ -150,7 +148,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast scanning in axial plane from aortic arch to skull base with 4 to 5-mm-thick contiguous slices.
@@ -204,7 +201,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner;
 Non-contrast axial contiguous scanning of cervical spine with sagittal and coronal reformatted images
@@ -242,7 +238,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner with (1) non-contrast and (2) contrast-enhanced
 scanning in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices;
@@ -291,7 +286,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner without contrast medium in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices
 
@@ -337,7 +331,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast and (2) Contrast-enhanced
@@ -388,7 +381,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner with non-contrast scanning in axial plane and coronal reformatted images.
 
@@ -441,7 +433,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast and (2) Contrast-enhanced
@@ -497,7 +488,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner with non-contrast scanning in axial plane and coronal reformatted images.
 
@@ -552,7 +542,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner with ultra-thin slice (<1mm) axial scan of temporal bone using high-resolution bone algorithm, with coronal reconstruction
 
@@ -610,7 +599,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Magnetic resonance angiography (MRA) of the brain focused on circle of Willis using 3D SPGR time of flight method with MIP (maximum intensity projection) reformatted images and raw data display.
@@ -670,7 +658,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
@@ -718,7 +705,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 The MR of the brain performed with Sagittal T1WI (localizer)
@@ -830,7 +816,6 @@ Return
   MyForm =
 (
 Indication: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
@@ -897,7 +882,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sagittal T1WI and T2WI,
@@ -952,7 +936,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Axial T1WI and T2WI with Fat sat,
@@ -1010,7 +993,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sagittal T1WI (localizer)
@@ -1059,7 +1041,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sella:
@@ -1135,7 +1116,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 C-spine
 Multi-slice CT scanner;
@@ -1174,7 +1154,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Coronal T2WI (localizer)
@@ -1234,7 +1213,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Coronal T2WI (localizer)
@@ -1294,7 +1272,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Coronal T2WI with fat sat (localizer)
@@ -1353,7 +1330,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Coronal T2WI with fat sat (localizer)
@@ -1418,7 +1394,6 @@ Myelography C&T Spine
 Myelography was performed smoothly under fluoroscopic guidance via puncture of L3/4 interspinous space.
 
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 Multi-slice CT scanner;
 Post-myelography axial contiguous scanning of whole spine with sagittal and coronal reformatted images
@@ -1461,7 +1436,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Lumbar spine localization (sagittal T2WI)
@@ -1522,7 +1496,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 Cervical spine localization (sagittal T2WI)
