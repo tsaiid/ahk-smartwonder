@@ -33,6 +33,7 @@
 ::s::several `
 ::n::nodule
 :c:f::findings
+::sg::suggest
 ::nob::no obvious `
 ::hyperi::hyperintensity
 ::hypoi::hypointensity
@@ -44,7 +45,7 @@
 ::loa::low-attenuation
 ::hypere::hyperechoic
 ::hypoe::hypoechoic
-::fd::filling defect
+:c:fd::filling defect
 ::pg::progresion
 ::rg::regression
 ::csd::considered

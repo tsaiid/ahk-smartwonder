@@ -24,6 +24,7 @@
 ::boop::bronchiolitis obliterans organizing pneumonia
 ::ptx::pneumothorax
 ::pna::pneumonia
+::bpn::bronchopneumonia
 ::htx::hemothorax
 ::pjp::pneumocystis jiroveci pneumonia
 ::ate::atelectasis
