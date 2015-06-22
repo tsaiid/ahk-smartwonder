@@ -179,7 +179,7 @@ GetSonoSR2(AccNo, ResultFrame){
       }).done(function(data){
         //alert(data.status.message);
         if (data.status.error) {
-          alert(data.status.message);
+          //alert(data.status.message);
           result.append(insert_result("message", data.status.message));
         }
         else {
