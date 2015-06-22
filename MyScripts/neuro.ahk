@@ -9,12 +9,12 @@
 ::imp2::Others as above descriptions.
 
 ;; Templates
-#Include MyScripts\neuro-spine.ahk
-#Include MyScripts\neuro-ajcc.ahk
-#Include MyScripts\neuro-orbital.ahk
-#Include MyScripts\neuro-brain.ahk
-#Include MyScripts\neuro-neck.ahk
-#Include MyScripts\neuro-sr.ahk
+#Include MyScripts\neuro\neuro-spine.ahk
+#Include MyScripts\neuro\neuro-ajcc.ahk
+#Include MyScripts\neuro\neuro-orbital.ahk
+#Include MyScripts\neuro\neuro-brain.ahk
+#Include MyScripts\neuro\neuro-neck.ahk
+#Include MyScripts\neuro\neuro-sr.ahk
 
 ;; hemra
 ::hemra::
