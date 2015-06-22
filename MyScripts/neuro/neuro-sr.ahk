@@ -375,6 +375,61 @@ No significant finding in face and neck region
   Paste(MyForm)
 Return
 
+;; srCTNec1
+::srctnec1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+TECHNIQUE:
+Noncontrast CT scan of head and neck was performed with a multi-slice CT scanner:
+SCAN RANGE: axial plane from the skull base to the low neck with 5-mm continuous scan slice thickness and coronal reconstruction
+
+COMPARISON:
+Applicable previous CT of face and neck: none
+Applicable previous MRI of face and neck: none
+
+FINDINGS:
+
+No contrast medium. Film interpretation is limited.
+
+The detail could not be evaluated in this noncontrast CT.
+
+*Post-surgical change: none
+
+*Skull base: normal
+*Orbits: normal
+*Nasal cavity: normal
+*Paranasal sinuses: normal / (ctp1) ,
+
+*Nasopharynx: normal / symmetrical thickening, adenoidal hyperplasia favored
+*Oropharynx: normal
+*Hypopharynx: normal
+*Larynx: normal
+*Oral cavity: normal / limited interpretation due to dental artifacts
+*Thoracic inlet, visualized lung and mediastinum: normal
+
+*Parotid gland: normal
+*Submandibular gland: normal
+*Thyroid gland: normal / several small nodules
+
+*Lymph nodes: normal
+*Vascular structures: normal
+
+*Neck soft tissue and muscles: normal
+
+*Others: none
+
+
+IMPRESSION:
+No significant finding in face and neck region
+
+SUGGESTION:
+Suggest clinical correlation and follow up.
+)
+  Paste(MyForm)
+Return
+
 ;; srCTO1
 ::srcto1::
   MyOrder := CopyOrder()
