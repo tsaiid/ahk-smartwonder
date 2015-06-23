@@ -161,7 +161,7 @@ Return
   MyOrder := CopyOrder()
   MyForm =
 (
-Indication: %MyOrder%
+INDICATION: %MyOrder%
 The MR of the brain performed with Sagittal T1WI (localizer)
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Coronal T1WI, T2WI
@@ -170,9 +170,11 @@ And post Gadolinium (0.1 mmol/kg) enhancement with axial and coronal T1 weighted
 Intracranial MRA with 3D TOF and focus on the circle of Willis showed:
 [[Intracranial MRA with 3D TOF and focus on the circle of Willis, intracranial MR venography (MRV) showed:]]
 
+COMPARISON:
+Previous CT of brain: none
 Previous MRI of brain: none
 
-Findings:
+FINDINGS:
 
 -----------------------------------
 Post-contrast study was not performed due to clinician request.
