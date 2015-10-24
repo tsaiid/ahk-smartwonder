@@ -132,10 +132,10 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
     }
 
     If (getPrevReport > 0) {  ; 有找到相關的報告
-      If (CopyReport) { ; 如果不 CopyReport, 就只會把 prevExamDate 存在 global var 裡
-        latestRelatedReport := prevReportLists.children[getPrevReport].children[(LoadImages? 1 : 3)]
-        latestRelatedReport.click() ; 點最近報告、開影像
+      latestRelatedReport := prevReportLists.children[getPrevReport].children[(LoadImages? 1 : 3)]
+      latestRelatedReport.click() ; 點最近報告、開影像
 
+      If (CopyReport) { ; 如果不 CopyReport, 就只會把 prevExamDate 存在 global var 裡
         frmPrevReport := frmTabIframe2.document.frames["History3"]
 
         FrameWait(frmPrevReport)
