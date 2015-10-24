@@ -157,15 +157,17 @@ C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: Presence of diffuse bulging disk, causing 
 
 C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: Presence of diffuse bulging/protrusion/herniation disk, disc space narrowing, small spondylosis, combined with ligament flavum hypertrophy and facet joint degenerative change causing mild/moderate/severe spinal stenosis.
 
-C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: Presence of diffuse bulging/protrusion/herniation disk, disc space narrowing, small spondylosis, and associated with posterior-central/right/left/posterior-lateral herniated nucleus pulposus (HIVD), cranial/caudal migration, combined with ligament flavum hypertrophy and facet joint degenerative change causing mild/moderate/severe spinal stenosis.
+C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: Presence of diffuse bulging/protrusion/herniation disk, disc space narrowing, small spondylosis, and associated with posterior-central/right/left/posterior-lateral herniated nucleus pulposus (HIVD), cranial/caudal migration of this HIVD, combined with ligament flavum hypertrophy and facet joint degenerative change causing mild/moderate/severe spinal stenosis.
 
-C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: Presence of posterior-central/right/left/posterior-lateral herniated nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac, disc space narrowing, small spondylosis, combined with ligament flavum hypertrophy and facet joint degenerative change causing mild/moderate/severe spinal stenosis, right/left lateral recess stenosis, and narrowing of right/left intervertebral neuroforamen.
+C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: Presence of posterior-central/right/left/posterior-lateral herniated nucleus pulposus (HIVD), cranial/caudal migration of this HIVD, with compression /attachment of the adjacent nerve root/dural sac, disc space narrowing, small spondylosis, combined with ligament flavum hypertrophy and facet joint degenerative change causing mild/moderate/severe spinal stenosis, right/left lateral recess stenosis, and narrowing of right/left intervertebral neuroforamen.
 
 C3-4, C4-5, C5-6, C6-7, C7-T1: Diffuse herniation of disc (HIVD), and small posterior osteophyte, and ligamentum flavum hypertrophy and causing severe spinal stenosis noted.
 
 C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1:  Presence of mild anterior spondylolisthesis, and slightly bulging disc, and causing mild/moderate spinal stenosis. (however, no obvious compression of the spinal cord).
 
 Diffuse ossification of posterior longitudinal ligament from C2 to C7, diffuse bulging disk, combined with mild ligament flavum hypertrophy, causing severe spinal stenosis over C2-C3 and nearly moderate spinal stenosis from C3 through C6 and mild spinal stenosis over C6-C7.
+
+Ossification of ligament flavum or ligament flavum hypertrophy at C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1, more on right side, causing mild/moderate/severe spinal stenosis.
 
 Narrowing of right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1 intervertebral neuroforaminas due to the degenerative change and severe disc space narrowing.
 
@@ -206,7 +208,7 @@ Presence of several nodular lesions noted over the right side thyroid gland, rec
 11. Presence of abnormal signal intensity involving the ------ spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
 
 IMPRESSION:
-As the above descriptions.
+Cervical degenerative spondylosis, disc space narrowing and protrusion disk. Details as above descriptions.
 
 SUGGESTION:
 )
@@ -438,6 +440,8 @@ L1-L2, L2-L3, L3-L4, L4-L5, L5-S1: Presence of diffuse bulging disk, causing mil
 
 L1-L2, L2-L3, L3-L4, L4-L5, L5-S1: Presence of diffuse bulging/protrusion/herniation disk, disc space narrowing, degenerative endplate change, ligament flavum hypertrophy and facet joint degenerative change causing mild/moderate/severe degree central spinal stenosis and mild/moderate/severe narrowing of bilateral lateral recesses and mild/moderate/severe degree degenerative bilateral/right/left neuroforaminal stenosis.
 
+L4-5 and L5-S1: Diffuse bulging disc with posterior protrusion disc, hypertrophy of ligamentum flavum and degenerative change of facet joints noted, resulting in spinal stenosis of L4-5/severe, and L5-S1/moderate.
+
 and prominence of epidural fat (epidural lipomatosis)
 
 L1-L2, L2-L3, L3-L4, L4-L5, L5-S1: Presence of diffuse bulging disc, and associated with the posterior-central/right/left/posterior-lateral/lateral herniated nucleus pulposus (HIVD), cranial/caudal migration of this HIVD, with compression /attachment of the adjacent nerve root/dural sac, ligament flavum hypertrophy and facet joint degenerative change  causing mild/moderate/severe degree central spinal stenosis and mild/moderate/severe narrowing of bilateral lateral recesses and mild/moderate/severe degree degenerative bilateral/right/left neuroforaminal stenosis.
@@ -495,6 +499,10 @@ Presence of benign hemangioma noted over the L2 spine vertebral body, size about
 
 
 IMPRESSION:
+Lumbar degenerative spondylosis, disc space narrowing and protrusion disk. Details as above descriptions.
+
+Degenerative spine disease with spinal stenosis. Details see descriptions.
+
 No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region noted.
 
 No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.

@@ -51,6 +51,8 @@ Presence of motion artifact in this study, film interpretation is limited.
 
 Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
 
+Hyperdense cerebral vessels and venous sinuses noted, in favor of recent study with coontrast media.
+
 No definite area of obvious abnormal density in the brain noted.
 
 No definite acute intracranial parenchymal hemorrhage or acute epidural or acute subdural hematoma in the brain noted.
@@ -59,12 +61,20 @@ The bilateral lateral ventricles showed symmetrical without dilatation.
 
 No obvious dilatation of intraventricular system.
 
+No obvious fracture of the skull base and the skull.
+
 IMPRESSION:
+1. No evident acute intracranial hemorrhage or acute subdural hematoma.
+2. Previous brain insult; old lacunar infarcts.
+3. No obvious old brain insult.
+
 No remarkable findings on noncontrast CT.
 
 No significant acute findings on noncontrast CT.
 
 No definite acute intracranial parenchymal hemorrhage or acute epidural or acute subdural hematoma in the brain noted.
+
+No obvious fracture of the skull base and the skull.
 
 SUGGESTION:
 Suggest clinical correlation and follow up.
@@ -238,6 +248,84 @@ No evidence of high signal intensity on DWI suggesting acute or recent ischemia 
 Small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter.
 SUGGESTION:
 Follow up or further evaluation.
+)
+  Paste(MyForm)
+Return
+
+;; MRICVA-1
+::mricva-1::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+The MR of the brain performed with Sagittal T1WI (localizer)
+Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
+Coronal T1WI, T2WI
+Diffusion-weighted Imaging (DWI)
+And post Gadolinium (0.1 mmol/kg) enhancement with axial and coronal T1 weighted image
+Intracranial MRA with 3D TOF and focus on the circle of Willis showed:
+
+COMPARISON:
+Applicable previous MRI of brain: no
+Applicable previous CT of brain: no
+
+FINDINGS:
+
+No evidence of hign signal intensity lesion in the brain stem on DWI suggesting acute or recent ischemia infarction.
+
+Presence of several small old ischemia infarction noted including the pons, bil. basal ganglion and bil. thalamus region noted.
+
+Presence of tiny old ischemic infarction or previous brain insult involving bil. basal ganglion, bil. corona radiata and bil. thalami regions.
+
+Presence of brain tissue loss change involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
+
+Presence of small old intracranial hemorrhage (ICH) hemosiderin noted including the pons, bil. basal ganglion and bil. thalamus region and bilateral cerebral and cerebellar hemispheres noted. From the above image finding and clinical history, more in favor of due to the hypertensive ICH. DDx:amyloid angiopathy.
+
+Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemic due to aging process and chronic hypertension.
+
+Presence of mild/moderate/severe periventricular hyperintensity on T2WI noted, the subcortical arteriosclerotic encephalopathy considered.
+
+Mild dilatation of intraventricular system with widening of subarachnoid space of bilateral cerebral hemispheres, in favor of aging process and mild brain atrophy.
+
+No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+
+Post contrast study showed no abnormal enhancing lesion in the brain and no abnormal leptomeningeal enhancement noted.
+
+Imp:
+No evidence of hign signal intensity lesion in the brain stem on DWI suggesting acute or recent ischemia infarction.
+Others as the above discription.
+
+
+--------------------------------------------------------------------------
+The MR of the brain performed with Sagittal T1WI (localizer)
+Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
+Coronal T1WI, T2WI
+Diffusion-weighted Imaging (DWI)
+And post Gadolinium enhancement with axial and coronal T1 weighted image showed:
+MRA of the brain with 3D TOF focus on circle of Willis:
+
+-----------------------------------
+No evidence of hign signal intensity lesion in the brain stem on DWI.
+
+Presence of small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter, with hign signal intensity on T2WI, FLAIR, and DWI, and lower apparent diffusion coefficeint (ADC).
+
+Presence of tiny old ischemic infarction involving bil. basal ganglion region.
+
+Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemic due to aging process and chronic hypertension.
+
+The bilateral lateral ventricles showed symmetrical without dilatation.
+
+MRA show that no evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and vertebral basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+
+No definite abnormal signal intensity tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+
+IMPRESSION:
+1. Previous brain insult; old infarcts, old ICH.
+2. No definite tumor mass lesion in the brain.
+Small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter.
+
+SUGGESTION:
+Suggest clinical correlation and follow up.
 )
   Paste(MyForm)
 Return
