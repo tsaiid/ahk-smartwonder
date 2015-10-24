@@ -52,10 +52,12 @@ SetPredefinedExamFlow() {
                   , "Antegrade pyelography, RT":              "SPE"
                   , "Antegrade pyelography, LT":              "SPE"
                   , "T-tube cholangiography":                 "SPE"
+                  , "CT whole abdomen no contrast":           "ACT"
                   , "CT whole abdomen with/no contras":       "ACT"
                   , "CT Stomach with/no contrast":            "ACT"
                   , "CT Pan or Liver with/no contrast":       "ACT"
                   , "CTA,Abdomen":                            "ACT"
+                  , "CT Kid & Adr with/no contrast":          "ACT"
                   , "CTA, Chest-Aorta, PE":                   "CCT"
                   , "CT chest with/no contrast":              "CCT"
                   , "CT chest no contrast":                   "CCT" }
@@ -82,10 +84,12 @@ SetPredefinedExamFlow() {
               , 6: {  "ACT":  "4320_0174" }
               , 0: {  "ACT":  "4320_0174" } }
 
+  thisMonthFlow := "4320_1796"
+
   newFlow := wdayMap[examWday][examNameMap[examName]]
   map := examNameMap[examName]
-  If (!newFlow) {
-    MsgBox, The flow is not defined: "%examName%", "%map%", "%examWday%".
+  If (!newFlow && !thisMonthFlow) {
+    MsgBox, The flow for "%examName%", "%map%", "%examWday%", or for this month is not defined.
   } Else {
     selFlow.click()
 
@@ -103,9 +107,22 @@ SetPredefinedExamFlow() {
       flowChange := tabIframe2.document.getElementsByName("FlowChange")[0]
       flowChange.click()
     } Else {
-      flowExit := divSelFlow.children[0].children[0].children[0].children[0].children[1]
-      flowExit.click()
-      MsgBox, "No flow selected. Please check the setting."
+      ; check if predefined this month flow
+      Loop % inputSelFlow.children.length {
+        If (inputSelFlow.children[A_Index].value = thisMonthFlow) {
+          inputSelFlow.selectedIndex := A_Index
+          Break
+        }
+      }
+
+      If (inputSelFlow.selectedIndex > -1) {
+        flowChange := tabIframe2.document.getElementsByName("FlowChange")[0]
+        flowChange.click()
+      } Else {
+        flowExit := divSelFlow.children[0].children[0].children[0].children[0].children[1]
+        flowExit.click()
+        MsgBox, "No flow selected. Please check the setting."
+      }
     }
   }
 }
