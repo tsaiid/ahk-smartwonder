@@ -15,7 +15,7 @@ IMPRESSION: No abnormal finding noted in this UGI study.
   Paste(MyForm)
 Return
 
-::pcuugi::
+::ugipcu::
   MyForm =
 (
 Double-contrast upper GI study from esophagus to proximal duodenum was performed smoothly.

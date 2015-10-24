@@ -11,6 +11,8 @@
 ::ntbd::nature to be determined.
 ::stbd::significance to be determined.
 ::ctbd::cause to be determined.
+::het::heterogenous
+::hom::homogenous
 ::p::presence of `
 ::h::however, `
 ::r::residual `
@@ -18,6 +20,7 @@
 ::i::increased `
 ::d::decreased `
 ::e::enhancement
+::rec::recurrence
 ::w::with `
 ::wo::without `
 ::esp::especially `
@@ -32,9 +35,18 @@
 ::mf::multifocal `
 ::s::several `
 ::n::nodule
+
 :c:f::findings
+:c:IND::INDICATION:
+:c:C::COMPARISON:
+:c:IMP::IMPRESSION:
+:c:SG::SUGGESTION:
+:c:FD::FINDINGS:
+
 ::sg::suggest
 ::nob::no obvious `
+::nod::no definite `
+::noe::no evident `
 ::hyperi::hyperintensity
 ::hypoi::hypointensity
 ::isoi::intermediate signal intensity
@@ -50,6 +62,7 @@
 ::rg::regression
 ::csd::considered
 ::spd::suspected
+::susp::suspicious
 ::ic::inflammatory change
 ::cd::consolidation
 ::nc::臨床不打藥
@@ -57,11 +70,7 @@
 ::mrt::more on right side
 ::mlt::more on left side
 ::adj::adjacent
+::std::soft tissue density
+::ddx::differential diagnoses
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
-
-:c:IND::INDICATION:
-:c:C::COMPARISON:
-:c:IMP::IMPRESSION:
-:c:SG::SUGGESTION:
-:c:FD::FINDINGS:

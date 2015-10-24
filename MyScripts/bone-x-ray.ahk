@@ -1,5 +1,6 @@
 ﻿; For Bone Plain Film
 ::bok::No joint space narrowing, dislocation, or fracture.{Enter}
+::bok1::No obvious dislocation or fracture.
 ::djdl::DJD change of L-spine.{Enter}
 ::djdt::DJD change of T-spine.{Enter}
 ::djdtl::DJD change of T- and L-spine.{Enter}
@@ -24,7 +25,7 @@
 ::pcsp::Post instrument fixation at cervical spine.
 ::pcsp1::Prevertebral soft tissue swelling. May be due to recent operation.
 ::plsp::Post instrument fixation at lumbar spine.
-::spok::No disc space narrowing. {Enter}No spondylolisthesis. {Enter}No fracture.
+::spok::No disc space narrowing, spondylolisthesis, or fracture.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
 ::capsp1::Presence of calcaneal spur at the insertion of the plantar fascia.
@@ -45,12 +46,15 @@
 ::rdhs::s/p right dynamic hip screw fixation.
 ::ldhs::s/p left dynamic hip screw fixation.
 ::bdhs::s/p bilateral dynamic hip screw fixation.
-::jsn::joint space narrowing `
+::js::joint space
+::jsn::joint space narrowing
+::ds::disc space
 ::dsn::disc space narrowing `
 ::mof::marginal osteophyte formation
 ::hs::in healing stage
 ::bu::bone union
 ::mu::malunion
+::pbu::partial bone union
 ::wol::without loosening.
 ::anb::accessory navicular bone.
 ::l4::Sacralization of L5 vertebra.
@@ -60,6 +64,13 @@
 ::sts::soft tissue swelling
 ::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
 ::wd::wedge deformity
+::opc::osteopenic change
+::gopc::generalized osteopenic change
+::avn::avascular necrosis
+::lhd::A drain at left hip region.
+::rhd::A drain at right hip region.
+::u+::Positive ulnar variance.
+::u-::Negative ulnar variance.
 
 ; Multiline
 ::flat::

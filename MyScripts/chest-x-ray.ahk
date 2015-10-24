@@ -5,7 +5,7 @@
 :c:Cm::Cardiomegaly.
 ::np::No abnormal patch opacity in lung fields.
 ::0::No previous film for comparison.{Enter 2}
-::1::No active lung lesion. {Enter}No cardiomegaly. {Enter}Intact bony thorax.
+::1::No abnormal patch opacity in lung fields. {Enter}No cardiomegaly.
 ::2::No active lung lesion. {Enter}No cardiomegaly.
 ::clnic::The condition of lung shows no obvious change as compared with previous study.
 ::clat::Suggest correlation with lateral view.
@@ -32,18 +32,27 @@
 ::bple1::Bilateral costophrenic angles blunting and diffuse ground glass opacity in both lungs, suspect pleural effusion.
 ::p/ster::Post median sternotomy with wire fixation.
 ::p/c::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
+::p/c0::S/P cholecystectomy.
 ::ricvp::On central venous catheter via right internal jegular vein with tip at superior vena cava.
 ::licvp::On central venous catheter via left internal jegular vein with tip at superior vena cava.
 ::rscvp::On central venous catheter via right subclavian vein with tip at superior vena cava.
 ::lscvp::On central venous catheter via left subclavian vein with tip at superior vena cava.
+::ridl::On double lumen catheter via right internal jegular vein.
+::lidl::On double lumen catheter via left internal jegular vein.
+::rsdl::On double lumen catheter via right subclavian vein.
+::lsdl::On double lumen catheter via left subclavian vein.
 ::rport::On Port-A catheter via right subclavian vein.
 ::lport::On Port-A catheter via left subclavian vein.
+::rshick::On Hickmann catheter via right subclavian vein.
+::lshick::On Hickmann catheter via left subclavian vein.
+::rihick::On Hickmann catheter via right internal jugular vein.
+::lihick::On Hickmann catheter via left internal jugular vein.
 ::rpicc::On PICC via right arm.
 ::lpicc::On PICC via left arm.
 ::rppm::s/p PPM implantation at right upper chest.
 ::lppm::s/p PPM implantation at left upper chest.
 ::ile::Inadequate inspiration crowds lung markings.
-::pe::Engorged hila and pulmonary vasculature indicate pulmonary edema.
+::pe::Engorged hila and pulmonary vascularities indicate pulmonary edema.
 ::pe0::pulmonary edema
 ::clc::Increased linear opacity over bilateral lower lungs, in favor of chronic inflammatory change.
 ::lla::Linear atelectasis of left lower lung.
@@ -53,10 +62,10 @@
 ::inef::interlobar effusion
 ::pcef::pericardial effusion
 ::iabp::On IABP, with tip in the thoracic aorta.
-::sll::Scoliosis of L-spine with left lateral convexity.
-::slr::Scoliosis of L-spine with right lateral convexity.
-::stl::Scoliosis of T-spine with left lateral convexity.
-::str::Scoliosis of T-spine with right lateral convexity.
+::sll::Scoliosis of L-spine with convexity to the left.
+::slr::Scoliosis of L-spine with convexity to the right.
+::stl::Scoliosis of T-spine with convexity to the left.
+::str::Scoliosis of T-spine with convexity to the right.
 ::pi::Ill-defined pulmonary infiltration over `
 ::pi0::pulmonary infiltration
 ::po::patch opacity
@@ -98,3 +107,7 @@
 ::prlct::Post removal of left chest tube. No pneumothorax noted.
 ::prrpg::Post removal of right pigtail drain. No pneumothorax noted.
 ::prlpg::Post removal of left pigtail drain. No pneumothorax noted.
+::ate::atelectasis
+::late::linear atelectasis
+::roas::OA change of right shoulder.
+::loas::OA change of left shoulder.

@@ -27,7 +27,6 @@
 ::bpn::bronchopneumonia
 ::htx::hemothorax
 ::pjp::pneumocystis jiroveci pneumonia
-::ate::atelectasis
 ::brec::bronchiectasis
 ::ttn::transient tachypnea of the newborn
 ::ild::interstitial lung disease
@@ -68,18 +67,27 @@
 ::as::ankylosing spondylitis
 ::ra::rheumatoid arthritis
 ::ha::hemiarthroplasty
+::lig::ligament
+::tfcc::triangular fibrocartilage complex
+::itb::iliotibial band
+::cmn::cephalomedullary nail
+::spl::spondylolisthesis
 
 ;; Abdomen
 ::ln::lymph node
+::lns::lymph nodes
 ::lap::lymphadenopathy
+::laps::lymphadenopathies
 ::met::metastasis
 ::mets::metastases
+::metc::metastatic
 ::ckd::chronic kidney disease
 ::bph::benign prostatic hyperplasia
 ::sma::superior mesenteric artery
 ::ima::inferior mesenteric artery
 ::iud::intrauterine device
 ::gb::gallbladder
+::cbd::common bile duct
 ::hn::hydronephrosis
 ::hu::hydroureter
 ::ub::urinary bladder

@@ -36,8 +36,9 @@ Return
 ::actncok::The liver, spleen, pancreas, kidneys, and bowels are unremarkable. Due to non-contrast study, the evaluation of solid organs is limited.
 ::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
-::hhact::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
-::hhmr::A -cm nodule over S of liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
+::acthh::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
+::mrhh::A -cm nodule over S of liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
+::actckd::Atrophic change of bilateral kidneys, in favor of chronic kidney disease.
 
 ::acthcc::
   MyOrder := CopyOrder()
