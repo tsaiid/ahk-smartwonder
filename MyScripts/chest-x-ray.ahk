@@ -35,6 +35,7 @@
 ::p/c0::S/P cholecystectomy.
 ::ricvp::On central venous catheter via right internal jegular vein with tip at superior vena cava.
 ::licvp::On central venous catheter via left internal jegular vein with tip at superior vena cava.
+::bicvp::On central venous catheters via right and left internal jegular veins with tips at superior vena cava.
 ::rscvp::On central venous catheter via right subclavian vein with tip at superior vena cava.
 ::lscvp::On central venous catheter via left subclavian vein with tip at superior vena cava.
 ::ridl::On double lumen catheter via right internal jegular vein.
@@ -66,7 +67,7 @@
 ::slr::Scoliosis of L-spine with convexity to the right.
 ::stl::Scoliosis of T-spine with convexity to the left.
 ::str::Scoliosis of T-spine with convexity to the right.
-::pi::Ill-defined pulmonary infiltration over `
+::pi::ill-defined pulmonary infiltration over `
 ::pi0::pulmonary infiltration
 ::po::patch opacity
 ::no::nodular opacity
@@ -91,6 +92,8 @@
 ::rrf::Old fractures of right ribs.
 ::lrf::Old fractures of left ribs.
 ::brf::Old fractures of bilateral ribs.
+::rcf::Old fracture of right clavicle.
+::lcf::Old fracture of left clavicle.
 ::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::copd::Hyperinflation with flattening of bilateral hemidiaphragms, suggestive the possibility of COPD.

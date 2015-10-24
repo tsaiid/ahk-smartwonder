@@ -28,8 +28,8 @@
 ::spok::No disc space narrowing, spondylolisthesis, or fracture.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
-::capsp1::Presence of calcaneal spur at the insertion of the plantar fascia.
-::calsp2::Presence of calcaneal spur at the insertion of the Achilles tendon.
+::calspp::Presence of calcaneal spur at the insertion of the plantar fascia.
+::calspa::Presence of calcaneal spur at the insertion of the Achilles tendon.
 ::nabl::No active bone lesion.
 ::rthr::s/p right total hip replacement.
 ::lthr::s/p left total hip replacement.

@@ -28,13 +28,17 @@
 ::o::otherwise, `
 ::rm::remarkable `
 ::urm::unremarkable `
-::cnbe::cannot be excluded.
+::cnbe::cannot be excluded
 ::mcnbe::malignancy cannot be excluded.
 ::msbe::malignancy should be excluded.
 ::m::multiple `
 ::mf::multifocal `
 ::s::several `
 ::n::nodule
+::mod::moderate
+::sv::severe
+::mtm::mild to moderate
+::mts::moderate to severe
 
 :c:f::findings
 :c:IND::INDICATION:
