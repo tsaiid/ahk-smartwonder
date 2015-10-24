@@ -120,6 +120,11 @@ $^!0::
   GetPreviousReport(true, false)
 Return
 
+; 不複製最近相關報告但開啟影像
+$^!#0::
+  GetPreviousReport(false, true)
+Return
+
 ; 吳主任版: 複製最近相關報告, 開啟最近兩次影像, 如皆在三個月內, 開另一更久遠的影像
 $^9::
   GetPreviousReportWithImages(true, true, 2, true, false)
