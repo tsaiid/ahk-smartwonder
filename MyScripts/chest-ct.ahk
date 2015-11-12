@@ -74,6 +74,44 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
+;; NCLD
+::cct-ncld::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+Report of ultra-low dose, high resolution non-contrast CT scan for screening pulmonary nodule.
+Scanner: Multi-detector CT scanner.
+Scan range: thoracic inlet to diaphragm.
+Reconstruction: axial and coronal reconstruction.
+
+INDICATION: %MyOrder%
+
+COMPARISON:
+Applicable previous CT of chest: no
+
+FINDINGS:
+1. Lung: no remarkable nodular lesions (>0.4 cm).
+2. Mediastinum: no lymph node enlargement > 1 cm.
+3. Heart:
+- Size: normal.
+- Coronary artery calcification: no or minimal.
+4. Great vessels: normal diameter.
+5. Pleura: N.A.
+6. Chest wall and spine: N.A.
+7. Upper abdomen: N.A.
+
+--------------------
+CONCLUSION:
+(1) no remarkable nodular lesions in bilateral lungs.
+(2) no or minimal coronary artery calcification.
+
+__________________________________________________
+@N.P. means no particular findings adjusted for patient's age.
+@N.A. means complete evaluation is not available due to absence of contrast enhancement however, from the limited information, there is no evident lesion.
+)
+  Paste(MyForm)
+Return
+
 ;; CTA
 ::cct-cta::
   MyOrder := CopyOrder()
