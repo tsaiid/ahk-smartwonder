@@ -5,6 +5,8 @@
 ::nip0::no obvious improvement.
 ::pc0::progressive change.
 ::rc0::regressive change.
+::pc1::progressive change than previous.
+::rc1::regressive change than previous.
 ::cc::Suggest clinical correlation.
 ::cc0::clinical correlation
 ::fe::Suggest further evaluation.

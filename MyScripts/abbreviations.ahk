@@ -117,3 +117,4 @@
 ::dvt::deep vein thrombosis
 ::op::operation
 ::avm::arteriovenous malformation
+::st::soft tissue

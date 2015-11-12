@@ -33,6 +33,7 @@
 ::msbe::malignancy should be excluded.
 ::m::multiple `
 ::mf::multifocal `
+::ml::multiloculated `
 ::s::several `
 ::n::nodule
 ::mod::moderate
@@ -76,5 +77,8 @@
 ::adj::adjacent
 ::std::soft tissue density
 ::ddx::differential diagnoses
+::nd::newly developed
+::ws::wedge-shaped
+::ift::infiltration
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `

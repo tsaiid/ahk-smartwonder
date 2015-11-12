@@ -4,12 +4,14 @@
 ::djdl::DJD change of L-spine.{Enter}
 ::djdt::DJD change of T-spine.{Enter}
 ::djdtl::DJD change of T- and L-spine.{Enter}
+::oak0::Mild joint space narrowing at medial compartment of knee joint.
 ::oak1a::Mild joint space narrowing, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
 ::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
 ::oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
 ::oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage II.
 ::oak2a::Joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage II.
 ::oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, compatible with osteoarthrosis, stage III.
+::oah::Superior joint space narrowing, subchondral sclerosis, subchondral cyst formation, osteophyte formation, in favor of osteoarthrosis of _ hip.
 ::scc::subchondral cyst
 ::scs::subchondral sclerosis
 ::spef::suprapatellar effusion
@@ -18,6 +20,7 @@
 ::pats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
 ::patt::Mild lateral tilting of bilateral patellae, with mild PF joint space narrowing at lateral facet.
 ::patts::Lateral tilting and subluxation of bilateral patellae, with severe PF joint space narrowing, subchondral sclerosis and marginal osteophyte formation at lateral facet.
+::patts0::Mild lateral tilting and subluxation of bilateral patellae, with PF joint space narrowing at lateral facet.
 ::acrd::Lateral downsloping of the acromion, narrowing the acromiohumeral distance, which may be associated with impingement of the supraspinatus tendon.
 ::acrok::No lateral downsloping or hooking of the acromion.
 ::acrsp::Presence of subacromial spur.
@@ -64,13 +67,17 @@
 ::sts::soft tissue swelling
 ::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
 ::wd::wedge deformity
-::opc::osteopenic change
-::gopc::generalized osteopenic change
+::opc::osteoporotic change
+::gopc::generalized osteoporotic change
 ::avn::avascular necrosis
 ::lhd::A drain at left hip region.
 ::rhd::A drain at right hip region.
 ::u+::Positive ulnar variance.
 ::u-::Negative ulnar variance.
+::hyperm::hypermobility
+::noas::No obvious squaring of the vertebral bodies.
+::gvr::genu varum
+::gvg::genu valgus
 
 ; Multiline
 ::flat::
