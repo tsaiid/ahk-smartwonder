@@ -88,6 +88,8 @@
 ::iud::intrauterine device
 ::gb::gallbladder
 ::cbd::common bile duct
+::chd::common hepatic duct
+::ihd::intrahepatic duct
 ::hn::hydronephrosis
 ::hu::hydroureter
 ::ub::urinary bladder

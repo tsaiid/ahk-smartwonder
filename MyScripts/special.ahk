@@ -32,3 +32,24 @@ Hysterosalpingography was performed under fluoroscopy by using contrast medium i
 )
   Paste(MyForm)
 Return
+
+::t-tube::
+  MyForm =
+(
+T-tube cholangiography was performed via PTGBD/PTCD:
+
+Some small filling defects in the gallbladder, c/w gallbladder stones.
+No definite filling defect in the common bile duct and intrahepatic ducts.
+Normal passage of contrast medium through the ampulla of Vater into the duodenum.
+)
+  Paste(MyForm)
+Return
+
+::agp::
+  MyForm =
+(
+Antegrade pyelography was performed under fluoroscope by using contrast medium through right/left/bilateral PCN catheters with prone/supine position:
+
+)
+  Paste(MyForm)
+Return
