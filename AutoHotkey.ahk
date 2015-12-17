@@ -44,7 +44,7 @@ GroupAdd, SmartWonder, tedpc-
 
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
-  #Include MyScripts\abbreviations.ahk
+  #Include MyScripts\neuro.ahk
 
   #Include MyScripts\chest-x-ray.ahk
   #Include MyScripts\kub.ahk
@@ -60,8 +60,6 @@ GroupAdd, SmartWonder, tedpc-
 
   #Include MyScripts\ct-guide.ahk
 
-  #Include MyScripts\neuro.ahk
-
   #Include MyScripts\barium-enema.ahk
   #Include MyScripts\esophagraphy.ahk
   #Include MyScripts\ugi-small-intestine.ahk
@@ -72,6 +70,7 @@ GroupAdd, SmartWonder, tedpc-
 
   #Include MyScripts\mri.ahk
   #Include MyScripts\others.ahk
+  #Include MyScripts\abbreviations.ahk
 
   #Include MyScripts\spg.ahk
   #Include MyScripts\bone-density.ahk
