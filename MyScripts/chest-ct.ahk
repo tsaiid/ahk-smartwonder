@@ -4,9 +4,10 @@
 ::6mcct::Follow up chest CT scan 6 months later.
 ::csono::Suggest correlate with sonography.
 ::tacal::Atherosclerotic change and calcification of aortic wall.
+::accal::Atherosclerotic change of the aorta and coronary arteries.
 
 ;; Lung Routine
-::cct-lr::
+::cctlr::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -41,7 +42,7 @@ SUGGESTION:
 Return
 
 ;; NCSD
-::cct-ncsd::
+::cctncsd::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -75,7 +76,7 @@ SUGGESTION:
 Return
 
 ;; NCLD
-::cct-ncld::
+::cctncld::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -113,7 +114,7 @@ __________________________________________________
 Return
 
 ;; CTA
-::cct-cta::
+::cctcta::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -144,7 +145,7 @@ SUGGESTION:
 Return
 
 ;; Congenital Heart Disease
-::cct-chd::
+::cctchd::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -197,7 +198,7 @@ IMPRESSION:
 Return
 
 ;; Lung cancer, staging
-::cct-lcs::
+::cctlcs::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -260,7 +261,7 @@ SUGGESTION:
 Return
 
 ;; Esophageal cancer, staging
-::cct-ecs::
+::cctecs::
   MyOrder := CopyOrder()
   MyForm =
 (
