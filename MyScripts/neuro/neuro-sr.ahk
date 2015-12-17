@@ -822,13 +822,75 @@ No significant intracranial finding
   Paste(MyForm)
 Return
 
+;; srMRBcva-wnl
+::srmrbcva-wnl::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+TECHNIQUE:
+1.5 Tesla scanner
+Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
+Coronal T1WI, T2WI,
+post Gadolinium enhancement with axial and coronal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
+Magnetic resonance angiography (MRA) of the brain focused on circle of Willis using 3D SPGR time of flight method with MIP (maximum intensity projection) reformatted images and raw data display.
+
+COMPARISON:
+Applicable previous CT of brain: none
+Applicable previous MRI of brain: none
+
+FINDINGS:
+
+*Cerebral lobes: small hypointensity on GET2*WI noted at left parietal region, possible due to previous hemorrhage or calcification
+*Basal ganglia and thalami: normal
+*White matter tracts: several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
+
+*Midline shift: none
+
+*Cerebellum: normal
+*Brainstem: normal
+*Sella and skull base: normal
+*Pineal region: normal
+
+*Extra-axial spaces: normal for the patient's age
+*Basal cisterns: normal for the patient's age
+*Ventricular system: normal for the patient's age
+*Calvarium and scalp: normal
+
+*Artery anatomy by MRA
+Distal internal carotid artery (ICA): normal
+Anterior cerebral artery complex (ACA): normal
+Middle cerebral artery complex (MCA): normal
+Distal vertebral artery (VA): normal
+Basilar artery (BA): normal
+Posterior cerebral artery (PCA): normal
+(Other intracranial arteries are usually hard to see in MRA)
+
+*Artery anatomy by MRA
+*Developmental variants: bilateral fetal origin PCA, hypoplasia of right A1 segment of ACA
+Distal internal carotid artery (ICA): normal
+Middle cerebral artery complex (MCA): normal
+Distal vertebral artery (VA): normal
+Basilar artery (BA): normal
+(Other intracranial arteries are usually hard to see in MRA)
+
+*MRA shows no evidence of abnormal intracranial engorged vessles and no evidence of retrograde venous drainage noted over the posterior fossa adjacent to the transverse and sigmoid venous sinus region noted, however, minute dura arterial venous fistula can not be completely to excluded in this MRA study.
+
+IMPRESSION:
+1. tiny old ischemia infarcts and tiny previous brain insult.
+2. No strong evidence of dura arterial venous fistula noted in this MRA study.
+3. No evidence of significant intracranial stenosis noted in this MRA study.
+4. No evidence of acute ischemia infarction in the brain noted.
+)
+  Paste(MyForm)
+Return
+
 ;; srMRICVA
 ::srmricva::
   MyOrder := CopyOrder()
   MyForm =
 (
 INDICATION: %MyOrder%
-
 TECHNIQUE:
 1.5 Tesla scanner
 The MR of the brain performed with Sagittal T1WI (localizer)

@@ -210,6 +210,8 @@ Presence of several nodular lesions noted over the right side thyroid gland, rec
 IMPRESSION:
 Cervical degenerative spondylosis, disc space narrowing and protrusion disk. Details as above descriptions.
 
+Cervical degenerative spondylosis, disc space narrowing, herniation disk and spinal stenosis. Details as above descriptions.
+
 SUGGESTION:
 )
   Paste(MyForm)

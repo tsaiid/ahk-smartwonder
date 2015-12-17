@@ -180,11 +180,9 @@ And post Gadolinium (0.1 mmol/kg) enhancement with axial and coronal T1 weighted
 Intracranial MRA with 3D TOF and focus on the circle of Willis showed:
 [[Intracranial MRA with 3D TOF and focus on the circle of Willis, intracranial MR venography (MRV) showed:]]
 
-COMPARISON:
-Previous CT of brain: none
 Previous MRI of brain: none
 
-FINDINGS:
+Findings:
 
 -----------------------------------
 Post-contrast study was not performed due to clinician request.
@@ -195,7 +193,7 @@ Post-contrast study was not performed due to patient's family refusal.
 
 Post-contrast study was not performed due to impaired renal function of the patient.
 
-No evidence of high signal intensity on DWI suggesting acute ischemia infarction in the brain and brainstem noted.
+No evidence of high signal intensity on DWI and lower apparent diffusion coefficeint suggesting acute ischemia infarction in the brain and brainstem noted.
 
 No evidence of high signal intensity lesion in the brain stem on DWI.
 
@@ -214,10 +212,19 @@ Post contrast study showed no abnormal enhancing lesion in the brain and no abno
 
 MRA shows turbulent flow or mild stenosis over intracranial portion of bilateral internal carotid arteries and basilar atery.
 
+Noncontrast intracranial MRA with 3D TOF shows that multiple foci of high grade stenoses over intracranial portion of the internal carotid artery.
+
 MRA shows presence of stenosis noted over the bilateral carotid siphon and supraclinoid internal carotid arteries, and high grade stenosis over main trunk of right side middle cerebral artery, and with paucity of the branches of the right side middle cerebral artery noted.
 
 MRA shows--
 Presence of normal variation of fenestration of the proximal basilar artery. (Hx: 13776391, ac: 65343630)
+(Hx: 14770377, Ac: 69245411)
+
+CTA shows noraml variation of A1 of left anterior cerebral artery fenestration. (Hx: 9481974, ac: 99785929)
+
+Normal variation of right fetal posterior cerebral artery and trifurcation of anterior cerebral artery. (Hx: 3577988, ac: 66986943)
+
+MRA shows normal variation of right persistent trigeminal artery. (HX: 5581748, ac: 57139640)
 
 Presence of hypoplasia of A1 portion of right/left anterior cerebral artery.
 
@@ -244,8 +251,16 @@ S/P embolization of left vertebral artery aneurysm anterior to the medulla with 
 MRV shows that no evidence of venous thrombosis involving the intracranial venous sinuses noted.
 
 IMPRESSION:
+Essentially negative finding.
+No remarkable significant intracranial findings.
+
 No evidence of high signal intensity on DWI suggesting acute or recent ischemia infarction in the brain noted.
+
+No evidence of acute ischemic infarction in this study.
+Old lacunar infarct. Old ischemic infarct.
+
 Small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter.
+
 SUGGESTION:
 Follow up or further evaluation.
 )
