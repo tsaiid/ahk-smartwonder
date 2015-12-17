@@ -89,6 +89,7 @@
 ::nnp::No newly developed patch opacity in lung fields.
 ::ii::Exaggerated lung markings, may be due to inadequate inspiration.
 ::ii0::inadequate inspiration
+::iir::inadequate inspiration related
 ::rrf::Old fractures of right ribs.
 ::lrf::Old fractures of left ribs.
 ::brf::Old fractures of bilateral ribs.
@@ -114,3 +115,4 @@
 ::late::linear atelectasis
 ::roas::OA change of right shoulder.
 ::loas::OA change of left shoulder.
+::xgbs::Round opacities over RUQ of abdomen, r/o gallstones. Suggest correlation with sonography.

@@ -7,6 +7,7 @@
 ::cal::calcification
 ::si::(Ser/Img: ){Left}
 ::sao::small amount of `
+::smao::small to moderate amount of `
 ::mao::moderate amount of `
 ::ntbd::nature to be determined.
 ::stbd::significance to be determined.
@@ -36,10 +37,14 @@
 ::ml::multiloculated `
 ::s::several `
 ::n::nodule
-::mod::moderate
-::sv::severe
+::cn::calcified nodule
+::g::granuloma
+::mod::moderate `
+::sv::severe `
 ::mtm::mild to moderate
 ::mts::moderate to severe
+::sl::slightly `
+::sip::superimposed `
 
 :c:f::findings
 :c:IND::INDICATION:

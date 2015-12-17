@@ -30,6 +30,7 @@
 ::brec::bronchiectasis
 ::ttn::transient tachypnea of the newborn
 ::ild::interstitial lung disease
+::sce::subcutaneous emphysema
 
 ;; General
 ::ant::anterior `

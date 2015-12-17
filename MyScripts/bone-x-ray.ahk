@@ -46,6 +46,7 @@
 ::orif::s/p screw and plate fixation.
 ::fr::fracture
 ::frs::fractures
+::clfr::clavicular fracture
 ::rdhs::s/p right dynamic hip screw fixation.
 ::ldhs::s/p left dynamic hip screw fixation.
 ::bdhs::s/p bilateral dynamic hip screw fixation.
@@ -76,7 +77,7 @@
 ::u-::Negative ulnar variance.
 ::hyperm::hypermobility
 ::noas::No obvious squaring of the vertebral bodies.
-::gvr::genu varum
+::gvr::genu varus
 ::gvg::genu valgus
 
 ; Multiline
