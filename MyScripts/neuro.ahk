@@ -24,7 +24,6 @@
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRA of the brain with focus on circle of Willis or skull base and Neck region with 2D SPGR time of flight,
 Post contrast enhanced 3D Fast SPGR MRA of the aortic arch and the Neck,
 MIP (maximum intensity projection) of collapse and projection image:
@@ -57,7 +56,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 Noncontrast CT of the paranasal sinuses was performed with a multi-slice CT scanner:
 SCAN RANGE: axial plane of the paranasal sinuses with 2 mm continuous scan slice thickness and coronal reconstruction
 
@@ -79,7 +77,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 MRI of the sella performed with Sagittal T1WI (localizer)
 Sagittal  T1WI and T2WI
 Coronal T1WI and T2WI
@@ -136,7 +133,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 MRI of the sella performed with
 Sagittal T1WI (localizer)
 Sagittal T1WI and T2WI
@@ -162,7 +158,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MRI of the brachial plexus performed with neurovascular coil
 Coronal T1WI, T2WI with Fat Sat images
 Sagittal T1WI, T2 STIR images
@@ -209,7 +204,6 @@ Return
   MyForm =
 (
 INDICATION: %MyOrder%
-
 The MR of the brain performed with Sagittal T1WI (localizer)
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Coronal T1WI, T2WI

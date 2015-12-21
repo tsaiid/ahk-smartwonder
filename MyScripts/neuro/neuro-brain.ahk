@@ -258,6 +258,7 @@ No evidence of high signal intensity on DWI suggesting acute or recent ischemia 
 
 No evidence of acute ischemic infarction in this study.
 Old lacunar infarct. Old ischemic infarct.
+Previous brain insult; old lacunar infarcts.
 
 Small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter.
 

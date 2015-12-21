@@ -765,7 +765,6 @@ TECHNIQUE:
 Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
 Coronal T1WI, T2WI,
 post Gadolinium enhancement with axial and coronal T1 weighted images (contrast medium: intravenous route, 0.1mmol/kg)
-Magnetic resonance angiography (MRA) of the brain focused on circle of Willis using 3D SPGR time of flight method with MIP (maximum intensity projection) reformatted images and raw data display.
 
 COMPARISON:
 Applicable previous CT of brain: none
@@ -774,8 +773,31 @@ Applicable previous MRI of brain: none
 FINDINGS:
 
 *Cerebral lobes: normal
+
+Presence of small hypointensity on GET2*WI noted at left parietal region, possible due to previous hemorrhage or calcification.
+
+Presence of brain tissue loss change involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
+
 *Basal ganglia and thalami: normal
-*White matter tracts: normal
+
+Presence of several tiny lesions involving bilateral basal ganglia with hypointensity on T1WI and hyperintensity on T2WI, in favor of previous lacunar infarcts or previous brain insults.
+
+Presence of tiny old ischemic infarction or or tiny previous brain insult involving right/left/bil. basal ganglion region.
+
+Presence of tiny old ischemic infarction or previous brain insult involving bil. basal ganglion, bil. corona radiata and bil. thalami regions.
+
+Presence of small old intracranial hemorrhage (ICH) hemosiderin noted including the pons, bil. basal ganglion and bil. thalamus region and bilateral cerebral and cerebellar hemispheres noted. From the above image finding and clinical history, more in favor of due to the hypertensive ICH. Other DDx: amyloid angiopathy.
+
+*White matter tracts: normal / as above
+
+1. Presence of bilateral white matter hyperintensities along the lateral ventricles on T2WI and FLAIR images, subcortical arteriosclerotic encephalopathy considered.
+2. Presence of several tiny hyperintensities in bilateral periventricular white matter and centrum semiovale, which may be gliosis, demyelination or tiny old ischemia due to aging process and chronic hypertension.
+
+small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter, with high signal intensity on T2WI, FLAIR, and DWI, and lower apparent diffusion coefficeint (ADC).
+
+Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
+
+Presence of mild/moderate/severe periventricular hyperintensity on T2WI and FLAIR noted, the subcortical arteriosclerotic encephalopathy considered.
 
 *Midline shift: none
 
@@ -788,13 +810,15 @@ FINDINGS:
 *Basal cisterns: normal for the patient's age
 *Ventricular system: normal for the patient's age
 
-*Visualized vascular system: normal / see below
+Mild dilatation of intraventricular system with widening of subarachnoid space of bilateral cerebral hemispheres, in favor of aging mild brain atrophy.
+
 *Visualized nasopharynx and paranasal sinuses: clear
 *Visualized orbits: normal
 *Calvarium and scalp: normal
 
-*Artery anatomy
+*MRA Visualized vascular system: normal / see below
 
+*Artery anatomy by MRA
 Distal internal carotid artery (ICA): normal
 Anterior cerebral artery complex (ACA): normal
 Middle cerebral artery complex (MCA): normal
@@ -803,21 +827,25 @@ Basilar artery (BA): normal
 Posterior cerebral artery (PCA): normal
 (Other intracranial arteries are usually hard to see in MRA)
 
-*Vascular pathology
+*Artery anatomy by MRA
+*Developmental variants: bilateral fetal origin PCA, hypoplasia of right A1 segment of ACA
+Distal internal carotid artery (ICA): normal
+Middle cerebral artery complex (MCA): normal
+Distal vertebral artery (VA): normal
+Basilar artery (BA): normal
+(Other intracranial arteries are usually hard to see in MRA)
 
-Aneurysm: none
-Vascular malformation: none
-Arteriovenous fistula: none
-
-*Developmental variants: none / fetal origin PCA / hypoplasia of A1 segment of ACA
-
-*Others: none
-
+*MRA shows no evidence of abnormal intracranial engorged vessles and no evidence of retrograde venous drainage noted over the posterior fossa adjacent to the transverse and sigmoid venous sinus region noted, however, minute dura arterial venous fistula can not be completely to excluded in this MRA study.
 
 IMPRESSION:
-No significant intracranial finding
+Essentially negative finding.
+No remarkable significant intracranial findings.
+No evidence of high signal intensity on DWI and lower apparent diffusion coefficeint suggesting acute ischemia infarction in the brain and brainstem noted.
 1. Previous brain insult; old infarcts, old ICH.
 2. No definite tumor mass lesion in the brain.
+
+SUGGESTION:
+Follow up or further evaluation.
 )
   Paste(MyForm)
 Return
@@ -908,6 +936,8 @@ FINDINGS:
 
 *Cerebral lobes: normal
 
+Presence of small hypointensity on GET2*WI noted at left parietal region, possible due to previous hemorrhage or calcification.
+
 Presence of brain tissue loss change involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
 
 *Basal ganglia and thalami: normal
@@ -994,10 +1024,14 @@ MRV shows that no evidence of venous thrombosis involving the intracranial venou
 *Others: none
 
 IMPRESSION:
-No significant intracranial finding.
+Essentially negative finding.
+No remarkable significant intracranial findings.
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficeint suggesting acute ischemia infarction in the brain and brainstem noted.
 1. Previous brain insult; old infarcts, old ICH.
 2. No definite tumor mass lesion in the brain.
+
+SUGGESTION:
+Follow up or further evaluation.
 )
   Paste(MyForm)
 Return
