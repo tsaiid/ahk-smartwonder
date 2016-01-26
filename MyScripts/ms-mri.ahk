@@ -22,11 +22,12 @@
 ;; MRI of Knee
 ::mrk::
   MyOrder := CopyOrder()
+  TheSide := GetSideStr(MyOrder)
   MyForm =
 (
 INDICATION: %MyOrder%
 
-MRI of _ knee in
+MRI of %TheSide% knee in
 sagittal localizer: SE T1WI
 oblique coronal plane:  fat-suppressed FSE PDWI
 oblique axial plane: fat-suppressed FSE PDWI
