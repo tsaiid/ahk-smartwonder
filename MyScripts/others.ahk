@@ -1,4 +1,4 @@
-﻿::bil::bilateral `
+﻿::b::bilateral `
 ::lt::left `
 ::rt::right `
 ::ifo::in favor of `
@@ -85,5 +85,6 @@
 ::nd::newly developed
 ::ws::wedge-shaped
 ::ift::infiltration
+::fac::fluid accumulation
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `

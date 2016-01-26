@@ -33,6 +33,9 @@ Hysterosalpingography was performed under fluoroscopy by using contrast medium i
   Paste(MyForm)
 Return
 
+::hsgnfs::opacification to the fimbrial level, however, no free spillage is noted.
+::hsggb::small movable filling defects in the uterine cavity, in favor of gas bubbles.
+
 ::t-tube::
   MyForm =
 (

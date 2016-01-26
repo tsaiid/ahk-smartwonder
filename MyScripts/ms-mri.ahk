@@ -5,7 +5,19 @@
 ::mrarok::No arthrographic evidence of full-thickness tear of rotator cuff or adhesive capsulitis.
 ::ftt::full-thickness tear `
 ::ptt::partial-thickness tear `
+::je::joint effusion
 ::bme::bone marrow edema
+::cmp1::focal areas of hyperintensity on PDWI with normal contour
+::cmp2::blister-like swelling/fraying of articular cartilage extending to surface
+::cmp3::partial thickness cartilage loss with focal ulceration
+::cmp4::full thickness cartilage loss with underlying bone reactive changes
+::aclsp::Edematous change and increased signal intensity over the anterior cruciate ligament (ACL) with preserved fiber continuity. Sprain is considered.
+::pclsp::Edematous change and increased signal intensity over the posterior cruciate ligament (PCL) with preserved fiber continuity. Sprain is considered.
+::aclct::Edematous change and increased signal intensity over the anterior cruciate ligament (ACL) with incontinuous fiber. Complete tear is considered.
+::pclct::Edematous change and increased signal intensity over the posterior cruciate ligament (PCL) with incontinuous fiber. Complete tear is considered.
+::aclpt::Edematous change and increased signal intensity over the anterior cruciate ligament (ACL) with focally incontinuous fiber. Partial tear is considered.
+::pclpt::Edematous change and increased signal intensity over the posterior cruciate ligament (PCL) with focally incontinuous fiber. Partial tear is considered.
+::mrsab::Presence of Hill Sachs deformity manifesting an impaction lesion of the posterolateral aspect of the humeral head, and under MR-arthrogram, the anteroinferior labrum is frayed and absence that considered Bankart lesion, the findings c/w secondary to anterior glenohumeral dislocation.
 
 ;; MRI of Knee
 ::mrk::
@@ -23,6 +35,8 @@ oblique sagittal plane: SE PDWI, FSE T2WI shows:
 PREVIOUS MRI of knee: none.
 
 FINDINGS:
+
+
 
 IMPRESSIONS:
 )

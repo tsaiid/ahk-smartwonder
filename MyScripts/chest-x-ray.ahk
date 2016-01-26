@@ -15,6 +15,7 @@
 ::ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
 ::tr::On tracheostomy tube.
 ::ng::On NG tube.
+::vps::s/p VP shunting.
 ::rpig::s/p right chest pigtail drainage.
 ::rpig1::s/p right chest pigtail drainage, with decreased pleural effusion.
 ::lpig::s/p left chest pigtail drainage.

@@ -73,6 +73,11 @@
 ::itb::iliotibial band
 ::cmn::cephalomedullary nail
 ::spl::spondylolisthesis
+::cmp::chondromalacia patella
+::mm::medial meniscus
+::lm::lateral meniscus
+::pvns::pigmented villonodular synovitis
+::osd::Osgood-Schlatter disease
 
 ;; Abdomen
 ::ln::lymph node

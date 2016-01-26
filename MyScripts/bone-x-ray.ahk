@@ -1,6 +1,7 @@
 ﻿; For Bone Plain Film
 ::bok::No joint space narrowing, dislocation, or fracture.{Enter}
 ::bok1::No obvious dislocation or fracture.
+::bok2::No obvious bony lesion.
 ::djdl::DJD change of L-spine.{Enter}
 ::djdt::DJD change of T-spine.{Enter}
 ::djdtl::DJD change of T- and L-spine.{Enter}
