@@ -80,6 +80,8 @@
 ::noas::No obvious squaring of the vertebral bodies.
 ::gvr::genu varus
 ::gvg::genu valgus
+::if::internal fixation
+::ef::external fixation
 
 ; Multiline
 ::flat::

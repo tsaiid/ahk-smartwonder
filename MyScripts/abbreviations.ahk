@@ -117,6 +117,8 @@
 ::hh::hepatic henamgioma
 ::rn::regenerative nodule
 ::dn::dysplastic nodule
+::uvj::ureterovesical junction
+::upj::ureteropelvic junction
 
 ;; Neuro
 ::ich::intracranial hemorrhage

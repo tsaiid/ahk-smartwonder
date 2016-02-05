@@ -7,6 +7,8 @@
 ::ptt::partial-thickness tear `
 ::je::joint effusion
 ::bme::bone marrow edema
+::mpp::mediopatellar plica
+::mppok::Presence of mediopatellar plica. The adjacent patellar and femoral cartilages are normal.
 ::cmp1::focal areas of hyperintensity on PDWI with normal contour
 ::cmp2::blister-like swelling/fraying of articular cartilage extending to surface
 ::cmp3::partial thickness cartilage loss with focal ulceration
