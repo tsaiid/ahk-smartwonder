@@ -177,6 +177,9 @@ No evidence of abnormal signal intensity tumor mass lesion over the spinal canal
 
 Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic change.
 
+Presence of high signal intensity within the spinal cord from C1 to C5 disc level on T2WI noted, which may be due to cord edema, demyelination or gliosis change.
+IMPRESSIONS:
+Evident cervical spondylosis with spinal cord signal change.
 
 Presence of old compression fracture and with decreased vertebral height over the C4 and C5 spine vertebral body.
 
