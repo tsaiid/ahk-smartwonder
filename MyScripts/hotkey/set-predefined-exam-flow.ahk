@@ -52,6 +52,14 @@ SetPredefinedExamFlow() {
                   , "Antegrade pyelography, RT":              "SPE"
                   , "Antegrade pyelography, LT":              "SPE"
                   , "T-tube cholangiography":                 "SPE"
+                  , "MRI (no contrast), Knee joint":          "MSK"
+                  , "MRI (no/with contra), Knee join":        "MSK"
+                  , "MRI (no/with), Shoulder joint":          "MSK"
+                  , "MRI no contrast, Shoulder joint":        "MSK"
+                  , "MRI (N/Y), Other musculoskeleta":        "MSK"
+                  , "MRI (no/with const.), Lower lim":        "MSK"
+                  , "MRI (no contrast), Wrist joint":         "MSK"
+                  , "MRI (N/Y), Ankle joint":                 "MSK"
                   , "CT whole abdomen no contrast":           "ACT"
                   , "CT whole abdomen with/no contras":       "ACT"
                   , "CT Stomach with/no contrast":            "ACT"
@@ -65,24 +73,31 @@ SetPredefinedExamFlow() {
   wdayMap := {  1: {  "UGI":  "4320_0750"
                     , "IVP":  "4320_0750"
                     , "CCT":  "4320_0176"
+                    , "MSK":  "4320_3396"
                     , "ACT":  "4320_0174" }
               , 2: {  "BE":   "4320_0750"
                     , "IVP":  "4320_0750"
+                    , "MSK":  "4320_3396"
                     , "CCT":  "4320_0176" }
               , 3: {  "BE":   "4320_3519"
                     , "UGI":  "4320_3519"
                     , "SPE":  "4320_3519"
                     , "IVP":  "4320_3519"
+                    , "MSK":  "4320_3396"
                     , "CCT":  "4320_0176" }
               , 4: {  "UGI":  "4320_1796"
                     , "IVP":  "4320_1796"
+                    , "MSK":  "4320_3396"
                     , "CCT":  "4320_0176" }
               , 5: {  "BE":   "4320_0750"
                     , "SPE":  "4320_0750"
                     , "IVP":  "4320_0750"
+                    , "MSK":  "4320_3396"
                     , "CCT":  "4320_0176" }
-              , 6: {  "ACT":  "4320_0174" }
-              , 0: {  "ACT":  "4320_0174" } }
+              , 6: {  "ACT":  "4320_0174"
+                    , "MSK":  "4320_3396" }
+              , 0: {  "ACT":  "4320_0174"
+                    , "MSK":  "4320_3396" } }
 
   thisMonthFlow := "4320_1796"
 
