@@ -15,6 +15,7 @@
 ::ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
 ::tr::On tracheostomy tube.
 ::ng::On NG tube.
+::og::On NG/OG tube.
 ::vps::s/p VP shunting.
 ::rpig::s/p right chest pigtail drainage.
 ::rpig1::s/p right chest pigtail drainage, with decreased pleural effusion.
@@ -87,6 +88,7 @@
 ::bllf::bilateral lower lung fields
 ::lllf::left lower lung field
 ::rllf::right lower lung field
+::bll::bilateral lower lungs
 ::nnp::No newly developed patch opacity in lung fields.
 ::ii::Exaggerated lung markings, may be due to inadequate inspiration.
 ::ii0::inadequate inspiration
@@ -114,6 +116,7 @@
 ::prlpg::Post removal of left pigtail drain. No pneumothorax noted.
 ::ate::atelectasis
 ::late::linear atelectasis
-::roas::OA change of right shoulder.
-::loas::OA change of left shoulder.
+::rsoa::OA change of right shoulder.
+::lsoa::OA change of left shoulder.
+::bsoa::OA change of bilateral shoulders.
 ::xgbs::Round opacities over RUQ of abdomen, r/o gallstones. Suggest correlation with sonography.

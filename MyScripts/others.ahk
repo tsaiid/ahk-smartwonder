@@ -12,7 +12,7 @@
 ::ntbd::nature to be determined.
 ::stbd::significance to be determined.
 ::ctbd::cause to be determined.
-::het::heterogenous
+::het::heterogeneous
 ::hom::homogenous
 ::p::presence of `
 ::h::however, `
