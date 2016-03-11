@@ -8,6 +8,10 @@ Return
   StringWithPrevExamDate("No obvious improvement as compared with previous study")
 Return
 
+::mip::
+  StringWithPrevExamDate("Mild improvement as compared with previous study")
+Return
+
 ::pc::
   StringWithPrevExamDate("Progressive change as compared with previous study")
 Return

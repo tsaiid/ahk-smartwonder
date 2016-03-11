@@ -1,7 +1,7 @@
 ﻿; For KUB
 ::k::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
 ::kb::the bowel gas pattern is unremarkable.
-::ks::Residual stool in the colon and rectum.
+::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Ring like calcification nodules in the pelvic cavity are mostly due to phleboliths of the vein.
 ::lpcn::s/p left side percutaneous nephrostomy.
 ::rpcn::s/p right side percutaneous nephrostomy.

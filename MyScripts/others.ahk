@@ -37,8 +37,10 @@
 ::ml::multiloculated `
 ::s::several `
 ::n::nodule
+::nl::nodular lesions
 ::cn::calcified nodule
 ::g::granuloma
+::l::lesion
 ::mod::moderate `
 ::sv::severe `
 ::mtm::mild to moderate
