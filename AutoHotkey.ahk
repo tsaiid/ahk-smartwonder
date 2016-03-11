@@ -18,7 +18,13 @@ GroupAdd, SmartWonder, VGHKS-
 GroupAdd, SmartWonder, vghks-
 GroupAdd, SmartWonder, tedpc-
 
+; External Libraries
+#Include Lib\WBGet.ahk
+#Include Lib\Paste.ahk
+#Include Lib\varExist.ahk
+
 ; Global Variables
+#Include MyScripts\options.ahk
 #Include MyScripts\vars.ahk
 
 ; RegEx Hotstrings
@@ -28,11 +34,6 @@ GroupAdd, SmartWonder, tedpc-
 ; Settings
 #Hotstring EndChars `t
 #Hotstring O
-
-; External Libraries
-#Include Lib\WBGet.ahk
-#Include Lib\Paste.ahk
-#Include Lib\varExist.ahk
 
 ;; My Own Lib
 #Include MyScripts\lib\frame-wait.ahk
