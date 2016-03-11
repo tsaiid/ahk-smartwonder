@@ -32,6 +32,7 @@ GroupAdd, SmartWonder, tedpc-
 ; External Libraries
 #Include Lib\WBGet.ahk
 #Include Lib\Paste.ahk
+#Include Lib\varExist.ahk
 
 ;; My Own Lib
 #Include MyScripts\lib\frame-wait.ahk
