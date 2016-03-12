@@ -80,7 +80,7 @@ RenumberSeletedText(deOrder = false){
           If (!deOrder) {
             finalText .= ++currLineNo . ". "
           }
-          finalText .= RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*])|(\(?\d+\)))?(\s*)(.*)", "$7")
+          finalText .= RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*])|(\(?\d+\)))?(\s*)(\w?)(.*)", "$u7$8")
 
           If (A_Index < endLine)
             finalText .= "`n"
