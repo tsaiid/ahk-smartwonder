@@ -11,8 +11,8 @@ GroupAdd, SmartWonder, tedpc-
 #Hotstring O
 
 ; External Libraries
-#Include Lib\WBGet.ahk
-#Include Lib\Paste.ahk
+#Include <WBGet>
+#Include <Paste>
 
 ;; My Own Lib
 #Include MyScripts\lib\frame-wait.ahk

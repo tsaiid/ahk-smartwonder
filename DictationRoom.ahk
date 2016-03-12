@@ -10,8 +10,8 @@ GroupAdd, SmartWonder, tedpc-
 #Hotstring EndChars `n
 
 ; External Libraries
-#Include Lib\WBGet.ahk
-#Include Lib\Paste.ahk
+#Include <WBGet>
+#Include <Paste>
 
 ;; My Own Lib
 #Include MyScripts\hotkey\change-font.ahk

@@ -19,9 +19,9 @@ GroupAdd, SmartWonder, vghks-
 GroupAdd, SmartWonder, tedpc-
 
 ; External Libraries
-#Include Lib\WBGet.ahk
-#Include Lib\Paste.ahk
-#Include Lib\varExist.ahk
+#Include <WBGet>
+#Include <Paste>
+#Include <varExist>
 
 ; Global Variables
 #Include MyScripts\options.ahk
