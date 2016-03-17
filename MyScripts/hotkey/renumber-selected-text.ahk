@@ -77,7 +77,7 @@ RenumberSeletedText(deOrder = false){
     {
       If (A_Index >= startLine && A_Index <= endLine) {
         If (!RegExMatch(A_LoopField, "^\s*$")) {
-          If (!deOrder) {
+          If (!deOrder && endLine - startLine > 0) { ; do not add line number if only 1 line
             finalText .= ++currLineNo . ". "
           }
           finalText .= RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*])|(\(?\d+\)))?(\s*)(\w?)(.*)", "$u7$8")
