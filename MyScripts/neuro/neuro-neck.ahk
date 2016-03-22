@@ -18,15 +18,30 @@ Applicable previous MRI of face and neck: none
 
 FINDINGS:
 
-Due to no contrast-enhanced CT performed, small enhancing lesion could not be evaluated.
+Due to no contrast-enhaned CT performed, the detail could not be evaluated. Film interpretation is limited.
+
+No contrast medium. Film interpretation is limited.
+
+The detail could not be evaluated in this noncontrast CT.
+
+*Due to no contrast-enhanced CT performed, small enhancing lesion could not be evaluated.
+
+*PS. The evaluation is limited especially for solid organs, lymph nodes, and vascular structure due to absence of contrast enhancement.
 
 1. Primary tumor status:
+[Tx] a. Unknown
+
 
 2. Cervical nodes:
 
 * right/left/bilateral level I, II, III, IV, V, VI, VII
 
-No evidence of bulky lymph nodes, and lymph nodes size smaller than 1 cm, over --------------- carotid space and --------------- posterior triangle of submandibular and neck regions was noted.
+* right/left/bilateral
+submandibular and submental space (level I)
+carotid space (level II, III, IV)
+posterior cervical space (level V)
+anterior cervical space (level VI)
+superior mediastinal space (level VII)
 
 No evidence of bulky lymph nodes (> 1cm) over bilateral carotid space and posterior cervical space noted.
 
@@ -36,14 +51,21 @@ No evidence of bulky lymph nodes in shortest axis (> 1cm) over bilateral supracl
 
 No evidence of bulky lymph nodes in shortest axis (> 1.5cm) over bilateral submandibular and submental space noted.
 
-a. No evidence of bulky lymph nodes over --------------- carotid space and --------------- posterior triangle of submandibular and neck regions was noted.
+b. Presence of several/multiple lymph nodes noted over -------- submandibular and submental space ,--------------- carotid space and --------------- posterior cervical space, the biggest size about --------  cm, R/O inflammatory or metastatic lymph nodes.
 
-b. Presence of several/multiple lymph nodes noted over --------------- carotid space and --------------- posterior triangle of submandibular and neck regions, the biggest size about --------  cm, R/O inflammatory or metastatic lymph nodes.
+c. Presence of several lymph nodes noted over -------- submandibular and submental space , bilateral carotid space and posterior cervical space, the biggest size about 1.1 cm, R/O inflammatory lymph nodes. However, lymphoma, metastatic lymph nodes can not be completely excluded.  Suggest clinical check up.
 
-c. Presence of several lymph nodes noted over bilateral carotid space and posterior triangle of submandibular and upper neck regions, the biggest size about 1.1 cm, R/O inflammatory lymph nodes. However, lymphoma, metastatic lymph nodes can not be completely excluded.  Suggest clinical check up.
+d. Presence of several/multiple lymph nodes noted over -------- submandibular and submental space , ---------------carotid space and posterior cervical space, the biggest size about --------  cm, the differential diagnoses including lymphoma, metastasis, or inflammation, recommend biopsy or close follow up.
 
-d. Presence of several/multiple lymph nodes noted over ---------------, the biggest size about --------  cm, the differential diagnoses including lymphoma, metastasis, or inflammation, recommend biopsy or close follow up.
-
+   ========================
+     # level I   : right (-);  left(-)
+     # level II  : right (-);  left(-)
+     # level III : right (-);  left(-)
+     # level IV : right (-);  left(-)
+     # level V  : right (-);  left(-)
+     # level VI : right (-);  left(-)
+     # level VII: right (-);  left(-)
+  ========================
 
 3. Others:
 
@@ -73,6 +95,8 @@ IMPRESSION:
 
 SUGGESTION:
 Suggest clinical correlation and follow up.
+
+PS. The evaluation is limited especially for solid organs, neck lymph nodes and vascular structure due to absence of contrast enhancement.
 )
   Paste(MyForm)
 Return
