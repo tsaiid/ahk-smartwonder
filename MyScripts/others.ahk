@@ -39,6 +39,7 @@
 ::n::nodule
 ::nl::nodular lesions
 ::cn::calcified nodule
+::rol::radiopaque lesion
 ::g::granuloma
 ::l::lesion
 ::mod::moderate `
@@ -47,6 +48,7 @@
 ::mts::moderate to severe
 ::sl::slightly `
 ::sip::superimposed `
+::pos::position
 
 :c:f::findings
 :c:IND::INDICATION:

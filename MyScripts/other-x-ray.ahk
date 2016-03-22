@@ -16,3 +16,6 @@
 ::ccfu::Suggest clinical correlation and follow-up.
 ::fufe::Suggest follow-up or further evaluation.
 ::nbd::Nature to be determined.
+::rms::Ground glass opacity in right maxillary sinus, r/o sinusitis.
+::lms::Ground glass opacity in left maxillary sinus, r/o sinusitis.
+::bms::Ground glass opacity in bilateral maxillary sinuses, r/o sinusitis.
