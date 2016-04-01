@@ -129,9 +129,10 @@ Return
 DJD of Cervical spine:
   - Osteophyte formation:
   - Disk space narrowing:
+  - Prominant unco-vertebral joint:
   - Encroachment of neuroforamen:
-  - Anterolisthesis:
-  - Retrolisthesis:
+  - Anterolisthesis: nil
+  - Retrolisthesis: nil
 )
   Paste(MyForm)
 Return

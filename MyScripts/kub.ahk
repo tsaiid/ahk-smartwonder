@@ -18,4 +18,5 @@
 ::foley::s/p Foley catheterization.
 ::haic-ok::On HAIC. The tip position shows no migration as compared with previous angiography.
 ::p/a::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
+::p/haic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
 ::aacal::Calcification of abdominal aortic wall.
