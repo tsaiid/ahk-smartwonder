@@ -33,6 +33,9 @@ CopyOrder(toLower = 0)
     MyOrderDiag := OrderDiag
   }
 
+  ; 有些人會打很多 ..., 刪掉
+  MyOrderDiag := RegExReplace(MyOrderDiag, "\.{2,}", ". ")
+
   if (toLower) {
     StringLower, MyOrderDiag, MyOrderDiag
   }
