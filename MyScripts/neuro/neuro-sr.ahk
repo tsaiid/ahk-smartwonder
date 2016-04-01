@@ -1270,46 +1270,8 @@ Pituitary macroadenoma
   Paste(MyForm)
 Return
 
-;; srSPINE-C-CT-NC
-::srspinecctnc::
-  MyOrder := CopyOrder()
-  MyForm =
-(
-INDICATION: %MyOrder%
-TECHNIQUE:
-C-spine
-Multi-slice CT scanner;
-Non-contrast axial contiguous scanning of cervical spine with sagittal and coronal reformatted images
-
-COMPARISON:
-Applicable previous CT of cervical spine: none
-
-FINDINGS:
-
-*Vertebral body
-  Morphology: normal
-  Alignment: normal
-
-*Vertebra, posterior elements: normal
-*Spinal canal: normal
-*Neuroforamen: normal
-*Intervertebral disc space: normal
-*Prevertebral space: normal
-
-*Spinal cord and disc condition: cannot be well evaluated by CT scan
-
-*Others: none
-
-
-IMPRESSION:
-No evident fracture or dislocation of cervical spine
-No significant finding in cervical spine region
-)
-  Paste(MyForm)
-Return
-
-;; srSPINE-C-MR-CE
-::srspinecmrce::
+;; srMRSPC1
+::srmrspc1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -1367,8 +1329,8 @@ Spinal canal stenosis
   Paste(MyForm)
 Return
 
-;; srSPINE-C-MR-NC
-::srspinecmrnc::
+;; srMRSPC2
+::srmrspc2::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -1426,8 +1388,8 @@ Spinal canal stenosis
   Paste(MyForm)
 Return
 
-;; srSPINE-L-MR-CE
-::srspinelmrce::
+;; srMRSPL1
+::srmrspl1::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -1484,8 +1446,8 @@ Spinal canal stenosis
   Paste(MyForm)
 Return
 
-;; srSPINE-L-MR-NC
-::srspinelmrnc::
+;; srMRSPL2
+::srmrspl2::
   MyOrder := CopyOrder()
   MyForm =
 (
@@ -1590,8 +1552,8 @@ See descriptions
   Paste(MyForm)
 Return
 
-;; srSPINE-T-MR-CE
-::srspinetmrce::
+;; srMRSPT
+::srmrspt::
   MyOrder := CopyOrder()
   MyForm =
 (
