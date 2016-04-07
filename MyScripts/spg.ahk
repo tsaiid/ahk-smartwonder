@@ -1,10 +1,34 @@
+; Function
+DoSPGorSEG()
+{
+  wb := WBGet()
+  frmWork := wb.document.frames["frameWork"]
+  frmTabIframe2 := frmWork.document.frames["tabIframe2"]
+
+  ; get current exam name
+  tmpStr := frmTabIframe2.document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
+  RegExMatch(tmpStr, "(.+) : (.+)", splittedTmpStr)
+  currExamName := splittedTmpStr2
+
+  If (currExamName = "SPG For vein") {
+    DoSPG()
+  } Else If (currExamName = "Segmental pressures - 3or4 Cuff") {
+    DoSEG()
+  } Else {
+    MsgBox, Not supported exam type!
+  }
+}
+
 ; SPG
 ::spg::
+  DoSPG()
+Return
+
+DoSPG()
+{
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
-  OrderId = OrderDiag_%accNo%
-  OrderDiag := tabIframe2.document.getElementById(OrderId).value
 
   GetSpgOcr2(AccNo, tabIframe2)
 
@@ -61,7 +85,7 @@ Abbreviation: Venous Outflow (VO, `%/min); Venous Capacitance (VC, `%); Arterial
 )
 
   Paste(MyForm, false)
-Return
+}
 
 ; Temp Function
 ::ocr::
@@ -74,6 +98,11 @@ Return
 
 ; SEG
 ::seg::
+  DoSEG()
+Return
+
+DoSEG()
+{
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
@@ -365,4 +394,4 @@ COMMENT:
 )
 
   Paste(MyForm, false)
-Return
+}
