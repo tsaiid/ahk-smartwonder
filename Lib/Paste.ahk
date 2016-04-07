@@ -4,11 +4,18 @@
 ; Source: http://www.autohotkey.com/board/topic/44917-paste-but-preserve-clipboard-simple/
 
 Paste(text, alsoChangeFont = 1) {
-  ClipSaved := ClipboardAll
-  Clipboard := text
-  Send ^v
-  Sleep 300 ; Probably more than enough. Depends on the system.
-  Clipboard := ClipSaved
+  global PRESERVE_CLIPBOARD
+
+  If (PRESERVE_CLIPBOARD) {
+    ClipSaved := ClipboardAll
+    Clipboard := text
+    Send ^v
+    Sleep 300 ; Probably more than enough. Depends on the system.
+    Clipboard := ClipSaved
+  } Else {
+    Clipboard := text
+    Send ^v
+  }
 
 #IfWinActive ahk_group SmartWonder
   If (alsoChangeFont) {
