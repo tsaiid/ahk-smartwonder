@@ -76,7 +76,7 @@
 ::rhd::A drain at right hip region.
 ::u+::Positive ulnar variance.
 ::u-::Negative ulnar variance.
-::hyperm::hypermobility
+::hm::hypermobility
 ::noas::No obvious squaring of the vertebral bodies.
 ::gvr::genu varus
 ::gvg::genu valgus

@@ -20,3 +20,4 @@
 ::p/a::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
 ::p/haic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
 ::aacal::Calcification of abdominal aortic wall.
+::cmub::Contrast medium retention in the urinary bladder, may be due to recent imaging study.
