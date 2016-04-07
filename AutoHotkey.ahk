@@ -17,8 +17,11 @@ GroupAdd, SmartWonder, tedpc-
 #Include <varExist>
 
 ; Global Variables
-#Include MyScripts\options.ahk
 #Include MyScripts\vars.ahk
+
+; Options
+ENABLE_KEY_COUNTER := 1
+PRESERVE_CLIPBOARD := 0
 
 ; RegEx Hotstrings
 ;; Bug: need to be included first ???
@@ -36,6 +39,7 @@ GroupAdd, SmartWonder, tedpc-
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
   #Include MyScripts\neuro.ahk
+  #Include MyScripts\neuro\neuro-hotstrings.ahk
 
   #Include MyScripts\chest-x-ray.ahk
   #Include MyScripts\kub.ahk
@@ -103,7 +107,8 @@ SetTitleMatchMode, 2
 
 ; 複製最近相關報告並開啟影像
 $^0::
-  GetPreviousReport(true, true)
+  ;GetPreviousReport(true, true)
+  GetPreviousReportWithImages(true, true, 1, false, false)
 Return
 
 ; 複製最近相關報告但不開啟影像
@@ -181,6 +186,11 @@ Return
 ; Set predefined exam flow
 ^!f::
   SetPredefinedExamFlow()
+Return
+
+; Get SPG or SEG report
+^!s::
+  DoSPGorSEG()
 Return
 
 #IfWinActive
