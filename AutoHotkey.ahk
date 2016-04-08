@@ -23,6 +23,10 @@ PRESERVE_CLIPBOARD := 0
 ; Global Variables
 #Include MyScripts\vars.ahk
 
+; Key/Mouse Counter
+;; Bug: shoule be before RegEx HotStrings
+#Include MyScripts\lib\keystroke-counter.ahk
+
 ; RegEx Hotstrings
 ;; Bug: need to be included first ???
 #Include MyScripts\regex-hotstrings.ahk
