@@ -16,12 +16,12 @@ GroupAdd, SmartWonder, tedpc-
 #Include <Paste>
 #Include <varExist>
 
-; Global Variables
-#Include MyScripts\vars.ahk
-
 ; Options
 ENABLE_KEY_COUNTER := 1
 PRESERVE_CLIPBOARD := 0
+
+; Global Variables
+#Include MyScripts\vars.ahk
 
 ; RegEx Hotstrings
 ;; Bug: need to be included first ???
