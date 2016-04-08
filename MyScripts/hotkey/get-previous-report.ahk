@@ -3,6 +3,12 @@
 #IfWinActive ahk_group SmartWonder
 
 GetPreviousReport(CopyReport=true, LoadImages=false) {
+  ; global vars for counters
+  global cntGetPreviousReport
+  global cntGetPreviousReportSuccess
+
+  cntGetPreviousReport += 1
+
   ; use global variables to store previous exam date
   global prevExamDate
   global currAccNo
@@ -142,6 +148,7 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
 
         btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
         btnCopyReport.click() ; 複製報告
+        cntGetPreviousReportSuccess += 1
       }
     }
   }

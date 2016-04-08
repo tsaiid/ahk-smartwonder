@@ -9,6 +9,12 @@
 ;;; LoadFarImage: true or false, if TotalRecentImages all within 3 months, find a > 3 months images.
 ;;; ShowAlert: true or false, show alert message or directly insert the message into the report area.
 GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=2, LoadFarImage=true, ShowAlert=true) {
+  ; global vars for counters
+  global cntGetPreviousReport
+  global cntGetPreviousReportSuccess
+
+  cntGetPreviousReport += 1
+
   ; use global variables to store previous exam date
   global prevExamDate
   global currAccNo
@@ -147,6 +153,7 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
 
       btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]
       btnCopyReport.click() ; 複製報告
+      cntGetPreviousReportSuccess += 1
 
       ; load image other than latest
       If (LoadImages && relatedReportCount > 1) {
