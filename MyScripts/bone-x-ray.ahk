@@ -82,6 +82,7 @@
 ::gvg::genu valgus
 ::if::internal fixation
 ::ef::external fixation
+::c7::The C7 vertebra is blocked by the shoulder shadow with limited evaluation.
 
 ; Multiline
 ::flat::

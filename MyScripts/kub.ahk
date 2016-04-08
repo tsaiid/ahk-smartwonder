@@ -22,6 +22,7 @@
 ::aacal::Calcification of abdominal aortic wall.
 ::cmub::Contrast medium retention in the urinary bladder, may be due to recent imaging study.
 ::kns::No definite stone-like radiopacity along the urinary tract.
+::krs::Several tiny radiopacities superimposed on bilateral renal shadows, r/o renal stones.
 ::lptcd::S/P PTCD via left side approach.
 ::rptcd::S/P PTCD via right side approach.
 ::bptcd::S/P PTCD via left and right side approach.
