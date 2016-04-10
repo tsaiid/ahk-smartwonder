@@ -119,5 +119,4 @@
 ::rsoa::OA change of right shoulder.
 ::lsoa::OA change of left shoulder.
 ::bsoa::OA change of bilateral shoulders.
-::xgbs::Round opacities over RUQ of abdomen, r/o gallstones. Suggest correlation with sonography.
 ::xg::Few tiny dense nodules over bilateral lung fields, in favor of granulomas.

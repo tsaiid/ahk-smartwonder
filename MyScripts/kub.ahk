@@ -3,6 +3,7 @@
 ::kb::the bowel gas pattern is unremarkable.
 ::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Ring like calcification nodules in the pelvic cavity are mostly due to phleboliths of the vein.
+::kgbs::Round opacities over RUQ of abdomen, r/o gallstones. Suggest correlation with sonography.
 ::lpcn::s/p left side percutaneous nephrostomy.
 ::rpcn::s/p right side percutaneous nephrostomy.
 ::bpcn::s/p bilateral percutaneous nephrostomies.

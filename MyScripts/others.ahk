@@ -29,6 +29,7 @@
 ::o::otherwise, `
 ::rm::remarkable `
 ::urm::unremarkable `
+::cnbd::cannot be determined
 ::cnbe::cannot be excluded
 ::mcnbe::malignancy cannot be excluded.
 ::msbe::malignancy should be excluded.
@@ -49,6 +50,10 @@
 ::sl::slightly `
 ::sip::superimposed `
 ::pos::position
+::pd::progressive disease
+::sd::stable disease
+::pr::partial response
+::cr::complete response
 
 :c:f::findings
 :c:IND::INDICATION:
