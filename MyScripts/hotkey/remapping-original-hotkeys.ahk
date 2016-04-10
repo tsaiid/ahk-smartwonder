@@ -8,23 +8,23 @@
 #IfWinActive ahk_class TImgViewPort
 
 l::
-  Send, ^+l
+  SendEvent ^+l
 Return
 
 `;::
-  Send, ^+`;
+  SendEvent ^+`;
 Return
 
 '::
-  Send, ^+'
+  SendEvent ^+'
 Return
 
 [::
-  Send, ^+[
+  SendEvent ^+[
 Return
 
 ]::
-  Send, ^+]
+  SendEvent ^+]
 Return
 
 #IfWinActive
