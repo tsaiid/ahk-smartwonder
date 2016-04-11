@@ -31,6 +31,7 @@
 ::urm::unremarkable `
 ::cnbd::cannot be determined
 ::cnbe::cannot be excluded
+::sbe::should be excluded
 ::mcnbe::malignancy cannot be excluded.
 ::msbe::malignancy should be excluded.
 ::m::multiple `
