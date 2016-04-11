@@ -25,7 +25,7 @@ PRESERVE_CLIPBOARD := 0
 
 ; Key/Mouse Counter
 ;; Bug: shoule be before RegEx HotStrings
-#Include MyScripts\lib\keystroke-counter.ahk
+;#Include MyScripts\lib\keystroke-counter.ahk
 
 ; RegEx Hotstrings
 ;; Bug: need to be included first ???
@@ -45,6 +45,8 @@ PRESERVE_CLIPBOARD := 0
   #Include MyScripts\neuro.ahk
   #Include MyScripts\neuro\neuro-hotstrings.ahk
 
+  #Include MyScripts\sono.ahk
+
   #Include MyScripts\chest-x-ray.ahk
   #Include MyScripts\kub.ahk
   #Include MyScripts\bone-x-ray.ahk
@@ -52,7 +54,6 @@ PRESERVE_CLIPBOARD := 0
   #Include MyScripts\comparisons.ahk
   #Include MyScripts\sono-guide.ahk
 
-  #Include MyScripts\sono.ahk
   #Include MyScripts\abdomen-ct.ahk
   #Include MyScripts\abdomen-mr.ahk
   #Include MyScripts\chest-ct.ahk
