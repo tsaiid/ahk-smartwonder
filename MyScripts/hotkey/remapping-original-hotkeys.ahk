@@ -28,3 +28,14 @@ Return
 Return
 
 #IfWinActive
+
+;; for global windows environment
+#Space::^Space
+#c::^c
+#v::^v
+#x::^x
+#w::^w
+#t::^t
+#r::^r
+#s::^s
+#z::^z
