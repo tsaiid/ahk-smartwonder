@@ -55,6 +55,9 @@
 ::sd::stable disease
 ::pr::partial response
 ::cr::complete response
+::ap::arterial phase
+::pvp::portovenous phase
+::dp::delayed phase
 
 :c:f::findings
 :c:IND::INDICATION:
