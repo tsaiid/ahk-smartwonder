@@ -88,21 +88,19 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
     prevReportArray := []
     prevReportDateArray := []
     Loop %prevReportListsLength% {
-      If RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) {
+      If (RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) > 0) {
         ; 先找出所有相關報告
         prevExamDate := prevReportLists.children[A_Index].children[4].innerText
         prevExamTime := prevReportLists.children[A_Index].children[5].innerText
-        ;; convert string to int for date and time
-        ;prevExamTime := prevExamTime + 0
-        prevExamDateTime := (prevExamDate . prevExamTime)
+        prevExamAcc := prevReportLists.children[A_Index].children[6].innerText
+        prevExamDateTime := (prevExamDate . prevExamTime) ; for datetime substract
 
         ;; 排除比目前日期晚的
         deltaDateTime := currExamDateTime
         EnvSub, deltaDateTime, %prevExamDateTime%, Seconds
-        ;MsgBox, c = %currExamDateTime%, p = %prevExamDateTime%, d = %deltaDateTime%
         If (deltaDateTime > 0) {
-          prevExamDate_Time := (prevExamDate . "_" . prevExamTime)
-          prevReportHash[prevExamDate_Time] := A_Index
+          prevExamDate_Time_Acc := (prevExamDate . "_" . prevExamTime . "_" . prevExamAcc) ; 有時 bone 的片子會有一樣的 data, time
+          prevReportHash[prevExamDate_Time_Acc] := A_Index
           relatedReportCount += 1
         }
       }
