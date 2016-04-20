@@ -30,7 +30,10 @@ Return
 #IfWinActive
 
 ;; for global windows environment
-#Space::^Space
+#Space::
+  SendEvent ^{Space}  ; Need to send event to work in VirtualBox
+Return
+
 #c::^c
 #v::^v
 #x::^x
