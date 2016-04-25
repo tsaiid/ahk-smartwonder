@@ -4,7 +4,6 @@
 #Hotstring O
 SetBatchLines -1  ; better performance: http://scsnake.blogspot.tw/2016/03/hotstring.html
 SendMode, Input
-SetKeyDelay, -1, -1
 
 ; Group Control For SmartWonder
 GroupAdd, SmartWonder, VGHKS-
@@ -25,7 +24,7 @@ PRESERVE_CLIPBOARD := 0
 
 ; Key/Mouse Counter
 ;; Bug: shoule be before RegEx HotStrings
-;#Include MyScripts\lib\keystroke-counter.ahk
+#Include MyScripts\lib\keystroke-counter.ahk
 
 ; RegEx Hotstrings
 ;; Bug: need to be included first ???
@@ -91,7 +90,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\change-font.ahk
 #Include MyScripts\hotkey\copy-order.ahk
 #Include MyScripts\hotkey\get-side-str.ahk
-#Include MyScripts\hotkey\toggle-position-sync.ahk
+;#Include MyScripts\hotkey\toggle-position-sync.ahk ; use SmartIris hotkey
 #Include MyScripts\hotkey\toggle-hanging-protocol.ahk
 #Include MyScripts\hotkey\insert-patient-exam-info.ahk
 #Include MyScripts\hotkey\convert-case.ahk
@@ -165,6 +164,11 @@ Return
 ; Deorder Seleted Text
 $^!+n::
   RenumberSeletedText(true)
+Return
+
+; Unorder Seleted Text
+$^!u::
+  RenumberSeletedText(false, true, "-")
 Return
 
 ; Click TB(-)Ot(-)
