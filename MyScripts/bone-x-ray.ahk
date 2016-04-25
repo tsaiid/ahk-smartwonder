@@ -2,9 +2,9 @@
 ::bok::No joint space narrowing, dislocation, or fracture.{Enter}
 ::bok1::No obvious dislocation or fracture.
 ::bok2::No obvious bony lesion.
-::djdl::DJD change of L-spine.{Enter}
-::djdt::DJD change of T-spine.{Enter}
-::djdtl::DJD change of T- and L-spine.{Enter}
+::djdl::DJD change of L-spine.
+::djdt::DJD change of T-spine.
+::djdtl::DJD change of T- and L-spine.
 ::oak0::Mild joint space narrowing at medial compartment of knee joint.
 ::oak1a::Mild joint space narrowing, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
 ::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
@@ -20,6 +20,7 @@
 ::patok::No lateral tilting or subluxation of bilateral patellae. {Enter}No PF joint space narrowing.
 ::pats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
 ::patt::Mild lateral tilting of bilateral patellae, with mild PF joint space narrowing at lateral facet.
+::lpatt::Mild lateral tilting of left patella, with mild PF joint space narrowing at lateral facet.
 ::patts::Lateral tilting and subluxation of bilateral patellae, with severe PF joint space narrowing, subchondral sclerosis and marginal osteophyte formation at lateral facet.
 ::patts0::Mild lateral tilting and subluxation of bilateral patellae, with PF joint space narrowing at lateral facet.
 ::acrd::Lateral downsloping of the acromion, narrowing the acromiohumeral distance, which may be associated with impingement of the supraspinatus tendon.
@@ -80,6 +81,8 @@
 ::noas::No obvious squaring of the vertebral bodies.
 ::gvr::genu varus
 ::gvg::genu valgus
+::hvr::hallux varus
+::hvg::hallux valgus
 ::if::internal fixation
 ::ef::external fixation
 ::c7::The C7 vertebra is blocked by the shoulder shadow with limited evaluation.

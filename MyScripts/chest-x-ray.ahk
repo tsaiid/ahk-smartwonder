@@ -4,6 +4,7 @@
 ::bcm::Borderline cardiomegaly.
 :c:Cm::Cardiomegaly.
 ::np::No abnormal patch opacity in lung fields.
+::nn::No nodular opacities (> 1cm) noted over bilateral lung fields.
 ::0::No previous film for comparison.{Enter 2}
 ::1::No abnormal patch opacity in lung fields. {Enter}No cardiomegaly.
 ::2::No active lung lesion. {Enter}No cardiomegaly.
@@ -35,6 +36,7 @@
 ::p/ster::Post median sternotomy with wire fixation.
 ::p/c::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
 ::p/c0::S/P cholecystectomy.
+::p/tae::Lipiodol retention in liver.
 ::ricvp::On central venous catheter via right internal jegular vein with tip at superior vena cava.
 ::licvp::On central venous catheter via left internal jegular vein with tip at superior vena cava.
 ::bicvp::On central venous catheters via right and left internal jegular veins with tips at superior vena cava.
@@ -45,15 +47,17 @@
 ::rsdl::On double lumen catheter via right subclavian vein.
 ::lsdl::On double lumen catheter via left subclavian vein.
 ::rport::On Port-A catheter via right subclavian vein.
+::rport1::On Port-A catheter via right subclavian vein.{ENTER}No pneumothorax is noted.
 ::lport::On Port-A catheter via left subclavian vein.
+::lport1::On Port-A catheter via left subclavian vein.{ENTER}No pneumothorax is noted.
 ::rshick::On Hickmann catheter via right subclavian vein.
 ::lshick::On Hickmann catheter via left subclavian vein.
 ::rihick::On Hickmann catheter via right internal jugular vein.
 ::lihick::On Hickmann catheter via left internal jugular vein.
 ::rpicc::On PICC via right arm.
 ::lpicc::On PICC via left arm.
-::rppm::s/p PPM implantation at right upper chest.
-::lppm::s/p PPM implantation at left upper chest.
+::rppm::s/p PPM implantation at right upper chest with lead tips at RA and RV.
+::lppm::s/p PPM implantation at left upper chest with lead tips at RA and RV.
 ::ile::Inadequate inspiration crowds lung markings.
 ::pe::Increased vascular markings and ill-defined vascular contours indicating pulmonary edema.
 ::pe0::pulmonary edema

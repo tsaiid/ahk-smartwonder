@@ -12,7 +12,7 @@
 ::fe::Suggest further evaluation.
 ::fe0::further evaluation
 ::fu::Suggest follow-up.
-::fu0::follow-up.
+::fu0::follow-up
 ::ccfu::Suggest clinical correlation and follow-up.
 ::fufe::Suggest follow-up or further evaluation.
 ::nbd::Nature to be determined.

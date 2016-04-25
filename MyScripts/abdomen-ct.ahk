@@ -38,6 +38,7 @@ Return
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
 ::acthh::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
 ::mrhh::A -cm nodule over S of liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
+::actrn::A -cm nodule over S of liver, shows enhancement in arterial phase, and isodense in portal venous phase, in favor of regenerative nodule.
 ::actckd::Atrophic change of bilateral kidneys, in favor of chronic kidney disease.
 
 ::acthcc::
@@ -54,6 +55,26 @@ Contrast medium: Yes, 80-100 ml, 1-2 ml/sec, with arterial and portovenous phase
 Previous abdominal CT: none.
 
 FINDINGS:
+
+Liver: tumor profiles:
+number: two
+segment, size: S5 and S8 ( 2.5 and 1.4 cm)
+enhancement:  hyper- in arterial phase, hypo- in venous/delayed phase
+vessel invasion: Nil
+cirrhotic change: nil, portosystemic collaterals (-)
+comments: in favor of HCCs
+
+Extrahepatic spread: No.
+Regional lymphadenopathy: No
+Non-regional lymphadenopathy: No
+
+Spleen: unremarkable.
+Biliary tree: Unremarkable
+Pancreas: Unremarkable
+
+Kidneys and ureters: Unremarkable.
+
+No evident upper abdominal retroperitoneal lymphadenopathy identified.
 
 IMPRESSION:
 
@@ -225,6 +246,7 @@ IMPRESSION:
 
 SUGGESTION:
 
+*PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
 )
   Paste(MyForm)
 Return

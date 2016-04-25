@@ -79,6 +79,7 @@
 ::lm::lateral meniscus
 ::pvns::pigmented villonodular synovitis
 ::osd::Osgood-Schlatter disease
+::druj::distal radioulnar joint
 
 ;; Abdomen
 ::ln::lymph node
@@ -120,6 +121,7 @@
 ::dn::dysplastic nodule
 ::uvj::ureterovesical junction
 ::upj::ureteropelvic junction
+::apn::acute pyelonephritis
 
 ;; Neuro
 ::ich::intracranial hemorrhage
