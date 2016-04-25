@@ -3,7 +3,7 @@
 ;; for SmartWonder
 
 #IfWinActive ahk_group SmartWonder
-RenumberSeletedText(deOrder = false){
+RenumberSeletedText(deOrder = false, keepEmptyLine = false, itemChar = ""){
   wb := WBGet()
 
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
@@ -78,16 +78,18 @@ RenumberSeletedText(deOrder = false){
       If (A_Index >= startLine && A_Index <= endLine) {
         If (!RegExMatch(A_LoopField, "^\s*$")) {
           If (!deOrder && endLine - startLine > 0) { ; do not add line number if only 1 line
-            finalText .= ++currLineNo . ". "
+            orderChar := (StrLen(itemChar) > 0 ? itemChar : ++currLineNo . ".")
+            finalText .= orderChar . " "
           }
           finalText .= RegExReplace(A_LoopField, "^(\s*)((\d+\.)|([-\+\*])|(\(?\d+\)))?(\s*)(\w?)(.*)", "$u7$8")
 
           If (A_Index < endLine)
             finalText .= "`n"
-        }
-        Else {
-          ; if all line is empty, ignore it, and do not append an \n
-          ; finalText .= A_LoopField
+        } Else {
+          ; use a para to control if all line is empty, ignore it, and do not append an \n
+          If (keepEmptyLine) {
+            finalText .= A_LoopField . "`n"
+          }
         }
 
       }
