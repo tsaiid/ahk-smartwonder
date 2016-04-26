@@ -22,6 +22,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include MyScripts\hotkey\get-previous-report-with-images.ahk
 #Include MyScripts\hotkey\change-font.ahk
 #Include MyScripts\hotkey\renumber-selected-text.ahk
+#Include MyScripts\hotkey\detect-non-ascii-chars.ahk
 
 ; Define hotkeys
 #IfWinActive ahk_group SmartWonder
@@ -34,6 +35,11 @@ Return
 ; Renumber Seleted Text
 $^!n::
   RenumberSeletedText()
+Return
+
+; Detect Non-Ascii Chars
+^!a::
+  DetectNonAsciiChars()
 Return
 
 #IfWinActive
