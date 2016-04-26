@@ -101,6 +101,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\set-predefined-exam-flow.ahk
 #Include MyScripts\hotkey\cgst32-related-mouse-control.ahk
 #Include MyScripts\hotkey\go-to-image.ahk
+#Include MyScripts\hotkey\detect-non-ascii-chars.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
@@ -200,6 +201,11 @@ Return
 ; Get SPG or SEG report
 ^!s::
   DoSPGorSEG()
+Return
+
+; Detect Non-Ascii Chars
+^!a::
+  DetectNonAsciiChars()
 Return
 
 #IfWinActive
