@@ -27,6 +27,30 @@ Return
   SendEvent ^+]
 Return
 
+1Joy2::
+  SendEvent {F11}
+Return
+
+1Joy3::
+  SendEvent {F10}
+Return
+
+1Joy4::
+  SendEvent {F5}
+Return
+
+1Joy5::
+  SendEvent ^!+p
+Return
+
+1Joy6::
+  SendEvent ^!+s
+Return
+
+1Joy9::
+  SendEvent ^+]
+Return
+
 #IfWinActive
 
 ;; for global windows environment
