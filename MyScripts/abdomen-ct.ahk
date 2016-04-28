@@ -347,3 +347,27 @@ SUGGESTION:
 )
   Paste(MyForm)
 Return
+
+::actgyn::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+
+METHOD:
+Non-contrast and contrast-enhanced abdominal CT scans.
+Scanning range: Liver to symphysis, 5-mm contiguous scan.
+Oral contrast medium: Yes.
+IV contrast medium: Yes, 80-100 ml, 1-2 ml/sec, with 100 seconds scanning delay.
+
+Previous abdominal CT: none.
+
+FINDINGS:
+
+IMPRESSION:
+
+SUGGESTION:
+
+)
+  Paste(MyForm)
+Return
