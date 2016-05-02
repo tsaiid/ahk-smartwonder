@@ -23,6 +23,14 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
   frmWork := wb.document.frames["frameWork"]
   frmTabIframe2 := frmWork.document.frames["tabIframe2"]
 
+  ; Check if in 報告編輯 tab
+  FrameWait(frmTabIframe2)
+  ReportContentList := frmTabIframe2.document.getElementsByName("ReportContent")
+  If (ReportContentList.length = 0) {
+    ;MsgBox, Not in REPORT EDIT page!
+    Return
+  }
+
   ; 把目前的 acc_no 存起來做為比對用
   currAccNo := frmTabIframe2.document.getElementsByName("OldAccNo")[0].value
 
