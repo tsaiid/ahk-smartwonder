@@ -4,9 +4,9 @@
 (
 Under sonography guidance, the gallbladder was localized.
 The skin was prepared and the area was draped.
-Under local anesthesia, a 6 Fr one-step pigtail catheter (without string lock) was placed transhepatically into the gallbladder.
+Under local anesthesia, a 6 Fr one-step pigtail catheter (with string lock) was placed transhepatically into the gallbladder.
 Dark green, mucinous fluid was aspirated.
-Then, the drain was fixed with 3-0 Nylon.
+Then, the drain was fixed with Mefix.
 The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
 )
   Paste(MyForm)
@@ -106,6 +106,22 @@ Under local anesthesia, a 6 Fr one-step pigtail catheter (without safety lock) w
 Milky pus about 5 ml was aspirated.
 Then, the drain was fixed with 3-0 Nylon.
 The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
+)
+  Paste(MyForm)
+Return
+
+:*:sg-bb::
+  MyForm =
+(
+Informed consent was obtained from patients for this percutaneous biopsy procedures.
+
+Breast /side:  Left
+Biopsy region: 2/0cm
+Performed Radiologist: Wang
+Biopsy procedure:freehand technique, guided by 10-MHz linear array transducer (GE Logiq Book XP Portable Ultrasound System)
+Biopsy device: automated guns (14G,MaxCore Disposable Core Biopsy Instruments ) or 18-gauge Tru-cut needles with a 22-mm throw. 
+Number of core samples: 6
+Complication: nil
 )
   Paste(MyForm)
 Return
