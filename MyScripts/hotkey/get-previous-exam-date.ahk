@@ -8,6 +8,15 @@ GetPrevExamDate() {
 
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+
+  ; Check if in 報告編輯 tab
+  FrameWait(tabIframe2)
+  ReportContentList := tabIframe2.document.getElementsByName("ReportContent")
+  If (ReportContentList.length = 0) {
+    ;MsgBox, Not in REPORT EDIT page!
+    Return
+  }
+
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
   If (currAccNo != AccNo || !StrLen(prevExamDate)) {
@@ -22,6 +31,15 @@ InsertPrevExamDate(){
 
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+
+  ; Check if in 報告編輯 tab
+  FrameWait(tabIframe2)
+  ReportContentList := tabIframe2.document.getElementsByName("ReportContent")
+  If (ReportContentList.length = 0) {
+    ;MsgBox, Not in REPORT EDIT page!
+    Return
+  }
+
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
   prevExamDate := GetPrevExamDate()
