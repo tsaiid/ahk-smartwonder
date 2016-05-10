@@ -21,10 +21,12 @@
 ::i::increased `
 ::d::decreased `
 ::e::enhancement
+::ec::enhancing
 ::rec::recurrence
 ::w::with `
 ::wo::without `
 ::esp::especially `
+::asp::aspiration
 ::cw::compatible with `
 ::o::otherwise, `
 ::rm::remarkable `
@@ -58,9 +60,14 @@
 ::ap::arterial phase
 ::pvp::portovenous phase
 ::dp::delayed phase
+::bd0::bone density
 
 :c:f::findings
 :c:IND::INDICATION:
+:c:IND1::
+  indicationStr := "INDICATION: " . CopyOrder()
+  Paste(indicationStr)
+Return
 :c:C::COMPARISON:
 :c:IMP::IMPRESSION:
 :c:SG::SUGGESTION:
