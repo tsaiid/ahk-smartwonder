@@ -118,6 +118,17 @@ LiberaBMD2() {
 LiberaBMDSR() {
   wb := WBGet()
 
+  ; check if the exam is BD related
+  frmWork := wb.document.frames["frameWork"]
+  frmTabIframe2 := frmWork.document.frames["tabIframe2"]
+  tmpStr := frmTabIframe2.document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
+  RegExMatch(tmpStr, "(.+) : (.+)", splittedTmpStr)
+  currExamName := splittedTmpStr2
+  If !RegExMatch(currExamName, "^Bone densitometry") {
+    MsgBox, This is not a bone density exam.
+    Return
+  }
+
   myL =
   (
     acc_no = $('iframe[name=frameWork]').contents().find('#tabIframe2').contents().find('input[name=OldAccNo]').val();
