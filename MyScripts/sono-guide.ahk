@@ -75,7 +75,18 @@ Due to the small amount of right/left side pleural effusion(<2cm thickness), pig
   Paste(MyForm)
 Return
 
-:*:sg-pb::
+:*:sg-lpb::
+  MyForm =
+(
+The skin was prepared, the area was draped, and the rectum was filled with Povidone.
+Under sonography guidance, the hypoechoic tumor was localized at left lobe of prostate.
+A 18G biopsy needle was used and 12 pieces of specimen (3 from the tumor, 3 from left lobe, 6 from right lobe) were harvested.
+The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
+)
+  Paste(MyForm)
+Return
+
+:*:sg-rpb::
   MyForm =
 (
 The skin was prepared, the area was draped, and the rectum was filled with Povidone.
