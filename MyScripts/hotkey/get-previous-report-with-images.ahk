@@ -102,13 +102,14 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
         prevExamTime := prevReportLists.children[A_Index].children[5].innerText
         prevExamAcc := prevReportLists.children[A_Index].children[6].innerText
         prevExamDateTime := (prevExamDate . prevExamTime) ; for datetime substract
+        prevExamNo := prevReportLists.children[A_Index].children[0].innerText   ; to prevent same date, time, acc !!!
 
         ;; 排除比目前日期晚的
         deltaDateTime := currExamDateTime
         EnvSub, deltaDateTime, %prevExamDateTime%, Seconds
         If (deltaDateTime > 0) {
-          prevExamDate_Time_Acc := (prevExamDate . "_" . prevExamTime . "_" . prevExamAcc) ; 有時 bone 的片子會有一樣的 data, time
-          prevReportHash[prevExamDate_Time_Acc] := A_Index
+          prevExamDate_Time_Acc_No := (prevExamDate . "_" . prevExamTime . "_" . prevExamAcc . "_" . prevExamNo) ; 有時 bone 的片子會有一樣的 data, time, 甚至連 Acc 都一樣 !!!
+          prevReportHash[prevExamDate_Time_Acc_No] := A_Index
           relatedReportCount += 1
         }
       }
