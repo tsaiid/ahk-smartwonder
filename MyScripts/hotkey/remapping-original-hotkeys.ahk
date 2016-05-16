@@ -47,6 +47,10 @@ Return
   SendEvent ^!+s
 Return
 
+1Joy7::
+  SendEvent ^i
+Return
+
 1Joy9::
   SendEvent ^+]
 Return
