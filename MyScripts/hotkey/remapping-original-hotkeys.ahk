@@ -74,3 +74,6 @@ Return
 #s::^s
 #z::^z
 #a::^a
+
++Capslock::Capslock
+Capslock::Ctrl
