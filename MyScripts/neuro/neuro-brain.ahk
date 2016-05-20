@@ -224,7 +224,7 @@ CTA shows noraml variation of A1 of left anterior cerebral artery fenestration. 
 
 Normal variation of right fetal posterior cerebral artery and trifurcation of anterior cerebral artery. (Hx: 3577988, ac: 66986943)
 
-MRA shows normal variation of right persistent trigeminal artery. (HX: 5581748, ac: 57139640)
+MRA shows normal variation of right persistent trigeminal artery. (HX: 5581748, ac: 57139640) (Hx: 15417944, Ac: 75376134)
 
 Presence of hypoplasia of A1 portion of right/left anterior cerebral artery.
 
@@ -243,6 +243,10 @@ Presence of normal variant of common origin of left vertebral artery and left co
 MRA shows that no evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
 
 MRA shows that no evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+
+MRA shows presence of segmental occlusion or high grade stenosis of the intracranial portion of basilar artery.
+MRA shows small diameter of right/left intracranial vertebral artery.
+MRA shows nonvisualization of right/left intracranial vertebral artery.
 
 MRA did not show the information of the vertebral artery due to the limited FOV (field of view) of this MRA study noted.
 
