@@ -30,6 +30,7 @@
 ::pcsp::Post instrument fixation at cervical spine.
 ::pcsp1::Prevertebral soft tissue swelling. May be due to recent operation.
 ::plsp::Post instrument fixation at lumbar spine.
+::plsp0::Post laminectomy, transpedicular screws, rods fixation at L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at L1-2, L2-3, L3-4, L4-5, L5-S1.
 ::spok::No disc space narrowing, spondylolisthesis, or fracture.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.

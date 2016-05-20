@@ -80,6 +80,7 @@
 ::pvns::pigmented villonodular synovitis
 ::osd::Osgood-Schlatter disease
 ::druj::distal radioulnar joint
+::ocd::osteochondritis dissecans
 
 ;; Abdomen
 ::ln::lymph node

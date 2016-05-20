@@ -50,10 +50,10 @@
 ::rport1::On Port-A catheter via right subclavian vein.{ENTER}No pneumothorax is noted.
 ::lport::On Port-A catheter via left subclavian vein.
 ::lport1::On Port-A catheter via left subclavian vein.{ENTER}No pneumothorax is noted.
-::rshick::On Hickmann catheter via right subclavian vein.
-::lshick::On Hickmann catheter via left subclavian vein.
-::rihick::On Hickmann catheter via right internal jugular vein.
-::lihick::On Hickmann catheter via left internal jugular vein.
+::rsperm::On Permcath via right subclavian vein.
+::lsperm::On Permcath catheter via left subclavian vein.
+::riperm::On Permcath catheter via right internal jugular vein.
+::liperm::On Permcath catheter via left internal jugular vein.
 ::rpicc::On PICC via right arm.
 ::lpicc::On PICC via left arm.
 ::rppm::s/p PPM implantation at right upper chest with lead tips at RA and RV.

@@ -61,6 +61,7 @@
 ::pvp::portovenous phase
 ::dp::delayed phase
 ::bd0::bone density
+::ndlg::Nearly dislodgement is considered.
 
 :c:f::findings
 :c:IND::INDICATION:
@@ -74,6 +75,7 @@ Return
 :c:FD::FINDINGS:
 
 ::sg::suggest
+::ob::obvious
 ::nob::no obvious `
 ::nod::no definite `
 ::noe::no evident `
