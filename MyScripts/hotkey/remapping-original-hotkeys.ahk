@@ -27,6 +27,14 @@ Return
   SendEvent ^+]
 Return
 
+j::
+  SendEvent {Down}
+Return
+
+k::
+  SendEvent {Up}
+Return
+
 1Joy2::
   SendEvent {F11}
 Return
@@ -74,6 +82,3 @@ Return
 #s::^s
 #z::^z
 #a::^a
-
-+Capslock::Capslock
-Capslock::Ctrl
