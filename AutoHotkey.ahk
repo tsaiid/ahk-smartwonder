@@ -76,6 +76,9 @@ PRESERVE_CLIPBOARD := 0
 
   ;;; HotKeys
   #Include MyScripts\hotkey\delete-current-line.ahk
+
+  ;;; Gui
+  #Include MyScripts\gui-common.ahk
 #IfWinActive
 
 SetTitleMatchMode, 2
@@ -111,64 +114,68 @@ SetTitleMatchMode, 2
 #IfWinActive ahk_group SmartWonder
 
 ; 複製最近相關報告並開啟影像
-$^0::
+^0::
+Capslock & 0::
   ;GetPreviousReport(true, true)
   GetPreviousReportWithImages(true, true, 1, false, false)
 Return
 
 ; 複製最近相關報告但不開啟影像
-$^!0::
+^!0::
   GetPreviousReport(true, false)
 Return
 
 ; 不複製最近相關報告但開啟影像
-$^!#0::
+^!#0::
   GetPreviousReport(false, true)
 Return
 
 ; 吳主任版: 複製最近相關報告, 開啟最近兩次影像, 如皆在三個月內, 開另一更久遠的影像
-$^9::
+^9::
   GetPreviousReportWithImages(true, true, 2, true, false)
 Return
 
 ; 更改報告編輯區字體
-$^!+f::
+^!+f::
   ChangeFont()
 Return
 
 ; 將選取的文字改為字首大寫
-$^!t::
+^!t::
   ConvertSelectedTextToSentenceCase()
 Return
 
 ; CopyIndication
-$^i::
+^i::
+Capslock & i::
   MyOrderDiag := CopyOrder()
   Paste(MyOrderDiag)
 Return
 
 ; Delete current line
-$^l::
+^l::
+Capslock & l::
   DeleteCurrentLine()
 Return
 
 ; Insert Previous Exam Date
-$^d::
+^d::
+Capslock & d::
   InsertPrevExamDate()
 Return
 
 ; Renumber Seleted Text
-$^!n::
+^!n::
   RenumberSeletedText()
 Return
 
 ; Deorder Seleted Text
-$^!+n::
+^!+n::
   RenumberSeletedText(true)
 Return
 
 ; Unorder Seleted Text
-$^!u::
+^!u::
   RenumberSeletedText(false, true, "-")
 Return
 
@@ -190,6 +197,7 @@ Return
 
 ; 皆可確認報告
 ^s::
+Capslock & s::
   ClickConfirm()
 Return
 
@@ -212,7 +220,7 @@ Return
 
 ; Insert Patient Exam Info
 ;; This hotkey cannot be included in SmartWonder window group
-$^h::
+^h::
   InsertPatientExamInfo()
 Return
 
