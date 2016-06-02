@@ -18,6 +18,7 @@
 ::h::however, `
 ::r::residual `
 ::reg::regular `
+::ireg::irregular `
 ::i::increased `
 ::d::decreased `
 ::e::enhancement
@@ -62,6 +63,8 @@
 ::dp::delayed phase
 ::bd0::bone density
 ::ndlg::Nearly dislodgement is considered.
+::eva::evaluation
+::eso0::esophagus
 
 :c:f::findings
 :c:IND::INDICATION:

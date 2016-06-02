@@ -24,6 +24,7 @@
 ::boop::bronchiolitis obliterans organizing pneumonia
 ::ptx::pneumothorax
 ::pna::pneumonia
+::pnas::pneumonias
 ::bpn::bronchopneumonia
 ::htx::hemothorax
 ::pjp::pneumocystis jiroveci pneumonia
@@ -81,6 +82,7 @@
 ::osd::Osgood-Schlatter disease
 ::druj::distal radioulnar joint
 ::ocd::osteochondritis dissecans
+::j::joint
 
 ;; Abdomen
 ::ln::lymph node

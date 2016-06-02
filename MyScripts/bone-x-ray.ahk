@@ -18,9 +18,14 @@
 ::spef::suprapatellar effusion
 ::jef::joint effusion
 ::patok::No lateral tilting or subluxation of bilateral patellae. {Enter}No PF joint space narrowing.
+::lpatok::No lateral tilting or subluxation of left patella. No PF joint space narrowing.
+::rpatok::No lateral tilting or subluxation of right patella. No PF joint space narrowing.
 ::pats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
+::lpats::Mild lateral subluxation of left patella, with mild PF joint space narrowing at lateral facet.
+::rpats::Mild lateral subluxation of right patella, with mild PF joint space narrowing at lateral facet.
 ::patt::Mild lateral tilting of bilateral patellae, with mild PF joint space narrowing at lateral facet.
 ::lpatt::Mild lateral tilting of left patella, with mild PF joint space narrowing at lateral facet.
+::rpatt::Mild lateral tilting of right patella, with mild PF joint space narrowing at lateral facet.
 ::patts::Lateral tilting and subluxation of bilateral patellae, with severe PF joint space narrowing, subchondral sclerosis and marginal osteophyte formation at lateral facet.
 ::patts0::Mild lateral tilting and subluxation of bilateral patellae, with PF joint space narrowing at lateral facet.
 ::acrd::Lateral downsloping of the acromion, narrowing the acromiohumeral distance, which may be associated with impingement of the supraspinatus tendon.
@@ -29,6 +34,7 @@
 ::shok::No limitation in internal/external rotation of the shoulder.
 ::pcsp::Post instrument fixation at cervical spine.
 ::pcsp1::Prevertebral soft tissue swelling. May be due to recent operation.
+::pvsts::Mild prevertebral soft tissue swelling, may be due to recent operation.
 ::plsp::Post instrument fixation at lumbar spine.
 ::plsp0::Post laminectomy, transpedicular screws, rods fixation at L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at L1-2, L2-3, L3-4, L4-5, L5-S1.
 ::spok::No disc space narrowing, spondylolisthesis, or fracture.
@@ -176,7 +182,9 @@ Triple film of lower extremities in standing AP projection :
      Rt knee: ----- degrees varus/valgus
      Lt knee: ----- degrees varus/valgus
 )
-  Paste(MyForm)
+  ;Paste(MyForm)
+  hParentWnd := WinExist("A")
+  LLDForm()
 Return
 
 ::lstv::
