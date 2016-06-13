@@ -43,8 +43,8 @@ GetMesaScale(){
   screenScaleRatio := A_ScreenDPI / 96
   mesaIeWidth := Ceil(650 * screenScaleRatio)
   mesaIeHeight := Ceil(1000 * screenScaleRatio)
-  mesaIeX := Ceil(A_ScreenWidth - mesaIeWidth)
-  mesaIeY := Ceil(550 * screenScaleRatio)
+  mesaIeX := (A_ScreenWidth > mesaIeWidth ? Ceil(A_ScreenWidth - mesaIeWidth) : 0)
+  mesaIeY := (A_ScreenHeight > mesaIeHeight ? Ceil(A_ScreenHeight - mesaIeHeight) : 0)
   WinMove, % "ahk_id " wbMesa.hwnd, , mesaIeX, mesaIeY, mesaIeWidth, mesaIeHeight
   wbMesa.Navigate("https://www.mesa-nhlbi.org/Calcium/input.aspx")
 
