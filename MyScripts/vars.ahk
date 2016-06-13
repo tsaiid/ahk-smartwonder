@@ -1,6 +1,9 @@
 ﻿; Global Variables
 prevExamDate := ""
 currAccNo := ""
+hParentWnd := 0
+LLDFormRtLD := 0
+LLDFormLtLD := 0
 
 ;; counters for statistics
 cntGetPreviousReport := 0
