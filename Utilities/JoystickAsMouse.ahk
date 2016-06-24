@@ -143,6 +143,8 @@ if JoyPOV = -1  ; No angle.
     return
 if (JoyPOV > 31500 or JoyPOV < 4500)  ; Forward
     Send {WheelUp}
+else if JoyPOV = 27000  ; Forward
+    Send {WheelUp}      ; Forward
 else if JoyPOV between 13500 and 22500  ; Back
     Send {WheelDown}
 return
