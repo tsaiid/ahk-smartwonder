@@ -42,6 +42,7 @@
 ::ml::multiloculated `
 ::s::several `
 ::n::nodule
+::nr::nodular
 ::nl::nodular lesions
 ::cn::calcified nodule
 ::rol::radiopaque lesion
