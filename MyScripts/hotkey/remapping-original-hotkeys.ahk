@@ -73,6 +73,7 @@ Return
 ;LWin & Tab::AltTab    ; Mimick Alt-Tab
                       ; Alt-tab hotkeys are not affected by #IfWin: they are in effect for all windows.
 
+/*
 #c::^c
 #v::^v
 #x::^x
@@ -82,3 +83,4 @@ Return
 #s::^s
 #z::^z
 #a::^a
+*/
