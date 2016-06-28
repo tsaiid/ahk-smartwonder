@@ -67,6 +67,7 @@ SetPredefinedExamFlow() {
                   , "CTA,Abdomen":                            "ACT"
                   , "CT Kid & Adr with/no contrast":          "ACT"
                   , "CTA, Chest-Aorta, PE":                   "CCT"
+                  , "3D CT-CV (heart)":                       "CCT"
                   , "GSI CT-Angiogram Coronary Art&LD":       "CCT"
                   , "GSI CT-Angiogram of Coronary Art":       "CCT"
                   , "CT-angiogram of Coronary Artery":        "CCT"
