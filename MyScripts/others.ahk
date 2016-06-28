@@ -43,6 +43,7 @@
 ::s::several `
 ::n::nodule
 ::nr::nodular
+::lr::linear
 ::nl::nodular lesions
 ::cn::calcified nodule
 ::rol::radiopaque lesion
