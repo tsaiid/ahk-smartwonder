@@ -106,6 +106,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\go-to-image.ahk
 #Include MyScripts\hotkey\detect-non-ascii-chars.ahk
 #Include MyScripts\hotkey\get-mesa-scale.ahk
+#Include MyScripts\hotkey\navigation-exam-list.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
@@ -220,6 +221,21 @@ Return
 ; Get Mesa Scale
 ^!m::
   GetMesaScale()
+Return
+
+; Go Next Exam
+^j::
+  GoNextExam()
+Return
+
+; Go Prev Exam
+^k::
+  GoPrevExam()
+Return
+
+; Click Same Patient Exams
+^p::
+  ClickSamePatientExams()
 Return
 
 #IfWinActive
