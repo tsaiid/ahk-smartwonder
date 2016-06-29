@@ -96,8 +96,6 @@ ClickSamePatientExams() {
     }
   }
 
-  ;MsgBox % samePatientExams.Length()
-
   Loop % samePatientExams.Length() {
     If (A_Index = 1 && samePatientExams.Length() > 1) {
       Continue
