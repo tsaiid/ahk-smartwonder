@@ -3,7 +3,8 @@
 ::rt::right `
 ::ifo::in favor of `
 ::acw::as compared with `
-::cf::compression fracture `
+::cpf::compression fracture `
+::cmf::comminuted fracture `
 ::cal::calcification
 ::si::(Ser/Img: ){Left}
 ::sao::small amount of `
@@ -74,7 +75,7 @@
   indicationStr := "INDICATION: " . CopyOrder()
   Paste(indicationStr)
 Return
-:c:C::COMPARISON:
+:c:CMP::COMPARISON:
 :c:IMP::IMPRESSION:
 :c:SG::SUGGESTION:
 :c:FD::FINDINGS:

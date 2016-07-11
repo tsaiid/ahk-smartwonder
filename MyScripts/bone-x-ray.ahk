@@ -2,6 +2,7 @@
 ::bok::No joint space narrowing, dislocation, or fracture.{Enter}
 ::bok1::No obvious dislocation or fracture.
 ::bok2::No obvious bony lesion.
+::mdjdl::Mild DJD change of L-spine with spur formation.{Enter}No disc space narrowing, spondylolisthesis, or fracture.
 ::djdl::DJD change of L-spine.
 ::djdt::DJD change of T-spine.
 ::djdtl::DJD change of T- and L-spine.
@@ -93,6 +94,8 @@
 ::if::internal fixation
 ::ef::external fixation
 ::c7::The C7 vertebra is blocked by the shoulder shadow with limited evaluation.
+::c12ok::No evidence of atlanto-axial subluxation or odontoid fracture.
+::cspok::No disc space narrowing, spondylolisthesis, or fracture.{Enter}No abnormal widening of the prevertebral space.
 
 ; Multiline
 ::flat::
@@ -134,6 +137,7 @@ Findings include extensive destruction of the femoral head and joint.
   Paste(MyForm)
 Return
 
+::mdjdc::Mild DJD change of C-spine with spur formation.{Enter}No disc space narrowing, spondylolisthesis, or fracture.
 ::djdc::
   MyForm =
 (
@@ -196,3 +200,5 @@ Lumbosacral Transitional Vertebrae, type IV.
 )
   Paste(MyForm)
 Return
+::rlstv::Lumbosacral transitional vertebrae, right side, type IIa.
+::llstv::Lumbosacral transitional vertebrae, left side, type IIa.

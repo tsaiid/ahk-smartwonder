@@ -34,8 +34,8 @@
 ::bple::Bilateral costophrenic angles blunting, suspect pleural effusion or changes.
 ::bple1::Bilateral costophrenic angles blunting and diffuse ground glass opacity in both lungs, suspect pleural effusion.
 ::p/ster::Post median sternotomy with wire fixation.
-::p/c::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
-::p/c0::S/P cholecystectomy.
+::spc::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
+::spc0::S/P cholecystectomy.
 ::p/tae::Lipiodol retention in liver.
 ::ricvp::On central venous catheter via right internal jegular vein with tip at superior vena cava.
 ::licvp::On central venous catheter via left internal jegular vein with tip at superior vena cava.
@@ -124,3 +124,5 @@
 ::lsoa::OA change of left shoulder.
 ::bsoa::OA change of bilateral shoulders.
 ::xg::Few tiny dense nodules over bilateral lung fields, in favor of granulomas.
+::plbok::Post lung biopsy, and no obvious pneumothorax is noted.
+::akb::Aortic knob calcification.

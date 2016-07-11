@@ -46,7 +46,7 @@
 ::hx::history `
 ::subq::subcutaneous `
 ::afl::air-fluid level
-:c:cm::contrast medium
+::c::contrast medium
 ::wnl::within normal limits
 ::prev::previous
 ::htn::hypertension
@@ -83,6 +83,7 @@
 ::druj::distal radioulnar joint
 ::ocd::osteochondritis dissecans
 ::j::joint
+::rct::rotator cuff tear
 
 ;; Abdomen
 ::ln::lymph node
