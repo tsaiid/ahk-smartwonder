@@ -38,6 +38,7 @@ PRESERVE_CLIPBOARD := 0
 #Include MyScripts\lib\string.ahk
 #Include MyScripts\lib\supported-exam-patterns.ahk
 #Include MyScripts\lib\libera-bmd.ahk
+#Include MyScripts\lib\smartwonder-common.ahk
 
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
