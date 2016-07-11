@@ -15,3 +15,27 @@ Return
 Return
 
 #IfWinExist
+
+#IfWinActive ahk_class MdiFrame
+
+; Copy
+^c::
+  MouseGetPos, xpos, ypos
+  Click, 117, 64
+  MouseMove, %xpos%, %ypos%
+Return
+
+; Paste
+^v::
+  MouseGetPos, xpos, ypos
+  Click, 142, 64
+  MouseMove, %xpos%, %ypos%
+Return
+
+; Execute
+^e::
+  MouseGetPos, xpos, ypos
+  Click, 242, 64
+  MouseMove, %xpos%, %ypos%
+Return
+#IfWinExist
