@@ -4,7 +4,7 @@
   txtMenu := frmMenu.document.getElementById("txtMenu")
   frmWork := ComObj(9,ComObjQuery(wb.document.getElementsByName("frameWork")[0].contentWindow,"{332C4427-26CB-11D0-B483-00C04FD90119}","{332C4427-26CB-11D0-B483-00C04FD90119}"),1)
 
-  If (txtmenu.innerText != "統計分析") {
+  If (txtMenu.innerText != "統計分析") {
     MsgBox, 請先切換至「統計分析」功能表
     Return
   }
