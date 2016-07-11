@@ -109,6 +109,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\get-mesa-scale.ahk
 #Include MyScripts\hotkey\navigation-exam-list.ahk
 #Include MyScripts\hotkey\status-of-us-rct-without-image.ahk
+#Include MyScripts\hotkey\query-prev-images-for-sonographer.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
@@ -243,6 +244,14 @@ Return
 ; Status of US RCT Without Image
 ^!+u::
   StatusOfUsRctWithoutImage()
+Return
+
+#IfWinActive
+
+#IfWinActive, 高雄榮總-攝影室播放系統WEB管理介面
+
+^p::
+  QueryPrevImagesForSonographer()
 Return
 
 #IfWinActive
