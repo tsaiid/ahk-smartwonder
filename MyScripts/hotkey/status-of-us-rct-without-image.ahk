@@ -53,8 +53,14 @@
   patientOriginDropdown.click()
 
   execDepartmentDropdown.click()
-  departmentAll := frmWork.document.getElementById("ReportViewerControl$ctl00$ctl11$divDropDown$ctl21")
-  departmentAll.click()
+  departmentList := frmWork.document.getElementById("ReportViewerControl_ctl00_ctl11_divDropDown").children[0].children[0].children
+  Loop % departmentList.Length {
+    If (departmentList[A_Index - 1].innerText = "RAD") {
+      departmentRad := departmentList[A_Index - 1].children[0].children[0].children[0]
+      Break
+    }
+  }
+  departmentRad.click()
   execDepartmentDropdown.click()
 
 /*
