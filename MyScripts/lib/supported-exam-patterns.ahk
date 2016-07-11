@@ -57,6 +57,8 @@ SupportedExamPatterns() {
                 , PelvisAP:     "Pelvis AP view"
                 , PelvisInlet:  "Pelvis inlet view"
                 , PelvisOutlet: "Pelvis outlet view"
+                , PelvisRtHip:  "Pelvis \+ hip \(RT\) - lat\."
+                , PelvisLtHip:  "Pelvis \+ hip \(LT\) - lat\."
                 , SonoUpperAbd: "Sono, Upper abdomen"
                 , SonoLowerAbd: "Sono, Lower abdomen"
                 , CTAbd:        "CT (whole abdomen|Pan or Liver) (with/)?no contras"
