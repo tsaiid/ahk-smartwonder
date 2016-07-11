@@ -107,6 +107,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\detect-non-ascii-chars.ahk
 #Include MyScripts\hotkey\get-mesa-scale.ahk
 #Include MyScripts\hotkey\navigation-exam-list.ahk
+#Include MyScripts\hotkey\status-of-us-rct-without-image.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
@@ -236,6 +237,11 @@ Return
 ; Click Same Patient Exams
 ^p::
   ClickSamePatientExams()
+Return
+
+; Status of US RCT Without Image
+^!+u::
+  StatusOfUsRctWithoutImage()
 Return
 
 #IfWinActive
