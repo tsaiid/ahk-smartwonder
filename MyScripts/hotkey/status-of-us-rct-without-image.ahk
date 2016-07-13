@@ -5,8 +5,14 @@
   frmWork := ComObj(9,ComObjQuery(wb.document.getElementsByName("frameWork")[0].contentWindow,"{332C4427-26CB-11D0-B483-00C04FD90119}","{332C4427-26CB-11D0-B483-00C04FD90119}"),1)
 
   If (txtMenu.innerText != "統計分析") {
-    MsgBox, 請先切換至「統計分析」功能表
-    Return
+    iconHome := frmMenu.document.getElementById("mId_Home")
+    iconHome.click()
+    FrameWait(frmWork)
+
+    frmTabIframe2 := frmWork.document.frames["tabIframe2"]
+    tabStatistics := FindTabByName(frmWork.document.getElementById("cmnTabs"), "統計評鑑")
+    tabStatistics.click()
+    FrameWait(frmTabIframe2)
   }
 
   spanMainMenu5 := frmMenu.document.getElementById("MainMenuBlock5Item")
