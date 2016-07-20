@@ -29,12 +29,13 @@
 
   MyForm =
 (
-Sonography of lower abdomen shows:
+No obvious bulky retroperitoneal mass lesion.
 
 Right renal size about %RightKidney%; left renal size about %LeftKidney%.
 Normal size and echogenicity over bilateral kidneys without hydronephrosis nor nephrolithiasis noted.
-Under Doppler Ultrasound, normal blood flow pattern is noted over bilateral kidneys.
+
 Normal appearance of urinary bladder. No stones nor sludge is noted.
+
 )
 
   If (Sex = "M") {
