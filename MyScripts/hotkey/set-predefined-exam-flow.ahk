@@ -66,6 +66,8 @@ SetPredefinedExamFlow() {
                   , "CT Pan or Liver with/no contrast":       "ACT"
                   , "CTA,Abdomen":                            "ACT"
                   , "CT Kid & Adr with/no contrast":          "ACT"
+                  , "PCN - Percut nephrostomy RT":            "Angio"
+                  , "PCN - Percut nephrostomy LT":            "Angio"
                   , "CTA, Chest-Aorta, PE":                   "CCT"
                   , "3D CT-CV (heart)":                       "CCT"
                   , "GSI CT-Angiogram Coronary Art&LD":       "CCT"
@@ -78,29 +80,36 @@ SetPredefinedExamFlow() {
                     , "IVP":  "4320_0750"
                     , "CCT":  "4320_0176"
                     , "MSK":  "4320_3396"
+                    , "Angio": "4320_1264"
                     , "ACT":  "4320_0174" }
               , 2: {  "BE":   "4320_0750"
                     , "IVP":  "4320_0750"
                     , "MSK":  "4320_3396"
+                    , "Angio": "4320_1264"
                     , "CCT":  "4320_0176" }
               , 3: {  "BE":   "4320_3519"
                     , "UGI":  "4320_3519"
                     , "SPE":  "4320_3519"
                     , "IVP":  "4320_3519"
                     , "MSK":  "4320_3396"
+                    , "Angio": "4320_1264"
                     , "CCT":  "4320_0176" }
               , 4: {  "UGI":  "4320_1796"
                     , "IVP":  "4320_1796"
                     , "MSK":  "4320_3396"
+                    , "Angio": "4320_1264"
                     , "CCT":  "4320_0176" }
               , 5: {  "BE":   "4320_0750"
                     , "SPE":  "4320_0750"
                     , "IVP":  "4320_0750"
                     , "MSK":  "4320_3396"
+                    , "Angio": "4320_1264"
                     , "CCT":  "4320_0176" }
               , 6: {  "ACT":  "4320_0174"
+                    , "Angio": "4320_1264"
                     , "MSK":  "4320_3396" }
               , 0: {  "ACT":  "4320_0174"
+                    , "Angio": "4320_1264"
                     , "MSK":  "4320_3396" } }
 
   thisMonthFlow := "4320_1796"
