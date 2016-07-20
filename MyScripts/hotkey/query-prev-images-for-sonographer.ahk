@@ -24,7 +24,7 @@ QueryPrevImagesForSonographer() {
       }
 
       frmTabIframe2 := frmWork.document.frames["tabIframe2"]
-      tabImageQuery := FindTabByName(frmWork.document.getElementById("tabCaption0"), "影像查詢")
+      tabImageQuery := FindTabByName(frmWork.document.getElementById("cmnTabs"), "影像查詢")
       tabImageQuery.click()
       FrameWait(frmTabIframe2)
 
@@ -32,9 +32,8 @@ QueryPrevImagesForSonographer() {
       clearBtn.click()
       inputPtId := frmTabIframe2.document.getElementsByName("dcm00100020")[0]
       inputPtId.value := patientID
-      ; do not specify machine category. sometimes they want to see CT or MR
-      ;inputMachine := frmTabIframe2.document.getElementsByName("dcm00080061")[0]
-      ;inputMachine.value := "US"
+      inputMachine := frmTabIframe2.document.getElementsByName("dcm00080061")[0]
+      inputMachine.value := "US"
       queryBtn := frmTabIframe2.document.getElementsByName("Query")[0]
       queryBtn.click()
     } Else {
