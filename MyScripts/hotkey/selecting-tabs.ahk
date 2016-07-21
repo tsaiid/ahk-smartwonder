@@ -10,7 +10,6 @@ ClickReportEditing() {
   tabEditReport := frmWork.document.getElementById("tabCaption0").children[1]
   ; 切換至編輯報告頁
   tabEditReport.click()
-  ChangeFont()
 }
 
 ClickPreviousReports() {
