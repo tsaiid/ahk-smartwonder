@@ -3,7 +3,7 @@
 ; 如果直接把 Clipboard 復原，會貼到舊的內容
 ; Source: http://www.autohotkey.com/board/topic/44917-paste-but-preserve-clipboard-simple/
 
-Paste(text, alsoChangeFont = 1) {
+Paste(text, alsoChangeFont = 0) {
   global PRESERVE_CLIPBOARD
 
   If (PRESERVE_CLIPBOARD) {
