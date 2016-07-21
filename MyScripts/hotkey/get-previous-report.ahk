@@ -179,7 +179,7 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
     If (currPattern = patterns["CXR"]) {
       FrameWait(frmTabIframe2)
       ReportContent := frmTabIframe2.document.getElementsByName("ReportContent")[0]
-      ReportContent.innerText := "No related previous image for comparison." . Chr(13) . ReportContent.innerHTML
+      ReportContent.innerText := "No related previous image for comparison." . Chr(13) . Chr(13) . ReportContent.innerHTML
     }
   }
 }
