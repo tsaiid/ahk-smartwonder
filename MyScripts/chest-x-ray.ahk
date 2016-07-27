@@ -3,6 +3,7 @@
 ::ncm::No cardiomegaly.
 ::bcm::Borderline cardiomegaly.
 :c:Cm::Cardiomegaly.
+:c:Cm1::Enlarged cardiac shadow.
 ::np::No abnormal patch opacity in lung fields.
 ::nn::No nodular opacities (> 1cm) noted over bilateral lung fields.
 ::0::No previous film for comparison.{Enter 2}
@@ -58,7 +59,7 @@
 ::lpicc::On PICC via left arm.
 ::rppm::s/p PPM implantation at right upper chest with lead tips at RA and RV.
 ::lppm::s/p PPM implantation at left upper chest with lead tips at RA and RV.
-::ile::Inadequate inspiration crowds lung markings.
+::ile::Insufficient inspiration crowds lung markings.
 ::pe::Increased vascular markings and ill-defined vascular contours indicating pulmonary edema.
 ::pe0::pulmonary edema
 ::clc::Increased linear opacity over bilateral lower lungs, in favor of chronic inflammatory change.
@@ -94,12 +95,13 @@
 ::rllf::right lower lung field
 ::bll::bilateral lower lungs
 ::nnp::No newly developed patch opacity in lung fields.
-::ii::Exaggerated lung markings, may be due to inadequate inspiration.
-::ii0::inadequate inspiration
-::iir::inadequate inspiration related
+::ii::Exaggerated lung markings, may be due to insufficient inspiration.
+::ii0::insufficient inspiration
+::iir::insufficient inspiration related
 ::rrf::Old fractures of right ribs.
 ::lrf::Old fractures of left ribs.
 ::brf::Old fractures of bilateral ribs.
+::rok::No evident rib fracture.
 ::rcf::Old fracture of right clavicle.
 ::lcf::Old fracture of left clavicle.
 ::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
@@ -126,3 +128,4 @@
 ::xg::Few tiny dense nodules over bilateral lung fields, in favor of granulomas.
 ::plbok::Post lung biopsy, and no obvious pneumothorax is noted.
 ::akb::Aortic knob calcification.
+::rci::Anterior interposition of the colon to the liver reaching the under-surface of the right hemidiaphragm.

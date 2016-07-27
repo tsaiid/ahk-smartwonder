@@ -32,6 +32,7 @@
 ::acrd::Lateral downsloping of the acromion, narrowing the acromiohumeral distance, which may be associated with impingement of the supraspinatus tendon.
 ::acrok::No lateral downsloping or hooking of the acromion.
 ::acrsp::Presence of subacromial spur.
+::acrsp1::Presence of subacromial spur, which may be associated with impingement of the supraspinatus tendon.
 ::shok::No limitation in internal/external rotation of the shoulder.
 ::pcsp::Post instrument fixation at cervical spine.
 ::pcsp1::Prevertebral soft tissue swelling. May be due to recent operation.
@@ -57,6 +58,12 @@
 ::fr::fracture
 ::frs::fractures
 ::clfr::clavicular fracture
+::rp3cf::Right proximal third clavicule fracture.
+::lp3cf::Left proximal third clavicule fracture.
+::rm3cf::Right middle third clavicule fracture.
+::lm3cf::Left middle third clavicule fracture.
+::rd3cf::Right distal third clavicule fracture.
+::ld3cf::Left distal third clavicule fracture.
 ::rdhs::s/p right dynamic hip screw fixation.
 ::ldhs::s/p left dynamic hip screw fixation.
 ::bdhs::s/p bilateral dynamic hip screw fixation.
