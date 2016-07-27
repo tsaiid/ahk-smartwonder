@@ -74,19 +74,24 @@ Return
 ; Define hotkeys
 #IfWinActive ahk_group SmartWonder
 
-; 複製最近相關報告並開啟最近兩張及三個月前影像
+; 複製最近相關報告並開啟影像
 ^z::
+  GetPreviousReportWithImages(true, true, 1, false, false)
+Return
+
+; 複製最近相關報告並開啟最近兩張及三個月前影像
+^+z::
   GetPreviousReportWithImages(true, true, 2, true, false)
 Return
 
 ; CopyIndication
-$^i::
+^i::
   MyOrderDiag := CopyOrder()
   Paste(MyOrderDiag)
 Return
 
 ; Renumber Seleted Text
-$^!n::
+^!n::
   RenumberSeletedText()
 Return
 
