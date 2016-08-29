@@ -10,12 +10,12 @@
 ::pda::patent ductus arteriosus `
 ::mi::myocardial infarction `
 ::cad::coronary artery disease
-::rul::right upper lobe
-::rml::right middle lobe
-::rll::right lower lobe
-::lul::left upper lobe
-::lll::left lower lobe
-::llnl::left lingular lobe
+:c:RUL::right upper lobe
+:c:RML::right middle lobe
+:c:RLL::right lower lobe
+:c:LUL::left upper lobe
+:c:LLL::left lower lobe
+:c:LLnL::left lingular lobe
 ::linll::lingula of left lung
 ::ppm::permanent pacemaker
 ::pmf::progressive massive fibrosis
@@ -69,6 +69,7 @@
 ::as::ankylosing spondylitis
 ::ra::rheumatoid arthritis
 ::ha::hemiarthroplasty
+::ba::bipolar hemiarthroplasty
 ::lig::ligament
 ::tfcc::triangular fibrocartilage complex
 ::itb::iliotibial band

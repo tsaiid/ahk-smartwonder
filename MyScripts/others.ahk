@@ -3,7 +3,7 @@
 ::rt::right `
 ::ifo::in favor of `
 ::acw::as compared with `
-::cpf::compression fracture `
+::cpf::compression fracture
 ::cmf::comminuted fracture `
 ::cal::calcification
 ::si::(Ser/Img: ){Left}
@@ -68,6 +68,7 @@
 ::ndlg::Nearly dislodgement is considered.
 ::eva::evaluation
 ::eso0::esophagus
+::fb::foreign body
 
 :c:f::findings
 :c:IND::INDICATION:

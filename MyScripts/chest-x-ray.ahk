@@ -34,7 +34,8 @@
 ::rple1::Right costophrenic angle blunting and diffuse ground glass opacity in right lung, suspect pleural effusion.
 ::bple::Bilateral costophrenic angles blunting, suspect pleural effusion or changes.
 ::bple1::Bilateral costophrenic angles blunting and diffuse ground glass opacity in both lungs, suspect pleural effusion.
-::p/ster::Post median sternotomy with wire fixation.
+::spster::Post median sternotomy with wire fixation.
+::spster1::Post median sternotomy with wire fixation. Several drains in the thorax.
 ::spc::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
 ::spc0::S/P cholecystectomy.
 ::p/tae::Lipiodol retention in liver.
@@ -61,6 +62,7 @@
 ::lppm::s/p PPM implantation at left upper chest with lead tips at RA and RV.
 ::ile::Insufficient inspiration crowds lung markings.
 ::pe::Increased vascular markings and ill-defined vascular contours indicating pulmonary edema.
+::mpe::Mildly increased vascular markings and ill-defined vascular contours indicating mild pulmonary edema.
 ::pe0::pulmonary edema
 ::clc::Increased linear opacity over bilateral lower lungs, in favor of chronic inflammatory change.
 ::lla::Linear atelectasis of left lower lung.
@@ -80,6 +82,7 @@
 ::no::nodular opacity
 ::lo::linear opacity
 ::flo::fibrolinear opacity
+::fno::fibronodular opacity
 ::rno::reticulonodular oapcity
 ::ip::inflammatory process.
 ::cic::chronic inflammatory change
@@ -93,6 +96,8 @@
 ::bllf::bilateral lower lung fields
 ::lllf::left lower lung field
 ::rllf::right lower lung field
+::rll::right lower lung
+::lll::left lower lung
 ::bll::bilateral lower lungs
 ::nnp::No newly developed patch opacity in lung fields.
 ::ii::Exaggerated lung markings, may be due to insufficient inspiration.

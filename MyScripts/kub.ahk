@@ -10,6 +10,7 @@
 ::rfcvp::On central venous catheter via right femoral vein.
 ::lfcvp::On central venous catheter via left femoral vein.
 ::ileus::Obvious small bowel gas, may be due to ileus.
+::mileus::Mild distended small bowel gas, may be due to ileus.
 ::rdj::s/p right side double-J ureteral stent.
 ::ldj::s/p left side double-J ureteral stent.
 ::bdj::s/p bilateral double-J ureteral stents.
@@ -27,3 +28,13 @@
 ::lptcd::S/P PTCD via left side approach.
 ::rptcd::S/P PTCD via right side approach.
 ::bptcd::S/P PTCD via left and right side approach.
+::ks1::
+  MyForm =
+(
+Mottled gas pattern along colon course is noted, implying fecal residues retention.
+Otherwise, the bowel gas pattern is unremarkable.
+
+Bilateral kidney shadows and psoas muscle contours are unremarkable.
+)
+  Paste(MyForm)
+Return
