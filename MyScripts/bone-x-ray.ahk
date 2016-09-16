@@ -3,6 +3,7 @@
 ::bok1::No obvious dislocation or fracture.
 ::bok2::No obvious bony lesion.
 ::mdjdl::Mild DJD change of L-spine with spur formation.{Enter}No disc space narrowing, spondylolisthesis, or fracture.
+::mdjdl0::Mild DJD change of L-spine with spur formation.
 ::djdl::DJD change of L-spine.
 ::djdt::DJD change of T-spine.
 ::djdtl::DJD change of T- and L-spine.
@@ -61,6 +62,7 @@
 ::frs::fractures
 ::clfr::clavicular fracture
 ::afr::avulsion fracture
+::pfr::pars interarticularis fracture
 ::rp3cf::Right proximal third clavicule fracture.
 ::lp3cf::Left proximal third clavicule fracture.
 ::rm3cf::Right middle third clavicule fracture.

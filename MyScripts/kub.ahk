@@ -28,6 +28,10 @@
 ::lptcd::S/P PTCD via left side approach.
 ::rptcd::S/P PTCD via right side approach.
 ::bptcd::S/P PTCD via left and right side approach.
+::ruq::RUQ of abdomen
+::luq::LUQ of abdomen
+::rlq::RLQ of abdomen
+::llq::LLQ of abdomen
 ::ks1::
   MyForm =
 (

@@ -33,11 +33,13 @@
 ::rple::Right costophrenic angle blunting, suspect pleural effusion or changes.
 ::rple1::Right costophrenic angle blunting and diffuse ground glass opacity in right lung, suspect pleural effusion.
 ::bple::Bilateral costophrenic angles blunting, suspect pleural effusion or changes.
+::bple0::Bilateral costophrenic angles blunting, suspect pleural effusion.
 ::bple1::Bilateral costophrenic angles blunting and diffuse ground glass opacity in both lungs, suspect pleural effusion.
 ::spster::Post median sternotomy with wire fixation.
 ::spster1::Post median sternotomy with wire fixation. Several drains in the thorax.
 ::spc::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
 ::spc0::S/P cholecystectomy.
+::sptae::Lipiodol retention in the liver, probably due to previous TAE.
 ::p/tae::Lipiodol retention in liver.
 ::ricvp::On central venous catheter via right internal jegular vein with tip at superior vena cava.
 ::licvp::On central venous catheter via left internal jegular vein with tip at superior vena cava.

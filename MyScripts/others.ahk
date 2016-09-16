@@ -70,6 +70,11 @@
 ::eso0::esophagus
 ::fb::foreign body
 
+::pl::possibly `
+::pb::probably `
+::sf::suspicious for `
+::ll::less likely
+
 :c:f::findings
 :c:IND::INDICATION:
 :c:IND1::
@@ -115,5 +120,6 @@ Return
 ::ws::wedge-shaped
 ::ift::infiltration
 ::fac::fluid accumulation
+::me::mediastinum
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
