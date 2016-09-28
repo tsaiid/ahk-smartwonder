@@ -69,6 +69,7 @@
 ::lm3cf::Left middle third clavicule fracture.
 ::rd3cf::Right distal third clavicule fracture.
 ::ld3cf::Left distal third clavicule fracture.
+::usfr::ulnar styloid process fracture
 ::rdhs::s/p right dynamic hip screw fixation.
 ::ldhs::s/p left dynamic hip screw fixation.
 ::bdhs::s/p bilateral dynamic hip screw fixation.
@@ -108,6 +109,9 @@
 ::c7::The C7 vertebra is blocked by the shoulder shadow with limited evaluation.
 ::c12ok::No evidence of atlanto-axial subluxation or odontoid fracture.
 ::cspok::No disc space narrowing, spondylolisthesis, or fracture.{Enter}No abnormal widening of the prevertebral space.
+::iaiv::intra-articular involvement
+::rkcppd::Linear calcifications along the joint space of the medial and lateral compartments of right knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
+::lkcppd::Linear calcifications along the joint space of the medial and lateral compartments of left knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 
 ; Multiline
 ::flat::

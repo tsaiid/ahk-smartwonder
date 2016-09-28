@@ -24,7 +24,11 @@
 ::aacal::Calcification of abdominal aortic wall.
 ::cmub::Contrast medium retention in the urinary bladder, may be due to recent imaging study.
 ::kns::No definite stone-like radiopacity along the urinary tract.
-::krs::Several tiny radiopacities superimposed on bilateral renal shadows, r/o renal stones.
+::kbrs::Several tiny radiopacities superimposed on bilateral renal shadows, r/o renal stones.
+::klrs::Tiny radiopacity superimposed on left renal shadow, r/o renal stone.
+::krrs::Tiny radiopacity superimposed on right renal shadow, r/o renal stone.
+::klus::A small stone-like opacity at left paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
+::krus::A small stone-like opacity at right paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
 ::lptcd::S/P PTCD via left side approach.
 ::rptcd::S/P PTCD via right side approach.
 ::bptcd::S/P PTCD via left and right side approach.
