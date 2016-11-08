@@ -46,7 +46,8 @@ InsertPrevExamDate(){
   FrameWait(tabIframe2) ; 要等如果是從歷史報告頁面切回來的時間
 
   If (currAccNo = AccNo && StrLen(prevExamDate)) {
-    Paste(prevExamDate, false)
+    ;Paste(prevExamDate, false)
+    Send %prevExamDate%
   }
 }
 
