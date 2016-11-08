@@ -127,6 +127,7 @@
 ::uvj::ureterovesical junction
 ::upj::ureteropelvic junction
 ::apn::acute pyelonephritis
+::sbo::small bowel obstruction
 
 ;; Neuro
 ::ich::intracranial hemorrhage

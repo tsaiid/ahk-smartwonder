@@ -1,5 +1,6 @@
 ﻿; For KUB
 ::k::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
+::k2::The bilateral kidney shadows and psoas muscle contours are unremarkable.
 ::kb::the bowel gas pattern is unremarkable.
 ::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Ring like calcification nodules in the pelvic cavity are mostly due to phleboliths of the vein.
@@ -9,8 +10,9 @@
 ::bpcn::s/p bilateral percutaneous nephrostomies.
 ::rfcvp::On central venous catheter via right femoral vein.
 ::lfcvp::On central venous catheter via left femoral vein.
-::ileus::Obvious small bowel gas, may be due to ileus.
-::mileus::Mild distended small bowel gas, may be due to ileus.
+::ki::Obvious small bowel gas, may be due to ileus.
+::ki2::Focal dilated bowel loops, probably ileus or partial bowel obstruction.
+::kmi::Mild distended small bowel gas, may be due to mild ileus.
 ::rdj::s/p right side double-J ureteral stent.
 ::ldj::s/p left side double-J ureteral stent.
 ::bdj::s/p bilateral double-J ureteral stents.
@@ -22,7 +24,7 @@
 ::p/a::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
 ::p/haic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
 ::aacal::Calcification of abdominal aortic wall.
-::cmub::Contrast medium retention in the urinary bladder, may be due to recent imaging study.
+::kc::Contrast medium retention in the urinary tract, may be due to recent imaging study.
 ::kns::No definite stone-like radiopacity along the urinary tract.
 ::kbrs::Several tiny radiopacities superimposed on bilateral renal shadows, r/o renal stones.
 ::klrs::Tiny radiopacity superimposed on left renal shadow, r/o renal stone.
@@ -41,8 +43,24 @@
 (
 Mottled gas pattern along colon course is noted, implying fecal residues retention.
 Otherwise, the bowel gas pattern is unremarkable.
+)
+  Paste(MyForm)
+Return
+::ks2::
+  MyForm =
+(
+Mottled gas pattern along colon course is noted, implying fecal residues retention.
+Otherwise, the bowel gas pattern is unremarkable.
 
 Bilateral kidney shadows and psoas muscle contours are unremarkable.
+)
+  Paste(MyForm)
+Return
+::ksi::
+  MyForm =
+(
+Mottled gas pattern along colon course is noted, implying fecal residues retention.
+Obvious small bowel gas, c/w stool impaction.
 )
   Paste(MyForm)
 Return

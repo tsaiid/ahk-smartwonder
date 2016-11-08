@@ -87,7 +87,7 @@ Return
 :c:FD::FINDINGS:
 
 ::sg::suggest
-::ob::obvious
+::obv::obvious
 ::nob::no obvious `
 ::nod::no definite `
 ::noe::no evident `

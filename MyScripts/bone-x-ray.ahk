@@ -2,6 +2,7 @@
 ::bok::No joint space narrowing, dislocation, or fracture.{Enter}
 ::bok1::No obvious dislocation or fracture.
 ::bok2::No obvious bony lesion.
+::kok::No joint space narrowing, dislocation, or fracture.{Enter}No obvious suprapatellar effusion.
 ::mdjdl::Mild DJD change of L-spine with spur formation.{Enter}No disc space narrowing, spondylolisthesis, or fracture.
 ::mdjdl0::Mild DJD change of L-spine with spur formation.
 ::djdl::DJD change of L-spine.
@@ -106,12 +107,14 @@
 ::hvg::hallux valgus
 ::if::internal fixation
 ::ef::external fixation
+::ob::osseous body
 ::c7::The C7 vertebra is blocked by the shoulder shadow with limited evaluation.
 ::c12ok::No evidence of atlanto-axial subluxation or odontoid fracture.
 ::cspok::No disc space narrowing, spondylolisthesis, or fracture.{Enter}No abnormal widening of the prevertebral space.
 ::iaiv::intra-articular involvement
 ::rkcppd::Linear calcifications along the joint space of the medial and lateral compartments of right knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 ::lkcppd::Linear calcifications along the joint space of the medial and lateral compartments of left knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
+::nbok::No evidence of nasal bone fracture.
 
 ; Multiline
 ::flat::
