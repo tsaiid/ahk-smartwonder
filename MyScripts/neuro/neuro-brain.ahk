@@ -45,6 +45,7 @@ SCAN RANGE: oblique axial plane from the skull base to the vertex with 5-mm cont
 
 COMPARISON:
 Applicable previous CT of brain: no
+Applicable previous CT of brain:      (other hospital)
 
 FINDINGS:
 Presence of motion artifact in this study, film interpretation is limited.
@@ -64,12 +65,17 @@ No obvious dilatation of intraventricular system.
 No obvious fracture of the skull base and the skull.
 
 IMPRESSION:
-1. No evident acute intracranial hemorrhage or acute subdural hematoma.
-2. Previous brain insult; old lacunar infarcts.
-3. No obvious old brain insult.
+1. No evident acute intracranial hemorrhage or acute subdural hematoma or acute subarachnoid hemorrhage.
+2. No evident acute ICH, SDH, or SAH.
+3. Previous brain insult; old lacunar infarcts.
+4. No obvious old brain insult.
 
+No remarkable intracranial findings on noncontrast CT.
 No remarkable findings on noncontrast CT.
 
+No significant acute intracranial lesion.
+No evident acute intracranial finding.
+No significant acute intracranial findings on noncontrast CT.
 No significant acute findings on noncontrast CT.
 
 No definite acute intracranial parenchymal hemorrhage or acute epidural or acute subdural hematoma in the brain noted.
@@ -197,6 +203,8 @@ No evidence of high signal intensity on DWI and lower apparent diffusion coeffic
 
 No evidence of high signal intensity lesion in the brain stem on DWI.
 
+Several tiny high signal intensity lesions in right occipital lobe, bilateral centrum semiovale and bilateral high frontal-parietal lobes on T2WI, FLAIR and DWI images. Acute embolic infarctions are suspected.
+
 Presence of small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter, with high signal intensity on T2WI, FLAIR, and DWI, and lower apparent diffusion coefficeint (ADC).
 
 Presence of tiny old ischemic infarction involving bil. basal ganglion region.
@@ -216,6 +224,8 @@ Noncontrast intracranial MRA with 3D TOF shows that multiple foci of high grade 
 
 MRA shows presence of stenosis noted over the bilateral carotid siphon and supraclinoid internal carotid arteries, and high grade stenosis over main trunk of right side middle cerebral artery, and with paucity of the branches of the right side middle cerebral artery noted.
 
+MRA shows presence of high grade stenosis or occlussion over the right/left carotid siphon and distal M1 of right/left MCA, with paucity of the branches of the right/left MCA noted.
+
 MRA shows--
 Presence of normal variation of fenestration of the proximal basilar artery. (Hx: 13776391, ac: 65343630)
 (Hx: 14770377, Ac: 69245411)
@@ -225,6 +235,9 @@ CTA shows noraml variation of A1 of left anterior cerebral artery fenestration. 
 Normal variation of right fetal posterior cerebral artery and trifurcation of anterior cerebral artery. (Hx: 3577988, ac: 66986943)
 
 MRA shows normal variation of right persistent trigeminal artery. (HX: 5581748, ac: 57139640) (Hx: 15417944, Ac: 75376134)
+
+MRA shows normal variation of azygos anterior cerebral artery (uncommon to rare variant of the circle of Willis where the two A1 segments of the anterior cerebral artery (ACA) join to form a single trunk).
+Hx: 6203312, Ac: 79930827, F/61Y, 20161021
 
 Presence of hypoplasia of A1 portion of right/left anterior cerebral artery.
 

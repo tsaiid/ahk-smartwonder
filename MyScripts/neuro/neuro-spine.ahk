@@ -171,6 +171,9 @@ Ossification of ligament flavum or ligament flavum hypertrophy at C2-C3, C3-4, C
 
 Narrowing of right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1 intervertebral neuroforaminas due to the degenerative change and severe disc space narrowing.
 
+Neuroforaminal stenosis, mild: right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1
+Neuroforaminal stenosis, moderate to severe: right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1
+
 No evidence of abnormal signal intensity lesion within the spinal cord of the C-spine.
 
 No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the C-spine.
@@ -197,11 +200,11 @@ mild/severe disc space narrowing noted over ---
 small spondylosis
 degenerative endplate change
 
-Presence of a nodular lesion noted over the right/left side thyroid gland, diameter/size about 2.8cm, recommend clinical correlation and sonography of the thyroid for further evaluation.
+Presence of a nodular lesion noted over the right/left side thyroid gland, diameter/size about 2.8cm, , nature to be determined, recommend thyroid sonography correlation.
 
-Presence of suspicious a small nodular lesion noted over the right side thyroid gland, recommend clinical correlation and sonography of the thyroid for further evaluation if clinical indicated.
+Presence of suspicious a small nodular lesion noted over the right side thyroid gland, recommend thyroid sonography correlation if clinical indicated.
 
-Presence of several nodular lesions noted over the right side thyroid gland, recommend sonography of the thyroid for further evaluation if clinical indicated.
+Presence of several nodular lesions noted over the right side thyroid gland,  nature to be determined, recommend thyroid sonography correlation if clinical indicated.
 
 4. --------: Mild retrolisthesis--------
 5. --------: Presence of -------- DJD/spondylolytic type spondylolisthesis--------
