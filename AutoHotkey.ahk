@@ -164,8 +164,7 @@ Capslock & l::
 Return
 
 ; Insert Previous Exam Date
-^d::
-Capslock & d::
+^!d::
   InsertPrevExamDate()
 Return
 
@@ -237,7 +236,7 @@ Return
 Return
 
 ; Click Same Patient Exams
-^p::
+^!p::
   ClickSamePatientExams()
 Return
 
@@ -258,7 +257,7 @@ Return
 
 ; Insert Patient Exam Info
 ;; This hotkey cannot be included in SmartWonder window group
-^h::
+^!h::
   InsertPatientExamInfo()
 Return
 

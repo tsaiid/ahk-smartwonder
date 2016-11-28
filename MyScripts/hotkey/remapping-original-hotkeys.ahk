@@ -2,6 +2,33 @@
 ;; for SmartWonder
 
 #IfWinActive ahk_group SmartWonder
+^h::
+  SendEvent {BS}
+Return
+
+^d::
+  SendEvent {DEL}
+Return
+
+^n::
+  SendEvent {Down}
+Return
+
+^p::
+  SendEvent {Up}
+Return
+
+^a::
+  SendEvent {Home}
+Return
+
+^e::
+  SendEvent {End}
+Return
+
+#a::
+  SendEvent ^a
+Return
 #IfWinActive
 
 ;; for SmartIris
