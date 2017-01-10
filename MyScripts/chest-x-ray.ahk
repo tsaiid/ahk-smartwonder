@@ -101,6 +101,9 @@
 ::rll::right lower lung
 ::lll::left lower lung
 ::bll::bilateral lower lungs
+::rul::right upper lung
+::lul::left upper lung
+::bul::bilateral upper lungs
 ::nnp::No newly developed patch opacity in lung fields.
 ::ii::Exaggerated lung markings, may be due to insufficient inspiration.
 ::ii0::insufficient inspiration
@@ -121,6 +124,7 @@
 ::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::id::ill-defined `
+::wd::well-defined `
 ::luqd::A drain in the LUQ of abdomen.
 ::ruqd::A drain in the RUQ of abdomen.
 ::prrct::Post removal of right chest tube. No pneumothorax noted.

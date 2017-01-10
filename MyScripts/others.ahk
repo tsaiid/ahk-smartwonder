@@ -30,7 +30,7 @@
 ::esp::especially `
 ::asp::aspiration
 ::cw::compatible with `
-::o::otherwise, `
+::ow::otherwise, `
 ::rm::remarkable `
 ::urm::unremarkable `
 ::cnbd::cannot be determined
@@ -48,6 +48,7 @@
 ::nl::nodular lesions
 ::cn::calcified nodule
 ::rol::radiopaque lesion
+::o::opacity
 ::g::granuloma
 ::l::lesion
 ::mod::moderate `

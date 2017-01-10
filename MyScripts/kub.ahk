@@ -2,6 +2,7 @@
 ::k::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
 ::k2::The bilateral kidney shadows and psoas muscle contours are unremarkable.
 ::kb::the bowel gas pattern is unremarkable.
+::kob::The other bowel gas pattern is unremarkable.
 ::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Ring like calcification nodules in the pelvic cavity are mostly due to phleboliths of the vein.
 ::kgbs::Round opacities over RUQ of abdomen, r/o gallstones. Suggest correlation with sonography.
@@ -27,8 +28,11 @@
 ::kc::Contrast medium retention in the urinary tract, may be due to recent imaging study.
 ::kns::No definite stone-like radiopacity along the urinary tract.
 ::kbrs::Several tiny radiopacities superimposed on bilateral renal shadows, r/o renal stones.
+::kbrss::Several small radiopacities superimposed on bilateral renal shadows, r/o renal stones.
 ::klrs::Tiny radiopacity superimposed on left renal shadow, r/o renal stone.
+::klrss::Small radiopacities superimposed on left renal shadow, r/o renal stones.
 ::krrs::Tiny radiopacity superimposed on right renal shadow, r/o renal stone.
+::krrss::Small radiopacities superimposed on right renal shadow, r/o renal stones.
 ::klus::A small stone-like opacity at left paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
 ::krus::A small stone-like opacity at right paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
 ::lptcd::S/P PTCD via left side approach.

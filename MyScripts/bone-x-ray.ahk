@@ -35,7 +35,7 @@
 ::acrok::No lateral downsloping or hooking of the acromion.
 ::acrsp::Presence of subacromial spur.
 ::acrsp1::Presence of subacromial spur, which may be associated with impingement of the supraspinatus tendon.
-::shok::No limitation in internal/external rotation of the shoulder.
+::shok::No joint space narrowing, dislocation, or fracture.{Enter}No limitation in internal/external rotation of the shoulder.
 ::pcsp::Post instrument fixation at cervical spine.
 ::pcsp1::Prevertebral soft tissue swelling. May be due to recent operation.
 ::pvsts::Mild prevertebral soft tissue swelling, may be due to recent operation.
@@ -91,7 +91,7 @@
 ::acj::acromioclavicular joint
 ::sts::soft tissue swelling
 ::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
-::wd::wedge deformity
+::wgd::wedge deformity
 ::opc::osteoporotic change
 ::gopc::generalized osteoporotic change
 ::avn::avascular necrosis

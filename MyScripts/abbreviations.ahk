@@ -40,6 +40,7 @@
 ::inf::inferior `
 ::lat::lateral `
 ::med::medial `
+::suplat::superolateral `
 ::pri::primary `
 ::sec::secondary `
 ::ned::no evidence of disease.
