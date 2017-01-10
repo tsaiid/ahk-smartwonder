@@ -18,6 +18,14 @@ Return
   SendEvent {Up}
 Return
 
+^f::
+  SendEvent {Right}
+Return
+
+^b::
+  SendEvent {Left}
+Return
+
 ^a::
   SendEvent {Home}
 Return
@@ -100,10 +108,10 @@ Return
 ;LWin & Tab::AltTab    ; Mimick Alt-Tab
                       ; Alt-tab hotkeys are not affected by #IfWin: they are in effect for all windows.
 
-/*
 #c::^c
 #v::^v
 #x::^x
+/*
 #w::^w
 #t::^t
 #r::^r
