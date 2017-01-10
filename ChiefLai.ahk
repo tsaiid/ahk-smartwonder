@@ -29,6 +29,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include MyScripts\hotkey\insert-patient-exam-info.ahk
 #Include MyScripts\hotkey\renumber-selected-text.ahk
 #Include MyScripts\hotkey\toggle-hanging-protocol.ahk
+#Include MyScripts\hotkey\detect-non-ascii-chars.ahk
 
 ; Define hotkeys
 #IfWinActive ahk_group SmartWonder
@@ -42,6 +43,11 @@ Return
 ; Renumber Seleted Text
 $^!n::
   RenumberSeletedText()
+Return
+
+; Detect Non-Ascii Chars
+^!a::
+  DetectNonAsciiChars()
 Return
 
 #IfWinActive
