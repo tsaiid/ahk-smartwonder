@@ -66,6 +66,14 @@ CheckSmartCardPresence(showDebugMsg=false) {
                         , "UInt")
       If (lReturn == 0x0) { ; SCARD_S_SUCCESS
         isSCardPresent := 1
+        lReturn := DllCall("Winscard.dll\SCardDisconnect"
+                        , A_PtrSize == 8 ? "UInt64" : "UInt", hCardHandle
+                        , "UInt", 0)   ; SCARD_LEAVE_CARD
+        If (lReturn != 0x0) { ; Not SCARD_S_SUCCESS
+          If (showDebugMsg) {
+            PrintHex(lReturn)
+          }
+        }
       }
     } Else {
       If (showDebugMsg) {

@@ -85,7 +85,7 @@ PRESERVE_CLIPBOARD := 0
 
 SetTitleMatchMode, 2
 
-;#Include MyScripts\debug.ahk
+#Include MyScripts\debug.ahk
 
 ; HotKeys Lib
 #Include MyScripts\hotkey\selecting-tabs.ahk
