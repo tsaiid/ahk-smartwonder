@@ -22,8 +22,8 @@
 ::nfa::No evidence of subphrenic free air.
 ::foley::s/p Foley catheterization.
 ::haic-ok::On HAIC. The tip position shows no migration as compared with previous angiography.
-::p/a::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
-::p/haic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
+::spa::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
+::sphaic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
 ::aacal::Calcification of abdominal aortic wall.
 ::kc::Contrast medium retention in the urinary tract, may be due to recent imaging study.
 ::kns::No definite stone-like radiopacity along the urinary tract.
@@ -35,6 +35,8 @@
 ::krrss::Small radiopacities superimposed on right renal shadow, r/o renal stones.
 ::klus::A small stone-like opacity at left paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
 ::krus::A small stone-like opacity at right paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
+::kluvjs::A small stone-like opacity at left side of pelvis, possibly a UVJ stone. Suggest correlation with sonography.
+::kruvjs::A small stone-like opacity at right side of pelvis, possibly a UVJ stone. Suggest correlation with sonography.
 ::lptcd::S/P PTCD via left side approach.
 ::rptcd::S/P PTCD via right side approach.
 ::bptcd::S/P PTCD via left and right side approach.
@@ -42,6 +44,9 @@
 ::luq::LUQ of abdomen
 ::rlq::RLQ of abdomen
 ::llq::LLQ of abdomen
+::rabd::right side of abdomen
+::labd::left side of abdomen
+::kis::Presence of inspissated fecal material in the rectum, probably stool impaction.
 ::ks1::
   MyForm =
 (
@@ -57,6 +62,14 @@ Mottled gas pattern along colon course is noted, implying fecal residues retenti
 Otherwise, the bowel gas pattern is unremarkable.
 
 Bilateral kidney shadows and psoas muscle contours are unremarkable.
+)
+  Paste(MyForm)
+Return
+::kss::
+  MyForm =
+(
+Mottled gas pattern along colon course is noted, implying fecal residues retention.
+The stone evaluation is limited.
 )
   Paste(MyForm)
 Return

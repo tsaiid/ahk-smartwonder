@@ -17,8 +17,11 @@
 ::ccfu::Suggest clinical correlation and follow-up.
 ::fufe::Suggest follow-up or further evaluation.
 ::nbd::Nature to be determined.
+::msok::Bilateral maxillary sinuses are well pneumatized.
 ::rmcs::Ground glass opacity in right maxillary sinus, r/o mucoperiosteal thickening or chronic sinusitis.
+::rmcs1::Ground glass opacity in right maxillary sinus, r/o mucoperiosteal thickening or chronic sinusitis. DDx: occult facial bone fracture.
 ::lmcs::Ground glass opacity in left maxillary sinus, r/o mucoperiosteal thickening or chronic sinusitis.
+::lmcs1::Ground glass opacity in left maxillary sinus, r/o mucoperiosteal thickening or chronic sinusitis. DDx: occult facial bone fracture.
 ::bmcs::Ground glass opacity in bilateral maxillary sinuses, r/o mucoperiosteal thickening or chronic sinusitis.
 ::rms::Presence of air-fluid level in right maxillary sinus, r/o sinusitis.
 ::lms::Presence of air-fluid level in left maxillary sinus, r/o sinusitis.

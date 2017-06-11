@@ -47,6 +47,7 @@
 ::lr::linear
 ::nl::nodular lesions
 ::cn::calcified nodule
+::cg::calcified granuloma
 ::rol::radiopaque lesion
 ::o::opacity
 ::g::granuloma

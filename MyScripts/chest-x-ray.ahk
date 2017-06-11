@@ -2,6 +2,7 @@
 ::nall::No active lung lesion.
 ::ncm::No cardiomegaly.
 ::bcm::Borderline cardiomegaly.
+::bcms::Borderline enlarged cardiac shadow, possibly supine position related.
 :c:Cm::Cardiomegaly.
 :c:Cm1::Enlarged cardiac shadow.
 ::np::No abnormal patch opacity in lung fields.
@@ -140,3 +141,4 @@
 ::plbok::Post lung biopsy, and no obvious pneumothorax is noted.
 ::akb::Aortic knob calcification.
 ::rci::Anterior interposition of the colon to the liver reaching the under-surface of the right hemidiaphragm.
+::cpftl::Compression fracture of several lower T- and L-spine.

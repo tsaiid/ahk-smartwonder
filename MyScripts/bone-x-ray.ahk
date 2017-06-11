@@ -42,6 +42,7 @@
 ::plsp::Post instrument fixation at lumbar spine.
 ::plsp0::Post laminectomy, transpedicular screws, rods fixation at L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at L1-2, L2-3, L3-4, L4-5, L5-S1.
 ::spok::No disc space narrowing, spondylolisthesis, or fracture.
+::lspok::L-spine: No disc space narrowing, spondylolisthesis, or fracture.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
 ::calspp::Presence of calcaneal spur at the insertion of the plantar fascia.
@@ -70,7 +71,7 @@
 ::lm3cf::Left middle third clavicule fracture.
 ::rd3cf::Right distal third clavicule fracture.
 ::ld3cf::Left distal third clavicule fracture.
-::usfr::ulnar styloid process fracture
+::usfr::ulnar styloid process fracture.
 ::rdhs::s/p right dynamic hip screw fixation.
 ::ldhs::s/p left dynamic hip screw fixation.
 ::bdhs::s/p bilateral dynamic hip screw fixation.
@@ -115,6 +116,10 @@
 ::rkcppd::Linear calcifications along the joint space of the medial and lateral compartments of right knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 ::lkcppd::Linear calcifications along the joint space of the medial and lateral compartments of left knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 ::nbok::No evidence of nasal bone fracture.
+::spv::s/p vertebroplasty at `
+::rsoa::OA change of right hip.
+::lsoa::OA change of left hip.
+::bsoa::OA change of bilateral hips.
 
 ; Multiline
 ::flat::
@@ -221,3 +226,4 @@ Lumbosacral Transitional Vertebrae, type IV.
 Return
 ::rlstv::Lumbosacral transitional vertebrae, right side, type IIa.
 ::llstv::Lumbosacral transitional vertebrae, left side, type IIa.
+::blstv::Lumbosacral transitional vertebrae, type IIb.
