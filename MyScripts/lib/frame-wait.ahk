@@ -6,7 +6,7 @@ FrameWait(FrameCom)
   Loop {
     Try {
       Loop    ;if readyState = complete
-        Sleep, 100
+        Sleep, 10
       Until (FrameCom.document.readyState = "complete")
 
       Break
