@@ -5,6 +5,7 @@ SplitDate(dateStr) {
 
 StringWithPrevExamDate(strTemplate) {
   global prevExamDate
+  global currExamDate
   global currAccNo
 
   wb := WBGet()
@@ -14,6 +15,9 @@ StringWithPrevExamDate(strTemplate) {
   output := strTemplate
   If (currAccNo = AccNo && StrLen(prevExamDate)) {
     output .= " on " . splitDate(prevExamDate)
+    If (currExamDate == prevExamDate) {
+      output .= " earlier"
+    }
   }
   output .= "."
 

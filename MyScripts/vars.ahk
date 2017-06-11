@@ -1,5 +1,6 @@
 ﻿; Global Variables
 prevExamDate := ""
+currExamDate := ""
 currAccNo := ""
 hParentWnd := 0
 LLDFormRtLD := 0

@@ -11,6 +11,7 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
 
   ; use global variables to store previous exam date
   global prevExamDate
+  global currExamDate
   global currAccNo
 
   wb := WBGet()
@@ -21,7 +22,7 @@ GetPreviousReport(CopyReport=true, LoadImages=false) {
   FrameWait(frmTabIframe2)
   ReportContentList := frmTabIframe2.document.getElementsByName("ReportContent")
   If (ReportContentList.length = 0) {
-    ;MsgBox, Not in REPORT EDIT page!
+    MsgBox, Not in REPORT EDIT page!
     Return
   }
 
