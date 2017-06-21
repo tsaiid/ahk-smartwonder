@@ -25,6 +25,7 @@
 ::spa::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
 ::sphaic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
 ::aacal::Calcification of abdominal aortic wall.
+::ka::Increased opacity of the abdomen with centralization of the bowel gas, probably due to ascites.
 ::kc::Contrast medium retention in the urinary tract, may be due to recent imaging study.
 ::kns::No definite stone-like radiopacity along the urinary tract.
 ::kbrs::Several tiny radiopacities superimposed on bilateral renal shadows, r/o renal stones.

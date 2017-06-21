@@ -120,6 +120,9 @@
 ::rsoa::OA change of right hip.
 ::lsoa::OA change of left hip.
 ::bsoa::OA change of bilateral hips.
+::rkoa::OA change of right knee.
+::lkoa::OA change of left knee.
+::bkoa::OA change of bilateral knees.
 
 ; Multiline
 ::flat::
