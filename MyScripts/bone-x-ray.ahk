@@ -9,12 +9,12 @@
 ::djdt::DJD change of T-spine.
 ::djdtl::DJD change of T- and L-spine.
 ::oak0::Mild joint space narrowing at medial compartment of knee joint.
-::oak1a::Mild joint space narrowing, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
-::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
-::oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage I.
-::oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage II.
-::oak2a::Joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, compatible with osteoarthrosis, stage II.
-::oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, compatible with osteoarthrosis, stage III.
+::oak1a::Mild joint space narrowing, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage I.
+::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage I.
+::oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage I.
+::oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage II.
+::oak2a::Joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage II.
+::oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, consistent with osteoarthrosis, stage III.
 ::oah::Superior joint space narrowing, subchondral sclerosis, subchondral cyst formation, osteophyte formation, in favor of osteoarthrosis of _ hip.
 ::scc::subchondral cyst
 ::scs::subchondral sclerosis
@@ -65,6 +65,7 @@
 ::clfr::clavicular fracture
 ::afr::avulsion fracture
 ::pfr::pars interarticularis fracture
+::lfr::linear fracture
 ::rp3cf::Right proximal third clavicule fracture.
 ::lp3cf::Left proximal third clavicule fracture.
 ::rm3cf::Right middle third clavicule fracture.
@@ -85,12 +86,14 @@
 ::mu::malunion
 ::pbu::partial bone union
 ::wol::without loosening.
-::anb::accessory navicular bone.
+::anb::accessory navicular bone
 ::l4::Sacralization of L5 vertebra.
 ::l6::Presence of L6 (lumbarization of S1).
 ::sij::sacroiliac joint
 ::acj::acromioclavicular joint
 ::sts::soft tissue swelling
+::rasts::Soft tissue swelling around right ankle.
+::lasts::Soft tissue swelling around left ankle.
 ::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
 ::wgd::wedge deformity
 ::opc::osteoporotic change
@@ -112,11 +115,17 @@
 ::c7::The C7 vertebra is blocked by the shoulder shadow with limited evaluation.
 ::c12ok::No evidence of atlanto-axial subluxation or odontoid fracture.
 ::cspok::No disc space narrowing, spondylolisthesis, or fracture.{Enter}No abnormal widening of the prevertebral space.
+::c5l::C5 and levels below are blocked with a limited evaluation.
+::c6l::C6 and levels below are blocked with a limited evaluation.
+::c7l::C7 and levels below are blocked with a limited evaluation.
 ::iaiv::intra-articular involvement
 ::rkcppd::Linear calcifications along the joint space of the medial and lateral compartments of right knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 ::lkcppd::Linear calcifications along the joint space of the medial and lateral compartments of left knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 ::nbok::No evidence of nasal bone fracture.
 ::spv::s/p vertebroplasty at `
+::pif::pars interarticularis fracture
+::rif::Intertrochanteric fracture of right hip.
+::lif::Intertrochanteric fracture of left hip.
 ::rsoa::OA change of right hip.
 ::lsoa::OA change of left hip.
 ::bsoa::OA change of bilateral hips.
@@ -139,7 +148,7 @@ Return
   MyForm =
 ( %
 Bilateral hips:
-Collapse of femoral heads is present, and joint spaces are mild irregular. The findings are compatible with avascular necrosis, stage IV.
+Collapse of femoral heads is present, and joint spaces are mild irregular. The findings are consistent with avascular necrosis, stage IV.
 
 Flattening or collapse of femoral head is present.
 Joint space may be irregular.
@@ -156,13 +165,20 @@ Return
 ::avn6::
   MyForm =
 (
-Extensive destruction of the femoral head and joint, compatible with avascular necrosis, stage VI.
+Extensive destruction of the femoral head and joint, consistent with avascular necrosis, stage VI.
 
 Ref:
 Findings include extensive destruction of the femoral head and joint.
 )
   Paste(MyForm)
 Return
+
+; sacroiliitis
+::sii0::The sacroiliac margin is clear, and there is uniform joint space of normal width. There is no sclerosis. The sacroiliac joints are normal.
+::sii1::No specific abnormality except “suspecious” change. (some blurring of the joint margins - suspicious). Grade I (suspecious) sacroiliitis.
+::sii2::Loss of definition at the edge of the sacroiliac joints. There is some sclerosis and perhaps minimal erosions. There may be some joint space narrowing. Grade II (minimal) sacroiliitis.
+::sii3::There is definite sclerosis on both sides of the sacroiliac joints, blurring and indistinct margins, and erosive changes with loss of joint space. Grade III (moderate) sacroiliitis.
+::sii4::Complete fusion or ankylosis of the joint with or withoutsome residual sclerosis. Grade IV (ankylosis) sacroiliitis.
 
 ::mdjdc::Mild DJD change of C-spine with spur formation.{Enter}No disc space narrowing, spondylolisthesis, or fracture.
 ::djdc::

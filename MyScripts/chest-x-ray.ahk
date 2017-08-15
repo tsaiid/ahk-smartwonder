@@ -116,7 +116,9 @@
 ::rcf::Old fracture of right clavicle.
 ::lcf::Old fracture of left clavicle.
 ::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::rdia0::Elevation of right hemidiaphragm.
 ::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::ldia0::Elevation of left hemidiaphragm.
 ::copd::Hyperinflation with flattening of bilateral hemidiaphragms, suggestive the possibility of COPD.
 ::tta::Tortuosity of thoracic descending aorta.
 ::bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
