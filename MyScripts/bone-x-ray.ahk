@@ -9,12 +9,12 @@
 ::djdt::DJD change of T-spine.
 ::djdtl::DJD change of T- and L-spine.
 ::oak0::Mild joint space narrowing at medial compartment of knee joint.
-::oak1a::Mild joint space narrowing, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage I.
-::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage I.
-::oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage I.
-::oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage II.
-::oak2a::Joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis, stage II.
-::oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, consistent with osteoarthrosis, stage III.
+::oak1a::Mild joint space narrowing, especially at medial compartment of knee joint, consistent with osteoarthrosis.
+::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis.
+::oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis.
+::oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis.
+::oak2a::Joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis.
+::oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, consistent with osteoarthrosis.
 ::oah::Superior joint space narrowing, subchondral sclerosis, subchondral cyst formation, osteophyte formation, in favor of osteoarthrosis of _ hip.
 ::scc::subchondral cyst
 ::scs::subchondral sclerosis
@@ -72,6 +72,8 @@
 ::lm3cf::Left middle third clavicule fracture.
 ::rd3cf::Right distal third clavicule fracture.
 ::ld3cf::Left distal third clavicule fracture.
+::rfnf::Right femoral neck fracture.
+::lfnf::Left femoral neck fracture.
 ::usfr::ulnar styloid process fracture.
 ::rdhs::s/p right dynamic hip screw fixation.
 ::ldhs::s/p left dynamic hip screw fixation.
@@ -112,6 +114,7 @@
 ::if::internal fixation
 ::ef::external fixation
 ::ob::osseous body
+::bf::bone fragment
 ::c7::The C7 vertebra is blocked by the shoulder shadow with limited evaluation.
 ::c12ok::No evidence of atlanto-axial subluxation or odontoid fracture.
 ::cspok::No disc space narrowing, spondylolisthesis, or fracture.{Enter}No abnormal widening of the prevertebral space.

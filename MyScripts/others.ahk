@@ -89,6 +89,7 @@ Return
 :c:FD::FINDINGS:
 
 ::sg::suggest
+::sgo::suggestive of `
 ::obv::obvious
 ::nob::no obvious `
 ::nod::no definite `
@@ -108,7 +109,7 @@ Return
 ::rg::regression
 ::csd::considered
 ::spd::suspected
-::susp::suspicious
+::susp::suspicious `
 ::ic::inflammatory change
 ::cd::consolidation
 ::nc::臨床不打藥

@@ -145,3 +145,6 @@
 ::rci::Anterior interposition of the colon to the liver reaching the under-surface of the right hemidiaphragm.
 ::cpftl::Compression fracture of several lower T- and L-spine.
 ::mw::Mediastinal widening, possibly due to tortuosity of the thoracic aorta. Suggest clinical correlation.
+
+; Neck
+::croup::Presence of steeple sign and hypopharyngeal distention, c/w croup.
