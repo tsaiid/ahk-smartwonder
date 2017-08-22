@@ -48,6 +48,7 @@ SupportedExamPatterns() {
                 , ScapulaLt:    "Scapula LT"
                 , ClavicleRt:   "Clavicle RT"
                 , ClavicleLt:   "Clavicle LT"
+                , ClavicleBil:  "Both clavicle (no )?stress 1 film"
                 , ShoulderRt:   "Shoulder RT"
                 , ShoulderLt:   "Shoulder LT"
                 , SkullRoutine: "Skull routine"
