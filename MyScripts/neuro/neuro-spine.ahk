@@ -441,8 +441,10 @@ Post contrast study shows no evidence of abnormal enhancing lesion noted over th
 Presence of scoliosis of the L-spine, convex to left/right side.
 Rotatory scoliosis of L-spine, convex to left/right side.
 Presence of transitional lumbosacral junction type IIa noted.
-Presence of transitional lumbosacral junction and with sacral
-lumbolization noted.
+Presence of transitional lumbosacral segment.
+Presence of transitional lumbosacral junction and with lumbarization of S1 vertebra noted.
+Presence of transitional lumbosacral junction and with sacralization of L5 vertebra noted.
+
 
 L1-L2, L2-L3, L3-L4, L4-L5, L5-S1:No definite spinal stenosis.
 
@@ -469,6 +471,11 @@ Degenerative disc disease:
 2. Disc space narrowing: L2 through L5
 
 No evidence of abnormal signal intensity mass lesion in the spinal canal of L-spine noted.
+
+*Vertebral body
+  Morphology: mild to moderate to severe collapse of L1 to L5 vertebral bodies.
+In favor of recent/old compression fractures
+Recent/old compression fractures suspected
 
 Presence of cystic lesion, maximum diameter about 1.1 cm in size, manifested with hypointensity on T1WI and hyperintensity on T2WI, near right/left L4-5 facet joint and medial to the facet joint and ligamentum flavum, DDx: synovial cyst or ligamentum flavum cyst.
 
@@ -507,6 +514,7 @@ Presence of disc space narrowing noted over L2-3, L3-4, and severe disc space na
 Presence of small hemangiomas over L1 and L4 spine verterbral body.
 Presence of benign hemangioma noted over the L2 spine vertebral body, size about 2.1 x 2 x 2cm.
 
+Bilateral renal cysts.
 
 IMPRESSION:
 Lumbar degenerative spondylosis, disc space narrowing and protrusion disk. Details as above descriptions.

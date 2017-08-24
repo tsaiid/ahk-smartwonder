@@ -13,6 +13,8 @@ CONTRAST MEDIUM: IV route, 80 ml, 1 ml/sec.
 
 COMPARISON:
 Applicable previous CT of brain: no
+Applicable previous CT of brain: same day earlier (non-contrast)
+Applicable previous CT of brain:      (other hospital)
 
 FINDINGS:
 Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
@@ -24,7 +26,7 @@ No definite acute intracranial parenchymal hemorrhage or acute epidural or acute
 The bilateral lateral ventricles showed symmetrical without dilatation.
 
 IMPRESSION:
-No remarkable findings on CT.
+No remarkable intracranial findings on CT.
 
 No definite abnormal enhancing mass lesion in the brain noted.
 
@@ -62,13 +64,16 @@ The bilateral lateral ventricles showed symmetrical without dilatation.
 
 No obvious dilatation of intraventricular system.
 
+The bilateral lateral ventricles are symmetrical in shape with acceptable age-dependent ventricular dilatation.
+
 No obvious fracture of the skull base and the skull.
 
 IMPRESSION:
 1. No evident acute intracranial hemorrhage or acute subdural hematoma or acute subarachnoid hemorrhage.
-2. No evident acute ICH, SDH, or SAH.
-3. Previous brain insult; old lacunar infarcts.
-4. No obvious old brain insult.
+2. No evidence of acute intracranial parenchymal hemorrhage or acute subdural or epidural hematoma.
+3. No evident acute ICH, SDH, or SAH.
+4. Previous brain insult; old lacunar infarcts.
+5. No obvious old brain insult.
 
 No remarkable intracranial findings on noncontrast CT.
 No remarkable findings on noncontrast CT.
@@ -234,7 +239,7 @@ CTA shows noraml variation of A1 of left anterior cerebral artery fenestration. 
 
 Normal variation of right fetal posterior cerebral artery and trifurcation of anterior cerebral artery. (Hx: 3577988, ac: 66986943)
 
-MRA shows normal variation of right persistent trigeminal artery. (HX: 5581748, ac: 57139640) (Hx: 15417944, Ac: 75376134)
+MRA shows normal variation of right persistent trigeminal artery. (HX: 5581748, ac: 57139640) (Hx: 15417944, Ac: 75376134) (Hx: 15785305, Ac: 81838580, F/69Y, 20170503)
 
 MRA shows normal variation of azygos anterior cerebral artery (uncommon to rare variant of the circle of Willis where the two A1 segments of the anterior cerebral artery (ACA) join to form a single trunk).
 Hx: 6203312, Ac: 79930827, F/61Y, 20161021
@@ -271,9 +276,13 @@ IMPRESSION:
 Essentially negative finding.
 No remarkable significant intracranial findings.
 
+No evident acute intracranial lesion.
+
 No evidence of high signal intensity on DWI suggesting acute or recent ischemia infarction in the brain noted.
 
+No evident acute ischemic infarction.
 No evidence of acute ischemic infarction in this study.
+
 Old lacunar infarct. Old ischemic infarct.
 Previous brain insult; old lacunar infarcts.
 
