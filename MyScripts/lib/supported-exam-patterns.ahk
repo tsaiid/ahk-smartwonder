@@ -4,6 +4,7 @@ SupportedExamPatterns() {
   patterns := {   CXR:          "i)chest (pa|ap|& kub)"
                 , KUBLSpine:    "KUB, L-Spine"
                 , KUB:          "i)kub"
+                , NeckSoft:     "Neck, Soft tissue|C-Spine AP, LAT"
                 , CSpineApLat:  "C-Spine AP, LAT"
                 , CSpineObl:    "C-Spine both obliques"
                 , CSpineFlxExt: "C-Spine lateral flex\."
