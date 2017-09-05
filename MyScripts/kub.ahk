@@ -5,7 +5,7 @@
 ::kob::The other bowel gas pattern is unremarkable.
 ::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Ring like calcification nodules in the pelvic cavity are mostly due to phleboliths of the vein.
-::kgbs::Round opacities over RUQ of abdomen, r/o gallstones. Suggest correlation with sonography.
+::kgbs::Round opacities over RUQ of abdomen, suspicious gallstones. Suggest correlation with sonography.
 ::lpcn::s/p left side percutaneous nephrostomy.
 ::rpcn::s/p right side percutaneous nephrostomy.
 ::bpcn::s/p bilateral percutaneous nephrostomies.
@@ -28,12 +28,12 @@
 ::ka::Increased opacity of the abdomen with centralization of the bowel gas, probably due to ascites.
 ::kc::Contrast medium retention in the urinary tract, may be due to recent imaging study.
 ::kns::No definite stone-like radiopacity along the urinary tract.
-::kbrs::Several tiny radiopacities superimposed on bilateral renal shadows, r/o renal stones.
-::kbrss::Several small radiopacities superimposed on bilateral renal shadows, r/o renal stones.
-::klrs::Tiny radiopacity superimposed on left renal shadow, r/o renal stone.
-::klrss::Small radiopacities superimposed on left renal shadow, r/o renal stones.
-::krrs::Tiny radiopacity superimposed on right renal shadow, r/o renal stone.
-::krrss::Small radiopacities superimposed on right renal shadow, r/o renal stones.
+::kbrs::Several tiny radiopacities superimposed on bilateral renal shadows, suspicious renal stones.
+::kbrss::Several small radiopacities superimposed on bilateral renal shadows, suspicious renal stones.
+::klrs::Tiny radiopacity superimposed on left renal shadow, suspicious renal stone.
+::klrss::Small radiopacities superimposed on left renal shadow, suspicious renal stones.
+::krrs::Tiny radiopacity superimposed on right renal shadow, suspicious renal stone.
+::krrss::Small radiopacities superimposed on right renal shadow, suspicious renal stones.
 ::klus::A small stone-like opacity at left paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
 ::krus::A small stone-like opacity at right paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
 ::kluvjs::A small stone-like opacity at left side of pelvis, possibly a UVJ stone. Suggest correlation with sonography.

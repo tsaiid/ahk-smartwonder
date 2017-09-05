@@ -4,7 +4,7 @@
 ::bcm::Borderline cardiomegaly.
 ::bcms::Borderline enlarged cardiac shadow, possibly supine position related.
 :c:Cm::Cardiomegaly.
-:c:Cm1::Enlarged cardiac shadow.
+::cm1::enlarged cardiac shadow.
 ::np::No abnormal patch opacity in lung fields.
 ::nn::No nodular opacities (> 1cm) noted over bilateral lung fields.
 ::0::No previous film for comparison.{Enter 2}
@@ -121,6 +121,7 @@
 ::ldia0::Elevation of left hemidiaphragm.
 ::copd::Hyperinflation with flattening of bilateral hemidiaphragms, suggestive the possibility of COPD.
 ::tta::Tortuosity of thoracic descending aorta.
+::mtta::Mild tortuosity of thoracic descending aorta.
 ::bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
 ::ilo::increased linear opacity `
 ::ao::acinar opacity `
@@ -145,6 +146,9 @@
 ::rci::Anterior interposition of the colon to the liver reaching the under-surface of the right hemidiaphragm.
 ::cpftl::Compression fracture of several lower T- and L-spine.
 ::mw::Mediastinal widening, possibly due to tortuosity of the thoracic aorta. Suggest clinical correlation.
+::rotb::Fibrilinear and nodular opacities over right apical region, in favor of old TB.
+::lotb::Fibrilinear and nodular opacities over left apical region, in favor of old TB.
+::botb::Fibrilinear and nodular opacities over bilateral apical regions, in favor of old TB.
 
 ; Neck
 ::croup::Presence of steeple sign and hypopharyngeal distention, c/w croup.

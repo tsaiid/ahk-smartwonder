@@ -109,7 +109,7 @@ Return
 ::rg::regression
 ::csd::considered
 ::spd::suspected
-::susp::suspicious `
+::sp::suspicious `
 ::ic::inflammatory change
 ::cd::consolidation
 ::nc::臨床不打藥
@@ -124,5 +124,6 @@ Return
 ::ift::infiltration
 ::fac::fluid accumulation
 ::me::mediastinum
+::fa::free air
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
