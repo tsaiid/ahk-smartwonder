@@ -16,7 +16,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include <varExist>
 
 ; Options
-ENABLE_KEY_COUNTER := 1
+ENABLE_KEY_COUNTER := 0
 PRESERVE_CLIPBOARD := 0
 
 ; Global Variables
@@ -24,7 +24,7 @@ PRESERVE_CLIPBOARD := 0
 
 ; Key/Mouse Counter
 ;; Bug: shoule be before RegEx HotStrings
-#Include MyScripts\lib\keystroke-counter.ahk
+;#Include MyScripts\lib\keystroke-counter.ahk
 
 ; RegEx Hotstrings
 ;; Bug: need to be included first ???
@@ -39,7 +39,7 @@ PRESERVE_CLIPBOARD := 0
 #Include MyScripts\lib\supported-exam-patterns.ahk
 #Include MyScripts\lib\libera-bmd.ahk
 #Include MyScripts\lib\smartwonder-common.ahk
-#Include MyScripts\lib\smart-card.ahk
+;#Include MyScripts\lib\smart-card.ahk
 
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
@@ -85,7 +85,7 @@ PRESERVE_CLIPBOARD := 0
 
 SetTitleMatchMode, 2
 
-#Include MyScripts\debug.ahk
+;#Include MyScripts\debug.ahk
 
 ; HotKeys Lib
 #Include MyScripts\hotkey\selecting-tabs.ahk
@@ -103,8 +103,9 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\remapping-original-hotkeys.ahk
 #Include MyScripts\hotkey\click-none-tb-none-ot.ahk
 #Include MyScripts\hotkey\click-confirm.ahk
+#Include MyScripts\hotkey\click-emr.ahk
 #Include MyScripts\hotkey\set-predefined-exam-flow.ahk
-#Include MyScripts\hotkey\cgst32-related-mouse-control.ahk
+;#Include MyScripts\hotkey\cgst32-related-mouse-control.ahk ;no more use
 #Include MyScripts\hotkey\go-to-image.ahk
 #Include MyScripts\hotkey\detect-non-ascii-chars.ahk
 #Include MyScripts\hotkey\get-mesa-scale.ahk
@@ -239,6 +240,10 @@ Return
 ; Click Same Patient Exams
 ^!p::
   ClickSamePatientExams()
+Return
+
+^+h::
+  ClickEMR()
 Return
 
 ; Status of US RCT Without Image
