@@ -63,6 +63,7 @@ SupportedExamPatterns() {
                 , PelvisLtHip:  "Pelvis \+ hip \(LT\) - lat\."
                 , SonoUpperAbd: "Sono, Upper abdomen"
                 , SonoLowerAbd: "Sono, Lower abdomen"
+                , SonoBr:       "Sono, Breast"
                 , CTAbd:        "CT (whole abdomen|Pan or Liver) (with/)?no contras"
                 , CTBrain:      "CT brain (with/)?no contrast"
                 , CTNeck:       "CT face \+ neck with/no contrast"
