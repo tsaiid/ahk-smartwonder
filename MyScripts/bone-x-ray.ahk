@@ -36,6 +36,7 @@
 ::acrsp::Presence of subacromial spur.
 ::acrsp1::Presence of subacromial spur, which may be associated with impingement of the supraspinatus tendon.
 ::shok::No joint space narrowing, dislocation, or fracture.{Enter}No limitation in internal/external rotation of the shoulder.
+::rct1::Upward migration of the humeral head, narrowing the acromiohumeral distance, rotator cuff tear is suspected.
 ::pcsp::Post instrument fixation at cervical spine.
 ::pcsp1::Prevertebral soft tissue swelling. May be due to recent operation.
 ::pvsts::Mild prevertebral soft tissue swelling, may be due to recent operation.
@@ -129,12 +130,15 @@
 ::pif::pars interarticularis fracture
 ::rif::Intertrochanteric fracture of right hip.
 ::lif::Intertrochanteric fracture of left hip.
-::rsoa::OA change of right hip.
-::lsoa::OA change of left hip.
-::bsoa::OA change of bilateral hips.
+::rhoa::OA change of right hip.
+::lhoa::OA change of left hip.
+::bhoa::OA change of bilateral hips.
 ::rkoa::OA change of right knee.
 ::lkoa::OA change of left knee.
 ::bkoa::OA change of bilateral knees.
+::rwoa::OA change of right wrist.
+::lwoa::OA change of left wrist.
+::bwoa::OA change of bilateral wrists.
 
 ; Multiline
 ::flat::

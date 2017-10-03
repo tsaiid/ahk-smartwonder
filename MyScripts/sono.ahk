@@ -7,9 +7,44 @@
 ::ll3us::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
 ::s-scr-ok::The size and vascularity of bilateral testes and epididymides are within normal limits.
 ::s-fl::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver change.
+::s-mfl::Slightly increased hyperechoic liver parenchyma without focal lesion noted, in favor of mild fatty liver change.
 ::s-ngb::The gallbladder is not seen, may be due to previous cholecystectomy.
 ::s-ckd::Cortical thinning, increased echogenicity, and small sizes of both kidneys, in favor of chronic kidney disease.
 ::s-p/c::The gallbladder was not found, most likely resected at the previous operation.
+::s-nnpo::Probably due to non-NPO status, the gallbladder is not distended enough for evaluation. However, no focal lesion is noted.
+::s-nf::The urinary bladder is not distended enough for evaluation. However, no focal lesion is noted.
+
+;; Sono, Breast
+::sbrspp::S/P previous right BCS (Breast conservation surgery) without evidence of local recurrence.
+::sblspp::S/P previous left BCS (Breast conservation surgery) without evidence of local recurrence.
+::sbbspp::S/P previous bilateral BCS (Breast conservation surgery) without evidence of local recurrence.
+::sbrspm::S/P previous right modified radical mastectomy without evidence of local recurrence.
+::sblspm::S/P previous left modified radical mastectomy without evidence of local recurrence.
+::sbbspm::S/P previous bilateral modified radical mastectomy without evidence of local recurrence.
+::sbrln::A reactive lymph node at right axilla noted.
+::sblln::A reactive lymph node at left axilla noted.
+::sbbln::Reactive lymph nodes at both axillae noted.
+::sbrc1::Presence of an anechoic cyst at _ o'clock position of right breast, measuring about _ cm in size. Fibrocystic disease considered.
+::sblc1::Presence of an anechoic cyst at _ o'clock position of left breast, measuring about _ cm in size. Fibrocystic disease considered.
+::sbrc2::Presence of several small anechoic cysts at right breast noted. Fibrocystic change considered.
+::sblc2::Presence of several small anechoic cysts at left breast noted. Fibrocystic change considered.
+::sbbc2::Presence of several small anechoic cysts at bilateral breasts noted. Fibrocystic change considered.
+::sbb2::ACR-BIRADS 5th ed., category 2. Follow up as routine screening is recommended.
+::sbb3::ACR-BIRADS 5th ed., category 3. Probably benign. Suggest short-interval (3-6 month) follow-up.
+::sbb4a::ACR-BIRADS 5th ed., category 4a. Biopsy is recommended to exclude benign-looking malignancy.
+
+::sbok::
+  MyForm =
+(
+Preserved echogenicities of the fibroglandular tissue of bilateral breast parenchyma.
+No evident ductal dilatation.
+No significant lesion of bilateral breast parenchyma.
+
+According to the ACR-BIRADS (5th ed.), a category 1 report of the breast is considered.
+No dominant mass or suspicious calcification.
+)
+  Paste(MyForm, false)
+Return
 
 ;; Forms
 ::s-labd::
@@ -19,13 +54,13 @@
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
-  GetSonoSR2(AccNo, tabIframe2)
+  ;GetSonoSR2(AccNo, tabIframe2)
 
   LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
   RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
 
   Sex := StrSplit(tabIframe2.document.getElementById("tabPatient").children(0).children(0).children(0).children(0).innerText, "/")[2]
-  Prostate := tabIframe2.document.getElementById("sr_prostate") ? tabIframe2.document.getElementById("sr_prostate").value : "_ cm"
+  Prostate := tabIframe2.document.getElementById("sr_prostate") ? tabIframe2.document.getElementById("sr_prostate").value : "_ ml"
 
   MyForm =
 (
@@ -52,7 +87,7 @@ Return
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
-  GetSonoSR2(AccNo, tabIframe2)
+  ;GetSonoSR2(AccNo, tabIframe2)
 
   LeftKidney := tabIframe2.document.getElementById("sr_left_kidney")
               ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
@@ -75,8 +110,6 @@ The visualized portion of spleen is unremarkable. Spleen size about %Spleen%.
 Bilateral kidneys are normal in echogenicity.
 Right kidney size about %RightKidney%; left kidney size about %LeftKidney%.
 No abnormal dilatation of bilateral urinary collecting systems noted.
-
-No pleural effusion or ascites noted.
 )
 
   Sleep 300 ; Probably more than enough. Depends on the system.
@@ -140,3 +173,67 @@ Impression: Essentially unremarkable study.
 )
   Paste(MyForm, false)
 Return
+
+::scar::
+  MyForm =
+(
+Presence of RT calcified plaques measuring up to 0. x 0. cm (length x thickness) at right __carotid bulb and extracranial ICA__ without significant luminal stenosis.
+Unremarkable RT CCA and ICA.
+
+Presence of a calcified plaque measuring about 0. x 0. cm (length x thickness) at left __ICA orifice__ without significant luminal stenosis.
+Unremarkable left CCA and ICA.
+
+No significant luminal stenosis.
+
+Carotid Intima-media thickness (CIMT): right carotid [0.] mm; left carotid [0.] mm (referenced threshold: 0.9 mm)
+)
+  Paste(MyForm, false)
+Return
+
+::s-nodvt::
+  MyForm =
+(
+Bilateral deep veins of lower limbs, from femoral to popliteal regions, are patent.
+No evidence of deep vein thrombosis.
+)
+  Paste(MyForm, false)
+Return
+
+::sprca::
+  MyForm =
+(
+Presence of a focal hypoechoic nodular lesion about _ cm in diameter at the peripheral zone of _ lobe of prostate.
+CA of prostate is suspected.
+Further evaluation recommended.
+)
+  Paste(MyForm, false)
+Return
+
+::sprbph::
+  MyForm =
+(
+Nodular hyperechoic change in the transitional zone noted. Nodular hyperplasia considered.
+The prostate was measured about _ cc in volume.
+)
+  Paste(MyForm, false)
+Return
+
+::sprok::
+  MyForm =
+(
+No definite focal lesion in the peripheral zone of prostate, normal appearance of the inner glands, with the prostate  measured about 20 ml in volume.
+Normal appearance of the seminal vesicles.
+)
+  Paste(MyForm, false)
+Return
+
+::sprsp::
+  MyForm =
+(
+S/P previous TURP with a central cleft of the prostate noted.
+The prostate was measured about _ cc in volume.
+)
+  Paste(MyForm, false)
+Return
+
+::sprsok::Normal appearance of the seminal vesicles.

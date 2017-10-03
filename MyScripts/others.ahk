@@ -125,5 +125,6 @@ Return
 ::fac::fluid accumulation
 ::me::mediastinum
 ::fa::free air
+::fs::fatty stranding
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `

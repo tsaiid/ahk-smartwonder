@@ -129,6 +129,7 @@
 ::upj::ureteropelvic junction
 ::apn::acute pyelonephritis
 ::sbo::small bowel obstruction
+::aml::angiomyolipoma
 
 ;; Neuro
 ::ich::intracranial hemorrhage
