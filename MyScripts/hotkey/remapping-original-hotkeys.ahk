@@ -37,6 +37,10 @@ Return
 #a::
   SendEvent ^a
 Return
+
+#z::
+  SendEvent ^z
+Return
 #IfWinActive
 
 ;; for SmartIris
@@ -70,6 +74,8 @@ k::
   SendEvent {Up}
 Return
 
+/*
+
 1Joy2::
   SendEvent {F11}
 Return
@@ -97,6 +103,8 @@ Return
 1Joy9::
   SendEvent ^+]
 Return
+
+*/
 
 #IfWinActive
 
