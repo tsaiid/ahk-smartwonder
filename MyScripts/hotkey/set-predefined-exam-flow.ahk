@@ -81,7 +81,7 @@ SetPredefinedExamFlow() {
                     , "CCT":  "4320_0176"
                     , "MSK":  "4320_3396"
                     , "Angio": "4320_1264"
-                    , "ACT":  "4320_0174" }
+                    , "ACT":  "4320_0750" }
               , 2: {  "BE":   "4320_0750"
                     , "IVP":  "4320_0750"
                     , "MSK":  "4320_3396"
@@ -112,7 +112,7 @@ SetPredefinedExamFlow() {
                     , "Angio": "4320_1264"
                     , "MSK":  "4320_3396" } }
 
-  thisMonthFlow := "4320_1796"
+  thisMonthFlow := "4320_0750"
 
   newFlow := wdayMap[examWday][examNameMap[examName]]
   map := examNameMap[examName]
