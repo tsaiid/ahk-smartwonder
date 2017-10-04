@@ -13,6 +13,10 @@
 ::s-p/c::The gallbladder was not found, most likely resected at the previous operation.
 ::s-nnpo::Probably due to non-NPO status, the gallbladder is not distended enough for evaluation. However, no focal lesion is noted.
 ::s-nf::The urinary bladder is not distended enough for evaluation. However, no focal lesion is noted.
+::s-gp::A tiny echogenic polyp, __ cm in size, in the gallbladder noted. Cholesterol polyp is considered.
+::s-ga::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
+::s-rcs::Several renal cysts in both kidneys, size up to __ cm.
+::s-hcs::Several hepatic cysts, size up to __ cm.
 
 ;; Sono, Breast
 ::sbrspp::S/P previous right BCS (Breast conservation surgery) without evidence of local recurrence.
@@ -24,14 +28,33 @@
 ::sbrln::A reactive lymph node at right axilla noted.
 ::sblln::A reactive lymph node at left axilla noted.
 ::sbbln::Reactive lymph nodes at both axillae noted.
-::sbrc1::Presence of an anechoic cyst at _ o'clock position of right breast, measuring about _ cm in size. Fibrocystic disease considered.
-::sblc1::Presence of an anechoic cyst at _ o'clock position of left breast, measuring about _ cm in size. Fibrocystic disease considered.
-::sbrc2::Presence of several small anechoic cysts at right breast noted. Fibrocystic change considered.
-::sblc2::Presence of several small anechoic cysts at left breast noted. Fibrocystic change considered.
-::sbbc2::Presence of several small anechoic cysts at bilateral breasts noted. Fibrocystic change considered.
+::sbblnok::No definite lymphadenopathy at both axillae noted.
+::sbrc::Presence of an anechoic cyst at __ o'clock position of right breast, measuring about __ cm in size. Fibrocystic disease considered.
+::sblc::Presence of an anechoic cyst at __ o'clock position of left breast, measuring about __ cm in size. Fibrocystic disease considered.
+::sbrcs::Presence of several small anechoic cysts at right breast noted. Fibrocystic change considered.
+::sblcs::Presence of several small anechoic cysts at left breast noted. Fibrocystic change considered.
+::sbbcs::Presence of several small anechoic cysts at bilateral breasts noted. Fibrocystic change considered.
 ::sbb2::ACR-BIRADS 5th ed., category 2. Follow up as routine screening is recommended.
 ::sbb3::ACR-BIRADS 5th ed., category 3. Probably benign. Suggest short-interval (3-6 month) follow-up.
 ::sbb4a::ACR-BIRADS 5th ed., category 4a. Biopsy is recommended to exclude benign-looking malignancy.
+::sbb4b::ACR-BIRADS 5th ed., category 4b. Suspicious abnormality carrying intermediate probability of malignancy was noted. Biopsy recommended.
+::sbrfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of right breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
+::sblfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of left breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
+::sbrfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, at __ o'clock position of right breast. More likely benign nature such as fibroadenomas.
+::sblfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, at __ o'clock position of left breast. More likely benign nature such as fibroadenomas.
+::sbbfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in bilateral breasts. More likely benign nature such as fibroadenomas.
+::sblok::No focal lesion in the left breast.
+::sbrok::No focal lesion in the right breast.
+::sbbok::No focal lesion in the bilateral breasts.
+::sbrca::
+  MyForm =
+(
+An irregular, hypoechoic nodule, measuring about __ cm in size, is noted at right breast, __ o'clock position / __  cm from nipple.
+Relatively increased intratumoral flow noted.
+Breast cancer is suspected.
+)
+  Paste(MyForm, false)
+Return
 
 ::sbok::
   MyForm =
@@ -56,11 +79,11 @@ Return
 
   ;GetSonoSR2(AccNo, tabIframe2)
 
-  LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
-  RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
+  LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "__ cm"
+  RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "__ cm"
 
   Sex := StrSplit(tabIframe2.document.getElementById("tabPatient").children(0).children(0).children(0).children(0).innerText, "/")[2]
-  Prostate := tabIframe2.document.getElementById("sr_prostate") ? tabIframe2.document.getElementById("sr_prostate").value : "_ ml"
+  Prostate := tabIframe2.document.getElementById("sr_prostate") ? tabIframe2.document.getElementById("sr_prostate").value : "__ ml"
 
   MyForm =
 (
@@ -113,6 +136,24 @@ No abnormal dilatation of bilateral urinary collecting systems noted.
 )
 
   Sleep 300 ; Probably more than enough. Depends on the system.
+  Paste(MyForm, false)
+Return
+
+::s-uabdok::
+  MyForm =
+(
+The visualized portion of pancreas is unremarkable.
+
+Normal liver parenchyma echo pattern without focal lesion noted.
+
+The gallbladder is well distended with smooth wall.
+No abnormal dilatation of IHDs and CBD noted.
+
+The visualized portion of spleen is unremarkable.
+
+Bilateral kidneys are normal in size and echogenicity.
+No abnormal dilatation of bilateral urinary collecting systems noted.
+)
   Paste(MyForm, false)
 Return
 
@@ -202,7 +243,7 @@ Return
 ::sprca::
   MyForm =
 (
-Presence of a focal hypoechoic nodular lesion about _ cm in diameter at the peripheral zone of _ lobe of prostate.
+Presence of a focal hypoechoic nodular lesion about __ cm in diameter at the peripheral zone of __ lobe of prostate.
 CA of prostate is suspected.
 Further evaluation recommended.
 )
@@ -213,7 +254,7 @@ Return
   MyForm =
 (
 Nodular hyperechoic change in the transitional zone noted. Nodular hyperplasia considered.
-The prostate was measured about _ cc in volume.
+The prostate was measured about __ cc in volume.
 )
   Paste(MyForm, false)
 Return
@@ -231,9 +272,21 @@ Return
   MyForm =
 (
 S/P previous TURP with a central cleft of the prostate noted.
-The prostate was measured about _ cc in volume.
+The prostate was measured about __ cc in volume.
 )
   Paste(MyForm, false)
 Return
 
 ::sprsok::Normal appearance of the seminal vesicles.
+
+::ssv::
+  MyForm =
+(
+Presence of convoluted vascular structure within bilateral hemiscrotums with back flow noted in Valsalva maneuver.
+More promient of the left/right, with the vascular diameter measuring up to __ cm in diameter.
+Varicoceles considered.
+
+Normal size of the testes. Normal epididymides.
+)
+  Paste(MyForm, false)
+Return
