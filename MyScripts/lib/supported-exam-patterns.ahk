@@ -64,6 +64,7 @@ SupportedExamPatterns() {
                 , SonoUpperAbd: "Sono, Upper abdomen"
                 , SonoLowerAbd: "Sono, Lower abdomen"
                 , SonoBr:       "Sono, Breast"
+                , SonoScrotum:  "Sono, Scrotum"
                 , CTAbd:        "CT (whole abdomen|Pan or Liver) (with/)?no contras"
                 , CTBrain:      "CT brain (with/)?no contrast"
                 , CTNeck:       "CT face \+ neck with/no contrast"
