@@ -86,6 +86,9 @@
 ::ocd::osteochondritis dissecans
 ::j::joint
 ::rct::rotator cuff tear
+::oall::ossification of the cervical anterior longitudinal ligament
+::opll::ossification of the posterior longitudinal ligament
+::dish::diffuse idiopathic skeletal hyperostosis
 
 ;; Abdomen
 ::ln::lymph node

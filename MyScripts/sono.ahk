@@ -46,10 +46,21 @@
 ::sblok::No focal lesion in the left breast.
 ::sbrok::No focal lesion in the right breast.
 ::sbbok::No focal lesion in the bilateral breasts.
+::sbrl::__ cm in size, at __ o'clock position of right breast, __ cm from the nipple.
+::sbll::__ cm in size, at __ o'clock position of left breast, __ cm from the nipple.
 ::sbrca::
   MyForm =
 (
 An irregular, hypoechoic nodule, measuring about __ cm in size, is noted at right breast, __ o'clock position / __  cm from nipple.
+Relatively increased intratumoral flow noted.
+Breast cancer is suspected.
+)
+  Paste(MyForm, false)
+Return
+::sblca::
+  MyForm =
+(
+An irregular, hypoechoic nodule, measuring about __ cm in size, is noted at left breast, __ o'clock position / __  cm from nipple.
 Relatively increased intratumoral flow noted.
 Breast cancer is suspected.
 )
@@ -287,6 +298,30 @@ More promient of the left/right, with the vascular diameter measuring up to __ c
 Varicoceles considered.
 
 Normal size of the testes. Normal epididymides.
+)
+  Paste(MyForm, false)
+Return
+
+::stok::
+  MyForm =
+(
+The sizes, surfaces, parenchymal thickness and echo pattern of both lateral lobes of thyroid are WNL.
+Maximal AP distance  of RT lateral lobe : __ cm; of left lateral lobe: __ cm.
+
+Bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
+)
+  Paste(MyForm, false)
+Return
+
+::spel::
+  MyForm =
+(
+The maximal thickness of uterine fundus is __ cm. The uterine cervix is __ cm thick.
+The endometrium was mild visible under sonography.
+
+The volume of RT ovary is about __ ml, and LT is about __ ml.
+
+No obvious abnormal soft tissue mass noted under the sonography.
 )
   Paste(MyForm, false)
 Return
