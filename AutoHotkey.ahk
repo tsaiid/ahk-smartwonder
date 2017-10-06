@@ -14,6 +14,8 @@ GroupAdd, SmartWonder, tedpc-
 #Include <WBGet>
 #Include <Paste>
 #Include <varExist>
+#Include <JSON>
+#Include <StdOutStream>
 
 ; Options
 ENABLE_KEY_COUNTER := 0
