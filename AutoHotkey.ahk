@@ -16,6 +16,7 @@ GroupAdd, SmartWonder, tedpc-
 #Include <varExist>
 #Include <JSON>
 #Include <StdOutStream>
+#Include <WinHttpRequest>
 
 ; Options
 ENABLE_KEY_COUNTER := 0
@@ -114,6 +115,7 @@ SetTitleMatchMode, 2
 #Include MyScripts\hotkey\navigation-exam-list.ahk
 #Include MyScripts\hotkey\status-of-us-rct-without-image.ahk
 #Include MyScripts\hotkey\query-prev-images-for-sonographer.ahk
+#Include MyScripts\hotkey\open-in-osirix.ahk
 
 ; Previously enabled but now disabled functions
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
@@ -246,6 +248,10 @@ Return
 
 ^+h::
   ClickEMR()
+Return
+
+^+o::
+  OpenCurrentAccNoInOsiriX()
 Return
 
 ; Status of US RCT Without Image
