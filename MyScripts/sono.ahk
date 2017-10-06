@@ -82,19 +82,23 @@ Return
 
 ;; Forms
 ::s-labd::
-  ;GetSonoSR()
-
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
-  ;GetSonoSR2(AccNo, tabIframe2)
+  parsedSR := GetSonoSR_Local(AccNo)
 
-  LeftKidney := tabIframe2.document.getElementById("sr_left_kidney") ? tabIframe2.document.getElementById("sr_left_kidney").value : "__ cm"
-  RightKidney := tabIframe2.document.getElementById("sr_right_kidney") ? tabIframe2.document.getElementById("sr_right_kidney").value : "__ cm"
+  ;sometimes need to debug
+  If (parsedSR.status.error) {
+    MsgBox % parsedSR.status.message
+  }
+
+  measure := parsedSR.result
+  LeftKidney := measure["kidney"]["left"] ? measure["kidney"]["left"] : "__ cm"
+  RightKidney := measure["kidney"]["right"] ? measure["kidney"]["right"] : "__ cm"
 
   Sex := StrSplit(tabIframe2.document.getElementById("tabPatient").children(0).children(0).children(0).children(0).innerText, "/")[2]
-  Prostate := tabIframe2.document.getElementById("sr_prostate") ? tabIframe2.document.getElementById("sr_prostate").value : "__ ml"
+  Prostate := measure["Prostate Vol"] ? measure["Prostate Vol"] : "__ ml"
 
   MyForm =
 (
@@ -115,20 +119,21 @@ Normal appearance of urinary bladder. No stones nor sludge is noted.
 Return
 
 ::s-uabd::
-  ;GetSonoSR()
-
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
-  ;GetSonoSR2(AccNo, tabIframe2)
+  parsedSR := GetSonoSR_Local(AccNo)
 
-  LeftKidney := tabIframe2.document.getElementById("sr_left_kidney")
-              ? tabIframe2.document.getElementById("sr_left_kidney").value : "_ cm"
-  RightKidney := tabIframe2.document.getElementById("sr_right_kidney")
-               ? tabIframe2.document.getElementById("sr_right_kidney").value : "_ cm"
-  Spleen := tabIframe2.document.getElementById("sr_spleen")
-          ? tabIframe2.document.getElementById("sr_spleen").value : "_ cm"
+  ;sometimes need to debug
+  If (parsedSR.status.error) {
+    MsgBox % parsedSR.status.message
+  }
+
+  measure := parsedSR.result
+  LeftKidney := measure["kidney"]["left"] ? measure["kidney"]["left"] : "__ cm"
+  RightKidney := measure["kidney"]["right"] ? measure["kidney"]["right"] : "__ cm"
+  Spleen := measure["kidney"]["spleen"] ? measure["kidney"]["spleen"] : "__ cm"
 
   MyForm =
 (

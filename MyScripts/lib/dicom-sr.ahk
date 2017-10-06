@@ -369,3 +369,12 @@ GetTasSR2(AccNo, ResultFrame){
 
   wb.quit()
 }
+
+GetSonoSR_Local(AccNo){
+  ruby_path = c:\Ruby24\bin\ruby.exe -W0
+  sr_script_dir = d:\tsaiid\git\vghks-dicom-sr
+  full_cmd = %ruby_path% %sr_script_dir%\sr-cli.rb %AccNo%
+
+  result := StdOutStream(full_cmd)
+  Return JSON.Load(result)
+}
