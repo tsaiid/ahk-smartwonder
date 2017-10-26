@@ -40,6 +40,7 @@ Return
 ::mrhh::A -cm nodule over S of liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
 ::actrn::A -cm nodule over S of liver, shows enhancement in arterial phase, and isodense in portal venous phase, in favor of regenerative nodule.
 ::actckd::Atrophic change of bilateral kidneys, in favor of chronic kidney disease.
+::actbph::Prostate enlargement with intravesical protrusion.
 
 ::acthcc::
   MyOrder := CopyOrder()
@@ -363,6 +364,43 @@ IV contrast medium: Yes, 80-100 ml, 1-2 ml/sec, with 100 seconds scanning delay.
 Previous abdominal CT: none.
 
 FINDINGS:
+
+IMPRESSION:
+
+SUGGESTION:
+
+)
+  Paste(MyForm)
+Return
+
+::actpcu::
+  wb := WBGet()
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  Sex := StrSplit(tabIframe2.document.getElementById("tabPatient").children(0).children(0).children(0).children(0).innerText, "/")[2]
+  SexOrganStr := (Sex = "M" ? "Prostate" : "Uterus") . ": Unremarkable."
+  MyForm =
+(
+INDICATION: PCU
+
+METHOD:
+Non-contrast and contrast-enhanced abdominal CT scans.
+Scanning range: Liver to symphysis, 5-mm contiguous scan.
+Contrast medium: Yes, 80-100 ml, 1-2 ml/sec, with arterial and portovenous phases.
+
+Previous abdominal CT: none.
+
+FINDINGS:
+Liver: Unremarkable.
+Spleen: Unremarkable.
+Biliary tree: Unremarkable.
+Pancreas: Unremarkable.
+GI Tracts: Unremarkable.
+Kidneys and ureters: Unremarkable.
+Urinary Bladder: Unremarkable.
+%SexOrganStr%
+Lungs: Unremarkable.
+Aorta & IVC: visualized portions appear normal.
+Ancillary findings:
 
 IMPRESSION:
 

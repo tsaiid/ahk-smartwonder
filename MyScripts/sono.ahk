@@ -5,18 +5,22 @@
 ::rl3us::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
 ::lu3us::A tiny stone at upper third of left ureter, with mild hydronephrosis.
 ::ll3us::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
-::s-scr-ok::The size and vascularity of bilateral testes and epididymides are within normal limits.
-::s-fl::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver change.
-::s-mfl::Slightly increased hyperechoic liver parenchyma without focal lesion noted, in favor of mild fatty liver change.
-::s-ngb::The gallbladder is not seen, may be due to previous cholecystectomy.
-::s-ckd::Cortical thinning, increased echogenicity, and small sizes of both kidneys, in favor of chronic kidney disease.
-::s-p/c::The gallbladder was not found, most likely resected at the previous operation.
-::s-nnpo::Probably due to non-NPO status, the gallbladder is not distended enough for evaluation. However, no focal lesion is noted.
-::s-nf::The urinary bladder is not distended enough for evaluation. However, no focal lesion is noted.
-::s-gp::A tiny echogenic polyp, __ cm in size, in the gallbladder noted. Cholesterol polyp is considered.
-::s-ga::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
-::s-rcs::Several renal cysts in both kidneys, size up to __ cm.
-::s-hcs::Several hepatic cysts, size up to __ cm.
+::sscrok::The size and vascularity of bilateral testes and epididymides are within normal limits.
+::sfl::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver change.
+::smfl::Slightly increased hyperechoic liver parenchyma without focal lesion noted, in favor of mild fatty liver change.
+::sngb::The gallbladder is not seen, may be due to previous cholecystectomy.
+::sckd::Cortical thinning, increased echogenicity, and small sizes of both kidneys, in favor of chronic kidney disease.
+::sspc::The gallbladder was not found, most likely resected at the previous operation.
+::snnpo::Probably due to non-NPO status, the gallbladder is not distended enough for evaluation. However, no focal lesion is noted.
+::subnf::The urinary bladder is not distended enough for evaluation. However, no focal lesion is noted.
+::sgp::A tiny echogenic polyp, __ cm in size, in the gallbladder noted. Cholesterol polyp is considered.
+::sgps::Several tiny echogenic polyps, size up to __ cm, in the gallbladder noted. Cholesterol polyps are considered.
+::sgbs::Several echogenic lesions in GB with postural change and acoustic shadow, in favor gallstones.
+::sga::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
+::srcs::Several renal cysts in both kidneys, size up to __ cm.
+::shcs::Several hepatic cysts, size up to __ cm.
+::spb::The pancreas can not be well evaluated because of gas blockage.
+::spaok::The visualized portion of pancreas is unremarkable.
 
 ;; Sono, Breast
 ::sbrspp::S/P previous right BCS (Breast conservation surgery) without evidence of local recurrence.
@@ -38,6 +42,7 @@
 ::sbb3::ACR-BIRADS 5th ed., category 3. Probably benign. Suggest short-interval (3-6 month) follow-up.
 ::sbb4a::ACR-BIRADS 5th ed., category 4a. Biopsy is recommended to exclude benign-looking malignancy.
 ::sbb4b::ACR-BIRADS 5th ed., category 4b. Suspicious abnormality carrying intermediate probability of malignancy was noted. Biopsy recommended.
+::sbb4c::ACR-BIRADS 5th ed., category 4c. Highly suspicious malignancy. Biopsy recommended.
 ::sbrfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of right breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
 ::sblfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of left breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
 ::sbrfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, at __ o'clock position of right breast. More likely benign nature such as fibroadenomas.
@@ -81,7 +86,7 @@ No dominant mass or suspicious calcification.
 Return
 
 ;; Forms
-::s-labd::
+::slabd::
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
@@ -118,7 +123,7 @@ Normal appearance of urinary bladder. No stones nor sludge is noted.
   Paste(MyForm, false)
 Return
 
-::s-uabd::
+::suabd::
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
@@ -155,7 +160,7 @@ No abnormal dilatation of bilateral urinary collecting systems noted.
   Paste(MyForm, false)
 Return
 
-::s-uabdok::
+::suabd0::
   MyForm =
 (
 The visualized portion of pancreas is unremarkable.
@@ -247,7 +252,7 @@ Carotid Intima-media thickness (CIMT): right carotid [0.] mm; left carotid [0.] 
   Paste(MyForm, false)
 Return
 
-::s-nodvt::
+::sdvtok::
   MyForm =
 (
 Bilateral deep veins of lower limbs, from femoral to popliteal regions, are patent.

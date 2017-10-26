@@ -106,7 +106,7 @@
 ::lul::left upper lung
 ::bul::bilateral upper lungs
 ::nnp::No newly developed patch opacity in lung fields.
-::ii::Exaggerated lung markings, may be due to insufficient inspiration.
+::ii::Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration.
 ::ii0::insufficient inspiration
 ::iir::insufficient inspiration related
 ::rrf::Old fractures of right ribs.
@@ -142,7 +142,7 @@
 ::bsoa::OA change of bilateral shoulders.
 ::xg::Few tiny dense nodules over bilateral lung fields, in favor of granulomas.
 ::plbok::Post lung biopsy, and no obvious pneumothorax is noted.
-::akb::Aortic knob calcification.
+::aak::Atherosclerotic change of the aortic knob.
 ::rci::Anterior interposition of the colon to the liver reaching the under-surface of the right hemidiaphragm.
 ::cpftl::Compression fracture of several lower T- and L-spine.
 ::mw::Mediastinal widening, possibly due to tortuosity of the thoracic aorta. Suggest clinical correlation.

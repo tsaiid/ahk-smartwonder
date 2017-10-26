@@ -8,6 +8,7 @@
 ::djdl::DJD change of L-spine.
 ::djdt::DJD change of T-spine.
 ::djdtl::DJD change of T- and L-spine.
+::oak::OA change of the knee.
 ::oak0::Mild joint space narrowing at medial compartment of knee joint.
 ::oak1a::Mild joint space narrowing, especially at medial compartment of knee joint, consistent with osteoarthrosis.
 ::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, consistent with osteoarthrosis.
@@ -65,7 +66,7 @@
 ::frs::fractures
 ::clfr::clavicular fracture
 ::afr::avulsion fracture
-::pfr::pars interarticularis fracture
+::pfr::pathologic fracture
 ::lfr::linear fracture
 ::rp3cf::Right proximal third clavicule fracture.
 ::lp3cf::Left proximal third clavicule fracture.
@@ -81,6 +82,7 @@
 ::bdhs::s/p bilateral dynamic hip screw fixation.
 ::js::joint space
 ::jsn::joint space narrowing
+::jsw::joint space widening
 ::ds::disc space
 ::dsn::disc space narrowing `
 ::mof::marginal osteophyte formation

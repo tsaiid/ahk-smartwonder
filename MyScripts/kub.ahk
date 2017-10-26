@@ -13,6 +13,7 @@
 ::lfcvp::On central venous catheter via left femoral vein.
 ::ki::Obvious small bowel gas, may be due to ileus.
 ::ki2::Focal dilated bowel loops, probably ileus or partial bowel obstruction.
+::kbo::Obvious dilated bowel loops, suspicious bowel obstruction.
 ::kmi::Mild distended small bowel gas, may be due to mild ileus.
 ::rdj::s/p right side double-J ureteral stent.
 ::ldj::s/p left side double-J ureteral stent.

@@ -89,6 +89,7 @@
 ::oall::ossification of the cervical anterior longitudinal ligament
 ::opll::ossification of the posterior longitudinal ligament
 ::dish::diffuse idiopathic skeletal hyperostosis
+::rom::range of motion
 
 ;; Abdomen
 ::ln::lymph node
@@ -131,6 +132,7 @@
 ::uvj::ureterovesical junction
 ::upj::ureteropelvic junction
 ::apn::acute pyelonephritis
+::bo::bowel obstruction
 ::sbo::small bowel obstruction
 ::aml::angiomyolipoma
 

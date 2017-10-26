@@ -29,7 +29,7 @@
 ::wo::without `
 ::esp::especially `
 ::asp::aspiration
-::cw::compatible with `
+::cw::comsistent with `
 ::ow::otherwise, `
 ::rm::remarkable `
 ::urm::unremarkable `
