@@ -376,5 +376,10 @@ GetSonoSR_Local(AccNo){
   full_cmd = %ruby_path% %sr_script_dir%\sr-cli.rb %AccNo%
 
   result := StdOutStream(full_cmd)
-  Return JSON.Load(result)
+  Try {
+    parsedSr := JSON.Load(result)
+  } Catch e {
+    MsgBox, Parsing JSON error: %e%
+  }
+  Return parsedSr
 }
