@@ -2,7 +2,7 @@
 ;; Retrieve Images And Then Open in OsiriX
 
 OpenInOsiriX(AccNo) {
-  osirixUrl = http://172.31.67.220:8080
+  osirixUrl = http://mbpr-lan-ip.tsai.it:8080
   serverName = VGHKS
   requestXml =
 (
