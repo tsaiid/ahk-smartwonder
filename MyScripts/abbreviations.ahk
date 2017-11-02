@@ -44,6 +44,7 @@
 ::pri::primary `
 ::sec::secondary `
 ::ned::no evidence of disease.
+::ner::no evidence of recurrence.
 ::hx::history `
 ::subq::subcutaneous `
 ::afl::air-fluid level

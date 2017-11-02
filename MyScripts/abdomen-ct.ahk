@@ -41,6 +41,7 @@ Return
 ::actrn::A -cm nodule over S of liver, shows enhancement in arterial phase, and isodense in portal venous phase, in favor of regenerative nodule.
 ::actckd::Atrophic change of bilateral kidneys, in favor of chronic kidney disease.
 ::actbph::Prostate enlargement with intravesical protrusion.
+::aphe::arterial phase hyperenhancement
 
 ::acthcc::
   MyOrder := CopyOrder()

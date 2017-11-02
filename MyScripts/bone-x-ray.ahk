@@ -103,12 +103,14 @@
 ::wgd::wedge deformity
 ::opc::osteoporotic change
 ::gopc::generalized osteoporotic change
+::dop::disuse osteoporosis
 ::avn::avascular necrosis
 ::lhd::A drain at left hip region.
 ::rhd::A drain at right hip region.
 ::u+::Positive ulnar variance.
 ::u-::Negative ulnar variance.
 ::hm::hypermobility
+::nhm::No obvious hypermobility.
 ::noas::No obvious squaring of the vertebral bodies.
 ::gvr::genu varus
 ::gvg::genu valgus

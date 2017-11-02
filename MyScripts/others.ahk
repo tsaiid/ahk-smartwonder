@@ -126,5 +126,6 @@ Return
 ::me::mediastinum
 ::fa::free air
 ::fs::fatty stranding
+::hop::hollow organ perforation
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
