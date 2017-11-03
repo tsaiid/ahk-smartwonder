@@ -97,6 +97,10 @@ Return
 ::hyperi::hyperintensity
 ::hypoi::hypointensity
 ::isoi::intermediate signal intensity
+::T1h::T1 hyperintensity
+::T1l::T1 hypointensity
+::T2h::T2 hyperintensity
+::T2l::T2 hypointensity
 ::hyperd::hyperdense
 ::hypod::hypodense
 ::isod::isodense

@@ -136,6 +136,7 @@
 ::bo::bowel obstruction
 ::sbo::small bowel obstruction
 ::aml::angiomyolipoma
+::iai::intra-abdominal infection
 
 ;; Neuro
 ::ich::intracranial hemorrhage
