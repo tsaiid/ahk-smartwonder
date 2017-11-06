@@ -41,6 +41,9 @@
 ::lat::lateral `
 ::med::medial `
 ::suplat::superolateral `
+::inflat::inferolateral `
+::antlat::anterolateral `
+::postlat::posterolateral `
 ::pri::primary `
 ::sec::secondary `
 ::ned::no evidence of disease.
@@ -97,6 +100,7 @@
 ::lns::lymph nodes
 ::lap::lymphadenopathy
 ::laps::lymphadenopathies
+::mlap::metastatic lymphadenopathy
 ::met::metastasis
 ::mets::metastases
 ::metc::metastatic
