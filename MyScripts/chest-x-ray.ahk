@@ -9,7 +9,7 @@
 ::nn::No nodular opacities (> 1cm) noted over bilateral lung fields.
 ::0::No previous film for comparison.{Enter 2}
 ::1::No abnormal patch opacity in lung fields. {Enter}No cardiomegaly.
-::2::No abnormal patch opacity in lung fields. {Enter}No cardiomegaly.{Enter}The bowel gas pattern is unremarkable.
+::2::No abnormal patch opacity in lung fields. {Enter}No cardiomegaly.{Enter}The bowel gas pattern is normal.
 ::clnic::The condition of lung shows no obvious change as compared with previous study.
 ::clat::Suggest correlation with lateral view.
 ::ett::On endotracheal tube with tip at proper location.

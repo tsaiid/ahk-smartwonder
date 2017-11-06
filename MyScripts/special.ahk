@@ -80,11 +80,11 @@ Barium aspiration: Nil., Yes, due to : poor or absence of (epiglottic tilting, e
 Retention: Nil.
 
 -Swallowing stages analysis:
-  -Control of junction of mouth and pharynx (stage 1): Unremarkable, (tongue deficiency, palatal deficiency with compensation; decompensation with leakage).
-  -Closure of the palatopharyngeal isthmus (stage 2): Unremarkable, (deficiency of the pharyngeal palate with comensation, decompensation with nasopharyngeal regurgitation).
-  -Compression of the bolus (stage 3): Unremarkable, (deficiency of the tongus, constrictor muscle, with barium retention in valleculae or piriform sinuses after swallowing).
-  -Closure of the larynx (stage 4): . Unremarkable, laryngeal penetration.
-       -Opening of the pharyngoesophageal segment (stage 5): : unremarkable, overflow aspiration, retained bolus.
+  -Control of junction of mouth and pharynx (stage 1): normal, (tongue deficiency, palatal deficiency with compensation; decompensation with leakage).
+  -Closure of the palatopharyngeal isthmus (stage 2): normal, (deficiency of the pharyngeal palate with comensation, decompensation with nasopharyngeal regurgitation).
+  -Compression of the bolus (stage 3): normal, (deficiency of the tongus, constrictor muscle, with barium retention in valleculae or piriform sinuses after swallowing).
+  -Closure of the larynx (stage 4): . normal, laryngeal penetration.
+       -Opening of the pharyngoesophageal segment (stage 5): : normal, overflow aspiration, retained bolus.
 
 -Aspiration: Nil. Yes, during stage ///
 

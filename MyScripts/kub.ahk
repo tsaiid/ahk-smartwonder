@@ -1,8 +1,8 @@
 ﻿; For KUB
-::k::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
-::k2::The bilateral kidney shadows and psoas muscle contours are unremarkable.
-::kb::the bowel gas pattern is unremarkable.
-::kob::The other bowel gas pattern is unremarkable.
+::k::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are normal.
+::k2::The bilateral kidney shadows and psoas muscle contours are normal.
+::kb::the bowel gas pattern is normal.
+::kob::The other bowel gas pattern is normal.
 ::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Ring like calcification nodules in the pelvic cavity are mostly due to phleboliths of the vein.
 ::kgbs::Round opacities over RUQ of abdomen, suspicious gallstones. Suggest correlation with sonography.
@@ -53,7 +53,7 @@
   MyForm =
 (
 Mottled gas pattern along colon course is noted, implying fecal residues retention.
-Otherwise, the bowel gas pattern is unremarkable.
+Otherwise, the bowel gas pattern is normal.
 )
   Paste(MyForm)
 Return
@@ -61,9 +61,9 @@ Return
   MyForm =
 (
 Mottled gas pattern along colon course is noted, implying fecal residues retention.
-Otherwise, the bowel gas pattern is unremarkable.
+Otherwise, the bowel gas pattern is normal.
 
-Bilateral kidney shadows and psoas muscle contours are unremarkable.
+Bilateral kidney shadows and psoas muscle contours are normal.
 )
   Paste(MyForm)
 Return

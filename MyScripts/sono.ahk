@@ -20,7 +20,7 @@
 ::srcs::Several renal cysts in both kidneys, size up to __ cm.
 ::shcs::Several hepatic cysts, size up to __ cm.
 ::spb::The pancreas can not be well evaluated because of gas blockage.
-::spaok::The visualized portion of pancreas is unremarkable.
+::spaok::The visualized portion of pancreas is normal.
 
 ;; Sono, Breast
 ::sbrspp::S/P previous right BCS (Breast conservation surgery) without evidence of local recurrence.
@@ -142,14 +142,14 @@ Return
 
   MyForm =
 (
-The visualized portion of pancreas is unremarkable.
+The visualized portion of pancreas is normal.
 
 Normal liver parenchyma echo pattern without focal lesion noted.
 
 The gallbladder is well distended with smooth wall.
 No abnormal dilatation of IHDs and CBD noted.
 
-The visualized portion of spleen is unremarkable. Spleen size about %Spleen%.
+The visualized portion of spleen is normal. Spleen size about %Spleen%.
 
 Bilateral kidneys are normal in echogenicity.
 Right kidney size about %RightKidney%; left kidney size about %LeftKidney%.
@@ -163,14 +163,14 @@ Return
 ::suabd0::
   MyForm =
 (
-The visualized portion of pancreas is unremarkable.
+The visualized portion of pancreas is normal.
 
 Normal liver parenchyma echo pattern without focal lesion noted.
 
 The gallbladder is well distended with smooth wall.
 No abnormal dilatation of IHDs and CBD noted.
 
-The visualized portion of spleen is unremarkable.
+The visualized portion of spleen is normal.
 
 Bilateral kidneys are normal in size and echogenicity.
 No abnormal dilatation of bilateral urinary collecting systems noted.
@@ -231,7 +231,7 @@ The RT ovary was measured as %RightOvaryL% x %RightOvaryH% x %RightOvaryW% cm (%
 The LT ovary was measured as %LeftOvaryL% x %LeftOvaryH% x %LeftOvaryW% cm (%LeftOvaryVol% ml) in size.
 
 
-Impression: Essentially unremarkable study.
+Impression: Essentially normal study.
 )
   Paste(MyForm, false)
 Return
@@ -240,10 +240,10 @@ Return
   MyForm =
 (
 Presence of RT calcified plaques measuring up to 0. x 0. cm (length x thickness) at right __carotid bulb and extracranial ICA__ without significant luminal stenosis.
-Unremarkable RT CCA and ICA.
+Normal RT CCA and ICA.
 
 Presence of a calcified plaque measuring about 0. x 0. cm (length x thickness) at left __ICA orifice__ without significant luminal stenosis.
-Unremarkable left CCA and ICA.
+Normal left CCA and ICA.
 
 No significant luminal stenosis.
 
