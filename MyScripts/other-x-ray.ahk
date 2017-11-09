@@ -8,14 +8,6 @@
 ::rc0::regressive change.
 ::pc1::progressive change than previous.
 ::rc1::regressive change than previous.
-::cc::Suggest clinical correlation.
-::cc0::clinical correlation
-::fe::Suggest further evaluation.
-::fe0::further evaluation
-::fu::Suggest follow-up.
-::fu0::follow-up
-::ccfu::Suggest clinical correlation and follow-up.
-::fufe::Suggest follow-up or further evaluation.
 ::nbd::Nature to be determined.
 ::msok::Bilateral maxillary sinuses are well pneumatized.
 ::rmcs::Ground glass opacity in right maxillary sinus, suspicious mucoperiosteal thickening or chronic sinusitis.

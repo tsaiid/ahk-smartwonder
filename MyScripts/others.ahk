@@ -88,7 +88,19 @@ Return
 :c:SG::SUGGESTION:
 :c:FD::FINDINGS:
 
+; recommendations
 ::sg::suggest
+::cc::Suggest clinical correlation.
+::cc0::clinical correlation
+::fe::Suggest further evaluation.
+::fe0::further evaluation
+::feci::Suggest further evaluation if clinically indicated.
+::fu::Suggest follow-up.
+::fu0::follow-up
+::ccfu::Suggest clinical correlation and follow-up.
+::fufe::Suggest follow-up or further evaluation.
+
+
 ::sgo::suggestive of `
 ::obv::obvious
 ::nob::no obvious `

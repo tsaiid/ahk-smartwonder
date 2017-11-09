@@ -68,12 +68,12 @@
 ::afr::avulsion fracture
 ::pfr::pathologic fracture
 ::lfr::linear fracture
-::rp3cf::Right proximal third clavicule fracture.
-::lp3cf::Left proximal third clavicule fracture.
-::rm3cf::Right middle third clavicule fracture.
-::lm3cf::Left middle third clavicule fracture.
-::rd3cf::Right distal third clavicule fracture.
-::ld3cf::Left distal third clavicule fracture.
+::rpcf::Right proximal third clavicule fracture.
+::lpcf::Left proximal third clavicule fracture.
+::rmcf::Right middle third clavicule fracture.
+::lmcf::Left middle third clavicule fracture.
+::rdcf::Right distal third clavicule fracture.
+::ldcf::Left distal third clavicule fracture.
 ::rfnf::Right femoral neck fracture.
 ::lfnf::Left femoral neck fracture.
 ::usfr::ulnar styloid process fracture.
@@ -143,6 +143,8 @@
 ::rwoa::OA change of right wrist.
 ::lwoa::OA change of left wrist.
 ::bwoa::OA change of bilateral wrists.
+::rsct::A tiny linear calcification over superolateral aspect of right shoulder, in favor of calcific tendinitis. 
+::lsct::A tiny linear calcification over superolateral aspect of left shoulder, in favor of calcific tendinitis. 
 
 ; Multiline
 ::flat::
