@@ -36,6 +36,35 @@ Follow up or further evaluation.
   Paste(MyForm)
 Return
 
+;; CTN1wnl
+::ctn1wnl::
+  MyOrder := CopyOrder()
+  MyForm =
+(
+INDICATION: %MyOrder%
+CT scan of brain was performed with a multi-slice CT scanner:
+METHOD: (1) Noncontrast and (2) Post-contrast enhancement
+SCAN RANGE: oblique axial plane from the skull base to the vertex with 5-mm continuous scan slice thickness
+CONTRAST MEDIUM: IV route, 80 ml, 1 ml/sec.
+
+COMPARISON:
+Applicable previous CT of brain: no
+
+FINDINGS:
+Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
+
+No definite abnormal enhancing mass lesion in the brain noted.
+
+No definite acute intracranial parenchymal hemorrhage or acute epidural or acute subdural hematoma in the brain noted.
+
+The bilateral lateral ventricles showed symmetrical without dilatation.
+
+IMPRESSION:
+No definite abnormal enhancing mass lesion in the brain noted.
+)
+  Paste(MyForm)
+Return
+
 ;; CTN2
 ::ctn2::
   MyOrder := CopyOrder()
@@ -187,7 +216,7 @@ The MR of the brain performed with Sagittal T1WI (localizer)
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Coronal T1WI, T2WI
 Diffusion-weighted Imaging (DWI)
-And post Gadolinium (0.1 mmol/kg) enhancement with axial and coronal T1 weighted image
+And post Gadolinium (0.1 mmol/kg) enhancement with axial and coronal T1 weighted image 
 Intracranial MRA with 3D TOF and focus on the circle of Willis showed:
 [[Intracranial MRA with 3D TOF and focus on the circle of Willis, intracranial MR venography (MRV) showed:]]
 
@@ -196,21 +225,21 @@ Previous MRI of brain: none
 Findings:
 
 -----------------------------------
-Post-contrast study was not performed due to clinician request.
+Post-contrast study was not performed due to clinician request. 
 
-Becasue this patient couldn't tolerate this examination finally, the Gd-enhanced study was not obtained.
+Becasue this patient couldn't tolerate this examination finally, the Gd-enhanced study was not obtained. 
 
-Post-contrast study was not performed due to patient's family refusal.
+Post-contrast study was not performed due to patient's family refusal.  
 
-Post-contrast study was not performed due to impaired renal function of the patient.
+Post-contrast study was not performed due to impaired renal function of the patient.  
 
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficeint suggesting acute ischemia infarction in the brain and brainstem noted.
 
 No evidence of high signal intensity lesion in the brain stem on DWI.
 
-Several tiny high signal intensity lesions in right occipital lobe, bilateral centrum semiovale and bilateral high frontal-parietal lobes on T2WI, FLAIR and DWI images. Acute embolic infarctions are suspected.
+Several tiny high signal intensity lesions in right occipital lobe, bilateral centrum semiovale and bilateral high frontal-parietal lobes on T2WI, FLAIR and DWI images. Acute embolic infarctions are suspected. 
 
-Presence of small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter, with high signal intensity on T2WI, FLAIR, and DWI, and lower apparent diffusion coefficeint (ADC).
+Presence of small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter, with high signal intensity on T2WI, FLAIR, and DWI, and lower apparent diffusion coefficeint (ADC). 
 
 Presence of tiny old ischemic infarction involving bil. basal ganglion region.
 
@@ -241,6 +270,8 @@ Normal variation of right fetal posterior cerebral artery and trifurcation of an
 
 MRA shows normal variation of right persistent trigeminal artery. (HX: 5581748, ac: 57139640) (Hx: 15417944, Ac: 75376134) (Hx: 15785305, Ac: 81838580, F/69Y, 20170503)
 
+MRA shows normal variation of left persistent carotid-vertebrobasilar anastomosis, possibly persistent hypoglossal artery or persistent proatlantal intersegmental artery.  (Hx: 16381605, Ac: 85095461, M/51Y, 20170920)
+
 MRA shows normal variation of azygos anterior cerebral artery (uncommon to rare variant of the circle of Willis where the two A1 segments of the anterior cerebral artery (ACA) join to form a single trunk).
 Hx: 6203312, Ac: 79930827, F/61Y, 20161021
 
@@ -248,13 +279,13 @@ Presence of hypoplasia of A1 portion of right/left anterior cerebral artery.
 
 Normal variant of left vertebral artery directly arising from the aortic arch.
 
-Presence of normal variation of right/left /bilateral fetal posterior cerebral artery.
+Presence of normal variation of right/left /bilateral fetal posterior cerebral artery. 
 
 Incidental finding of right side fetal type posterior cerebral artery (PCA) from right internal carotid artery (ICA) with hypoplasia change at P1 segment of right PCA noted.
 
-Presence of long segment hypoplasia or narrowing of left vertebral artery of the neck portion.
+Presence of long segment hypoplasia or narrowing of left vertebral artery of the neck portion. 
 
-Presence of mild asymmetry of bilateral vertebral arteries, and more prominence over the right side, and patent flow of bilateral vertebral arteries noted, normal variation in favor.
+Presence of mild asymmetry of bilateral vertebral arteries, and more prominence over the right side, and patent flow of bilateral vertebral arteries noted, normal variation in favor.  
 
 Presence of normal variant of common origin of left vertebral artery and left common carotid artery, so called "left brachiocephalic trunk".
 
@@ -263,20 +294,20 @@ MRA shows that no evidence of aneurysm or arterial-venous malformation (AVM) not
 MRA shows that no evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
 
 MRA shows presence of segmental occlusion or high grade stenosis of the intracranial portion of basilar artery.
-MRA shows small diameter of right/left intracranial vertebral artery.
-MRA shows nonvisualization of right/left intracranial vertebral artery.
+MRA shows small diameter of right/left intracranial vertebral artery. 
+MRA shows nonvisualization of right/left intracranial vertebral artery. 
 
 MRA did not show the information of the vertebral artery due to the limited FOV (field of view) of this MRA study noted.
 
 S/P embolization of left vertebral artery aneurysm anterior to the medulla with susceptability artifact, possibly from coil embolization. However, whether embolization of the aneurysm was completed or not cannot be evaluated because of limited FOV (field of view) of this MRA study which cannot show the full information of vertebral artery. Please correlate with prior studies to check the status of the left vertebral artery aneurysm.
 
-MRV shows that no evidence of venous thrombosis involving the intracranial venous sinuses noted.
+MRV shows that no evidence of venous thrombosis involving the intracranial venous sinuses noted. 
 
 IMPRESSION:
 Essentially negative finding.
 No remarkable significant intracranial findings.
 
-No evident acute intracranial lesion.
+No evident acute intracranial lesion.  
 
 No evidence of high signal intensity on DWI suggesting acute or recent ischemia infarction in the brain noted.
 

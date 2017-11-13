@@ -32,6 +32,7 @@
 ::ttn::transient tachypnea of the newborn
 ::ild::interstitial lung disease
 ::sce::subcutaneous emphysema
+::aaa::abdominal aortic aneurysm
 
 ;; General
 ::ant::anterior `
@@ -141,6 +142,8 @@
 ::sbo::small bowel obstruction
 ::aml::angiomyolipoma
 ::iai::intra-abdominal infection
+::uc::urothelial carcinoma
+::uti::urinary tract infection
 
 ;; Neuro
 ::ich::intracranial hemorrhage
