@@ -1,26 +1,35 @@
 ﻿; Sono
 ;; Hotstrings
-::s-foley::s/p Foley catheterization. The urinary bladder is not distended enough for evaluation.
-::ru3us::A tiny stone at upper third of right ureter, with mild hydronephrosis.
-::rl3us::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
-::lu3us::A tiny stone at upper third of left ureter, with mild hydronephrosis.
-::ll3us::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
-::sscrok::The size and vascularity of bilateral testes and epididymides are within normal limits.
+;; Sono, Upper Abdomen
 ::sfl::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver change.
 ::smfl::Slightly increased hyperechoic liver parenchyma without focal lesion noted, in favor of mild fatty liver change.
+::slc::Irregular surface of the liver and coarsening change of the parenchyma, indicating liver cirrhosis.
 ::sngb::The gallbladder is not seen, may be due to previous cholecystectomy.
 ::sckd::Cortical thinning, increased echogenicity, and small sizes of both kidneys, in favor of chronic kidney disease.
 ::sspc::The gallbladder was not found, most likely resected at the previous operation.
 ::snnpo::Probably due to non-NPO status, the gallbladder is not distended enough for evaluation. However, no focal lesion is noted.
 ::subnf::The urinary bladder is not distended enough for evaluation. However, no focal lesion is noted.
-::sgp::A tiny echogenic polyp, __ cm in size, in the gallbladder noted. Cholesterol polyp is considered.
-::sgps::Several tiny echogenic polyps, size up to __ cm, in the gallbladder noted. Cholesterol polyps are considered.
-::sgbs::Several echogenic lesions in GB with postural change and acoustic shadow, in favor gallstones.
-::sga::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
-::srcs::Several renal cysts in both kidneys, size up to __ cm.
+::sgbp::A tiny echogenic polyp, __ cm in size, in the gallbladder noted. Cholesterol polyp is considered.
+::sgbps::Several tiny echogenic polyps, size up to __ cm, in the gallbladder noted. Cholesterol polyps are considered.
+::sgbs::A __-cm echogenic lesion in GB with acoustic shadow, in favor gallstone.
+::sgbss::Several echogenic lesions in GB with acoustic shadow, in favor gallstones.
+::sgbss1::Several echogenic lesions in GB with postural change and acoustic shadow, in favor gallstones.
+::sgba::Comet tail artifacts from the gallbladder wall, adenomyomatosis should be considered.
+::sgba1::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
+::srbcs::Several renal cysts in both kidneys, size up to __ cm.
+::srrc::A __-cm renal cyst in right kidney.
+::srlc::A __-cm renal cyst in left kidney.
 ::shcs::Several hepatic cysts, size up to __ cm.
 ::spb::The pancreas can not be well evaluated because of gas blockage.
 ::spaok::The visualized portion of pancreas is normal.
+
+;; Sono, Lower Abdomen
+::s-foley::s/p Foley catheterization. The urinary bladder is not distended enough for evaluation.
+::sru3us::A tiny stone at upper third of right ureter, with mild hydronephrosis.
+::srl3us::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
+::slu3us::A tiny stone at upper third of left ureter, with mild hydronephrosis.
+::sll3us::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
+::sscrok::The size and vascularity of bilateral testes and epididymides are within normal limits.
 
 ;; Sono, Breast
 ::sbrspp::S/P previous right BCS (Breast conservation surgery) without evidence of local recurrence.
@@ -86,7 +95,7 @@ No dominant mass or suspicious calcification.
 Return
 
 ;; Forms
-::slabd::
+::sla::
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
@@ -123,7 +132,7 @@ Normal appearance of urinary bladder. No stones nor sludge is noted.
   Paste(MyForm, false)
 Return
 
-::suabd::
+::sua::
   wb := WBGet()
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
@@ -160,7 +169,7 @@ No abnormal dilatation of bilateral urinary collecting systems noted.
   Paste(MyForm, false)
 Return
 
-::suabd0::
+::sua0::
   MyForm =
 (
 The visualized portion of pancreas is normal.
@@ -174,6 +183,15 @@ The visualized portion of spleen is normal.
 
 Bilateral kidneys are normal in size and echogenicity.
 No abnormal dilatation of bilateral urinary collecting systems noted.
+)
+  Paste(MyForm, false)
+Return
+
+::suaok::
+  MyForm =
+(
+No focal lesion in upper abdomen survey, including liver, GB, spleen, kidney or visible pancreas.
+The sizes, surfaces and echo pattern of both kidneys are WNL.
 )
   Paste(MyForm, false)
 Return
@@ -261,6 +279,21 @@ No evidence of deep vein thrombosis.
   Paste(MyForm, false)
 Return
 
+; TRUS related
+GetProstateVol()
+{
+  wb := WBGet()
+  tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
+  AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
+
+  parsedSR := GetSonoSR_Local(AccNo)
+
+  measure := parsedSR.result
+  Prostate := measure["Prostate Vol"] ? measure["Prostate Vol"] : "__ ml"
+
+  Return Prostate
+}
+
 ::sprca::
   MyForm =
 (
@@ -272,18 +305,24 @@ Further evaluation recommended.
 Return
 
 ::sprbph::
+  ProstateVol := GetProstateVol()
+
   MyForm =
 (
 Nodular hyperechoic change in the transitional zone noted. Nodular hyperplasia considered.
-The prostate was measured about __ cc in volume.
+The prostate is measured about %ProstateVol% in volume.
+
+Normal appearance of the seminal vesicles.
 )
   Paste(MyForm, false)
 Return
 
 ::sprok::
+  ProstateVol := GetProstateVol()
+
   MyForm =
 (
-No definite focal lesion in the peripheral zone of prostate, normal appearance of the inner glands, with the prostate  measured about 20 ml in volume.
+No definite focal lesion in the peripheral zone of prostate, normal appearance of the inner glands, with the prostate measured about %ProstateVol% in volume.
 Normal appearance of the seminal vesicles.
 )
   Paste(MyForm, false)
