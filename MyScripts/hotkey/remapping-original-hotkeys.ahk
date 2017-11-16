@@ -46,15 +46,15 @@ Return
 ;; for SmartIris
 #IfWinActive ahk_class TImgViewPort
 
-l::
+,::
   SendEvent ^+l
 Return
 
-`;::
+.::
   SendEvent ^+`;
 Return
 
-'::
+/::
   SendEvent ^+'
 Return
 
@@ -73,6 +73,33 @@ Return
 k::
   SendEvent {Up}
 Return
+
+; for YODA 2 use
+
+-::
+  SendEvent {F11}
+Return
+
+5::
+  SendEvent {F5}
+Return
+
+6::
+  SendEvent {F6}
+Return
+
+0::
+  SendEvent {F10}
+Return
+
+o::
+  SendEvent {Home}
+Return
+
+l::
+  SendEvent {End}
+Return
+
 
 /*
 
