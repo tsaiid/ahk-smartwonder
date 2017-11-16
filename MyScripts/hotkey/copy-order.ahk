@@ -13,18 +13,18 @@ CopyOrder(toLower = 0)
   OrderDiag := tabIframe2.document.getElementById(OrderId).value
 
   ; 只取 "Purpose :" 以後的字串, 把 "History & Data:" 拿掉
-  FoundPos := RegExMatch(OrderDiag, "^.*?(Reason :\s*(.*?))?((No history of i|I)mpaired renal func.*?)Purpose :\s*(.*?)\s*(History &(amp;)? Data\s*:(.*?)\s*)?$", OrderMatch)
+  FoundPos := RegExMatch(OrderDiag, "^.*Purpose :\s*(.*?)\s*(History &(amp;)? Data\s*:(.*?)\s*)?$", OrderMatch)
   if (FoundPos > 0) {
     ; 如果沒有句點則加上句點
-    StringRight, strEndChar, OrderMatch5, 1
-    strPurpose := (strEndChar = ".") ? OrderMatch5 : OrderMatch5 . "."
-    StringRight, strEndChar, OrderMatch8, 1
-    strHistory := (strEndChar = ".") ? OrderMatch8 : OrderMatch8 . "."
+    StringRight, strEndChar, OrderMatch1, 1
+    strPurpose := (strEndChar = ".") ? OrderMatch1 : OrderMatch1 . "."
+    StringRight, strEndChar, OrderMatch4, 1
+    strHistory := (strEndChar = ".") ? OrderMatch4 : OrderMatch4 . "."
 
     ; 有時  purpose 和 history 部份內容會重複，留下比較長的就好
-    if (InStr(OrderMatch5, OrderMatch8, true)) {
+    if (InStr(OrderMatch1, OrderMatch4, true)) {
       MyOrderDiag := strPurpose
-    } else if (InStr(OrderMatch8, OrderMatch5, true)) {
+    } else if (InStr(OrderMatch4, OrderMatch1, true)) {
       MyOrderDiag := strHistory
     } else {
       MyOrderDiag := strPurpose . " " . strHistory
