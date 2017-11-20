@@ -31,9 +31,9 @@ Return
 ::l-b-ok::In lung and bone windows, the findings are normal.
 ::l-ok::In lung window, the findings are normal.
 ::b-ok::In bone window, the findings are normal.
-::gbsnac::Presence of gallbladder stones without obvious GB distention or wall thickening.
-::actok::The liver, spleen, pancreas, kidneys, and bowels are normal.
-::actncok::The liver, spleen, pancreas, kidneys, and bowels are normal. Due to non-contrast study, the evaluation of solid organs is limited.
+::actgbss::Presence of several gallbladder stones without obvious GB distention or wall thickening.
+::actok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal.
+::actncok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal. Due to non-contrast study, the evaluation of solid organs is limited.
 ::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
 ::acthh::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
@@ -42,6 +42,16 @@ Return
 ::actckd::Atrophic change of bilateral kidneys, in favor of chronic kidney disease.
 ::actbph::Prostate enlargement with intravesical protrusion.
 ::aphe::arterial phase hyperenhancement
+
+::actok1::
+  MyForm =
+(
+The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal.
+No retroperitoneal or mesenteric lymphadenopathy.
+In lung and bone windows, the findings are normal.
+)
+  Paste(MyForm)
+Return
 
 ::acthcc::
   MyOrder := CopyOrder()
