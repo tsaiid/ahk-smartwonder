@@ -41,6 +41,8 @@
 ::pcsp::Post instrument fixation at cervical spine.
 ::pcsp1::Prevertebral soft tissue swelling. May be due to recent operation.
 ::pvsts::Mild prevertebral soft tissue swelling, may be due to recent operation.
+::ptsp::Post instrument fixation at thoracic spine.
+::ptlsp::Post instrument fixation at lower thoracic to lumbar spine.
 ::plsp::Post instrument fixation at lumbar spine.
 ::plsp0::Post laminectomy, transpedicular screws, rods fixation at L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at L1-2, L2-3, L3-4, L4-5, L5-S1.
 ::spok::No disc space narrowing, spondylolisthesis, or fracture.

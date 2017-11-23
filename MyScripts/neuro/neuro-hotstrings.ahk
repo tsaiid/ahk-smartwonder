@@ -8,3 +8,5 @@
 :c:imp::As the above descriptions.
 :c:imp2::Others as above descriptions.
 ::ifch::from the imaging findings and clinical history, `
+::mrmast::Increased signal intensity over -------------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+::ctmast::Presecne of soft tissue density over ---- mastoid air sinus, R/O mastoiditis or fluid collection in the mastoid.

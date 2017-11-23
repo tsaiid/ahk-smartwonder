@@ -95,6 +95,8 @@
 ::opll::ossification of the posterior longitudinal ligament
 ::dish::diffuse idiopathic skeletal hyperostosis
 ::rom::range of motion
+::asis::anterior superior iliac spine
+::aiis::anterior inferior iliac spine
 
 ;; Abdomen
 ::ln::lymph node
