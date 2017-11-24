@@ -2,6 +2,7 @@
 ::k::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are normal.
 ::k2::The bilateral kidney shadows and psoas muscle contours are normal.
 ::kb::the bowel gas pattern is normal.
+::kb1::the bowel gas pattern is unremarkable.
 ::kob::The other bowel gas pattern is normal.
 ::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Ring like calcification nodules in the pelvic cavity are mostly due to phleboliths of the vein.
