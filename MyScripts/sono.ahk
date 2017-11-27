@@ -16,9 +16,11 @@
 ::sgbss1::Several echogenic lesions in GB with postural change and acoustic shadow, in favor gallstones.
 ::sgba::Comet tail artifacts from the gallbladder wall, adenomyomatosis should be considered.
 ::sgba1::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
-::srbcs::Several renal cysts in both kidneys, size up to __ cm.
-::srrc::A __-cm renal cyst in right kidney.
-::srlc::A __-cm renal cyst in left kidney.
+::srbcs::Several renal cysts in the both kidneys, size up to __ cm.
+::srrc::A __-cm renal cyst in the right kidney.
+::srrcs::Several renal cysts in the right kidney, size up to __ cm.
+::srlc::A __-cm renal cyst in the left kidney.
+::srlcs::Several renal cysts in the left kidney, size up to __ cm.
 ::shcs::Several hepatic cysts, size up to __ cm.
 ::spb::The pancreas can not be well evaluated because of gas blockage.
 ::spaok::The visualized portion of pancreas is normal.
