@@ -161,18 +161,18 @@ C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: Presence of diffuse bulging/protrusion/her
 
 C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1: Presence of posterior-central/right/left/posterior-lateral herniated nucleus pulposus (HIVD), cranial/caudal migration of this HIVD, with compression /attachment of the adjacent nerve root/dural sac, disc space narrowing, small spondylosis, combined with ligament flavum hypertrophy and facet joint degenerative change causing mild/moderate/severe spinal stenosis, right/left lateral recess stenosis, and narrowing of right/left intervertebral neuroforamen.
 
-C3-4, C4-5, C5-6, C6-7, C7-T1: Diffuse herniation of disc (HIVD), and small posterior osteophyte, and ligamentum flavum hypertrophy and causing severe spinal stenosis noted.
+C3-4, C4-5, C5-6, C6-7, C7-T1: Diffuse herniation of disc (HIVD), and small posterior osteophyte, and ligamentum flavum hypertrophy and causing severe spinal stenosis noted. 
 
 C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1:  Presence of mild anterior spondylolisthesis, and slightly bulging disc, and causing mild/moderate spinal stenosis. (however, no obvious compression of the spinal cord).
 
 Diffuse ossification of posterior longitudinal ligament from C2 to C7, diffuse bulging disk, combined with mild ligament flavum hypertrophy, causing severe spinal stenosis over C2-C3 and nearly moderate spinal stenosis from C3 through C6 and mild spinal stenosis over C6-C7.
 
-Ossification of ligament flavum or ligament flavum hypertrophy at C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1, more on right side, causing mild/moderate/severe spinal stenosis.
+Ossification of ligament flavum or ligament flavum hypertrophy at C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1, more on right side, causing mild/moderate/severe spinal stenosis. 
 
 Narrowing of right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1 intervertebral neuroforaminas due to the degenerative change and severe disc space narrowing.
 
-Neuroforaminal stenosis, mild: right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1
-Neuroforaminal stenosis, moderate to severe: right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1
+Neuroforaminal stenosis, mild: right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1 
+Neuroforaminal stenosis, moderate to severe: right\left\bilateral C2-C3, C3-4, C4-5, C5-6, C6-7, C7-T1 
 
 No evidence of abnormal signal intensity lesion within the spinal cord of the C-spine.
 
@@ -182,7 +182,7 @@ Suspicious high signal intensity within the cervical cord at the C4 and C5 level
 
 Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic change.
 
-Presence of high signal intensity within the spinal cord from C1 to C5 disc level on T2WI noted, which may be due to cord edema, demyelination or gliosis change.
+Presence of high signal intensity within the spinal cord from C1 to C5 disc level on T2WI noted, which may be due to cord edema, demyelination or gliosis change. 
 IMPRESSIONS:
 Evident cervical spondylosis with spinal cord signal change.
 
@@ -190,26 +190,26 @@ Presence of old compression fracture and with decreased vertebral height over th
 
 Presence of mild cord atrophic change and small high signal intensity on T2WI within the spinal cord at C4 and C5 spine levels, and posterior osteophyte over the C4 and C5 spine region (more on left side), from the image finding and clinical history, compatible with prior cervical cord injury and with spinal cord gliosis and cord atrophic change over the C4 and C5 spine regions.
 
-Borderline distance of the predental space of the C1-C2, about 5mm, noted in the flexion plain film of the C-spine. However, no obvious spinal stenosis in the neutral position of MRI study.
+Borderline distance of the predental space of the C1-C2, about 5mm, noted in the flexion plain film of the C-spine. However, no obvious spinal stenosis in the neutral position of MRI study. 
 
 Presence of small meningeal cysts over bilateral C7-T1 and T1-2 and left T2-3 neuroframen regions, maximal dimension about 9mm.
 Severe disc space narrowing and degenerative change and spondylosis noted from C4 through C7.
-Mild anterior spondylolisthesis between ----
+Mild anterior spondylolisthesis between ---- 
 Mild retrolisthesis noted, C4 through C6.
 mild/severe disc space narrowing noted over ---
 small spondylosis
 degenerative endplate change
 
-Presence of a nodular lesion noted over the right/left side thyroid gland, diameter/size about 2.8cm, , nature to be determined, recommend thyroid sonography correlation.
+Presence of a nodular lesion noted over the right/left side thyroid gland, diameter/size about 2.8cm, , nature to be determined, recommend thyroid sonography correlation. 
 
-Presence of suspicious a small nodular lesion noted over the right side thyroid gland, recommend thyroid sonography correlation if clinical indicated.
+Presence of suspicious a small nodular lesion noted over the right side thyroid gland, recommend thyroid sonography correlation if clinical indicated. 
 
 Presence of several nodular lesions noted over the right side thyroid gland,  nature to be determined, recommend thyroid sonography correlation if clinical indicated.
 
-4. --------: Mild retrolisthesis--------
+4. --------: Mild retrolisthesis-------- 
 5. --------: Presence of -------- DJD/spondylolytic type spondylolisthesis--------
 6. Presence of narrowing of intervertebral foramen over -----.
-7. No evidence of fracture of cervical spine.
+7. No evidence of fracture of cervical spine. 
 8. Presence of fracture/subluxation over --------------.
 9. Presence of high signal within the spinal cord at ------ level, indicating contusion edema/gliosis/compression with cord signal change
 10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
@@ -473,7 +473,7 @@ Degenerative disc disease:
 No evidence of abnormal signal intensity mass lesion in the spinal canal of L-spine noted.
 
 *Vertebral body
-  Morphology: mild to moderate to severe collapse of L1 to L5 vertebral bodies.
+  Morphology: mild to moderate to severe collapse of L1 to L5 vertebral bodies. 
 In favor of recent/old compression fractures
 Recent/old compression fractures suspected
 
@@ -515,6 +515,8 @@ Presence of small hemangiomas over L1 and L4 spine verterbral body.
 Presence of benign hemangioma noted over the L2 spine vertebral body, size about 2.1 x 2 x 2cm.
 
 Bilateral renal cysts.
+
+Bilateral/Right/Left hydronephrosis and hydroureter. The precise nature to be determined. Suggest clinical correlation.
 
 IMPRESSION:
 Lumbar degenerative spondylosis, disc space narrowing and protrusion disk. Details as above descriptions.
