@@ -25,10 +25,10 @@
 
 ;; Sono, Lower Abdomen
 ::s-foley::s/p Foley catheterization. The urinary bladder is not distended enough for evaluation.
-::sru3us::A tiny stone at upper third of right ureter, with mild hydronephrosis.
-::srl3us::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
-::slu3us::A tiny stone at upper third of left ureter, with mild hydronephrosis.
-::sll3us::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
+::sruus::A tiny stone at upper third of right ureter, with mild hydronephrosis.
+::srlus::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
+::sluus::A tiny stone at upper third of left ureter, with mild hydronephrosis.
+::sllus::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
 ::sscrok::The size and vascularity of bilateral testes and epididymides are within normal limits.
 
 ;; Sono, Breast
@@ -147,7 +147,7 @@ Return
   measure := parsedSR.result
   LeftKidney := measure["kidney"]["left"] ? measure["kidney"]["left"] : "__ cm"
   RightKidney := measure["kidney"]["right"] ? measure["kidney"]["right"] : "__ cm"
-  Spleen := measure["kidney"]["spleen"] ? measure["kidney"]["spleen"] : "__ cm"
+  Spleen := measure["spleen"] ? measure["spleen"] : "__ cm"
 
   MyForm =
 (
