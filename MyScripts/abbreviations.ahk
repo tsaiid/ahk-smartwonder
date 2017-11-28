@@ -149,6 +149,8 @@
 
 ;; Neuro
 ::ich::intracranial hemorrhage
+::cva::cerebrovascular accident
+::dva::developmental venous anomaly
 
 ;; Others
 ::dvt::deep vein thrombosis
