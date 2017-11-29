@@ -16,14 +16,15 @@
 ::sgbss1::Several echogenic lesions in GB with postural change and acoustic shadow, in favor gallstones.
 ::sgba::Comet tail artifacts from the gallbladder wall, adenomyomatosis should be considered.
 ::sgba1::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
-::srbcs::Several renal cysts in the both kidneys, size up to __ cm.
+::srbcs::Several renal cysts in the both kidneys, size up to  cm.{Left 4}
 ::srrc::A __-cm renal cyst in the right kidney.
-::srrcs::Several renal cysts in the right kidney, size up to __ cm.
+::srrcs::Several renal cysts in the right kidney, size up to  cm.{Left 4}
 ::srlc::A __-cm renal cyst in the left kidney.
-::srlcs::Several renal cysts in the left kidney, size up to __ cm.
-::shcs::Several hepatic cysts, size up to __ cm.
+::srlcs::Several renal cysts in the left kidney, size up to  cm.{Left 4}
+::shcs::Several hepatic cysts, size up to  cm.{Left 4}
 ::spb::The pancreas can not be well evaluated because of gas blockage.
 ::spaok::The visualized portion of pancreas is normal.
+::bsm::Borderline splenomegaly, size about  cm.{Left 4}
 
 ;; Sono, Lower Abdomen
 ::s-foley::s/p Foley catheterization. The urinary bladder is not distended enough for evaluation.
@@ -203,37 +204,43 @@ Return
   tabIframe2 := wb.document.frames["frameWork"].document.frames["tabIframe2"]
   AccNo := tabIframe2.document.getElementsByName("OldAccNo")[0].value
 
-  GetTasSR2(AccNo, tabIframe2)
+  parsedSR := GetSonoSR_Local(AccNo)
 
-  LeftOvaryL := tabIframe2.document.getElementById("sr_leftOvaryL")
-              ? StrSplit(tabIframe2.document.getElementById("sr_leftOvaryL").value, A_Space)[1] : "_"
-  LeftOvaryW := tabIframe2.document.getElementById("sr_leftOvaryW")
-              ? StrSplit(tabIframe2.document.getElementById("sr_leftOvaryW").value, A_Space)[1] : "_"
-  LeftOvaryH := tabIframe2.document.getElementById("sr_leftOvaryH")
-              ? StrSplit(tabIframe2.document.getElementById("sr_leftOvaryH").value, A_Space)[1] : "_"
-  LeftOvaryVol := tabIframe2.document.getElementById("sr_leftOvaryVol")
-                ? StrSplit(tabIframe2.document.getElementById("sr_leftOvaryVol").value, A_Space)[1] : "_"
-  RightOvaryL := tabIframe2.document.getElementById("sr_rightOvaryL")
-               ? StrSplit(tabIframe2.document.getElementById("sr_rightOvaryL").value, A_Space)[1] : "_"
-  RightOvaryW := tabIframe2.document.getElementById("sr_rightOvaryW")
-               ? StrSplit(tabIframe2.document.getElementById("sr_rightOvaryW").value, A_Space)[1] : "_"
-  RightOvaryH := tabIframe2.document.getElementById("sr_rightOvaryH")
-               ? StrSplit(tabIframe2.document.getElementById("sr_rightOvaryH").value, A_Space)[1] : "_"
-  RightOvaryVol := tabIframe2.document.getElementById("sr_rightOvaryVol")
-                 ? StrSplit(tabIframe2.document.getElementById("sr_rightOvaryVol").value, A_Space)[1] : "_"
-  UterusL := tabIframe2.document.getElementById("sr_UterusL")
-           ? StrSplit(tabIframe2.document.getElementById("sr_UterusL").value, A_Space)[1] : "_"
-  UterusW := tabIframe2.document.getElementById("sr_UterusW")
-           ? StrSplit(tabIframe2.document.getElementById("sr_UterusW").value, A_Space)[1] : "_"
-  UterusH := tabIframe2.document.getElementById("sr_UterusH")
-           ? StrSplit(tabIframe2.document.getElementById("sr_UterusH").value, A_Space)[1] : "_"
-  UterusVol := tabIframe2.document.getElementById("sr_UterusVol")
-             ? StrSplit(tabIframe2.document.getElementById("sr_UterusVol").value, A_Space)[1] : "_"
-  Endometrium := tabIframe2.document.getElementById("sr_Endometrium")
-               ? StrSplit(tabIframe2.document.getElementById("sr_Endometrium").value, A_Space)[1] : "_"
+  ;sometimes need to debug
+  If (parsedSR.status.error) {
+    MsgBox % parsedSR.status.message
+  }
+
+  measure := parsedSR.result
+  LeftOvaryL := measure["sr_leftOvaryL"]
+              ? StrSplit(measure["sr_leftOvaryL"], A_Space)[1] : "_"
+  LeftOvaryW := measure["sr_leftOvaryW"]
+              ? StrSplit(measure["sr_leftOvaryW"], A_Space)[1] : "_"
+  LeftOvaryH := measure["sr_leftOvaryH"]
+              ? StrSplit(measure["sr_leftOvaryH"], A_Space)[1] : "_"
+  LeftOvaryVol := measure["sr_leftOvaryVol"]
+                ? StrSplit(measure["sr_leftOvaryVol"], A_Space)[1] : "_"
+  RightOvaryL := measure["sr_rightOvaryL"]
+               ? StrSplit(measure["sr_rightOvaryL"], A_Space)[1] : "_"
+  RightOvaryW := measure["sr_rightOvaryW"]
+               ? StrSplit(measure["sr_rightOvaryW"], A_Space)[1] : "_"
+  RightOvaryH := measure["sr_rightOvaryH"]
+               ? StrSplit(measure["sr_rightOvaryH"], A_Space)[1] : "_"
+  RightOvaryVol := measure["sr_rightOvaryVol"]
+                 ? StrSplit(measure["sr_rightOvaryVol"], A_Space)[1] : "_"
+  UterusL := measure["sr_UterusL"]
+           ? StrSplit(measure["sr_UterusL"], A_Space)[1] : "_"
+  UterusW := measure["sr_UterusW"]
+           ? StrSplit(measure["sr_UterusW"], A_Space)[1] : "_"
+  UterusH := measure["sr_UterusH"]
+           ? StrSplit(measure["sr_UterusH"], A_Space)[1] : "_"
+  UterusVol := measure["sr_UterusVol"]
+             ? StrSplit(measure["sr_UterusVol"], A_Space)[1] : "_"
+  Endometrium := measure["sr_Endometrium"]
+               ? StrSplit(measure["sr_Endometrium"], A_Space)[1] : "_"
 
   ; Chief Huang seems like to use cm as unit
-  If (Endometrium != "_" && StrSplit(tabIframe2.document.getElementById("sr_Endometrium").value, A_Space)[2] = "mm") {
+  If (Endometrium != "_" && StrSplit(measure["sr_Endometrium"], A_Space)[2] = "mm") {
     Endometrium := Round(Endometrium / 10, 1)
   }
 
