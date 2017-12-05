@@ -45,6 +45,8 @@
 ::inflat::inferolateral `
 ::antlat::anterolateral `
 ::postlat::posterolateral `
+::ext::external `
+::int::internal `
 ::pri::primary `
 ::sec::secondary `
 ::ned::no evidence of disease.

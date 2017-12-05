@@ -24,14 +24,15 @@
 ::patok::No lateral tilting or subluxation of bilateral patellae. {Enter}No PF joint space narrowing.
 ::lpatok::No lateral tilting or subluxation of left patella. No PF joint space narrowing.
 ::rpatok::No lateral tilting or subluxation of right patella. No PF joint space narrowing.
-::pats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
-::lpats::Mild lateral subluxation of left patella, with mild PF joint space narrowing at lateral facet.
-::rpats::Mild lateral subluxation of right patella, with mild PF joint space narrowing at lateral facet.
-::patt::Mild lateral tilting of bilateral patellae, with mild PF joint space narrowing at lateral facet.
-::lpatt::Mild lateral tilting of left patella, with mild PF joint space narrowing at lateral facet.
-::rpatt::Mild lateral tilting of right patella, with mild PF joint space narrowing at lateral facet.
+::pats::Lateral subluxation of bilateral patellae, with severe PF joint space narrowing at lateral facet.
+::mpats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
+::lmpats::Mild lateral subluxation of left patella, with mild PF joint space narrowing at lateral facet.
+::rmpats::Mild lateral subluxation of right patella, with mild PF joint space narrowing at lateral facet.
+::mpatt::Mild lateral tilting of bilateral patellae, with mild PF joint space narrowing at lateral facet.
+::lmpatt::Mild lateral tilting of left patella, with mild PF joint space narrowing at lateral facet.
+::rmpatt::Mild lateral tilting of right patella, with mild PF joint space narrowing at lateral facet.
 ::patts::Lateral tilting and subluxation of bilateral patellae, with severe PF joint space narrowing, subchondral sclerosis and marginal osteophyte formation at lateral facet.
-::patts0::Mild lateral tilting and subluxation of bilateral patellae, with PF joint space narrowing at lateral facet.
+::mpatts::Mild lateral tilting and subluxation of bilateral patellae, with PF joint space narrowing at lateral facet.
 ::acrd::Lateral downsloping of the acromion, narrowing the acromiohumeral distance, which may be associated with impingement of the supraspinatus tendon.
 ::acrok::No lateral downsloping or hooking of the acromion.
 ::acrsp::Presence of subacromial spur.
@@ -61,8 +62,14 @@
 ::lhba0::s/p left hip bipolar hemiarthroplasty.{Enter}A drain at left hip region.
 ::bhba::s/p bilateral hip bipolar hemiarthroplasties.
 ::rtka::s/p right total knee arthroplasty.
+::rtka0::s/p right total knee arthroplasty.{Enter}A drain at right knee region.
+::rtka1::s/p right total knee arthroplasty, without loosening.
 ::ltka::s/p left total knee arthroplasty.
+::ltka0::s/p left total knee arthroplasty.{Enter}A drain at left knee region.
+::ltka1::s/p left total knee arthroplasty, without loosening.
 ::btka::s/p bilateral total knee arthroplasties.
+::btka0::s/p bilateral total knee arthroplasty.{Enter}A drain at bilateral knee region.
+::btka1::s/p bilateral total knee arthroplasty, without loosening.
 ::orif::s/p screw and plate fixation.
 ::fr::fracture
 ::frs::fractures
@@ -109,6 +116,8 @@
 ::avn::avascular necrosis
 ::lhd::A drain at left hip region.
 ::rhd::A drain at right hip region.
+::lkd::A drain at left knee region.
+::rkd::A drain at right knee region.
 ::u+::Positive ulnar variance.
 ::u-::Negative ulnar variance.
 ::hm::hypermobility
