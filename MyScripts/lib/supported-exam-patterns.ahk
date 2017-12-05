@@ -27,7 +27,7 @@ SupportedExamPatterns() {
                 , AnkleLt:      "Ankle LT"
                 , KneeRt:       "Knee( standing)? RT"
                 , KneeLt:       "Knee( standing)? LT"
-                , KneePat45:    "Knee patella \(tangential 45\)"
+                , KneePat:      "Knee patella \(tangential (30|45)\)"
                 , LowerLegRt:   "Lower leg RT(( including)? 2 joint(s)?)?"
                 , LowerLegLt:   "Lower leg LT(( including)? 2 joint(s)?)?"
                 , FemurRt:      "Femur, RT"
