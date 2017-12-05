@@ -383,3 +383,27 @@ No obvious abnormal soft tissue mass noted under the sonography.
 )
   Paste(MyForm, false)
 Return
+
+::sdrasok::
+  MyForm =
+(
+Color doppler evaluation measured at the segmental arteries of both kidneys shows:
+
+Normal perfusion of bilateral renal parenchyma. 
+Normal size and echogenicit of both kidneys.
+Normal accleration time of bilateral renal segmental arteries, measuring between 30-60 msec, with the accleration index about 410-1330 cm/s2. 
+No evidence of upstream renal arterial stenosis. 
+)
+  Paste(MyForm, false)
+Return
+
+::sdras+::
+  MyForm =
+(
+Color doppler evaluation measured at the segmental arteries of both kidneys shows:
+
+Relatively prolonged accleration time of -- renal segmental arteries, measuring between 130-180 msec, with the accleration index about 90-100cm/s2. Tardus-parvus waves suspected. The possibility of ---. upstream renal arterial stenosis can not be R/O. 
+Suggest further evaluation.
+)
+  Paste(MyForm, false)
+Return
