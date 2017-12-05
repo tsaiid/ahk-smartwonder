@@ -23,6 +23,7 @@
 ::lfdl::On double-lumen catheter via left femoral vein.
 ::nfa::No evidence of subphrenic free air.
 ::foley::s/p Foley catheterization.
+::iud1::s/p intrauterine device implantation.
 ::haic-ok::On HAIC. The tip position shows no migration as compared with previous angiography.
 ::spa::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
 ::sphaic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
@@ -32,9 +33,9 @@
 ::kns::No definite stone-like radiopacity along the urinary tract.
 ::kbrs::Several tiny radiopacities superimposed on bilateral renal shadows, suspicious renal stones.
 ::kbrss::Several small radiopacities superimposed on bilateral renal shadows, suspicious renal stones.
-::klrs::Tiny radiopacity superimposed on left renal shadow, suspicious renal stone.
+::klrs::A tiny radiopacity superimposed on left renal shadow, suspicious a renal stone.
 ::klrss::Small radiopacities superimposed on left renal shadow, suspicious renal stones.
-::krrs::Tiny radiopacity superimposed on right renal shadow, suspicious renal stone.
+::krrs::A tiny radiopacity superimposed on right renal shadow, suspicious a renal stone.
 ::krrss::Small radiopacities superimposed on right renal shadow, suspicious renal stones.
 ::klus::A small stone-like opacity at left paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
 ::krus::A small stone-like opacity at right paraspinal region at L3 level, possibly a ureter stone. Suggest correlation with sonography.
