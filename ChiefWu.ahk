@@ -76,12 +76,12 @@ Return
 
 ; 複製最近相關報告並開啟影像
 ^z::
-  GetPreviousReportWithImages(true, true, 1, false, false)
+  GetPreviousReportWithImages(true, true, 1, false, false, false)
 Return
 
 ; 複製最近相關報告並開啟最近兩張及三個月前影像
 ^+z::
-  GetPreviousReportWithImages(true, true, 2, true, false)
+  GetPreviousReportWithImages(true, true, 2, true, false, false)
 Return
 
 ; CopyIndication

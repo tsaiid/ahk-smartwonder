@@ -8,7 +8,8 @@
 ;;; TotalRecentImages: numeric, how many previous images to be loaded.
 ;;; LoadFarImage: true or false, if TotalRecentImages all within 3 months, find a > 3 months images.
 ;;; ShowAlert: true or false, show alert message or directly insert the message into the report area.
-GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=2, LoadFarImage=true, ShowAlert=true) {
+;;; InsertNoRelatedText: true or false, insert a non-related text if there is none
+GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=2, LoadFarImage=true, ShowAlert=true, InsertNoRelatedText=false) {
   ; global vars for counters
   global cntGetPreviousReport
   global cntGetPreviousReportSuccess
@@ -214,8 +215,10 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
     ; 輸出沒得比較的字串
     If (isNoPrevReport || relatedReportCount = 0) {
       FrameWait(frmTabIframe2)
-      ReportContent := frmTabIframe2.document.getElementsByName("ReportContent")[0]
-      ReportContent.innerText := "No related previous image for comparison." . Chr(13) . ReportContent.innerHTML
+      if (InsertNoRelatedText) {
+        ReportContent := frmTabIframe2.document.getElementsByName("ReportContent")[0]
+        ReportContent.innerText := "No related previous image for comparison." . Chr(13) . ReportContent.innerHTML
+      }
     }
   }
 }
