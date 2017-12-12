@@ -20,7 +20,7 @@ GroupAdd, SmartWonder, tedpc-
 
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
-  #Include MyScripts\neuro.ahk
+  #Include MyScripts\neuro-lai.ahk
 #IfWinActive
 
 ; HotKeys
