@@ -153,6 +153,8 @@
 ::ich::intracranial hemorrhage
 ::cva::cerebrovascular accident
 ::dva::developmental venous anomaly
+::sah::subarachnoid hemorrhage
+::sdh::subdural hemorrhage
 
 ;; Others
 ::dvt::deep vein thrombosis
