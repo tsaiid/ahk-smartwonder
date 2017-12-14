@@ -7,7 +7,7 @@
 ::sngb::The gallbladder is not seen, may be due to previous cholecystectomy.
 ::sckd::Cortical thinning, increased echogenicity, and small sizes of both kidneys, in favor of chronic kidney disease.
 ::sspc::The gallbladder was not found, most likely resected at the previous operation.
-::snnpo::Probably due to non-NPO status, the gallbladder is not distended enough for evaluation. However, no focal lesion is noted.
+::sgbnnpo::Probably due to non-NPO status, the gallbladder is not distended enough for evaluation. However, no focal lesion is noted.
 ::subnf::The urinary bladder is not distended enough for evaluation. However, no focal lesion is noted.
 ::sgbp::A tiny echogenic polyp, __ cm in size, in the gallbladder noted. Cholesterol polyp is considered.
 ::sgbps::Several tiny echogenic polyps, size up to __ cm, in the gallbladder noted. Cholesterol polyps are considered.
@@ -389,10 +389,10 @@ Return
 (
 Color doppler evaluation measured at the segmental arteries of both kidneys shows:
 
-Normal perfusion of bilateral renal parenchyma. 
+Normal perfusion of bilateral renal parenchyma.
 Normal size and echogenicit of both kidneys.
-Normal accleration time of bilateral renal segmental arteries, measuring between 30-60 msec, with the accleration index about 410-1330 cm/s2. 
-No evidence of upstream renal arterial stenosis. 
+Normal accleration time of bilateral renal segmental arteries, measuring between 30-60 msec, with the accleration index about 410-1330 cm/s2.
+No evidence of upstream renal arterial stenosis.
 )
   Paste(MyForm, false)
 Return
@@ -402,7 +402,7 @@ Return
 (
 Color doppler evaluation measured at the segmental arteries of both kidneys shows:
 
-Relatively prolonged accleration time of -- renal segmental arteries, measuring between 130-180 msec, with the accleration index about 90-100cm/s2. Tardus-parvus waves suspected. The possibility of ---. upstream renal arterial stenosis can not be R/O. 
+Relatively prolonged accleration time of -- renal segmental arteries, measuring between 130-180 msec, with the accleration index about 90-100cm/s2. Tardus-parvus waves suspected. The possibility of ---. upstream renal arterial stenosis can not be R/O.
 Suggest further evaluation.
 )
   Paste(MyForm, false)
