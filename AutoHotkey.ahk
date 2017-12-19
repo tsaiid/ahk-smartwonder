@@ -48,6 +48,8 @@ PRESERVE_CLIPBOARD := 0
   ;;; HotStrings
   #Include MyScripts\neuro.ahk
 
+  #Include MyScripts\ajcc.ahk
+
   #Include MyScripts\sono.ahk
 
   #Include MyScripts\chest-x-ray.ahk
