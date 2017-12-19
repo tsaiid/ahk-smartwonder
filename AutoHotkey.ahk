@@ -47,7 +47,6 @@ PRESERVE_CLIPBOARD := 0
 #IfWinActive ahk_group SmartWonder
   ;;; HotStrings
   #Include MyScripts\neuro.ahk
-  #Include MyScripts\neuro\neuro-hotstrings.ahk
 
   #Include MyScripts\sono.ahk
 
