@@ -18,11 +18,12 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
 
   ; use global variables to store previous exam date
   global prevExamDate
+  global currExamDate
   global currAccNo
 
   wb := WBGet()
-  frmWork := wb.document.frames["frameWork"]
-  frmTabIframe2 := frmWork.document.frames["tabIframe2"]
+  frmWork := wb.document.parentWindow.frames["frameWork"]
+  frmTabIframe2 := frmWork.document.parentWindow.frames["tabIframe2"]
 
   ; Check if in 報告編輯 tab
   FrameWait(frmTabIframe2)
@@ -37,7 +38,7 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
 
   ; 在切換至歷史報告頁之前先確認有無支援此類報告
   ;; get current exam name
-  tmpStr := frmTabIframe2.document.getElementById("orderTemplate_rptFlowProcess").children[0].children[1].children[2].children[0].children[0].innerText
+  tmpStr := frmTabIframe2.document.getElementById("tabOrder").children[0].children[0].children[2].children[0].children[0].innerText
   RegExMatch(tmpStr, "(.+) : (.+)", splittedTmpStr)
   currExamName := splittedTmpStr2
 
@@ -65,6 +66,7 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
   FrameWait(frmTabIframe2)
 
   ;; get current exam date and time
+  frmHistory0 := frmTabIframe2.frames["History0"]
   frmHistory2 := frmTabIframe2.frames["History2"]
   FrameWait(frmHistory2)
 
@@ -80,7 +82,7 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
   currExamDateTime := (currExamDate . currExamTime)
 
   ; 檢查是否有歷史報告
-  prevReportLists := frmTabIframe2.document.getElementById("lstBdyQuery")
+  prevReportLists := frmHistory0.document.getElementById("lstBdyQuery")
   isNoPrevReport := (prevReportLists.children.length = 0)
 
   ; get no prev report message.
@@ -97,11 +99,11 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
     prevReportArray := []
     prevReportDateArray := []
     Loop %prevReportListsLength% {
-      If (RegExMatch(prevReportLists.children[A_Index].children[7].innerText, currPattern) > 0) {
+      If (RegExMatch(prevReportLists.children[A_Index].children[9].innerText, currPattern) > 0) {
         ; 先找出所有相關報告
-        prevExamDate := prevReportLists.children[A_Index].children[4].innerText
-        prevExamTime := prevReportLists.children[A_Index].children[5].innerText
-        prevExamAcc := prevReportLists.children[A_Index].children[6].innerText
+        prevExamDate := prevReportLists.children[A_Index].children[10].innerText
+        prevExamTime := prevReportLists.children[A_Index].children[11].innerText
+        prevExamAcc := prevReportLists.children[A_Index].children[3].innerText
         prevExamDateTime := (prevExamDate . prevExamTime) ; for datetime substract
         prevExamNo := prevReportLists.children[A_Index].children[0].innerText   ; to prevent same date, time, acc !!!
 
@@ -150,13 +152,17 @@ GetPreviousReportWithImages(CopyReport=true, LoadImages=true, TotalRecentImages=
     ; 有找到相關報告
     If (relatedReportCount > 0) {
       ; update global var prevExamDate
-      prevExamDate := prevReportLists.children[prevReportArray[1]].children[4].innerText
+      prevExamDate := prevReportLists.children[prevReportArray[1]].children[10].innerText
 
       ; copy the latest report
-      latestRelatedReport := prevReportLists.children[prevReportArray[1]].children[(LoadImages? 1 : 3)]
-      latestRelatedReport.click() ; 點最近報告、開影像
+      If (LoadImages) {
+        latestRelatedReport := prevReportLists.children[prevReportArray[1]].children[1]
+        latestRelatedReport.click() ; 開影像
+      }
+      latestRelatedReport := prevReportLists.children[prevReportArray[1]].children[3]
+      latestRelatedReport.click() ; 要點一下最近報告才可以複製報告
 
-      frmPrevReport := frmTabIframe2.document.frames["History3"]
+      frmPrevReport := frmTabIframe2.document.parentWindow.frames["History3"]
       FrameWait(frmPrevReport)
 
       btnCopyReport := frmPrevReport.document.getElementsByName("copyReport")[0]

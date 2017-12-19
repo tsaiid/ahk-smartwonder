@@ -127,8 +127,8 @@ SetTitleMatchMode, 2
 ; 複製最近相關報告並開啟影像
 ^0::
 Capslock & 0::
-  GetPreviousReport(true, true)
-  ;GetPreviousReportWithImages(true, true, 1, false, false)
+  ;GetPreviousReport(true, true)
+  GetPreviousReportWithImages(true, true, 1, false, false, false)
 Return
 
 ; 複製最近相關報告但不開啟影像
