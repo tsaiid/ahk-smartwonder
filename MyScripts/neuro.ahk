@@ -16,4 +16,7 @@
 ::mrmast::Increased signal intensity over -------------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 ::ctmast::Presecne of soft tissue density over ---- mastoid air sinus, R/O mastoiditis or fluid collection in the mastoid.
 ::ctatr::Diffuse atrophy of bilateral cerebral hemispheres, with compensatory dilatation of bilateral lateral ventricles, deepening and widening of cortical sulci.
+::ctatr1::Mild dilatation of ventricular system and sulcal widening of bil. cerebral hemispheres noted, in favor of mild brain atrophy.
 ::mratr::Mild dilatation of intraventricular system with widening of subarachnoid space of bilateral cerebral hemispheres, in favor of aging process and mild brain atrophy.
+::ctpbi::Presence of ---------tiny/small low density involved right/left/bilateral basal ganglion, right/left/bilateral thalamus, and right/left/bilateral periventricular white matter, previous brain ischemic insult, such as old tiny ischemic infarction considered.
+::ctnsprt::Diffuse thickening and enhancement over the epiglottis, arytenoepiglottic folds, and posterior pharangeal wall over the oropharynx and hypopharynx, c/w post-radiation change.

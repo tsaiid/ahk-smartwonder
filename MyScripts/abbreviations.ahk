@@ -155,6 +155,7 @@
 ::dva::developmental venous anomaly
 ::sah::subarachnoid hemorrhage
 ::sdh::subdural hemorrhage
+::pvwm::periventricular white matter
 
 ;; Others
 ::dvt::deep vein thrombosis

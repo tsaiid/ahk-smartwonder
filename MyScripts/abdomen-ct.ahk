@@ -29,8 +29,9 @@ Return
 ;; Hotstrings
 ::lapok::No retroperitoneal or mesenteric lymphadenopathy.
 ::l-b-ok::In lung and bone windows, the findings are normal.
-::l-ok::In lung window, the findings are normal.
+::l-ok::The lungs covered in the scanning range are normal.
 ::b-ok::In bone window, the findings are normal.
+::actgbs::A tiny gallbladder stone without obvious GB distention or wall thickening.
 ::actgbss::Presence of several gallbladder stones without obvious GB distention or wall thickening.
 ::actok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal.
 ::actncok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal. Due to non-contrast study, the evaluation of solid organs is limited.
