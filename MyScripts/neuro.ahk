@@ -20,3 +20,19 @@
 ::mratr::Mild dilatation of intraventricular system with widening of subarachnoid space of bilateral cerebral hemispheres, in favor of aging process and mild brain atrophy.
 ::ctpbi::Presence of ---------tiny/small low density involved right/left/bilateral basal ganglion, right/left/bilateral thalamus, and right/left/bilateral periventricular white matter, previous brain ischemic insult, such as old tiny ischemic infarction considered.
 ::ctnsprt::Diffuse thickening and enhancement over the epiglottis, arytenoepiglottic folds, and posterior pharangeal wall over the oropharynx and hypopharynx, c/w post-radiation change.
+
+::ctps::
+  MyForm =
+(
+Presence of mild mucoperiosteal thickening and soft tissue density in the bilateral frontal sinuses, bilateral ethmoid sinuses, bilateral maxillary sinuses, and bilateral sphenoid sinuses, in favor of mild sinusitis.
+)
+  Paste(MyForm)
+Return
+
+::mrps::
+  MyForm =
+(
+Presence of hyperintensity on T2WI over right/left/bilateral sphenoid sinus, right/left/bilateral ethmoid sinus, right/left/bilateral maxillary sinus, right/left/bilateral frontal sinus, in favor of mild sinusitis. Suggest clinical check up.
+)
+  Paste(MyForm)
+Return

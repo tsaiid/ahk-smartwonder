@@ -31,11 +31,11 @@ Return
 ::l-b-ok::In lung and bone windows, the findings are normal.
 ::l-ok::The lungs covered in the scanning range are normal.
 ::b-ok::In bone window, the findings are normal.
+::acthcs::Several hepatic cysts, size up to  cm.{Left 4}
 ::actgbs::A tiny gallbladder stone without obvious GB distention or wall thickening.
 ::actgbss::Presence of several gallbladder stones without obvious GB distention or wall thickening.
 ::actok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal.
 ::actncok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal. Due to non-contrast study, the evaluation of solid organs is limited.
-::rcyst::Some renal cysts in both kidneys, size up to  cm.{Left 4}
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
 ::acthh::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
 ::mrhh::A -cm nodule over S of liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
@@ -48,6 +48,7 @@ Return
   MyForm =
 (
 The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal.
+The lower abdomen and pelvis are normal.
 No retroperitoneal or mesenteric lymphadenopathy.
 In lung and bone windows, the findings are normal.
 )

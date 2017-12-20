@@ -145,3 +145,8 @@ Return
 ::hop::hollow organ perforation
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
+
+; common hotstrings
+::rcs::Some renal cysts in both kidneys, size up to  cm.{Left 4}
+::lrc::A -cm renal cyst at the left kidney.
+::rrc::A -cm renal cyst at the right kidney.
