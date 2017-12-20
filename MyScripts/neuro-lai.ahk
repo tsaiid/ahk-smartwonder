@@ -61,14 +61,6 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-::ctps::
-  MyForm =
-(
-Presence of mild mucoperiosteal thickening and soft tissue density in the bilateral frontal sinuses, bilateral ethmoid sinuses, bilateral maxillary sinuses, and bilateral sphenoid sinuses, in favor of mild sinusitis.
-)
-  Paste(MyForm)
-Return
-
 ;; MRSE
 ::mrse::
   MyOrder := CopyOrder()
